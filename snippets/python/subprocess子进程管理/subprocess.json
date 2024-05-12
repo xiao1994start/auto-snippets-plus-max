@@ -1,0 +1,35 @@
+{
+  "导入 subprocess 子进程管理模块": {
+    "prefix": "im -subprocess",
+    "body": ["# 导入子进程管理模块", "import subprocess"],
+    "description": ["导入subprocess子进程管理模块"]
+  },
+  "subprocess.run 运行命令": {
+    "prefix": ".run -subprocess",
+    "body": [
+      ".run([$0], shell=True, ${1:stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE})"
+    ],
+    "description": [
+      "subprocess.run 运行外部命令并等待其完成",
+      "\r\nshell=True 表示在shell中运行命令, 如果不需要在shell中运行, 可以设置为False",
+      "\r\nstdin=subprocess.PIPE 表示允许从标准输入读取数据",
+      "\r\nstdout=subprocess.PIPE 表示将标准输出保存到变量中",
+      "\r\nstderr=subprocess.PIPE 表示将标准错误保存到变量中",
+      "\r\n返回值是一个CompletedProcess对象, 包含命令执行的结果"
+    ]
+  },
+  "subprocess.Popen 构造函数": {
+    "prefix": ".Popen -subprocess",
+    "body": [
+      ".Popen([$0], shell=True, ${1:stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE})"
+    ],
+    "description": [
+      "subprocess.Popen 构造函数",
+      "\r\nshell=True 表示在shell中运行命令, 如果不需要在shell中运行, 可以设置为False",
+      "\r\nstdin=subprocess.PIPE 表示允许从标准输入读取数据",
+      "\r\nstdout=subprocess.PIPE 表示将标准输出保存到变量中",
+      "\r\nstderr=subprocess.PIPE 表示将标准错误保存到变量中",
+      "\r\n返回值是一个CompletedProcess对象, 包含命令执行的结果"
+    ]
+  }
+}

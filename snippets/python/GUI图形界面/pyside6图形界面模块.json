@@ -1,0 +1,27 @@
+{
+  "引入 PySide6 模块": {
+    "prefix": "im -PySide6",
+    "body": [
+      "import sys",
+      "from PySide6.QtCore import *",
+      "from PySide6.QtGui import *",
+      "from PySide6.QtWidgets import *",
+      "from ${1:ui_py} import Ui_Form\r\n",
+      "class MainWindow(QWidget, Ui_Form):  # 继承 Ui_Form 类的实例",
+      "\tdef __init__(self) -> None:",
+      "\t\tsuper().__init__()  # 继承父类 QMainWindow/QWidget 的__init__方法",
+      "\t\tself.setupUi(self)  # 传入窗体对象作为参数\r\n",
+      "\t\tself.bind()  # 图形化界面入口函数\r\n",
+      "\tdef bind(self):",
+      "\t\tpass\r\n",
+      "if __name__ == \"__main__\":",
+      "\tapp = QApplication(sys.argv)  # 创建应用程序对象, 传入命令行参数",
+      "\twindow = MainWindow()",
+      "\twindow.show()",
+      "",
+      "\t# 程序运行, sys.exit方法确保主循环安全结束, 释放资源",
+      "\tsys.exit(app.exec())  # 使用Jupyter进行测试时, 直接使用 app.exec()"
+    ],
+    "description": ["引入 PySide6 模块"]
+  }
+}

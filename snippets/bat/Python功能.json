@@ -1,0 +1,387 @@
+{
+  "python.创建_激活 虚拟环境": {
+    "prefix": "py -venv.activate",
+    "body": [
+      "@ECHO 创建虚拟环境...",
+      "call python -m venv ./.venv",
+      "@ECHO 创建虚拟环境完成...",
+      "@ECHO 激活虚拟环境...",
+      "call ./.venv/Scripts/activate.bat",
+      "@ECHO 安装Jupyter内核ipykernel依赖库...",
+      "call python -m pip install ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "",
+      "@ECHO 安装依赖库...",
+      "$0",
+      "",
+      "call python -m pip freeze  > requirements.txt"
+    ],
+    "description": ["创建_激活 虚拟环境"]
+  },
+  "pip.Jupyter内核ipykernel依赖库": {
+    "prefix": ["pip -Jupyter", "pip -ipykernel"],
+    "body": [
+      "@ECHO 安装Jupyter内核ipykernel依赖库...",
+      "call python -m pip install ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip.Jupyter内核ipykernel依赖库"]
+  },
+  "pip.镜像源": {
+    "prefix": "pip -config.index-url",
+    "body": [
+      "@ECHO 重置pip.ini...",
+      "@REM ECHO.> %USERPROFILE%/AppData/Roaming/pip/pip.ini",
+      "echo 清华",
+      "call python -m pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call python -m pip config set install.trusted-host https://pypi.tuna.tsinghua.edu.cn",
+      "echo 阿里",
+      "@REM call python -m pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/",
+      "@REM call python -m pip config set install.trusted-host https://mirrors.aliyun.com/pypi",
+      "echo 豆瓣",
+      "@REM call python -m pip config set global.index-url https://pypi.douban.com/simple/",
+      "@REM call python -m pip config set install.trusted-host https://pypi.douban.com"
+    ],
+    "description": ["pipconfig.index镜像源"]
+  },
+  "pip.批量镜像源": {
+    "prefix": "pip -config.extra-index-url",
+    "body": [
+      "@ECHO 重置pip.ini...",
+      "@REM ECHO.> %USERPROFILE%/AppData/Roaming/pip/pip.ini",
+      "call python -m pip config set global.extra-index-url \"https: //pypi.tuna.tsinghua.edu.cn/simple http://mirrors.aliyun.com/pypi/simple http://pypi.douban.com/simple http://pypi.mirrors.ustc.edu.cn/simple\""
+    ],
+    "description": ["pipconfig.index批量镜像源"]
+  },
+  "pip.install 安装模块": {
+    "prefix": "pip -install",
+    "body": [
+      "call python -m pip install ${1:模块名_whl文件路径} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+    ],
+    "description": ["pip -i 安装模块"]
+  },
+  "pip.-reinstall 强制重装模块": {
+    "prefix": "pip -install.reinstall",
+    "body": [
+      "call python -m pip install --force-reinstall ${1:模块名_whl文件路径} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+    ],
+    "description": ["pip -reinstall 强制重装模块"]
+  },
+  "pip.-upgrade 升级模块": {
+    "prefix": "pip -upgrade",
+    "body": [
+      "call python -m pip install --upgrade ${1:pip} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+    ],
+    "description": ["pip --upgrade 升级模块"]
+  },
+  "pip.uninstall 卸载": {
+    "prefix": "pip -uninstall",
+    "body": ["call python -m pip uninstall ${1:模块名} -y"],
+    "description": ["pip -uninstall 卸载"]
+  },
+  "pip.freeze 获取安装模块列表": {
+    "prefix": "pip -freeze",
+    "body": ["call python -m pip freeze  > ${1:requirements.txt}"],
+    "description": ["pip -freeze 获取安装模块列表"]
+  },
+  "pip.requirements 列式安装模块": {
+    "prefix": ["pip -requirements", "pip -txt.install"],
+    "body": ["call python -m pip install -r ${1:requirements.txt}"],
+    "description": ["pip -requirements 列式安装模块"]
+  },
+  "pip.pywin32 模块": {
+    "prefix": "pip -pywin32",
+    "body": [
+      "call python -m pip install pywin32 -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -pywin32 win系统模块"]
+  },
+  "pip.Django模块": {
+    "prefix": "pip -Django",
+    "body": [
+      "call python -m pip install ${1|django|} -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call django-admin startproject ${2:__DjangoServer_BE_ .}",
+      "call python manage.py startapp ${3:apps}",
+      "@REM __Django修改默认端口号与地址__",
+      "@REM manage.py : from django.core.management.commands.runserver import Command",
+      "@REM if __name__ == '__main__':",
+      "@REM     Command.default_port = '修改默认端口'",
+      "@REM     main()",
+      "@REM ____",
+      "@REM call python manage.py makemigrations",
+      "@REM call python manage.py migrate"
+    ],
+    "description": ["pip -Django模块"]
+  },
+  "pip.Django 模块 DRF 组件": {
+    "prefix": "pip -DRF",
+    "body": [
+      "call python -m pip install ${1|django|} -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call python -m pip install djangorestframework -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call python -m pip install django-cors-headers -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call django-admin startproject ${2:__DjangoServer_BE_ .}",
+      "call python manage.py startapp ${3:apps}",
+      "@REM __Django修改默认端口号与地址__",
+      "@REM manage.py : from django.core.management.commands.runserver import Command",
+      "@REM if __name__ == '__main__':",
+      "@REM     Command.default_port = '修改默认端口'",
+      "@REM     main()",
+      "@REM ____",
+      "@REM call python manage.py makemigrations",
+      "@REM call python manage.py migrate"
+    ],
+    "description": ["pip -Django 模块 DRF 组件"]
+  },
+  "pip.FastAPI 模块": {
+    "prefix": "pip -fastapi",
+    "body": [
+      "@REM 安装 fastapi web框架",
+      "call python -m pip install fastapi -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM 安装 uvicorn 异步服务器",
+      "call python -m pip install uvicorn -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM 安装 pydantic 数据接口定义检查与设置管理",
+      "call python -m pip install pydantic -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM 安装 pywebview webGUI框架库",
+      "call python -m pip install pywebview -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM 安装 pyinstaller 打包工具",
+      "call python -m pip install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "",
+      "goto :FastAPIHelp",
+      "{./main.py >> 入口配置:",
+      "\timport os",
+      "\timport subprocess",
+      "\t# 引入 uvicorn->ASGI服务器",
+      "\timport uvicorn",
+      "\t# 引入 pywebview",
+      "\timport webview",
+      "\tfrom fastapi import FastAPI",
+      "\t# 引入 FileResponse->定义HTML文件, RedirectResponse->定义重定向路由地址",
+      "\tfrom fastapi.responses import FileResponse, RedirectResponse",
+      "\t# 引入 StaticFiles->定义静态文件",
+      "\tfrom fastapi.staticfiles import StaticFiles",
+      "\t# 引入 子路由",
+      "\tfrom apps.urls import appsAPI",
+      "\t# 实例化",
+      "\tapp = FastAPI()",
+      "\t# 定义静态文件的绝对路径",
+      "\tBASE_DIR = os.path.dirname(os.path.abspath(__file__))  # 获取当前目录的绝对路径",
+      "\tstaticFilePath = os.path.join(BASE_DIR, \"static\")",
+      "\tif os.path.exists(staticFilePath):",
+      "\t\t# 判断存在静态文件目录->挂载静态文件",
+      "\t\t\"\"\"挂在静态文件",
+      "",
+      "\t\t设置参数:",
+      "\t\t\tapp.mount(\"url路径参数\", StaticFiles(directory=\"工作目录下的静态文件\"), name=\"static\")",
+      "",
+      "\t\tHTML文件路径参数修改",
+      "\t\t./dist 重命名-> ./static",
+      "\t\t./dist/index.html 将\"./\"替换成\"static/\" >>>",
+      "\t\t\thref=\"./static/assets/svg_css/*.svg_css\" -> href=\"static/static/assets/svg_css/*.svg_css\"",
+      "\t\t\tsrc=\"./static/assets/js/index-_0ISTUs5.js\" -> src=\"static/static/assets/js/*.js\"",
+      "\t\t\"\"\"",
+      "\t\t# 挂载静态文件",
+      "\t\tapp.mount(\"/\", StaticFiles(directory=staticFilePath), name=\"static\")",
+      "\t# 路由分发",
+      "\tapp.include_router(",
+      "\t\tappsAPI, prefix=\"/api\", tags=[\"get后端数据 | post文件操作命令\"]",
+      "\t)  # prefix=\"router路由地址前缀\"",
+      "\t@app.get(",
+      "\t\t\"/\",",
+      "\t\ttags=[\"tags: 前端_HTML 接口\"],",
+      "\t\tsummary=\"summary: 前端_HTML 接口\",",
+      "\t\tdescription=\"description: 用于路由到测试地址_打包的HTML文件(可以直接在函数内添加注释)\",",
+      "\t\tresponse_description=\"response_description: 响应的数据内容介绍注解\",",
+      "\t\tdeprecated=False,  # 是否废弃接口",
+      "\t)",
+      "\tasync def index():",
+      "\t\t\"\"\"_首页_\"\"\"",
+      "\t\tvueDev = RedirectResponse(",
+      "\t\t\turl=\"http://localhost:[port]/\"",
+      "\t\t)  # 定义开发dev重定向RedirectResponse路由",
+      "\t\tvueHTML = FileResponse(f\"{staticFilePath}/index.html\")  # 定义打包静态文件",
+      "\t\tif not os.path.exists(f\"{staticFilePath}/index.html\"):  # 判断不存在静态文件->调试模式",
+      "\t\t\treturn vueDev",
+      "\t\treturn vueHTML",
+      "\tdef dev():",
+      "\t\t\"\"\"_开发模式_",
+      "",
+      "\t\tdev: 调试方法",
+      "\t\t指定当前文件里的app对象->\"__main__:app\"",
+      "\t\t\"\"\"",
+      "\t\tuvicorn.run(\"main:app\", port=2402, reload=True)",
+      "\tdef release():",
+      "\t\t\"\"\"_发布模式_",
+      "\t\tpywebview:",
+      "\t\t发布模式",
+      "\t\t\"\"\"",
+      "\t\t# 创建FastAPI进程(args: list[] | str, shell=True), 记录进程ID",
+      "\t\tp = subprocess.Popen(\"uvicorn main:app --port [port]\", shell=True)",
+      "\t\t# 创建pywebview窗口(...,",
+      "\t\t#                       resizable=窗口是否可以调整大小_默认:True,",
+      "\t\t#                       frameless=创建无框窗户_默认:False,",
+      "\t\t#                       confirm_close=关闭窗口时确认_默认:False, ...)",
+      "\t\twebview.create_window(",
+      "\t\t\ttitle=\"便携安装\",",
+      "\t\t\turl=\"http://127.0.0.1:[port]/\",",
+      "\t\t\twidth=1140,",
+      "\t\t\theight=1000,",
+      "\t\t\tresizable=False,",
+      "\t\t\tconfirm_close=True,",
+      "\t\t)",
+      "\t\t# 启动pywebview事件循环",
+      "\t\twebview.start()",
+      "\t\t# 关闭pywebview进程",
+      "\t\tp.kill()",
+      "\tif __name__ == \"__main__\":",
+      "\t\tif not os.path.exists(f\"{staticFilePath}/index.html\"):",
+      "\t\t\tprint(\"正在启动dev模式...\")",
+      "\t\t\tdev()",
+      "\t\telse:",
+      "\t\t\tprint(\"正在启动PyWebview模式...\")",
+      "\t\t\trelease()",
+      "},",
+      "{./runServer.py >> 线程启动FastAPI服务(PyInstaller打包的主程序):",
+      "\timport threading",
+      "\timport uvicorn",
+      "\timport webview",
+      "\tfrom main import app",
+      "\t\"\"\"防止打包服务器为单文件时出现路径错误",
+      "\t重新封装启动文件",
+      "\t\"\"\"",
+      "\t# 启动FastAPI服务线程",
+      "\tt = threading.Thread(target=uvicorn.run, args=(app,), kwargs={\"port\": [port端口]})",
+      "\tt.daemon = True  # 添加线程守护",
+      "\tt.start()",
+      "\t# 在PyWebview应用程序中加载FastAPI应用程序的URL",
+      "\twebview.create_window(",
+      "\t\ttitle=\"FastAPI_APP\",",
+      "\t\turl=\"http://127.0.0.1:[port端口]/\",",
+      "\t\twidth=窗口宽度,",
+      "\t\theight=窗口高度,",
+      "\t\tresizable=False,  # 窗口是否可以调整大小_默认:True",
+      "\t\tframeless=False,  # 创建无框窗户_默认:False",
+      "\t\tconfirm_close=False,  # 关闭窗口时确认_默认:False",
+      "\t)",
+      "\twebview.start()",
+      "}",
+      "{./build.py >> 打包runServer.py为可执行文件:",
+      "\timport os",
+      "\timport shutil",
+      "\tfrom PyInstaller import __main__ as build",
+      "\t# 删除 build, dist 目录和 *.spec 文件",
+      "\tif os.path.exists(\"./build\"):",
+      "\t\tshutil.rmtree(\"./build\")",
+      "\tif os.path.exists(\"./dist\"):",
+      "\t\tshutil.rmtree(\"./dist\")",
+      "\tif os.path.exists(f'./{\"runServer\" + \".spec\"}'):",
+      "\t\tos.remove(f'./{\"runServer\" + \".spec\" }')",
+      "\t# 执行打包",
+      "\tif __name__ == \"__main__\":",
+      "\t\tbuild.run(",
+      "\t\t\t[",
+      "\t\t\t\t# 入口文件",
+      "\t\t\t\t\"runServer.py\",",
+      "\t\t\t\t\"-F\",  # -F:创建一个绑定的可执行文件(单文件打包_小项目), -D:创建一个包含可执行文件的单文件夹包(默认情况下_大项目)",
+      "\t\t\t\t# 每次打包前, 清除 build 和 dist 目录",
+      "\t\t\t\t\"--uac-admin\",  # 需求管理员权限",
+      "\t\t\t\t\"--clean\",",
+      "\t\t\t\t# 无需用户确认",
+      "\t\t\t\t\"--noconfirm\",",
+      "\t\t\t\t# --add-data: 要添加到应用程序中的附加数据文件或包含数据文件的目录",
+      "\t\t\t\t# 示例:\"source:dest_dir\"",
+      "\t\t\t\t#     source 是要收集的文件(或目录)的路径",
+      "\t\t\t\t#     dest_dir 是相对于应用程序顶层目录的目标目录",
+      "\t\t\t\t#     两个路径之间用冒号(:)分隔",
+      "\t\t\t\t#     要将文件放入应用程序顶层目录, 使用 . 作为 dest_dir 该选项可多次使用",
+      "\t\t\t\t\"--add-data\",",
+      "\t\t\t\t\"static:static\",  # 服务器静态文件",
+      "\t\t\t\t# \"-w\",  # 不提供用于标准i/o的控制台窗口",
+      "\t\t\t\t\"--icon\",  # 可执行文件的icon图标路径",
+      "\t\t\t\t\"vite.ico\",",
+      "\t\t\t]",
+      "\t\t)",
+      "\t}",
+      ":FastAPIHelp"
+    ],
+    "description": ["pip -FastAPI 模块"]
+  },
+  "pip.PyInstaller 模块": {
+    "prefix": "pip -PyInstaller",
+    "body": [
+      "call python -m pip install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -PyInstaller 打包模块"]
+  },
+  "pip.requests 模块": {
+    "prefix": "pip -requests",
+    "body": [
+      "call python -m pip install requests -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -requests 网络请求模块"]
+  },
+  "pip.httpx 模块": {
+    "prefix": "pip -httpx",
+    "body": [
+      "call python -m pip install httpx -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call python -m pip install httpx[http2] -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call python -m pip install httpx[brotli] -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call python -m pip install httpx[socks] -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -httpx 网络请求模块"]
+  },
+  "pip.beautifulsoup4 模块": {
+    "prefix": "pip -beautifulsoup4",
+    "body": [
+      "call python -m pip install beautifulsoup4 -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call python -m pip install lxml -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "call python -m pip install html5lib -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -beautifulsoup4 HTML解析模块"]
+  },
+  "pip.lxml 模块": {
+    "prefix": "pip -lxml",
+    "body": [
+      "call python -m pip install lxml -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -lxml lxml解析模块"]
+  },
+  "pip.html5lib 模块": {
+    "prefix": "pip -html5lib",
+    "body": [
+      "call python -m pip install html5lib -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -html5lib HTML5解析模块"]
+  },
+  "pip.selenium 模块": {
+    "prefix": "pip -selenium",
+    "body": [
+      "call python -m pip install selenium -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
+      "@REM chromedriver -> https://getwebdriver.com/chromedriver",
+      "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads"
+    ],
+    "description": ["pip -selenium 自动化web测试"]
+  },
+  "pip.DrissionPage 模块": {
+    "prefix": "pip -DrissionPage",
+    "body": [
+      "call python -m pip install DrissionPage -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
+      "@REM chromedriver -> https://getwebdriver.com/chromedriver",
+      "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads"
+    ],
+    "description": ["pip -DrissionPage 自动化网络请求模块"]
+  },
+  "pip.pandas 模块": {
+    "prefix": "pip -pandas",
+    "body": [
+      "call python -m pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -pandas CSV数据模块"]
+  },
+  "pip.pyside6 模块": {
+    "prefix": "pip -pyside6",
+    "body": [
+      "call python -m pip install pyside6 -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -pyside6 GUI界面模块"]
+  }
+}

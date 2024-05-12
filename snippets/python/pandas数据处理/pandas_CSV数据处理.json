@@ -1,0 +1,60 @@
+{
+  "引入 pandas 模块": {
+    "prefix": "im -pandas",
+    "body": ["import pandas as pd"],
+    "description": ["引入 pandas 数据处理模块"]
+  },
+  "pandas.Series 创建一维数组或列表": {
+    "prefix": ".Series -pandas",
+    "body": [".Series(data=${1:data}, index=None)"],
+    "description": [
+      "pandas.Series 创建一维数组或列表",
+      "data: 可以是字典、列表、元组、NumPy数组、pandas的Series或DataFrame",
+      "** index: 指定索引",
+      "** dtype: 指定数据类型",
+      "** copy: 是否复制数据",
+      "** name: 指定名称"
+    ]
+  },
+  "pandas.DataFrame 创建二维表格": {
+    "prefix": ".DataFrame -pandas",
+    "body": [".DataFrame(data=${1:data}, index=None)"],
+    "description": [
+      "pandas.DataFrame 创建二维表格",
+      "data: 可以是字典、列表、元组、NumPy数组、pandas的Series或DataFrame",
+      "** data: dict 会自动添加 columns 指定列索引",
+      "** index: 指定行索引",
+      "** columns: 指定列索引",
+      "** dtype: 指定数据类型",
+      "** copy: 是否复制数据",
+      "** name: 指定名称"
+    ]
+  },
+  "pandas.values 值": {
+    "prefix": ".values -pandas",
+    "body": [".values"],
+    "description": ["pandas.values 值"]
+  },
+  "pandas.isnull NaN空值->True": {
+    "prefix": ".isnull -pandas",
+    "body": [".isnull()"],
+    "description": ["pandas.isnull NaN空值->True"]
+  },
+  "pandas.notnull NaN空值->False": {
+    "prefix": ".notnull -pandas",
+    "body": [".notnull()"],
+    "description": ["pandas.notnull NaN空值->False"]
+  },
+  "pandas.loc 索引取值": {
+    "prefix": ".loc -pandas",
+    "body": [".loc[$0]"],
+    "description": [
+      "pandas.loc 索引取值",
+      "Series: .loc[index]",
+      "** index: 索引",
+      "DataFrame: .loc[index, columns]",
+      "** index: 行索引",
+      "** columns: 列索引"
+    ]
+  }
+}

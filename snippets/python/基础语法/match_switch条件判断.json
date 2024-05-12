@@ -1,0 +1,20 @@
+{
+  "match:case -switch条件判断开关": {
+    "prefix": "match:case -switch",
+    "body": [
+      "match object:",
+      "\tcase ($0):",
+      "\t\t# comment:",
+      "\t\tpass",
+      "\tcase (_):",
+      "\t\t# comment:OtherState",
+      "\t\tpass"
+    ],
+    "description": ["match:case -switch条件判断开关"]
+  },
+  "case -switch条件判断开关": {
+    "prefix": "case -switch",
+    "body": ["case ($0):", "\t# comment:", "\tpass"],
+    "description": ["case -switch条件判断开关"]
+  }
+}

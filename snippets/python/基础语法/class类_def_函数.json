@@ -1,0 +1,52 @@
+{
+  "创建class对象": {
+    "prefix": "class.newObject -class",
+    "body": [
+      "class ${1:NewObject}:",
+      "\tdef __init__(self) -> None:",
+      "\t\t${2:pass}",
+      "\t${3:pass}"
+    ],
+    "description": ["创建class对象"]
+  },
+  "class初始化": {
+    "prefix": "def.init -class.def",
+    "body": ["def __init__(self) -> None:", "\t${2:pass}"],
+    "description": ["class初始化"]
+  },
+  "class类self": {
+    "prefix": "sf -class",
+    "body": ["self$0"],
+    "description": ["class类self"]
+  },
+  "class类self.": {
+    "prefix": "self -class",
+    "body": ["self.$0"],
+    "description": ["class类self."]
+  },
+  "创建class - def函数": {
+    "prefix": "def.selfFunctin -class.def",
+    "body": ["def ${1:name}(self):", "\t${3:pass}"],
+    "description": ["创建class - def函数"]
+  },
+  "创建def函数": {
+    "prefix": "def.newFunction -def",
+    "body": ["def ${1:name}():", "\t${2:pass}"],
+    "description": ["创建def函数"]
+  },
+  "创建async def函数": {
+    "prefix": "async -def",
+    "body": ["async def ${1:name}(${2:arg}):", "\t${3:pass}"],
+    "description": ["创建async def函数"]
+  },
+  "lambda(匿名函数)": {
+    "prefix": "lambda -lambda",
+    "body": ["lambda ${1:args}: ${2:expr表达式}"],
+    "description": ["lambda(匿名函数)"]
+  },
+  "主函数(入口函数)": {
+    "prefix": "ifmain -main",
+    "body": ["if __name__ == \"__main__\":", "\t${1:main()}"],
+    "description": ["主函数(入口函数)"]
+  }
+}

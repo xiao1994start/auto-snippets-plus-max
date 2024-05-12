@@ -1,0 +1,21 @@
+{
+  "Path.glob 遍历/搜索文件夹->object": {
+    "prefix": ".glob -Path",
+    "body": [".glob(${1|*,**|}, ${2:recursive=False})"],
+    "description": [
+      "Path.glob 匹配所有的符合条件的所有文件夹",
+      "\r\n* 表示当前目录中的所有文件夹",
+      "\r\n** 表示当前目录, 及其下所有子目录中的 所有文件夹"
+    ]
+  },
+  "Path.rglob 递归遍历/搜索->object": {
+    "prefix": ".rglob -Path",
+    "body": [".rglob(${1|*,**,*.py|}, ${2:recursive=False})"],
+    "description": [
+      "Path.rglob 返回当前目录, 及所有子目录中的 所有文件和文件夹",
+      "\r\n* 表示当前目录, 及所有子目录中的 所有文件",
+      "\r\n** 当前目录, 及其下所有子目录中的 所有文件夹",
+      "\r\n例如, Path('.').rglob('*.py') 返回当前目录下所有以 .py 结尾的文件"
+    ]
+  }
+}

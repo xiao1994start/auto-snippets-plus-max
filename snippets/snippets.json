@@ -1,0 +1,12 @@
+{
+  "引入 name 模块": {
+    "prefix": "im -name",
+    "body": ["import name"],
+    "description": ["引入 name 模块"]
+  },
+  "type.object 描述": {
+    "prefix": ".object -type",
+    "body": [".object()"],
+    "description": ["type.object 描述"]
+  }
+}

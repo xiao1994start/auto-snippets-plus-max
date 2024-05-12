@@ -1,0 +1,41 @@
+{
+  "导入 PyInstaller 打包模块": {
+    "prefix": "im -PyInstaller",
+    "body": [
+      "# 导入PyInstaller模块",
+      "from PyInstaller import __main__ as ${1:pyinstaller}"
+    ],
+    "description": ["导入PyInstaller打包模块"]
+  },
+  "pyinstaller.run 打包命令": {
+    "prefix": ".run -pyinstaller",
+    "body": [
+      ".run(",
+      "\t[",
+      "\t\t# 入口文件",
+      "\t\t\"${2:main}.py\",",
+      "\t\t\"${3|-F,-D|}\",  # -F:创建一个绑定的可执行文件(单文件打包_小项目), -D:创建一个包含可执行文件的单文件夹包(默认情况下_大项目)",
+      "\t\t# \"-n\",  # -n:文件名",
+      "\t\t# \"Name\",",
+      "\t\t\"-v\"  # -v:版本号",
+      "\t\t\"0.0.0.${0:1}\",",
+      "\t\t# \"--uac-admin\",  # 需求管理员权限",
+      "\t\t\"--clean\",  # 每次打包前, 清除 build 和 dist 目录",
+      "\t\t\"--noconfirm\",  # 无需用户确认",
+      "\t\t\"--add-data\",",
+      "\t\t# --add-data: 要添加到应用程序中的附加数据文件或包含数据文件的目录",
+      "\t\t# 示例:\"source:dest_dir\"",
+      "\t\t#     source 是要收集的文件(或目录)的路径",
+      "\t\t#     dest_dir 是相对于应用程序顶层目录的目标目录",
+      "\t\t#     两个路径之间用冒号(:)分隔",
+      "\t\t#     要将文件放入应用程序顶层目录, 使用 . 作为 dest_dir. 该选项可多次使用",
+      "\t\t\"static:static\",  # 服务器静态文件",
+      "\t\t# \"-w\",  # 仅使用窗口, 不提供用于标准i/o的控制台窗口",
+      "\t\t\"--icon\",  # 可执行文件的icon图标路径",
+      "\t\t\"${4:icon.ico}\",",
+      "\t]",
+      ")"
+    ],
+    "description": ["pyinstaller.run 打包命令"]
+  }
+}

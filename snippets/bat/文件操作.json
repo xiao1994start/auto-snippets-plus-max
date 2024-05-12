@@ -1,0 +1,101 @@
+{
+  "新建路径": {
+    "prefix": ["md", "mkdir"],
+    "body": ["md ${1:新建路径}"],
+    "description": ["新建路径"]
+  },
+  "复制文件": {
+    "prefix": "copy",
+    "body": ["copy /V /Y ${1:复制路径} ${2:粘贴路径}"],
+    "description": ["复制文件"]
+  },
+  "复制文件夹": {
+    "prefix": "xcopy",
+    "body": ["xcopy /S /E /I /Y ${1:复制文件路径} ${2:粘贴路径}"],
+    "description": ["复制文件夹"]
+  },
+  "移动文件夹": {
+    "prefix": "move",
+    "body": ["move /Y ${1:目标路径} ${2:粘贴路径}"],
+    "description": ["移动文件夹"]
+  },
+  "重命名": {
+    "prefix": "ren",
+    "body": ["ren ${1:重命名的文件或文件夹路径} \"${2:新名称及后缀}\""],
+    "description": ["重命名"]
+  },
+  "删除文件": {
+    "prefix": "del -Q",
+    "body": ["del /F /Q /S ${1:删除文件路径}"],
+    "description": ["删除文件"]
+  },
+  "删除文件夹": {
+    "prefix": "rd -SQ",
+    "body": ["rd /S /Q ${1:删除目录路径}"],
+    "description": ["删除文件夹"]
+  },
+  "删除符号链接_删除空文件夹": {
+    "prefix": "rmdir",
+    "body": ["rmdir ${1:删除的空文件夹或符号链接路径}"],
+    "description": ["删除符号链接_删除空文件夹"]
+  },
+  "创建符号链接文件": {
+    "prefix": "mklink",
+    "body": ["mklink ${2:新文件路径} ${1:目标文件路径}"],
+    "description": ["创建符号链接文件"]
+  },
+  "创建符号链接文件或文件夹": {
+    "prefix": "mklink -D",
+    "body": ["mklink /D ${2:新符号链接路径及名称} ${1:目标路径}"],
+    "description": ["创建符号链接文件或文件夹(可以使用相对路径_快捷方式)"]
+  },
+  "创建符号链接文件或文件夹(必须绝对路径)": {
+    "prefix": "mklink -J",
+    "body": ["mklink /J ${2:新符号链接的路径及名称} ${1:目标路径}"],
+    "description": ["创建符号链接文件或文件夹(必须绝对路径)"]
+  },
+  "重建Symlink文件": {
+    "prefix": ["del_Lnk", "New_Lnk"],
+    "body": [
+      "del /Q ${2:新文件路径}",
+      "mklink ${2:新文件路径} ${1:目标文件路径}"
+    ],
+    "description": ["重建Symlink文件"]
+  },
+  "重建符号硬链接": {
+    "prefix": ["del_Lnk -H", "New_Lnk -H"],
+    "body": [
+      "del /Q ${2:新文件路径}",
+      "mklink /H ${2:新文件路径} ${1:目标文件路径}"
+    ],
+    "description": ["重建符号硬链接(/H 只能在同相同盘符)"]
+  },
+  "重建快捷方式符号链接": {
+    "prefix": ["re_Lnk -D", "New_Lnk -D"],
+    "body": [
+      "rd /S /Q ${2:新捷方式路径}",
+      "mklink /D ${2:新捷方式路径} ${1:目标路径}"
+    ],
+    "description": ["重建mklink /D快捷方式符号链接"]
+  },
+  "重建mklink /J符号链接": {
+    "prefix": ["re_Lnk -J", "New_Lnk -J"],
+    "body": [
+      "rd /S /Q ${2:新符号链接路径}",
+      "mklink /J ${2:新符号链接路径} ${1:目标路径}"
+    ],
+    "description": ["重建mklink /J符号链接"]
+  },
+  "打开文件夹": {
+    "prefix": "open -explorer",
+    "body": ["explorer.exe ${1:打开文件夹路径}"],
+    "description": ["打开文件夹"]
+  },
+  "创建快捷方式": {
+    "prefix": ["Desktop_Lnk -vbs", "Shortcut -vbs"],
+    "body": [
+      "mshta VBScript:Execute(\"Set a=CreateObject(\"\"WScript.Shell\"\"):Set b=a.CreateShortcut(a.SpecialFolders(\"\"Desktop\"\") & \"\"\\\\${1:快捷方式名称}.lnk\"\"):b.TargetPath=\"${2:exe绝对路径_需要双引号包裹}\":b.Arguments=\"\"--${3:启动选项可选}\"\":b.WorkingDirectory=\"\"${4:程序工作目录或起始位置}\"\":b.IconLocation=\"\"${5:可选ico图标路径}\"\":b.Save:close\")"
+    ],
+    "description": ["创建快捷方式"]
+  }
+}
