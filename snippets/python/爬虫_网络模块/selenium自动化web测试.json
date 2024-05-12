@@ -28,14 +28,13 @@
   "selenium.execute_script 获取浏览器user-agent": {
     "prefix": ".execute_script.userAgent -selenium",
     "body": [
-      "# 获取浏览器user-agent",
-      ".execute_script('return navigator.userAgent')"
+      ".execute_script('return navigator.userAgent')  # 获取浏览器user-agent"
     ],
     "description": ["selenium.execute_script 获取浏览器user-agent"]
   },
   "selenium.execute_script 打印页面内容": {
     "prefix": ".execute_script.windowPrint -selenium",
-    "body": ["# 打印页面内容", ".execute_script('window.print()')"],
+    "body": [".execute_script('window.print()')  # 打印页面内容"],
     "description": ["selenium.execute_script 打印页面内容"]
   }
 }
