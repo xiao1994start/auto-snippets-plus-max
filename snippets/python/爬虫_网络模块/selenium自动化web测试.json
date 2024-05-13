@@ -4,19 +4,26 @@
     "body": [
       "from pathlib import Path  # 路径设置",
       "from selenium import webdriver  # 实例化网络请求模块",
+      "",
       "# from selenium.webdriver.common.by import By  # 选择器类",
       "# from selenium.webdriver.common.keys import Keys  # 键盘按键类",
       "# from selenium.webdriver.support.wait import WebDriverWait  # 获取浏览器user-agent类",
       "# from selenium.webdriver.support import expected_conditions  # 获取浏览器user-agent条件类",
+      "",
+      "",
       "chromedriver_path = str(Path(Path(__file__).parent.absolute(), '${1:chromedriver_exe}'))",
       "chrome_path = str(Path(Path(__file__).parent.absolute(), '${2:chrome_exe}'))",
+      "",
       "service = webdriver.ChromeService(executable_path=chromedriver_path)  # 实例化浏览器驱动",
+      "",
       "options = webdriver.ChromeOptions()  # 实例化浏览器options配置对象",
       "options.binary_location = chrome_path  # 设置浏览器路径",
       "# options.add_argument('--headless')  # 设置浏览器无界面模式",
       "# options.add_argument('--ignore-certificate-errors')  # 忽略SSL证书验证",
       "options.add_experimental_option('detach', True)  # 浏览器debug(不关闭)",
-      "driver = webdriver.Chrome(service=service, options=options)  # 实例化浏览器对象"
+      "",
+      "driver = webdriver.Chrome(service=service, options=options)  # 实例化浏览器对象",
+      "$0"
     ],
     "description": ["引入 selenium 模块"]
   },
