@@ -8,20 +8,56 @@
       "@ECHO 激活虚拟环境...",
       "call ./.venv/Scripts/activate.bat",
       "@ECHO 安装Jupyter内核ipykernel依赖库...",
-      "call python -m pip install ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "",
       "@ECHO 安装依赖库...",
       "$0",
       "",
-      "call python -m pip freeze  > requirements.txt"
+      "pip freeze  > requirements.txt"
     ],
     "description": ["创建_激活 虚拟环境"]
+  },
+  "python-embed 环境激活": {
+    "prefix": "py -venv.activate",
+    "body": [
+      "@ECHO 进入 python embed 目录(https://www.python.org/downloads/windows/)",
+      "CD /D python*embed*",
+      "if not exist get-pip.py (",
+      "    @ECHO get-pip.py正在下载...",
+      "    curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py",
+      ")",
+      "@ECHO 初始化环境 pip",
+      "python get-pip.py -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@ECHO 修改 python*._pth 导入",
+      "for %%i in (python*._pth) do (",
+      "    for /F \"tokens=*\" %%j in (%%i) do (",
+      "        @ECHO %%j>> python._pth",
+      "    )",
+      "    @ECHO import site>> python._pth",
+      "    del /F /Q /S %%i",
+      "    ren python._pth %%i",
+      ")",
+      "",
+      "@ECHO 环境 pip 执行",
+      "CD /D Scripts",
+      "@ECHO 安装Jupyter内核ipykernel依赖库...",
+      "pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "",
+      "@ECHO 安装依赖库...",
+      "",
+      "",
+      "",
+      "@ECHO 导出依赖库",
+      "pip freeze  > \"%~dp0requirements.txt\"",
+      ""
+    ],
+    "description": ["python-embed 环境激活"]
   },
   "pip.Jupyter内核ipykernel依赖库": {
     "prefix": ["pip -Jupyter", "pip -ipykernel"],
     "body": [
       "@ECHO 安装Jupyter内核ipykernel依赖库...",
-      "call python -m pip install ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
     "description": ["pip.Jupyter内核ipykernel依赖库"]
   },
@@ -31,14 +67,14 @@
       "@ECHO 重置pip.ini...",
       "@REM ECHO.> %USERPROFILE%/AppData/Roaming/pip/pip.ini",
       "echo 清华",
-      "call python -m pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple",
-      "call python -m pip config set install.trusted-host https://pypi.tuna.tsinghua.edu.cn",
+      "pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip config set install.trusted-host https://pypi.tuna.tsinghua.edu.cn",
       "echo 阿里",
-      "@REM call python -m pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/",
-      "@REM call python -m pip config set install.trusted-host https://mirrors.aliyun.com/pypi",
+      "@REM pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/",
+      "@REM pip config set install.trusted-host https://mirrors.aliyun.com/pypi",
       "echo 豆瓣",
-      "@REM call python -m pip config set global.index-url https://pypi.douban.com/simple/",
-      "@REM call python -m pip config set install.trusted-host https://pypi.douban.com"
+      "@REM pip config set global.index-url https://pypi.douban.com/simple/",
+      "@REM pip config set install.trusted-host https://pypi.douban.com"
     ],
     "description": ["pipconfig.index镜像源"]
   },
@@ -47,57 +83,57 @@
     "body": [
       "@ECHO 重置pip.ini...",
       "@REM ECHO.> %USERPROFILE%/AppData/Roaming/pip/pip.ini",
-      "call python -m pip config set global.extra-index-url \"https: //pypi.tuna.tsinghua.edu.cn/simple http://mirrors.aliyun.com/pypi/simple http://pypi.douban.com/simple http://pypi.mirrors.ustc.edu.cn/simple\""
+      "pip config set global.extra-index-url \"https: //pypi.tuna.tsinghua.edu.cn/simple http://mirrors.aliyun.com/pypi/simple http://pypi.douban.com/simple http://pypi.mirrors.ustc.edu.cn/simple\""
     ],
     "description": ["pipconfig.index批量镜像源"]
   },
-  "pip.install 安装模块": {
+  "pip.install 安装库": {
     "prefix": "pip -install",
     "body": [
-      "call python -m pip install ${1:模块名_whl文件路径} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+      "pip install ${1:库名_whl文件路径} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
     ],
-    "description": ["pip -i 安装模块"]
+    "description": ["pip -i 安装库"]
   },
-  "pip.-reinstall 强制重装模块": {
+  "pip.-reinstall 强制重装库": {
     "prefix": "pip -install.reinstall",
     "body": [
-      "call python -m pip install --force-reinstall ${1:模块名_whl文件路径} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+      "pip install --force-reinstall ${1:库名_whl文件路径} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
     ],
-    "description": ["pip -reinstall 强制重装模块"]
+    "description": ["pip -reinstall 强制重装库"]
   },
-  "pip.-upgrade 升级模块": {
+  "pip.-upgrade 升级库": {
     "prefix": "pip -upgrade",
     "body": [
-      "call python -m pip install --upgrade ${1:pip} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+      "pip install --upgrade ${1:pip} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
     ],
-    "description": ["pip --upgrade 升级模块"]
+    "description": ["pip --upgrade 升级库"]
   },
   "pip.uninstall 卸载": {
     "prefix": "pip -uninstall",
-    "body": ["call python -m pip uninstall ${1:模块名} -y"],
+    "body": ["pip uninstall ${1:库名} -y"],
     "description": ["pip -uninstall 卸载"]
   },
-  "pip.freeze 获取安装模块列表": {
+  "pip.freeze 获取安装库列表": {
     "prefix": "pip -freeze",
-    "body": ["call python -m pip freeze  > ${1:requirements.txt}"],
-    "description": ["pip -freeze 获取安装模块列表"]
+    "body": ["pip freeze  > ${1:requirements.txt}"],
+    "description": ["pip -freeze 获取安装库列表"]
   },
-  "pip.requirements 列式安装模块": {
+  "pip.requirements 列式安装库": {
     "prefix": ["pip -requirements", "pip -txt.install"],
-    "body": ["call python -m pip install -r ${1:requirements.txt}"],
-    "description": ["pip -requirements 列式安装模块"]
+    "body": ["pip install -r ${1:requirements.txt}"],
+    "description": ["pip -requirements 列式安装库"]
   },
-  "pip.pywin32 模块": {
+  "pip.pywin32 win系统库": {
     "prefix": "pip -pywin32",
     "body": [
-      "call python -m pip install pywin32 -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pywin32 -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -pywin32 win系统模块"]
+    "description": ["pip -pywin32 win系统库"]
   },
-  "pip.Django模块": {
+  "pip.Django 库": {
     "prefix": "pip -Django",
     "body": [
-      "call python -m pip install ${1|django|} -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade ${1|django|} -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
       "call python manage.py startapp ${3:apps}",
       "@REM __Django修改默认端口号与地址__",
@@ -109,14 +145,14 @@
       "@REM call python manage.py makemigrations",
       "@REM call python manage.py migrate"
     ],
-    "description": ["pip -Django模块"]
+    "description": ["pip -Django 库"]
   },
-  "pip.Django 模块 DRF 组件": {
+  "pip.Django 库DRF组件": {
     "prefix": "pip -DRF",
     "body": [
-      "call python -m pip install ${1|django|} -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "call python -m pip install djangorestframework -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "call python -m pip install django-cors-headers -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade ${1|django|} -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade djangorestframework -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade django-cors-headers -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
       "call python manage.py startapp ${3:apps}",
       "@REM __Django修改默认端口号与地址__",
@@ -128,21 +164,21 @@
       "@REM call python manage.py makemigrations",
       "@REM call python manage.py migrate"
     ],
-    "description": ["pip -Django 模块 DRF 组件"]
+    "description": ["pip -Django 库DRF组件"]
   },
-  "pip.FastAPI 模块": {
+  "pip.FastAPI 库": {
     "prefix": "pip -fastapi",
     "body": [
       "@REM 安装 fastapi web框架",
-      "call python -m pip install fastapi -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade fastapi -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "@REM 安装 uvicorn 异步服务器",
-      "call python -m pip install uvicorn -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade uvicorn -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "@REM 安装 pydantic 数据接口定义检查与设置管理",
-      "call python -m pip install pydantic -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade pydantic -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "@REM 安装 pywebview webGUI框架库",
-      "call python -m pip install pywebview -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade pywebview -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "@REM 安装 pyinstaller 打包工具",
-      "call python -m pip install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "",
       "goto :FastAPIHelp",
       "{./main.py >> 入口配置:",
@@ -301,87 +337,115 @@
       "\t}",
       ":FastAPIHelp"
     ],
-    "description": ["pip -FastAPI 模块"]
+    "description": ["pip -FastAPI 库"]
   },
-  "pip.PyInstaller 模块": {
+  "pip.PyInstaller 打包库": {
     "prefix": "pip -PyInstaller",
     "body": [
-      "call python -m pip install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -PyInstaller 打包模块"]
+    "description": ["pip -PyInstaller 打包库"]
   },
-  "pip.requests 模块": {
+  "python.embadEnv.PyInstaller 打包": {
+    "prefix": "embadEnv -PyInstaller",
+    "body": [
+      "CD /D python*embed*",
+      "CD /D Scripts",
+      "if exist \"%~dp0_pyinstaller\" (",
+      "    rd /S /Q \"%~dp0_pyinstaller\"",
+      ")",
+      "pyinstaller --workpath=\"%~dp0_pyinstaller/build\" --distpath=\"%~dp0_pyinstaller/dist\" --specpath=\"%~dp0_pyinstaller\" --log-level=WARN --noconfirm --clean --onedir --noconsole --add-data=\"%~dp0dataName\":dataName --name=\"main\" --icon=\"%~dp0icoName.ico\" \"%~dp0main.py\"",
+      "explorer.exe \"%~dp0_pyinstaller\"",
+      ""
+    ],
+    "description": ["python.embadEnv -PyInstaller 打包"]
+  },
+  "pip.requests 网络请求库": {
     "prefix": "pip -requests",
     "body": [
-      "call python -m pip install requests -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade requests -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -requests 网络请求模块"]
+    "description": ["pip -requests 网络请求库"]
   },
-  "pip.httpx 模块": {
+  "pip.httpx 网络请求库": {
     "prefix": "pip -httpx",
     "body": [
-      "call python -m pip install httpx -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "call python -m pip install httpx[http2] -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "call python -m pip install httpx[brotli] -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "call python -m pip install httpx[socks] -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade httpx -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade httpx[http2] -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade httpx[brotli] -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade httpx[socks] -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -httpx 网络请求模块"]
+    "description": ["pip -httpx 网络请求库"]
   },
-  "pip.beautifulsoup4 模块": {
+  "pip.beautifulsoup4 HTML解析库": {
     "prefix": "pip -beautifulsoup4",
     "body": [
-      "call python -m pip install beautifulsoup4 -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "call python -m pip install lxml -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "call python -m pip install html5lib -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade beautifulsoup4 -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade lxml -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade html5lib -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -beautifulsoup4 HTML解析模块"]
+    "description": ["pip -beautifulsoup4 HTML解析库"]
   },
-  "pip.lxml 模块": {
+  "pip.lxml lxml解析库": {
     "prefix": "pip -lxml",
     "body": [
-      "call python -m pip install lxml -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade lxml -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -lxml lxml解析模块"]
+    "description": ["pip -lxml lxml解析库"]
   },
-  "pip.html5lib 模块": {
+  "pip.html5lib HTML5解析库": {
     "prefix": "pip -html5lib",
     "body": [
-      "call python -m pip install html5lib -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade html5lib -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -html5lib HTML5解析模块"]
+    "description": ["pip -html5lib HTML5解析库"]
   },
-  "pip.selenium 模块": {
+  "pip.selenium 自动化web测试": {
     "prefix": "pip -selenium",
     "body": [
-      "call python -m pip install selenium -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade selenium -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
       "@REM chromedriver -> https://getwebdriver.com/chromedriver",
       "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads"
     ],
     "description": ["pip -selenium 自动化web测试"]
   },
-  "pip.DrissionPage 模块": {
+  "pip.DrissionPage 自动化网络请求库": {
     "prefix": "pip -DrissionPage",
     "body": [
-      "call python -m pip install DrissionPage -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade DrissionPage -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
       "@REM chromedriver -> https://getwebdriver.com/chromedriver",
       "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads"
     ],
-    "description": ["pip -DrissionPage 自动化网络请求模块"]
+    "description": ["pip -DrissionPage 自动化网络请求库"]
   },
-  "pip.pandas 模块": {
+  "pip.pandas CSV数据库": {
     "prefix": "pip -pandas",
     "body": [
-      "call python -m pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pandas -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -pandas CSV数据模块"]
+    "description": ["pip -pandas CSV数据库"]
   },
-  "pip.pyside6 模块": {
+  "pip.numpy NumPy维度数组与矩阵运算科学计算的基础库": {
+    "prefix": "pip -numpy",
+    "body": [
+      "pip install --upgrade numpy -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -numpy NumPy维度数组与矩阵运算科学计算的基础库"]
+  },
+  "pip.Pillow 图像处理库": {
+    "prefix": "pip -Pillow",
+    "body": [
+      "pip install --upgrade Pillow -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -Pillow 图像处理库"]
+  },
+  "pip.pyside6 GUI界面库": {
     "prefix": "pip -pyside6",
     "body": [
-      "call python -m pip install pyside6 -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pyside6 -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
-    "description": ["pip -pyside6 GUI界面模块"]
+    "description": ["pip -pyside6 GUI界面库"]
   }
 }

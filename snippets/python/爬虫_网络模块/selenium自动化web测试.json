@@ -5,10 +5,10 @@
       "from pathlib import Path  # 路径设置",
       "from selenium import webdriver  # 实例化网络请求模块",
       "",
-      "# from selenium.webdriver.common.by import By  # 选择器类",
-      "# from selenium.webdriver.common.keys import Keys  # 键盘按键类",
-      "# from selenium.webdriver.support.wait import WebDriverWait  # 获取浏览器user-agent类",
-      "# from selenium.webdriver.support import expected_conditions  # 获取浏览器user-agent条件类",
+      "from selenium.webdriver.common.by import By  # 选择器类",
+      "from selenium.webdriver.common.keys import Keys  # 键盘按键类",
+      "from selenium.webdriver.support.wait import WebDriverWait  # 显式等待机制类",
+      "from selenium.webdriver.support import expected_conditions as EC  # 网页元素判断条件类",
       "",
       "",
       "chromedriver_path = str(Path(Path(__file__).parent.absolute(), '${1:chromedriver_exe}'))",
@@ -32,6 +32,11 @@
     "body": [".get_cookies()  # python对象格式"],
     "description": ["selenium.get_cookies 获取python对象格式cookies"]
   },
+  "selenium.execute_script 发送JavaScript命令": {
+    "prefix": ".execute_script -selenium",
+    "body": [".execute_script('${1:console}')  # 发送JavaScript命令"],
+    "description": ["selenium.execute_script 发送JavaScript命令"]
+  },
   "selenium.execute_script 获取浏览器user-agent": {
     "prefix": ".execute_script.userAgent -selenium",
     "body": [
@@ -43,5 +48,22 @@
     "prefix": ".execute_script.windowPrint -selenium",
     "body": [".execute_script('window.print()')  # 打印页面内容"],
     "description": ["selenium.execute_script 打印页面内容"]
+  },
+  "selenium.implicitly_wait 隐式等待(自动等待元素)": {
+    "prefix": ".implicitly_wait -selenium",
+    "body": [".implicitly_wait(30)  # 隐式等待(自动等待元素)/秒"],
+    "description": ["selenium.implicitly_wait 隐式等待(自动等待元素)"]
+  },
+  "selenium..set_window_size 设置浏览器窗口大小": {
+    "prefix": ".set_window_size -selenium",
+    "body": [
+      ".set_window_size(width=1920, height=1080)  # 设置浏览器窗口大小(可以作用于无界面模式)"
+    ],
+    "description": ["selenium..set_window_size 设置浏览器窗口大小"]
+  },
+  "selenium..screenshot 截图保存png": {
+    "prefix": ".screenshot -selenium",
+    "body": [".screenshot(${1:'strPath'})  # 截图保存png"],
+    "description": ["selenium..screenshot 截图保存png"]
   }
 }

@@ -30,6 +30,28 @@
       "** name: 指定名称"
     ]
   },
+  "pandas.drop 删除指定列": {
+    "prefix": ".drop -pandas",
+    "body": [".drop(labels=[labelsList], axis=1, inplace=True)"],
+    "description": [
+      "pandas.values 删除指定列",
+      "** labels: 列索引列表",
+      "** axis: 0 行索引, 1 列索引",
+      "** inplace: 是否修改原对象"
+    ]
+  },
+  "pandas.to_csv 保存为CSV文件": {
+    "prefix": ".to_csv -pandas",
+    "body": [".to_csv(path_or_buf=${1:file_path}, header=True, index=True)"],
+    "description": [
+      "pandas.values 保存为CSV文件",
+      "** path_or_buf: 保存路径",
+      "** header: 是否保存列索引",
+      "** index: 是否保存行索引",
+      "** mode: 文件打开模式",
+      "** encoding: 文件编码"
+    ]
+  },
   "pandas.values 值": {
     "prefix": ".values -pandas",
     "body": [".values"],

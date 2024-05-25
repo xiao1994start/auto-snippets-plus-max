@@ -48,6 +48,16 @@
     "body": ["for ${1:value} in ${2:iterable}:", "\t${3:pass}\r\n$0"],
     "description": ["for循环结构的代码片段"]
   },
+  "for_inEnumerate循环枚举": {
+    "prefix": "for_inEnumerate -for",
+    "body": [
+      "for ${1:i}, ${2:itemIter} in enumerate(${3:iterable}):  # 循环遍历行",
+      "\t# comment: 注释",
+      "\tpass",
+      "# end for"
+    ],
+    "description": ["for_inEnumerate循环枚举"]
+  },
   "while循环结构的代码片段": {
     "prefix": "while -while",
     "body": ["while ${1:condition}:", "\t${2:pass}\r\n$0"],
@@ -75,21 +85,34 @@
     ]
   },
   "try:正常执行 except:异常处理": {
-    "prefix": "try -try",
+    "prefix": "try_excep -try",
     "body": [
       "try:",
       "\t$0",
-      "\tpass",
-      "except Exception as ${1:error}:",
-      "\traise ${1:error}"
+      "\t",
+      "except Exception as error:",
+      "\tprint(\"错误类型: \",type(error))",
+      "\tprint(\"错误信息: \", error)",
+      "\traise error"
     ],
     "description": ["try:正常执行 except:异常处理"]
   },
-  "try:正常执行 except:异常处理 else:try之后执行 finally:强制执行 ": {
-    "prefix": ["try_excep_telse_finally -try", "try_ _finally -try"],
+  "try:正常执行 finally:强制执行": {
+    "prefix": "try_finally -try",
     "body": [
       "try:",
-      "\tprint(\"正常执行\")",
+      "\t$0",
+      "\t",
+      "finally:",
+      "\tprint(\"无论是否异常,强制执行...\")",
+      "\t"
+    ],
+    "description": ["try:正常执行 finally:强制执行"]
+  },
+  "try:正常执行 except:异常处理 else:try之后执行 finally:强制执行": {
+    "prefix": "try_excep_telse_finally -try",
+    "body": [
+      "try:",
       "\t$0",
       "\tpass",
       "except Exception as ${1:error}:",

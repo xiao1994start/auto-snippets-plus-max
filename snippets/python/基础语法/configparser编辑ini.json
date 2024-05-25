@@ -1,8 +1,12 @@
 {
   "引入 configparser 模块": {
     "prefix": "im -configparser",
+    "body": ["import configparser"],
+    "description": ["引入configparser->ini控制模块"]
+  },
+  "configparser 模板": {
+    "prefix": "config=> -configparser",
     "body": [
-      "import configparser",
       "config = configparser.ConfigParser()",
       "config.read(${1:'db_ini'}, encoding='utf-8')",
       "# 读取节点-键->值",
@@ -17,7 +21,7 @@
       "# 写入节点-键-值",
       "# config.set(section, key, value)"
     ],
-    "description": ["引入configparser->ini控制模块"]
+    "description": ["configparser 模板"]
   },
   "configparser.sections 读取节点": {
     "prefix": ".sections -configparser",

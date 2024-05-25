@@ -4,8 +4,8 @@
     "body": [
       "class ${1:NewObject}:",
       "\tdef __init__(self) -> None:",
-      "\t\t${2:pass}",
-      "\t${3:pass}"
+      "\t\tpass",
+      "\tpass"
     ],
     "description": ["创建class对象"]
   },
@@ -26,7 +26,7 @@
   },
   "创建class - def函数": {
     "prefix": "def.selfFunctin -class.def",
-    "body": ["def ${1:name}(self):", "\t${3:pass}"],
+    "body": ["def ${1:name}(self):", "\t${2:pass}"],
     "description": ["创建class - def函数"]
   },
   "创建def函数": {
@@ -39,14 +39,20 @@
     "body": ["async def ${1:name}(${2:arg}):", "\t${3:pass}"],
     "description": ["创建async def函数"]
   },
-  "lambda(匿名函数)": {
+  "lambda:匿名函数": {
     "prefix": "lambda -lambda",
     "body": ["lambda ${1:args}: ${2:expr表达式}"],
     "description": ["lambda(匿名函数)"]
   },
-  "主函数(入口函数)": {
+  "ifmain:主程序运行入口 | 调试运行": {
     "prefix": "ifmain -main",
-    "body": ["if __name__ == \"__main__\":", "\t${1:main()}"],
-    "description": ["主函数(入口函数)"]
+    "body": [
+      "if __name__ == \"__main__\":",
+      "\t'''",
+      "\t主程序运行入口 | 调试运行",
+      "\t'''",
+      "\t${1:main()}"
+    ],
+    "description": ["主程序运行入口 | 调试运行"]
   }
 }

@@ -168,6 +168,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/基础语法/type数据类型.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/爬虫_网络模块/beautifulsoup4解析HTML.json"
       },
       {
@@ -208,6 +212,14 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/NumPy/NumPy.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/os多种操作系统接口/os.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/pandas数据处理/pandas_CSV数据处理.json"
       },
       {
@@ -220,7 +232,23 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/pyinstaller打包/pyinstaller.json"
+        "path": "./snippets/python/Pillow图像处理模块/Pillow图像处理模块.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/PyInstaller打包模块/pyinstaller.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/pywin32系统API接口/win32系统信号模块.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/pywin32系统API接口/win32api.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/pywin32系统API接口/win32print.json"
       },
       {
         "language": "python",

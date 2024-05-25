@@ -1,0 +1,7 @@
+{
+  "引入 win32ui 界面API模块": {
+    "prefix": "im -win32ui",
+    "body": ["import win32ui"],
+    "description": ["引入 win32ui 界面API模块"]
+  }
+}

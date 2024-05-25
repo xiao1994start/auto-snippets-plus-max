@@ -229,7 +229,7 @@
     "description": ["list推导式"]
   },
   "list[推导式] 列表推导式": {
-    "prefix": "[list] -list",
+    "prefix": "list.comp -list",
     "body": "[ ${1:item} for ${2:item} in ${3:list} if ${4:conditional} ",
     "description": ["list推导式"]
   },

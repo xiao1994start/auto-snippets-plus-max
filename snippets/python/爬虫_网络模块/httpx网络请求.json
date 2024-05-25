@@ -12,6 +12,19 @@
   "httpx.Client with构造函数": {
     "prefix": "withhttpxClient -httpx",
     "body": [
+      "with httpx.Client(",
+      "\tbase_url=URL,",
+      "\theaders=HEADER_DIST,",
+      "\ttimeout=None,  # 超时时间",
+      "\t# verify=False,  # 关闭SSL验证",
+      ") as client:",
+      "\tpass"
+    ],
+    "description": ["with httpx.Client 使用with进行Client构造函数"]
+  },
+  "httpx.Client with构造函数 模板": {
+    "prefix": "withhttpxClient=> -httpx",
+    "body": [
       "base_url = \"${1:base_url}\"",
       "prixy_url = '${2:代理地址}'",
       "proxies = {",
@@ -33,7 +46,7 @@
       "\t# r = client.post(url='url', data={}, json={}, content=b'content', files=files)",
       "\t${0:pass}"
     ],
-    "description": ["with httpx.Client 使用with进行Client构造函数"]
+    "description": ["with httpx.Client 使用with进行Client构造函数 模板"]
   },
   "httpx.Request 请求参数": {
     "prefix": ".Request -httpx",
