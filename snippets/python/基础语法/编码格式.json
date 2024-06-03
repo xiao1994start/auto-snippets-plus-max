@@ -16,12 +16,12 @@
     ]
   },
   "编码: UTF-8": {
-    "prefix": "utf8 -coding",
+    "prefix": "coding_utf8 -coding",
     "body": ["'utf-8'"],
     "description": ["编码: UTF-8"]
   },
   "编码: GBK": {
-    "prefix": "gbk -coding",
+    "prefix": "coding_gbk -coding",
     "body": ["'gbk'"],
     "description": ["编码: GBK"]
   }

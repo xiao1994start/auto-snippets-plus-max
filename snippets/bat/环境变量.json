@@ -94,10 +94,23 @@
     "body": ["\"%WINDIR%/system32/${1:example}\""],
     "description": ["WindowsSystem32系统文件目录"]
   },
-  "Desktop桌面": {
-    "prefix": "Desktop",
+  "用户 Desktop 桌面": {
+    "prefix": "UserDesktop",
     "body": ["\"%USERPROFILE%/Desktop/${1:example}\""],
-    "description": ["Desktop桌面"]
+    "description": ["用户 Desktop 桌面"]
+  },
+  "DesktopDir 桌面环境": {
+    "prefix": "DesktopDir",
+    "body": [
+      "FOR /F \"tokens=1,2 delims=:\" %%i in ('REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\ExplorerShell Folders\" /V \"Desktop\"') do (",
+      "    set \"a=%%i\"",
+      "    set \"b=%%j\"",
+      ")",
+      "set \"D=%a:~-1%:%b%\"",
+      "@ECHO %D%",
+      ""
+    ],
+    "description": ["DesktopDir 桌面环境"]
   },
   "当前用户Documents文档": {
     "prefix": "Documents",

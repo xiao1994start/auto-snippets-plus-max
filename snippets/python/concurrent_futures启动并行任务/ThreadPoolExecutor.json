@@ -1,0 +1,7 @@
+{
+  "引入 ThreadPoolExecutor 线程池库": {
+    "prefix": "im -ThreadPoolExecutor",
+    "body": ["from concurrent.futures import ThreadPoolExecutor"],
+    "description": ["引入 ThreadPoolExecutor 线程池库"]
+  }
+}

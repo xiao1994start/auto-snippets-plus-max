@@ -136,7 +136,7 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/基础语法/match_switch条件判断.json"
+        "path": "./snippets/python/基础语法/match_case条件判断.json"
       },
       {
         "language": "python",
@@ -200,6 +200,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/concurrent_futures启动并行任务/ThreadPoolExecutor.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/Django/Django自定义配置.json"
       },
       {
@@ -208,7 +212,7 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/GUI图形界面/pyside6图形界面模块.json"
+        "path": "./snippets/python/logging日志管理/logging.json"
       },
       {
         "language": "python",
@@ -240,6 +244,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/PySide_GUI图形界面/pyside6图形界面模块.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/pywin32系统API接口/win32系统信号模块.json"
       },
       {
@@ -261,6 +269,10 @@
       {
         "language": "python",
         "path": "./snippets/python/sys系统相关的形参和函数/sys.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/threading基于线程的并行/Thread.json"
       },
       {
         "language": "scss",

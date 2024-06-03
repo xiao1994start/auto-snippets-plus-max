@@ -1,57 +1,67 @@
 {
   "创建class对象": {
-    "prefix": "class.newObject -class",
+    "prefix": "add_class:newObject -class",
     "body": [
+      "# * Object: ",
       "class ${1:NewObject}:",
-      "\tdef __init__(self) -> None:",
-      "\t\tpass",
-      "\tpass"
+      "    # * class signal",
+      "    def __init__(self) -> None:",
+      "        pass",
+      "",
+      "    pass"
     ],
     "description": ["创建class对象"]
   },
   "class初始化": {
-    "prefix": "def.init -class.def",
-    "body": ["def __init__(self) -> None:", "\t${2:pass}"],
+    "prefix": "add_def:init -class.def",
+    "body": ["# * Class Init", "def __init__(self) -> None:", "    ${2:pass}"],
     "description": ["class初始化"]
   },
   "class类self": {
-    "prefix": "sf -class",
+    "prefix": "add_class:self -class",
     "body": ["self$0"],
     "description": ["class类self"]
   },
   "class类self.": {
-    "prefix": "self -class",
+    "prefix": "add_class:self_ -class",
     "body": ["self.$0"],
     "description": ["class类self."]
   },
   "创建class - def函数": {
-    "prefix": "def.selfFunctin -class.def",
-    "body": ["def ${1:name}(self):", "\t${2:pass}"],
+    "prefix": "add_def:classFunctin -class.def",
+    "body": ["# * Class Function: ", "def ${1:name}(self):", "    ${2:pass}"],
     "description": ["创建class - def函数"]
   },
   "创建def函数": {
-    "prefix": "def.newFunction -def",
-    "body": ["def ${1:name}():", "\t${2:pass}"],
+    "prefix": "add_def:newFunction -def",
+    "body": ["# * Function: ", "def ${1:name}():", "    ${2:pass}"],
     "description": ["创建def函数"]
   },
   "创建async def函数": {
-    "prefix": "async -def",
-    "body": ["async def ${1:name}(${2:arg}):", "\t${3:pass}"],
+    "prefix": "add_asyncDef -def",
+    "body": [
+      "# * async_Function: ",
+      "async def ${1:name}(${2:arg}):",
+      "    ${3:pass}"
+    ],
     "description": ["创建async def函数"]
   },
   "lambda:匿名函数": {
-    "prefix": "lambda -lambda",
-    "body": ["lambda ${1:args}: ${2:expr表达式}"],
+    "prefix": "add_lambda -lambda",
+    "body": [
+      "lambda ${1:args}: ${2:expr表达式}  # lambda(匿名函数) [参数]: 表达式"
+    ],
     "description": ["lambda(匿名函数)"]
   },
   "ifmain:主程序运行入口 | 调试运行": {
     "prefix": "ifmain -main",
     "body": [
       "if __name__ == \"__main__\":",
-      "\t'''",
-      "\t主程序运行入口 | 调试运行",
-      "\t'''",
-      "\t${1:main()}"
+      "    '''",
+      "    主程序运行入口 | 调试运行",
+      "    '''",
+      "    ${1:main()}",
+      "    pass"
     ],
     "description": ["主程序运行入口 | 调试运行"]
   }
