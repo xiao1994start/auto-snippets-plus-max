@@ -1,0 +1,7 @@
+{
+  "引入 Thread 多线程库": {
+    "prefix": "im -Thread",
+    "body": ["from threading import Thread"],
+    "description": ["引入 Thread 多线程库"]
+  }
+}

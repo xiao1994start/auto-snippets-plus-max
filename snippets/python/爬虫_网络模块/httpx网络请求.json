@@ -1,0 +1,104 @@
+{
+  "引入 httpx 模块": {
+    "prefix": "im -httpx",
+    "body": ["import httpx"],
+    "description": ["引入 httpx 模块"]
+  },
+  "httpx.Client 跨请求共享配置": {
+    "prefix": "httpxClient -httpx",
+    "body": ["httpx.Client(base_url=${1:base_url})"],
+    "description": ["httpx.Client 设置请求的 base_url"]
+  },
+  "httpx.Client with构造函数": {
+    "prefix": "with_httpxClient -httpx",
+    "body": [
+      "with httpx.Client(",
+      "    base_url=URL,",
+      "    headers=header_dict,",
+      "    timeout=None,  # 超时时间(None | 0: 无限等待; 默认值: 10 -> 10秒等待)",
+      "    # verify=False,  # 关闭SSL验证",
+      ") as client:",
+      "    pass"
+    ],
+    "description": ["with httpx.Client 使用with进行Client构造函数"]
+  },
+  "httpx.Client with构造函数 模板": {
+    "prefix": "with_httpxClient=> -httpx",
+    "body": [
+      "base_url = \"${1:base_url}\"",
+      "prixy_url = '${2:代理地址}'",
+      "proxies = {",
+      "    \"all://\": httpx.HTTPTransport(proxy=prixy_url),",
+      "    \"http://\": httpx.HTTPTransport(proxy=prixy_url),",
+      "    \"https://\": httpx.HTTPTransport(proxy=prixy_url),",
+      "}  # 代理配置(socks>http): {'all://': httpx.HTTPTransport(proxy='socks5://user:pass@host:port')}",
+      "user_headers = {\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0\",}",
+      "with httpx.Client(",
+      "    base_url=base_url,",
+      "    # proxy='socks5://user:pass@host:port',  # 代理(单个)配置,同 proxies",
+      "    # mounts=proxies,  # 代理(多个)配置",
+      "    headers=user_headers,",
+      "    timeout=None,  # 超时时间(None | 0: 无限等待; 默认值: 10 -> 10秒等待)",
+      "    # verify=False,  # 关闭SSL验证",
+      "    # event_hooks={\"request\": [], \"response\": []},",
+      ") as client:",
+      "    # r = client.get(url=URL, params={},)",
+      "    # r = client.post(url=URL, data={}, json={}, content=b'content', files=files)",
+      "    ${0:pass}"
+    ],
+    "description": ["with httpx.Client 使用with进行Client构造函数 模板"]
+  },
+  "httpx.Request 请求参数": {
+    "prefix": ".Request -httpx",
+    "body": [".Request"],
+    "description": ["httpx.Request 请求参数"]
+  },
+  "httpx.Response 响应参数": {
+    "prefix": ".Response -httpx",
+    "body": [".Response"],
+    "description": ["httpx.Response 响应参数"]
+  },
+  "httpx.encoding 编码格式": {
+    "prefix": ".encoding -httpx",
+    "body": [".encoding${1|  # 自动确定编码格式, = 'utf-8'|}"],
+    "description": [
+      "httpx.encoding 在某些情况下, 响应可能不包含显式编码, 在这种情况下 HTTPX 将尝试自动确定要使用的编码"
+    ]
+  },
+  "httpx.charset_encoding 识别响应编码格式": {
+    "prefix": ".charset_encoding -httpx",
+    "body": [".charset_encoding"],
+    "description": [
+      "httpx.charset_encoding 识别响应编码格式, 需要进行格式转化->str()"
+    ]
+  },
+  "httpx.headers 响应头": {
+    "prefix": ".headers -httpx",
+    "body": [".headers"],
+    "description": ["httpx.headers 获取响应头"]
+  },
+  "httpx.text 格式化响应内容": {
+    "prefix": ".text -httpx",
+    "body": [".text"],
+    "description": ["httpx.text 格式化响应内容"]
+  },
+  "httpx.content b.响应体": {
+    "prefix": ".content -httpx",
+    "body": [".content"],
+    "description": [
+      "httpx.content b.二进制响应内容.\r\n对于非文本响应, 响应内容也可以作为字节访问"
+    ]
+  },
+  "httpx.json JSON解码器": {
+    "prefix": ".json -httpx",
+    "body": [".json()"],
+    "description": [
+      "httpx.json JSON 响应内容.\r\nWeb API 响应通常会被编码为 JSON"
+    ]
+  },
+  "httpx.status_cod 响应状态代码": {
+    "prefix": ".status_code -httpx",
+    "body": [".status_code"],
+    "description": ["httpx.status_cod 检查响应的 HTTP 状态代码"]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "# -*- coding=utf-8 -*-": {
+    "prefix": "enc -coding=utf-8",
+    "body": "# -*- coding=utf-8 -*-\n$0",
+    "description": [
+      "将默认的 python2.x 编码规范设置为 utf-8, 如 pep-0263 中所述",
+      "\r\nset default python2.x encoding specification to utf-8 as it is mentioned in pep-0263."
+    ]
+  },
+  "# coding=utf-8": {
+    "prefix": "enco -coding=utf-8",
+    "body": "# coding=utf-8\n$0",
+    "description": [
+      "将默认的 python3 编码规范设置为 utf-8, 默认情况下, 这是 pep-3120 中提到的 python3.x 的编码",
+      "\r\nSet default python3 encoding specification to utf-8, by default this is the encoding for python3.x as it is mentioned in pep-3120."
+    ]
+  },
+  "编码: UTF-8": {
+    "prefix": "coding_utf8 -coding",
+    "body": ["'utf-8'"],
+    "description": ["编码: UTF-8"]
+  },
+  "编码: GBK": {
+    "prefix": "coding_gbk -coding",
+    "body": ["'gbk'"],
+    "description": ["编码: GBK"]
+  }
+}

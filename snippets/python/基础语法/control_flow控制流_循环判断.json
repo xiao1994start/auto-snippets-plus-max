@@ -1,0 +1,155 @@
+{
+  "if判断的代码片段": {
+    "prefix": "add_if -if",
+    "body": [
+      "if ${1:condition}:",
+      "    # comment: ${2:}",
+      "    ${3:pass}",
+      "# * End_if"
+    ],
+    "description": ["if判断的代码片段"]
+  },
+  "elif判断的代码片段": {
+    "prefix": "add_elif -if",
+    "body": ["elif ${1:}:", "    # comment: ${2:}", "    pass", "# * End_elif"],
+    "description": ["elif判断的代码片段"]
+  },
+  "else判断的代码片段": {
+    "prefix": "add_else -if",
+    "body": ["else:", "    # comment: ${1:}", "    ${2:pass}", "# * End_if"],
+    "description": ["else判断的代码片段"]
+  },
+  "if_else判断的代码片段": {
+    "prefix": "add_if:else -if",
+    "body": [
+      "if ${1:}:",
+      "    # comment: ${2:}",
+      "    pass",
+      "else:",
+      "    # comment: ${3:}",
+      "    pass",
+      "    # End else",
+      "# * End_if"
+    ],
+    "description": ["if_else判断的代码片段"]
+  },
+  "if_elif_else判断的代码片段": {
+    "prefix": "add_if:elif:else -if",
+    "body": [
+      "if ${1:}:",
+      "    # comment:${2:}",
+      "    pass",
+      "elif ${3:}:",
+      "    # comment:${4:}",
+      "    pass",
+      "    # * End_elif",
+      "else:",
+      "    # comment:${5:}",
+      "    pass",
+      "    # * End_else",
+      "# * End_if"
+    ],
+    "description": ["if_elif_else判断的代码片段"]
+  },
+  "for循环结构的代码片段": {
+    "prefix": "add_for -for",
+    "body": [
+      "for ${1:value} in ${2:iterable}:",
+      "    ${3:pass}",
+      "# * End_for"
+    ],
+    "description": ["for循环结构的代码片段"]
+  },
+  "for_inEnumerate循环枚举": {
+    "prefix": "add_for:inEnumerate -for",
+    "body": [
+      "for ${1:i}, ${2:itemIter} in enumerate(${3:iterable}):  # 循环遍历行",
+      "    # comment: 注释",
+      "    pass",
+      "# * End_for"
+    ],
+    "description": ["for_inEnumerate循环枚举"]
+  },
+  "while循环结构的代码片段": {
+    "prefix": "while -while",
+    "body": ["while ${1:condition}:", "    ${2:pass}", "# * End_while"],
+    "description": ["while循环结构的代码片段"]
+  },
+  "终止循环": {
+    "prefix": "continue ",
+    "body": ["continue"],
+    "description": ["停止循环"]
+  },
+  "结束循环": {
+    "prefix": "break ",
+    "body": ["break"],
+    "description": ["跳出一个循环体或者完全结束一个循环"]
+  },
+  "空语句(结构语句)": {
+    "prefix": "pass ",
+    "body": ["pass"],
+    "description": [
+      "空语句, 是为了保持程序结构的完整性",
+      "    pass 不做任何事情, 一般用做占位语句",
+      "    pass 不会引发任何错误",
+      "    pass 不会消耗任何资源",
+      "    pass 不会阻塞程序的执行"
+    ]
+  },
+  "try:正常执行 except:异常处理": {
+    "prefix": "add_try:excep -try",
+    "body": [
+      "try:",
+      "    # comment: 注释",
+      "    $0",
+      "    pass",
+      "except Exception as error:",
+      "    print(\"错误类型: \",type(error))",
+      "    print(\"错误信息: \", error)",
+      "    raise error",
+      "    # * End_except",
+      "# * End_try"
+    ],
+    "description": ["try:正常执行 except:异常处理"]
+  },
+  "try:正常执行 finally:强制执行": {
+    "prefix": "add_try:finally -try",
+    "body": [
+      "try:",
+      "    # comment: 注释",
+      "    $0",
+      "    pass",
+      "finally:",
+      "    print(\"无论是否异常,强制执行...\")",
+      "    # * End_finally",
+      "# * End_try"
+    ],
+    "description": ["try:正常执行 finally:强制执行"]
+  },
+  "try:正常执行 except:异常处理 else:try之后执行 finally:强制执行": {
+    "prefix": "add_try:excep:telse:finally -try",
+    "body": [
+      "try:",
+      "    # comment: 注释",
+      "    $0",
+      "    pass",
+      "except Exception as ${1:error}:",
+      "    print(\"错误类型: \",type(${1:error}))",
+      "    print(\"错误信息: \", ${1:error})",
+      "    raise ${1:error}",
+      "    # * End_except",
+      "else:",
+      "    print(\"try正常执行后执行...\")",
+      "    pass",
+      "    # * End_else",
+      "finally:",
+      "    print(\"无论是否异常,强制执行...\")",
+      "    pass",
+      "    # * End_finally",
+      "# * End_try"
+    ],
+    "description": [
+      "try:正常执行 except:异常处理 else:try之后执行 finally:强制执行 "
+    ]
+  }
+}

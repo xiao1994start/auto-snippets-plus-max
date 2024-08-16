@@ -1,0 +1,12 @@
+{
+  "type 数据类型": {
+    "prefix": "type -dataType",
+    "body": ["type($0)"],
+    "description": ["type 数据类型"]
+  },
+  "isinstance 判断对象类型是否一致": {
+    "prefix": "isinstance -dataType",
+    "body": ["isinstance(${1:data}, ${2:type})"],
+    "description": ["isinstance 判断对象类型是否一致"]
+  }
+}
