@@ -6,7 +6,7 @@
       ":: BatchGotAdmin",
       ":-------------------------------------",
       "REM  --> Check for permissions",
-      ">nul 2>&1 \"%SYSTEMROOT%/system32/cacls.exe\" \"%SYSTEMROOT%/system32/config/system\"",
+      ">nul 2>&1 \"%SYSTEMROOT%\\system32\\cacls.exe\" \"%SYSTEMROOT%\\system32\\config\\system\"",
       "REM --> If error flag set, we do not have admin.",
       "if '%errorlevel%' NEQ '0' (",
       "\techo Requesting administrative privileges...",
@@ -14,12 +14,12 @@
       "\tgoto UACPrompt",
       ") else ( goto gotAdmin )",
       ":UACPrompt",
-      "\techo Set UAC = CreateObject^(\"Shell.Application\"^) > \"%temp%/getadmin.vbs\"",
-      "\techo UAC.ShellExecute \"%~s0\", \"\", \"\", \"runas\", 1 >> \"%temp%/getadmin.vbs\"",
-      "\t\"%temp%/getadmin.vbs\"",
+      "\techo Set UAC = CreateObject^(\"Shell.Application\"^) > \"%temp%\\getadmin.vbs\"",
+      "\techo UAC.ShellExecute \"%~s0\", \"\", \"\", \"runas\", 1 >> \"%temp%\\getadmin.vbs\"",
+      "\t\"%temp%\\getadmin.vbs\"",
       "\texit /B",
       ":gotAdmin",
-      "\tif exist \"%temp%/getadmin.vbs\" ( del \"%temp%/getadmin.vbs\" )",
+      "\tif exist \"%temp%\\getadmin.vbs\" ( del \"%temp%\\getadmin.vbs\" )",
       "\tpushd \"%CD%\"",
       "\tCD /D \"%~dp0\"",
       ":--------------------------------------",
@@ -54,12 +54,12 @@
   },
   "安全终止进程": {
     "prefix": ["kill -f", "kill_safe"],
-    "body": ["taskkill /F /IM \"${1:进程名称}\""],
+    "body": ["taskkill /F /IM \"${1:dst终止目标进程名称}\""],
     "description": ["安全终止进程"]
   },
   "终止进程": {
     "prefix": ["kill -t", "kill -all"],
-    "body": ["taskkill /F /T /IM \"${1:进程名称}\""],
+    "body": ["taskkill /F /T /IM \"${1:dst终止目标进程名称}\""],
     "description": ["终止进程(可能会发生错误)"]
   },
   "暂停": {
@@ -74,7 +74,7 @@
   },
   "运行程序": {
     "prefix": "start",
-    "body": ["start ${2| ,\"窗口标题\"|} \"${1:运行程序路径}\""],
+    "body": ["start ${2| ,\"窗口标题\"|} \"${1:dst运行程序路径}\""],
     "description": ["运行程序(第一个双引号为空->等待运行程序关闭继续)"]
   },
   "等待n秒后继续": {

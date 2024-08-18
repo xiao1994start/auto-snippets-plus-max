@@ -32,11 +32,11 @@
     "prefix": "Host -Edit",
     "body": [
       ":: 取消 hosts 只读",
-      "attrib -R C:/WINDOWS/system32/drivers/etc/hosts",
+      "attrib -R C:\\WINDOWS\\system32\\drivers\\etc\\hosts",
       ":: 用 记事本 打开 hosts ",
-      "call notepad C:/WINDOWS/system32/drivers/etc/hosts",
+      "call notepad C:\\WINDOWS\\system32\\drivers\\etc\\hosts",
       ":: 设定 hosts 只读",
-      "attrib +R C:/WINDOWS/system32/drivers/etc/hosts"
+      "attrib +R C:\\WINDOWS\\system32\\drivers\\etc\\hosts"
     ],
     "description": ["使用记事本打开host文件"]
   },
