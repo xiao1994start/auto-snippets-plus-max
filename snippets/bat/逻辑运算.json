@@ -1,19 +1,19 @@
 {
   "判断文件夹存在": {
     "prefix": "if -Exist",
-    "body": ["if exist ${1:判断目标} (", "    echo 目标存在", ")"],
+    "body": ["if exist ${1:判断目标} (", "    @ECHO 目标存在", ")"],
     "description": ["判断文件夹存在"]
   },
   "判断文件夹不存在": {
     "prefix": "if -Not-Exist",
-    "body": ["if not exist ${1:判断目标} (", "    echo 目标不存在", ")"],
+    "body": ["if not exist ${1:判断目标} (", "    @ECHO 目标不存在", ")"],
     "description": ["判断文件夹不存在"]
   },
   "判断字符串相等且忽略大小写": {
     "prefix": "if -IEQU",
     "body": [
       "if /I \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
-      "    @echo 一致",
+      "    @ECHO 一致",
       ")"
     ],
     "description": ["判断字符串相等且忽略大小写"]
@@ -22,7 +22,7 @@
     "prefix": "if -EQU",
     "body": [
       "if \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
-      "    @echo 完全一致",
+      "    @ECHO 完全一致",
       ")"
     ],
     "description": ["判断字符串完全相等"]
@@ -31,7 +31,7 @@
     "prefix": "if -INEQ",
     "body": [
       "if /I \"${1:被比较字符串}\" NEQ \"${2:对比字符串}\" (",
-      "    echo 不一致",
+      "    @ECHO 不一致",
       ")"
     ],
     "description": ["字符串不一致且忽略大小写"]
@@ -40,19 +40,19 @@
     "prefix": "if -NEQ",
     "body": [
       "if not \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
-      "    echo 完全不一致",
+      "    @ECHO 完全不一致",
       ")"
     ],
     "description": ["判断字符串完全不一致且忽略大小写"]
   },
   "循环目录下文件": {
     "prefix": "for -do",
-    "body": ["for %%i in (${1:*}) do (", "    @echo %%i", ")$0"],
+    "body": ["for %%i in (${1:*}) do (", "    @ECHO %%i", ")$0"],
     "description": ["循环目录下文件"]
   },
   "循环目录下文件夹": {
     "prefix": "for -D",
-    "body": ["for /D %%i in (${1:*}) do (", "    @echo %%i", ")"],
+    "body": ["for /D %%i in (${1:*}) do (", "    @ECHO %%i", ")"],
     "description": ["循环目录下文件夹"]
   },
   "循环提取 文本|列表|对象 信息": {
@@ -75,7 +75,7 @@
   },
   "循环目录及子目录文件": {
     "prefix": "for -R",
-    "body": ["for /R %%i in (*) do (", "    @echo %%i", ")"],
+    "body": ["for /R %%i in (*) do (", "    @ECHO %%i", ")"],
     "description": ["forR循环目录及子目录文件"]
   },
   "循环文件计数": {
@@ -83,13 +83,13 @@
     "body": [
       "set num=0",
       "for %%i in (*) do (",
-      "    echo %%i",
+      "    ECHO %%i",
       "    set /A num+=1",
       ")",
       "if %num%==0 (",
-      "    echo No files found",
+      "    ECHO No files found",
       ") else (",
-      "    echo Files found:%num%",
+      "    ECHO Files found:%num%",
       ")"
     ],
     "description": ["循环文件计数"]
@@ -97,7 +97,7 @@
   "判断文件夹是否为空": {
     "prefix": ["dir-B-findstr-Empty", "ifDirEmpty"],
     "body": [
-      "dir /B ${1:文件夹路径} | findstr . >nul && echo NoEmpty || echo Empty"
+      "dir /B ${1:文件夹路径} | findstr . >nul && ECHO NoEmpty || ECHO Empty"
     ],
     "description": ["判断文件夹是否为空"]
   },
