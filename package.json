@@ -104,6 +104,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/基础语法/装饰器.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/基础语法/class类_def_函数.json"
       },
       {

@@ -28,13 +28,15 @@
       "from PySide6.QtWidgets import (",
       "    QApplication,",
       "    QHeaderView,",
+      "    QMessageBox,",
       "    QPushButton,",
       "    QTableWidget,",
       "    QTableWidgetItem,",
+      "    QVBoxLayout,",
       "    QWidget,",
       ")",
       "",
-      "from ${1:ui_py} import Ui_Form"
+      "from ${1:ui_py_Path} import Ui_Form"
     ],
     "description": ["引入 PySide6 模块"]
   },
@@ -67,13 +69,15 @@
       "from PySide6.QtWidgets import (",
       "    QApplication,",
       "    QHeaderView,",
+      "    QMessageBox,",
       "    QPushButton,",
       "    QTableWidget,",
       "    QTableWidgetItem,",
+      "    QVBoxLayout,",
       "    QWidget,",
       ")",
       "",
-      "from ${1:ui_py} import Ui_Form",
+      "from ${1:ui_py_Path} import Ui_Form",
       "",
       "class MainThread(QObject):",
       "    # ! 信号: 子线程 -> 窗体",
@@ -91,7 +95,8 @@
       "        super().__init__()  # 解决多重继承问题, 调用_继承父类 QMainWindow/QWidget 的__init__方法",
       "        self.setupUi(self)  # 传入窗体对象作为参数",
       "        self.autoRun()  # 图形化界面入口函数",
-      "        self.bind()  # 图形化界面入口函数",
+      "        self.bind()  # 界面绑定函数",
+      "    # * 窗体启动自动执行函数",
       "    def autoRun(self):",
       "        pass",
       "    def bind(self):",
@@ -116,7 +121,8 @@
       "        super().__init__()  # 解决多重继承问题, 调用_继承父类 QMainWindow/QWidget 的__init__方法",
       "        self.setupUi(self)  # 传入窗体对象作为参数",
       "        self.autoRun()  # 图形化界面入口函数",
-      "        self.bind()  # 图形化界面入口函数",
+      "        self.bind()  # 界面绑定函数",
+      "    # * 窗体启动自动执行函数",
       "    def autoRun(self):",
       "        pass",
       "    def bind(self):",
@@ -125,7 +131,7 @@
     "description": ["PySide6.MainUI 创建窗体对象"]
   },
   "PySide6.MainUI.createQThread 窗体创建子线程对象": {
-    "prefix": "create_QThread=> -PySide6",
+    "prefix": "QT_create_QThread=> -PySide6",
     "body": [
       "def createThread(self):",
       "    \"\"\"",
@@ -175,34 +181,37 @@
     "description": ["PySide6.MainUI.createQThread 窗体创建子线程对象"]
   },
   "PySide6.MainUI.closeEvent 重写窗体关闭事件": {
-    "prefix": "closeEvent=> -PySide6",
+    "prefix": "QT_closeEvent=> -PySide6",
     "body": [
       "def closeEvent(self, event):",
       "    \"\"\"",
       "    重新定义窗体关闭事件, 加入确认关闭提示, 并结束子线程",
       "    Args:",
       "        event (QCloseEvent): 继承QCloseEvent窗体关闭事件",
+      "        # * self.QThread实例对象.terminate()  # 中断子线程",
+      "        # * self.QThread实例对象.deleteLater()  # 删除子线程实例对象",
+      "        # * self.QThread实例对象.quit()  # 结束子线程",
       "    \"\"\"",
-      "    result = QtWidgets.QMessageBox.question(",
-      "    self,",
-      "    \"正在关闭程序\",  # [QMessageBox标题]",
-      "    \"亲@你确定想关闭我?别后悔!!! '_'\",  # [QMessageBox窗体内容]",
-      "    QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No,  # [QMessageBox窗体按钮]",
-      "    match result:",
-      "        case QtWidgets.QMessageBox.Yes:",
-      "            # comment: 点击 Yes 确认结束子线程和主线程",
-      "            # * self.QThread实例对象.terminate()  # 中断子线程",
-      "            # * self.QThread实例对象.deleteLater()  # 删除子线程实例对象",
-      "            # * self.QThread实例对象.quit()  # 结束子线程",
-      "            event.accept()  # 接受关闭事件, 结束主线程",
-      "        case _:",
-      "            # comment: 点击 No 关闭提示, 忽略关闭事件, 继续运行线程",
-      "            event.ignore()"
+      "    replay = QMessageBox.question(",
+      "        self,",
+      "        \"正在关闭程序\",  # QMessageBox标题",
+      "        \"亲@你确定想关闭我?别后悔!!! '_'\",  # QMessageBox窗体内容",
+      "        QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,  # QMessageBox窗体按钮组",
+      "        QMessageBox.StandardButton.Yes,  # 默认按钮",
+      "    )  # [QMessageBox窗体按钮]",
+      "    if reply == QMessageBox.Yes:",
+      "        # comment: 点击 Yes 确认结束子线程和主线程",
+      "        # todo 其他操作",
+      "",
+      "        event.accept()  # 接受关闭事件, 结束主线程",
+      "    else:",
+      "        # comment: 点击 No 关闭提示, 忽略关闭事件, 继续运行线程",
+      "        event.ignore()"
     ],
     "description": ["PySide6.MainUI.closeEvent 重写窗体关闭事件"]
   },
   "PySide6.MainThread 创建子线程对象": {
-    "prefix": "add_classQWidget=> -PySide6",
+    "prefix": "QT_add_classQWidget=> -PySide6",
     "body": [
       "class MainThread(QObject):",
       "    # * 信号: 子线程 -> 窗体",
@@ -214,7 +223,7 @@
     "description": ["PySide6.MainUI 创建窗体对象"]
   },
   "PySide6.QApplication 运行窗口": {
-    "prefix": "ifMainUI -PySide6",
+    "prefix": "QT_ifMainUI -PySide6",
     "body": [
       "if __name__ == \"__main__\":",
       "    app = QApplication(sys.argv)  # 创建应用程序对象, 传入命令行参数",
@@ -231,7 +240,7 @@
     "description": ["PySide6.QThread.terminate 中断子线程"]
   },
   "PySide6.QtGui.QKeySequence:QShortcut 设置快捷键": {
-    "prefix": "create_QShortcut:QKeySequence=> -PySide6",
+    "prefix": "QT_create_QShortcut:QKeySequence=> -PySide6",
     "body": [
       "# * 定义快捷键",
       "def setupShortcutKey(self):",
@@ -246,7 +255,7 @@
     "description": ["PySide6.QtGui.QKeySequence:QShortcut 设置快捷键"]
   },
   "PySide6.QtWidgets.QTableWidget 导入DataFrame数据": {
-    "prefix": "load_DataFrame:add_tableButton=> -PySide6",
+    "prefix": "QT_load_DataFrame:add_tableButton=> -PySide6",
     "body": [
       "# * Class Function: 导入DataFrame -> QTableWidget表格数据",
       "def loading_DF(self, data: DataFrame, qtable: QTableWidget):",
@@ -307,7 +316,7 @@
     "description": ["PySide6.QtWidgets.QTableWidget 导入DataFrame数据"]
   },
   "PySide6.QtCore.QTimer 定时器": {
-    "prefix": "create_Timer=> -PySide6",
+    "prefix": "QT_create_Timer=> -PySide6",
     "body": [
       "# * Class Function: 创建定时器",
       "def createTimer(self):",
@@ -320,7 +329,7 @@
     "description": "PySide6.QtCore.QTimer 定时器"
   },
   "PySide6.sender().pos 获取点击按钮坐标位置": {
-    "prefix": ".pos -PySide6",
+    "prefix": "QT_.pos -PySide6",
     "body": [".pos()"],
     "description": ["PySide6.sender().pos 获取点击按钮坐标位置"]
   }
