@@ -148,25 +148,5 @@
       ""
     ],
     "description": ["DesktopDir 桌面环境"]
-  },
-  "路径变量path设置并添加修复注册表": {
-    "prefix": "REG -Edit",
-    "body": [
-      "@ECHO start reg  ...",
-      ":: 获取当前路径 并 设为变量df",
-      "::set df=%~dp0",
-      ":: 强调显示变量 %df%",
-      "::@ECHO %df%",
-      ":: 注册表中的应用",
-      ":: 注册表创建自启动项",
-      ":: reg add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /v \"名称\" /t REG_SZ /d \"%df%路径\" /F",
-      ":: 注册表删除自启动项",
-      ":: REG DELETE \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /v \"名称\" /F",
-      ":: reg add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /F",
-      "::也可以不用变量直接写入",
-      ":: reg add \"HKEY_CURRENT_USER\\Software\\illusion\\RoomGirdmklin\\RoomGirdmklin\" /v \"INSTALLDIR\" /d \"%~dp0\\\" /F",
-      ":: 路径“%~dp0”就是注册路径"
-    ],
-    "description": ["路径变量path设置并添加修复注册表"]
   }
 }
