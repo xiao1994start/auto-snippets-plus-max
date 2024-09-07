@@ -2,7 +2,7 @@
   "if判断的代码片段": {
     "prefix": "add_if -if",
     "body": [
-      "if (${1:condition}):",
+      "if ${1:condition}:",
       "    # comment: ${2:}",
       "    ${3:pass}",
       "# * End_if"
@@ -11,23 +11,18 @@
   },
   "elif判断的代码片段": {
     "prefix": "add_elif -if",
-    "body": [
-      "elif (${1:}):",
-      "    # comment: ${2:}",
-      "    pass",
-      "# * End_elif"
-    ],
+    "body": ["elif ${1:}:", "    # comment: ${2:}", "    pass", "# * End_elif"],
     "description": ["elif判断的代码片段"]
   },
   "else判断的代码片段": {
     "prefix": "add_else -if",
-    "body": ["else:", "    # comment: (${1:})", "    ${2:pass}", "# * End_if"],
+    "body": ["else:", "    # comment: ${1:}", "    ${2:pass}", "# * End_if"],
     "description": ["else判断的代码片段"]
   },
   "if_else判断的代码片段": {
     "prefix": "add_if:else -if",
     "body": [
-      "if (${1:}):",
+      "if ${1:}:",
       "    # comment: ${2:}",
       "    pass",
       "else:",
@@ -41,10 +36,10 @@
   "if_elif_else判断的代码片段": {
     "prefix": "add_if:elif:else -if",
     "body": [
-      "if (${1:}):",
+      "if ${1:}:",
       "    # comment:${2:}",
       "    pass",
-      "elif (${3:}):",
+      "elif ${3:}:",
       "    # comment:${4:}",
       "    pass",
       "    # * End_elif",
@@ -59,7 +54,7 @@
   "for循环结构的代码片段": {
     "prefix": "add_for -for",
     "body": [
-      "for (${1:value} in ${2:iterable}):",
+      "for ${1:value} in ${2:iterable}:",
       "    ${3:pass}",
       "# * End_for"
     ],
@@ -77,7 +72,7 @@
   },
   "while循环结构的代码片段": {
     "prefix": "while -while",
-    "body": ["while (${1:condition}):", "    ${2:pass}", "# * End_while"],
+    "body": ["while ${1:condition}:", "    ${2:pass}", "# * End_while"],
     "description": ["while循环结构的代码片段"]
   },
   "终止循环": {
