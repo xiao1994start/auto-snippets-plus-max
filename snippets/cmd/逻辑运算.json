@@ -1,0 +1,121 @@
+{
+  "判断文件夹存在": {
+    "prefix": "if -Exist",
+    "body": ["if exist ${1:判断目标} (", "    @ECHO 目标存在", ")"],
+    "description": ["判断文件夹存在"]
+  },
+  "判断文件夹不存在": {
+    "prefix": "if -Not-Exist",
+    "body": ["if not exist ${1:判断目标} (", "    @ECHO 目标不存在", ")"],
+    "description": ["判断文件夹不存在"]
+  },
+  "判断字符串相等且忽略大小写": {
+    "prefix": "if -IEQU",
+    "body": [
+      "if /I \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
+      "    @ECHO 一致",
+      ")"
+    ],
+    "description": ["判断字符串相等且忽略大小写"]
+  },
+  "判断字符串完全相等": {
+    "prefix": "if -EQU",
+    "body": [
+      "if \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
+      "    @ECHO 完全一致",
+      ")"
+    ],
+    "description": ["判断字符串完全相等"]
+  },
+  "判断字符串不一致且忽略大小写": {
+    "prefix": "if -INEQ",
+    "body": [
+      "if /I \"${1:被比较字符串}\" NEQ \"${2:对比字符串}\" (",
+      "    @ECHO 不一致",
+      ")"
+    ],
+    "description": ["字符串不一致且忽略大小写"]
+  },
+  "判断字符串完全不一致且忽略大小写": {
+    "prefix": "if -NEQ",
+    "body": [
+      "if not \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
+      "    @ECHO 完全不一致",
+      ")"
+    ],
+    "description": ["判断字符串完全不一致且忽略大小写"]
+  },
+  "判断字符串包含": {
+    "prefix": "ifString==",
+    "body": [
+      "if not \"!被比较字符串:包含字符串=!\"==\"!被比较字符串!\" (",
+      "    @ECHO 包含",
+      ") else (",
+      "    @ECHO 不包含",
+      ")",
+      ""
+    ],
+    "description": ["判断字符串包含"]
+  },
+  "循环目录下文件": {
+    "prefix": "for -do",
+    "body": ["for %%i in (${1:*}) do (", "    @ECHO %%i", ")$0"],
+    "description": ["循环目录下文件"]
+  },
+  "循环目录下文件夹": {
+    "prefix": "for -D",
+    "body": ["for /D %%i in (${1:*}) do (", "    @ECHO %%i", ")"],
+    "description": ["循环目录下文件夹"]
+  },
+  "循环提取 文本|列表|对象 信息": {
+    "prefix": "for -F",
+    "body": [
+      "for /F \"tokens=* delims= \" %%i in ('tasklist') do (",
+      "    @REM tasklist       : 循环对象('命令'-单引号包裹; \"字符串\"-双引号包裹; 文件-无需引号包裹,可以使用通配符)",
+      "    @REM tokens=x,y,m-n : 指每行的哪一个符号被传递到每个迭代的 for 本身. 这会导致额外变量名称的分配. ",
+      "    @REM                  x,y 格式为循环 x 和 y 列",
+      "    @REM                  如果符号字符串中的最后一个字符星号.",
+      "    @REM delims=        : 指定分隔符",
+      "    @REM 注意: 空格和制表符是分隔符, 除非在delims中指定",
+      "    @REM 注意: 空行不会被处理, 除非在for /F中指定eol=enter",
+      "    @REM 注意: 注释行不会被处理, 除非在for /F中指定comment=rem",
+      "    @ECHO %%i",
+      ")",
+      ""
+    ],
+    "description": "循环提取 文本|列表|对象 信息"
+  },
+  "循环目录及子目录文件": {
+    "prefix": "for -R",
+    "body": ["for /R %%i in (*) do (", "    @ECHO %%i", ")"],
+    "description": ["forR循环目录及子目录文件"]
+  },
+  "循环文件计数": {
+    "prefix": "for -FileNumber",
+    "body": [
+      "set num=0",
+      "for %%i in (*) do (",
+      "    ECHO %%i",
+      "    set /A num+=1",
+      ")",
+      "if %num%==0 (",
+      "    ECHO No files found",
+      ") else (",
+      "    ECHO Files found:%num%",
+      ")"
+    ],
+    "description": ["循环文件计数"]
+  },
+  "判断文件夹是否为空": {
+    "prefix": ["dir-B-findstr-Empty", "ifDirEmpty"],
+    "body": [
+      "dir /B ${1:文件夹路径} | findstr . >nul && ECHO NoEmpty || ECHO Empty"
+    ],
+    "description": ["判断文件夹是否为空"]
+  },
+  "导入证书->受信任的根证书颁发机构": {
+    "prefix": "cer-Add-Root",
+    "body": ["certutil -addstore Root ${1:导入根证书路径}"],
+    "description": ["导入证书->受信任的根证书颁发机构"]
+  }
+}

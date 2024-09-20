@@ -6,18 +6,23 @@
   },
   "PIL.Image.open 打开图形文件": {
     "prefix": ".open -PIL.Image",
-    "body": ["Image.open(${1:strImgPath})"],
+    "body": [".open(${1:strImgPath})"],
     "description": ["PIL.Image.open 打开图形文件"]
   },
   "PIL.Image.save 打开图形文件": {
     "prefix": ".save -PIL.Image",
-    "body": ["Image.save($0)"],
+    "body": [".save($0)"],
     "description": ["PIL.Image.open 打开图形文件"]
   },
-  "PIL.Image.convert('RGB') 转换图像格式": {
-    "prefix": ".convert -PIL.Image",
+  "PIL.Image.convert('RGB') 转换图像格式RGB彩色": {
+    "prefix": ".convertRGB -PIL.Image",
     "body": [".convert('RGB')"],
-    "description": ["PIL.Image.convert 转换图像格式"]
+    "description": ["PIL.Image.convert 转换图像格式RGB彩色"]
+  },
+  "PIL.Image.convert('L') 转换图像格式RGB灰度": {
+    "prefix": ".convertL -PIL.Image",
+    "body": [".convert('L')"],
+    "description": ["PIL.Image.convert 转换图像格式RGB灰度"]
   },
   "PIL.Image.format 识别图像格式": {
     "prefix": ".format -PIL.Image",

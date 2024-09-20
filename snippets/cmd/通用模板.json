@@ -1,0 +1,148 @@
+{
+  "BAT模板": {
+    "prefix": "ECHO_OFF-CWD",
+    "body": [
+      "@ECHO OFF",
+      "setlocal enabledelayedexpansion",
+      "CD /D \"%~dp0\"\r\n\r\n$0"
+    ],
+    "description": ["BAT模板"]
+  },
+  "ECHO_控制台输出": {
+    "prefix": [
+      "print -ECHO",
+      "log -ECHO",
+      "logP -ECHO",
+      "logPrint -ECHO",
+      "clp -ECHO"
+    ],
+    "body": ["ECHO $0"],
+    "description": ["ECHO_控制台输出"]
+  },
+  "choice模板": {
+    "prefix": "choice-C-N-M",
+    "body": [
+      ":begin",
+      "@ECHO ==========================",
+      "@ECHO [指令列表]",
+      "@ECHO    [1] 指令1",
+      "@ECHO    [2] 指令2",
+      "@ECHO    [3] 指令3",
+      "@ECHO ==========================",
+      "",
+      "choice /C \"字符或数字\" /N /M 请输入执行指令:",
+      "",
+      "if \"%errorlevel%\"==\"字符或数字\" call :to_1",
+      "if \"%errorlevel%\"==\"字符或数字\" call :to_2",
+      "if \"%errorlevel%\"==\"字符或数字\" cls & goto :eof",
+      "",
+      ":to_1",
+      "@ECHO 1 指令1",
+      "",
+      "",
+      ":to_2",
+      "@ECHO 2 指令2",
+      ""
+    ],
+    "description": ["choice模板"]
+  },
+  "脚本跳转到文件的结束处": {
+    "prefix": "goto_eof",
+    "body": ["goto :eof"],
+    "description": ["脚本跳转到文件的结束处"]
+  },
+  "Bandizip压缩Zip": {
+    "prefix": "Bandizip -C",
+    "body": ["CALL Bandizip.exe c ${2:压缩到.zip} \"${1:压缩目标}\""],
+    "description": ["Bandizip压缩Zip"]
+  },
+  "使用记事本打开host文件": {
+    "prefix": "Host -Edit",
+    "body": [
+      ":: 取消 hosts 只读",
+      "attrib -R C:\\WINDOWS\\system32\\drivers\\etc\\hosts",
+      ":: 用 记事本 打开 hosts ",
+      "call notepad C:\\WINDOWS\\system32\\drivers\\etc\\hosts",
+      ":: 设定 hosts 只读",
+      "attrib +R C:\\WINDOWS\\system32\\drivers\\etc\\hosts"
+    ],
+    "description": ["使用记事本打开host文件"]
+  },
+  "使用cmd静默安装innosetup安装包": {
+    "prefix": "inno -Install",
+    "body": [
+      "${1:InnoSetup安装程序路径} /SILENT /COMPONENTS=\"${2:InnoExtractor提取的安装参数_使用英文逗号隔开}\""
+    ],
+    "description": ["使用cmd静默安装innosetup安装包"]
+  },
+  "msi安装_静默": {
+    "prefix": "msi -Install",
+    "body": [
+      "@REM msiexec /i [安装] \"安装包路径\" /qb [指定在安装过程中有一个基本 UI]",
+      "msiexec /i ${1:安装包路径} /qb"
+    ],
+    "description": ["msi安装_静默"]
+  },
+  "msi卸载_静默": {
+    "prefix": ["msi -X", "msi -Uninstall"],
+    "body": [
+      "@REM msiexec /x [卸载] \"安装包路径\" /qb [指定在安装过程中有一个基本 UI]",
+      "msiexec /x ${1:安装包路径} /qb"
+    ],
+    "description": ["msi卸载_静默"]
+  },
+  "bat_to_exe嵌入式模板": {
+    "prefix": "bat-to-exe",
+    "body": [
+      "@ECHO off",
+      "::[Bat To Exe Converter]",
+      "::",
+      "::YAwzoRdxOk+EWAjk",
+      "::fBw5plQjdG8=",
+      "::YAwzuBVtJxjWCl3EqQJgSA==",
+      "::ZR4luwNxJguZRRnk",
+      "::Yhs/ulQjdF+5",
+      "::cxAkpRVqdFKZSzk=",
+      "::cBs/ulQjdF65",
+      "::ZR41oxFsdFKZSDk=",
+      "::eBoioBt6dFKZSDk=",
+      "::cRo6pxp7LAbNWATEpSI=",
+      "::egkzugNsPRvcWATEpSI=",
+      "::dAsiuh18IRvcCxnZtBNQ",
+      "::cRYluBh/LU+EWAjk",
+      "::YxY4rhs+aU+JeA==",
+      "::cxY6rQJ7JhzQF1fEqQJQ",
+      "::ZQ05rAF9IBncCkqN+0xwdVs0",
+      "::ZQ05rAF9IAHYFVzEqQJQ",
+      "::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=",
+      "::fBEirQZwNQPfEVWB+kM9LVsJDGQ=",
+      "::cRolqwZ3JBvQF1fEqQJQ",
+      "::dhA7uBVwLU+EWDk=",
+      "::YQ03rBFzNR3SWATElA==",
+      "::dhAmsQZ3MwfNWATElA==",
+      "::ZQ0/vhVqMQ3MEVWAtB9wSA==",
+      "::Zg8zqx1/OA3MEVWAtB9wSA==",
+      "::dhA7pRFwIByZRRnk",
+      "::YB416Ek+ZG8=",
+      "::",
+      "::",
+      "::978f952a14a936cc963da21a135fa983",
+      ":: 工作目录: 当前目录",
+      ":: 启用 UPX 压缩 (小文件推荐开启)",
+      ":: 提取到: 临时目录",
+      ":: 在退出时删除: 是",
+      ":: 覆盖: 是",
+      ":: 保存属性: 是",
+      ":: 显示名称: 是",
+      "CD /D \"%~dp0\"",
+      ":: 嵌入式解压环境变量 \"%b2eincfilepath%\"",
+      "echo \"%b2eincfilepath%\"",
+      "@REM 进入 临时目录（即为: 当前目录）",
+      "CD /D \"%b2eincfilepath%\"",
+      ":: <下面是执行代码>",
+      "",
+      ""
+    ],
+    "description": ["bat_to_exe嵌入式模板"]
+  }
+}

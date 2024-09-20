@@ -1,0 +1,55 @@
+{
+  "引入 opencv-python 计算机视觉库": {
+    "prefix": "im -opencv-python",
+    "body": ["import cv2  #! opencv-python 计算机视觉库(图像路径不能有中文)"],
+    "description": ["引入 opencv-python 计算机视觉库"]
+  },
+  "OpenCV.imread 读取图像信息": {
+    "prefix": ".imread -OpenCV",
+    "body": [".imread(imgPath)"],
+    "description": ["OpenCV.imread 读取图像信息"]
+  },
+  "OpenCV.imshow 显示图像": {
+    "prefix": ".imshow -OpenCV",
+    "body": [
+      ".imshow(\"WindowsName\", imgPath)",
+      "# cv2.waitKey(0)  # 图像显示时间函数(0 为无限时间的显示函数)",
+      "# cv2.destroyAllWindows()  # 按下任意键便可关闭窗口"
+    ],
+    "description": ["OpenCV.imshow 显示图像"]
+  },
+  "OpenCV.waitKey 图像显示时间函数": {
+    "prefix": ".waitKey -OpenCV",
+    "body": [".waitKey(0)"],
+    "description": ["OpenCV.waitKey 图像显示时间函数"]
+  },
+  "OpenCV.destroyAllWindows 按下任意键便可关闭窗口": {
+    "prefix": ".destroyAllWindows -OpenCV",
+    "body": [".destroyAllWindows()"],
+    "description": ["OpenCV.destroyAllWindows 按下任意键便可关闭窗口"]
+  },
+  "OpenCV.shape 获取图像 (宽, 高, 通道数)": {
+    "prefix": ".shape -OpenCV",
+    "body": [".shape  # -> tuple: (height, width, channel)"],
+    "description": ["OpenCV.shape 获取图像 (宽, 高, 通道数)"]
+  },
+  "OpenCV.matchTemplate 模板匹配": {
+    "prefix": ".matchTemplate -OpenCV",
+    "body": [
+      ".matchTemplate(image, templ, method=cv2.TM_SQDIFF_NORMED)  # (匹配对象, 模板, 匹配方式)"
+    ],
+    "description": ["OpenCV.matchTemplate 模板匹配"]
+  },
+  "OpenCV.minMaxLoc 查找匹配结果": {
+    "prefix": ".minMaxLoc -OpenCV",
+    "body": [
+      ".minMaxLoc(srcData)  # -> tuple: (min_val, max_val索引, min_loc, max_loc索引)"
+    ],
+    "description": ["OpenCV.minMaxLoc 查找匹配结果"]
+  },
+  "OpenCV.rectangle 绘制矩形": {
+    "prefix": ".rectangle -OpenCV",
+    "body": [".rectangle(image, upper_left, bottom_right, (0, 0, 255), 2)"],
+    "description": ["OpenCV.object 绘制矩形"]
+  }
+}

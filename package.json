@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/jsconfig",
   "name": "auto-snippets-plus-max",
   "displayName": "Auto Snippets Plus Max",
   "description": "整理代码片段包括 BAT, Python, JSON, SCSS, TypeScript, JavaScript, Vue, Vue HTML, HTML... 整理代码片段",
@@ -18,57 +19,70 @@
   ],
   "keywords": [
     "snippets",
-    "python"
+    "bat",
+    "json",
+    "markdown",
+    "python",
+    "scss",
+    "typescript"
   ],
   "contributes": {
     "snippets": [
       {
         "language": "bat",
-        "path": "./snippets/bat/文件操作.json"
+        "path": "./snippets/cmd/文件操作.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/系统操作.json"
+        "path": "./snippets/cmd/系统操作.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/通用模板.json"
+        "path": "./snippets/cmd/通用模板.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/逻辑运算.json"
+        "path": "./snippets/cmd/逻辑运算.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/环境变量.json"
+        "path": "./snippets/cmd/环境变量.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/编码语言页.json"
+        "path": "./snippets/cmd/编码语言页.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/注册表.json"
+        "path": "./snippets/cmd/注册表.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/npm功能.json"
+        "path": "./snippets/cmd/npm功能.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/git_VSCode.json"
+        "path": "./snippets/cmd/git_VSCode.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/Python功能.json"
+        "path": "./snippets/cmd/Python功能.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/vscodePlugin插件创建.json"
+        "path": "./snippets/cmd/vscodePlugin插件创建.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/Vue功能.json"
+        "path": "./snippets/cmd/Vue功能.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js/基础语法.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/json/json_snippets.json"
       },
       {
         "language": "markdown",
@@ -236,6 +250,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/opencv-python计算机视觉库/cv2.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/os多种操作系统接口/os.json"
       },
       {
@@ -253,6 +271,10 @@
       {
         "language": "python",
         "path": "./snippets/python/Pillow图像处理模块/Pillow图像处理模块.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/pyautogui自动化/pyautogui.json"
       },
       {
         "language": "python",
@@ -321,10 +343,6 @@
       {
         "language": "typescript",
         "path": "./snippets/typescript/vue基础设置.json"
-      },
-      {
-        "language": "json",
-        "path": "./snippets/json_snippets/json.json"
       }
     ]
   }
