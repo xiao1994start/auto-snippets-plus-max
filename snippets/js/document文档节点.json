@@ -1,0 +1,7 @@
+{
+  "type.object 描述": {
+    "prefix": ".object -type",
+    "body": [".object"],
+    "description": ["type.object 描述"]
+  }
+}

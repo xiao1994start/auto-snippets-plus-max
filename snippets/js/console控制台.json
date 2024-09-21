@@ -1,0 +1,7 @@
+{
+  "console.log 控制台输出Log日志": {
+    "prefix": "prl -js.console",
+    "body": ["console.log($0);"],
+    "description": ["console.log 控制台输出Log日志"]
+  }
+}

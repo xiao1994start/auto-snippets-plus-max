@@ -1,0 +1,13 @@
+{
+  "snippets.js.Function =>模板": {
+    "prefix": "snippets.js.Function=>",
+    "body": [
+      "\"${1:Object}.${2:Function} ${3:描述}\": {",
+      "  \"prefix\": \"${2:Function} -js\",",
+      "  \"body\": [\".${2:Function}\"],",
+      "  \"description\": [\"${1:Object}.${2:Function} ${3:描述}\"]",
+      "},"
+    ],
+    "description": "snippets.js.Function =>模板"
+  }
+}

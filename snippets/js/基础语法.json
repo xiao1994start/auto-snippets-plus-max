@@ -1,0 +1,12 @@
+{
+  "Node.nodeType 查看节点类型": {
+    "prefix": "nodeType -js",
+    "body": [".nodeType"],
+    "description": ["Node.nodeType 查看节点类型"]
+  },
+  "type.object 描述": {
+    "prefix": ".object -type",
+    "body": [".object"],
+    "description": ["type.object 描述"]
+  }
+}

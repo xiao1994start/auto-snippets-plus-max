@@ -81,8 +81,24 @@
         "path": "./snippets/js/基础语法.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/js/console控制台.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js/document文档节点.json"
+      },
+      {
         "language": "json",
-        "path": "./snippets/json/json_snippets.json"
+        "path": "./snippets/json/json_snippets_for_all.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/json/json_snippets_for_js.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/json/json_snippets_for_python.json"
       },
       {
         "language": "markdown",
