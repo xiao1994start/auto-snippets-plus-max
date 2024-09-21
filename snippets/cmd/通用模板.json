@@ -9,13 +9,7 @@
     "description": ["BAT模板"]
   },
   "ECHO_控制台输出": {
-    "prefix": [
-      "print -ECHO",
-      "log -ECHO",
-      "logP -ECHO",
-      "logPrint -ECHO",
-      "clp -ECHO"
-    ],
+    "prefix": "prl -ECHO",
     "body": ["ECHO $0"],
     "description": ["ECHO_控制台输出"]
   },

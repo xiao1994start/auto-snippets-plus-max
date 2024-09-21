@@ -1,6 +1,6 @@
 {
   "print(...)": {
-    "prefix": ["print -print", "logP -print", "logPrint -print", "clp -print"],
+    "prefix": "prl -print",
     "body": "print($0)",
     "description": ["print语句的代码片段."]
   }

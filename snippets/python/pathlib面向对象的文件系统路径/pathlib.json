@@ -73,7 +73,7 @@
   },
   "Path.cwd 当前路径": {
     "prefix": ".cwd -Path",
-    "body": [".cwd()"],
+    "body": ["Path().cwd()"],
     "description": [
       "Path.cwd 返回一个新的表示当前目录的路径对象",
       "\r\n和 os.getcwd() 返回的相同",
@@ -81,7 +81,7 @@
     ]
   },
   "Path.cwd 当前目录路径": {
-    "prefix": "Path_cwd -Path",
+    "prefix": "Path.cwd.resolve -Path",
     "body": ["Path.cwd().resolve()"],
     "description": [
       "Path.cwd -Path 返回一个新的表示当前目录的路径对象",
