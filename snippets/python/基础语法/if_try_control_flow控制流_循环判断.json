@@ -1,4 +1,26 @@
 {
+  "dict字典映射代替if多层判断": {
+    "prefix": [
+      "dictIf=>",
+      "dictMap=>",
+      "dictMapMethod=>",
+      "dictionaryMappingMethod=>"
+    ],
+    "body": [
+      "commands = {",
+      "    \"condition1\": condition1_function1,",
+      "    \"condition2\": condition2_function2,",
+      "    \"condition3\": condition3_function3,",
+      "}",
+      "command = \"conditions\"",
+      "action = commands.get(command, None)",
+      "if action:",
+      "    action()",
+      "else:",
+      "    print('Unknown Command!')"
+    ],
+    "description": ["dict字典映射代替if多层判断"]
+  },
   "if判断的代码片段": {
     "prefix": "add_if -if",
     "body": [
