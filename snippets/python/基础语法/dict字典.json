@@ -71,7 +71,7 @@
   },
   "dict.get 返回dict指定键的值": {
     "prefix": ".get -dict",
-    "body": ".get(${1:key})",
+    "body": ".get(${1:key}, None)",
     "description": ["dict.get 返回dict指定键的值"]
   },
   "dict.get=>示例1": {

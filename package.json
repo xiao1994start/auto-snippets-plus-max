@@ -89,6 +89,10 @@
         "path": "./snippets/js/document文档节点.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/js/HTML_DOM对象方法.json"
+      },
+      {
         "language": "json",
         "path": "./snippets/json/json_snippets_for_all.json"
       },

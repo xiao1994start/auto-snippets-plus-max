@@ -124,18 +124,43 @@
     "body": ["@set Path=临时环境变量;%Path%"],
     "description": "设置适用于当前批处理的环境变量"
   },
-  "DesktopDir 桌面环境": {
-    "prefix": "DesktopDir",
+  "DesktopDir 系统桌面路径": {
+    "prefix": ["DesktopDir", "sdd"],
     "body": [
-      "FOR /F \"tokens=1,2 delims=:\" %%i IN ('REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\ExplorerShell Folders\" /V \"Desktop\"') do (",
-      "    set \"a=%%i\"",
-      "    set \"b=%%j\"",
-      ")",
-      "set \"D=%a:~-1%:%b%\"",
-      "@ECHO %D%",
-      ""
+      "@REM @ECHO 获取系统桌面路径",
+      "set \"regSF=REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\" /v Desktop\"",
+      "!regSF! > NUL 2>&1",
+      "if %errorlevel%==0 (",
+      "    @ECHO 获取当前桌面路径",
+      "    for /F \"tokens=1,2 delims=:\" %%i in ('\"!regSF!\"') do (",
+      "        set \"root=%%i\"",
+      "        set \"dir=%%j\"",
+      "    )",
+      "    set \"sdd=!root:~-1!:!dir!\"",
+      ") else (",
+      "    @ECHO 无法获取桌面路径, 请使用管理员权限运行脚本",
+      ")"
     ],
-    "description": ["DesktopDir 桌面环境"]
+    "description": ["DesktopDir 系统桌面路径"]
+  },
+  "UserDesktopDir 当前用户桌面路径": {
+    "prefix": ["UserDesktopDir", "udd"],
+    "body": [
+      "@REM @ECHO 获取当前用户桌面路径",
+      "set \"regUSF=REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" /v Desktop\"",
+      "!regUSF! > NUL 2>&1",
+      "if %errorlevel%==0 (",
+      "    @ECHO 获取当前桌面路径",
+      "    for /F \"tokens=1,2 delims=:\" %%i in ('\"!regUSF!\"') do (",
+      "        set \"root=%%i\"",
+      "        set \"dir=%%j\"",
+      "    )",
+      "    set \"udd=!root:~-1!:!dir!\"",
+      ") else (",
+      "    @ECHO 无法获取桌面路径, 请使用管理员权限运行脚本",
+      ")"
+    ],
+    "description": ["UserDesktopDir 当前用户桌面路径"]
   },
   "windows系统路径环境变量常用": {
     "prefix": "pathInfo",

@@ -9,7 +9,7 @@
     "description": ["BAT模板"]
   },
   "ECHO_控制台输出": {
-    "prefix": "prl -ECHO",
+    "prefix": ["pcl -ECHO", "clp -ECHO"],
     "body": ["ECHO $0"],
     "description": ["ECHO_控制台输出"]
   },
