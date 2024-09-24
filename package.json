@@ -154,10 +154,6 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/基础语法/if_try_control_flow控制流_循环判断.json.json"
-      },
-      {
-        "language": "python",
         "path": "./snippets/python/基础语法/datetime高级时间模块.json"
       },
       {
@@ -166,7 +162,15 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/基础语法/dict字典多态性应用.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/基础语法/eval字符串转换执行函数.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/基础语法/if_try_control_flow控制流_循环判断.json.json"
       },
       {
         "language": "python",

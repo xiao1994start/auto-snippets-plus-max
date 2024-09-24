@@ -6,7 +6,7 @@
   },
   "sys.argv 脚本传入参数": {
     "prefix": ".argv -sys",
-    "body": [".argv${1:[0]}"],
+    "body": [".argv  # -> list[str]: [0]->脚本名, [1]->参数1, [2]->参数2, ..."],
     "description": [
       "sys.argv 一个列表, 其中包含了被传递给 Python 脚本的命令行参数",
       "\r\nargv[0] 为脚本的名称(是否是完整的路径名取决于操作系统)",
