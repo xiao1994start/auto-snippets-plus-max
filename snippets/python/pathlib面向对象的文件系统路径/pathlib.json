@@ -122,8 +122,8 @@
       "\r\n如果迭代器创建之后有文件在目录中被移除或添加, 是否要包括该文件所对应的路径对象并没有明确规定"
     ]
   },
-  "Path.iterdir=>示例": {
-    "prefix": "Path-iterdir=>",
+  "Path.iterdir 示例": {
+    "prefix": "iterdir =Path",
     "body": [
       "for child in Path(${1:path}).iterdir(): child",
       "\tprint(child)",
@@ -146,8 +146,8 @@
       "\r\n在默认情况下, Path.walk() 不会跟踪符号链接, 而是将其添加到 filenames 列表中. 将 follow_symlinks*设为真值可解析符号链接并根据它们的目标将其放入*dirnames 和 filenames 中, 从而(在受支持的系统上)访问符号链接所指向的目录"
     ]
   },
-  "Path.walk=>示例": {
-    "prefix": "Path-Pathforwalk=>",
+  "Path.walk 示例": {
+    "prefix": "walk =Path",
     "body": [
       "for root, dirs, files in ${1:Path(path)}.walk():",
       "\tfor dir in dirs:",
@@ -188,8 +188,8 @@
       "Path.hardlink_to 将此路径设为一个指向与 target 相同文件的硬链接"
     ]
   },
-  "Path.hardlink_to=>示例": {
-    "prefix": "Path-hardlink_to=>",
+  "Path.hardlink_to 示例": {
+    "prefix": "hardlink_to =Path",
     "body": ["Path(${2:newLink}).hardlink_to(${1:target}):"],
     "description": ["使用Path.hardlink_to的示例"]
   },
@@ -203,8 +203,8 @@
       "\r\n在 Windows 上, 符号链接可以表示文件或目录两种类型, 并且不会动态改变类型. 如果目标存在, 则新建链接的类型将与目标一致. 否则, 如果 target_is_directory 为 True, 则符号链接将创建为目录链接, 为 False (默认)将创建为文件链接. 在非 Windows 平台上, target_is_directory 被忽略"
     ]
   },
-  "Path.symlink_to=>示例": {
-    "prefix": "Path-symlink_to=>",
+  "Path.symlink_to 示例": {
+    "prefix": "symlink_to =Path",
     "body": [
       "Path(${2:newLink}).symlink_to(${1:target}, target_is_directory=${1:target}.is_dir()):"
     ],
@@ -234,8 +234,8 @@
       "\r\n在 3.10 版本发生变更: 增加了 follow_symlinks 形参"
     ]
   },
-  "Path.stat=>示例": {
-    "prefix": "Path-stat=>",
+  "Path.stat 示例": {
+    "prefix": "stat =Path",
     "body": [
       "p = Path('setup.py')",
       "p.stat().st_size",
@@ -268,8 +268,8 @@
       "\r\n在 3.5 版本加入.samefile() 方法"
     ]
   },
-  "Path.samefile=>示例": {
-    "prefix": "Path-samefile=>",
+  "Path.samefile 示例": {
+    "prefix": "samefile =Path",
     "body": [
       "p = Path('spam')",
       "q = Path('eggs')",

@@ -1,6 +1,6 @@
 {
   "npm 帮助说明": {
-    "prefix": "help -npm",
+    "prefix": "help =npm",
     "body": [
       "@REM npm 说明",
       "临时代理 --registry https://registry.npm.taobao.org",

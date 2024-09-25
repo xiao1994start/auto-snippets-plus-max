@@ -5,7 +5,7 @@
     "description": ["引入configparser->ini控制模块"]
   },
   "configparser 模板": {
-    "prefix": "config=> -configparser",
+    "prefix": "config =configparser",
     "body": [
       "config = configparser.ConfigParser()",
       "config.read(${1:'db_ini'}, encoding='utf-8')",

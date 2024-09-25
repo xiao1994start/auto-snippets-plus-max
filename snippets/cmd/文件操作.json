@@ -5,12 +5,12 @@
     "description": ["新建路径"]
   },
   "复制文件": {
-    "prefix": "copy-V",
+    "prefix": "copy -V",
     "body": ["copy /V /Y ${1:src源路径} ${2:dst目标路径}"],
     "description": ["复制文件"]
   },
   "二进制合并文件": {
-    "prefix": "copy-B",
+    "prefix": "copy -B",
     "body": [
       "copy /B ${1:src图片源路径} + ${2:src数据源路径} ${3:dst目标路径_jpg_png}"
     ],
@@ -64,7 +64,7 @@
     "description": ["创建符号链接文件或文件夹(必须绝对路径)"]
   },
   "重建Symlink文件": {
-    "prefix": ["del_Lnk", "New_Lnk"],
+    "prefix": ["delLnk", "New_Lnk"],
     "body": [
       "del /F /S /Q ${2:dst目标文件路径}",
       "mklink ${2:dst目标文件路径} ${1:src源文件路径}"
@@ -72,7 +72,7 @@
     "description": ["重建Symlink文件"]
   },
   "重建符号硬链接": {
-    "prefix": ["del_Lnk -H", "New_Lnk -H"],
+    "prefix": ["delLnk -H", "NewLnk -H"],
     "body": [
       "del /F /S /Q ${2:dst目标文件路径}",
       "mklink /H ${2:dst目标文件路径} ${1:src源文件路径}"
@@ -80,7 +80,7 @@
     "description": ["重建符号硬链接(/H 只能在同相同盘符)"]
   },
   "重建快捷方式符号链接": {
-    "prefix": ["re_Lnk -D", "New_Lnk -D"],
+    "prefix": ["reLnk -D", "NewLnk -D"],
     "body": [
       "rd /S /Q ${2:dst目标文件夹路径}",
       "mklink /D ${2:dst目标文件夹路径} ${1:src源文件夹路径}"
@@ -88,7 +88,7 @@
     "description": ["重建mklink /D快捷方式符号链接"]
   },
   "重建mklink /J符号链接": {
-    "prefix": ["re_Lnk -J", "New_Lnk -J"],
+    "prefix": ["reLnk -J", "NewLnk -J"],
     "body": [
       "rd /S /Q ${2:dst目标文件夹路径}",
       "mklink /J ${2:dst目标文件夹路径} ${1:src源文件夹路径}"
@@ -108,7 +108,7 @@
     "description": ["创建快捷方式"]
   },
   "向上一级目录寻找文件夹或文件": {
-    "prefix": "findLoop",
+    "prefix": "findLoop =",
     "body": [
       "set \"root=%cd:~,3%\"",
       "ECHO 当前根目录: %root%",

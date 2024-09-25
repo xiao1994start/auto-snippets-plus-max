@@ -1,6 +1,6 @@
 {
   "-yo HELP": {
-    "prefix": "help -yo",
+    "prefix": "help =yo",
     "body": [
       "goto :yoHELP",
       "",

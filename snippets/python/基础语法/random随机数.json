@@ -47,8 +47,8 @@
     ],
     "description": ["生成 2 个给定日期之间的日期"]
   },
-  "random=>": {
-    "prefix": "random=>",
+  "random 示例": {
+    "prefix": "random =random",
     "body": [
       "sides = ['heads', 'tails']  # list of string options",
       "outcomes = [0, 0]           # list of tallies heads/tails\n",

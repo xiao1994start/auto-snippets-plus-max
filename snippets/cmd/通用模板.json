@@ -14,7 +14,7 @@
     "description": ["ECHO_控制台输出"]
   },
   "choice模板": {
-    "prefix": "choice-C-N-M",
+    "prefix": "choice-C-N-M =choice",
     "body": [
       ":begin",
       "@ECHO ==========================",
@@ -86,7 +86,7 @@
     "description": ["msi卸载_静默"]
   },
   "bat_to_exe嵌入式模板": {
-    "prefix": "bat-to-exe",
+    "prefix": "bat-to-exe =",
     "body": [
       "@ECHO off",
       "::[Bat To Exe Converter]",

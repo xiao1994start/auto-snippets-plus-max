@@ -4,8 +4,8 @@
     "body": ["from concurrent.futures import ThreadPoolExecutor"],
     "description": ["引入 ThreadPoolExecutor 线程池库"]
   },
-  "ThreadPoolExecutor 模板=>": {
-    "prefix": "with_ThreadPoolExecutor -ThreadPoolExecutor=>",
+  "ThreadPoolExecutor 模板": {
+    "prefix": "with.ThreadPoolExecutor =ThreadPoolExecutor",
     "body": [
       "with ThreadPoolExecutor(max_workers=3) as executor:",
       "    \"\"\"",
@@ -19,6 +19,6 @@
       "    pass",
       ""
     ],
-    "description": ["ThreadPoolExecutor 模板=>"]
+    "description": ["ThreadPoolExecutor 模板"]
   }
 }

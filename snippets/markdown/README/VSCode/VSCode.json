@@ -1,6 +1,6 @@
 {
   "-VSCode Plugin 插件构建": {
-    "prefix": "help -VSCode",
+    "prefix": "help =VSCode",
     "body": [
       "# VSCode Plugin 插件构建",
       "",

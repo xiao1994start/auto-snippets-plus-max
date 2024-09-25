@@ -1,6 +1,6 @@
 {
   "pyinstaller 库打包python脚本exe": {
-    "prefix": "im -pyinstaller=>",
+    "prefix": "im -pyinstaller =pyinstaller",
     "body": [
       "import os",
       "import shutil",

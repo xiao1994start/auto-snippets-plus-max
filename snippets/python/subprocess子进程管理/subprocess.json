@@ -19,7 +19,7 @@
     ]
   },
   "subprocess.Popen 构造函数": {
-    "prefix": ".Popen -subprocess=>",
+    "prefix": ".Popen =subprocess",
     "body": [
       ".Popen(",
       "    args=[$0],  # * 传递给Popen的命令列表",

@@ -1,6 +1,6 @@
 {
   "引入 loguru 日志库": {
-    "prefix": "im -loguru=>",
+    "prefix": "im -loguru =loguru",
     "body": [
       "from pathlib import Path",
       "",

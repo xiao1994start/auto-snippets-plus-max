@@ -1,6 +1,6 @@
 {
   "setBtn自定义按钮样式": {
-    "prefix": "setButton -Btn",
+    "prefix": "setButton =scss.button",
     "body": [
       ".setBtn,",
       "// 默认状态设置",

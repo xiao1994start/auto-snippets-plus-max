@@ -1,7 +1,0 @@
-{
-  "console控制台 输出 Log日志": {
-    "prefix": "prl -js",
-    "body": ["console.log($0);"],
-    "description": ["console控制台 输出 Log日志"]
-  }
-}

@@ -14,8 +14,8 @@
     "body": ".add(${1:element})",
     "description": ["set.add 向set集合中添加一个元素"]
   },
-  "set.add=>示例": {
-    "prefix": "set-add=>",
+  "set.add ": {
+    "prefix": "set-add =set",
     "body": [
       "fruits = {'apple', 'banana', 'cherry'}",
       "fruits.add('orange') ",
@@ -28,8 +28,8 @@
     "body": ".clear()",
     "description": ["set.clear 从set集合中删除所有元素"]
   },
-  "set.clear=>示例": {
-    "prefix": "set-clear=>",
+  "set.clear ": {
+    "prefix": "set-clear =set",
     "body": [
       "fruits = {'apple', 'banana', 'cherry'}",
       "fruits.clear()",
@@ -42,8 +42,8 @@
     "body": ".copy()",
     "description": ["set.copy 返回set该集的副本"]
   },
-  "set.copy=>示例": {
-    "prefix": "set-copy=>",
+  "set.copy ": {
+    "prefix": "set-copy =set",
     "body": [
       "fruits = {'apple', 'banana', 'cherry'}",
       "x = fruits.copy()",
@@ -58,8 +58,8 @@
       "set.difference 返回包含两个或多个集合之间差异的集合\r\n运算符: -"
     ]
   },
-  "set.difference=>示例1": {
-    "prefix": "set-difference=>1",
+  "set.difference 1": {
+    "prefix": "set-difference =set1",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",
@@ -68,8 +68,8 @@
     ],
     "description": ["使用 set.difference 的示例"]
   },
-  "set.difference=>示例2": {
-    "prefix": "set-difference=>2",
+  "set.difference 2": {
+    "prefix": "set-difference =set2",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",
@@ -85,8 +85,8 @@
       "set.difference_update 移除集合中的元素, 该元素在指定的集合也存在"
     ]
   },
-  "set.difference_update=>示例": {
-    "prefix": "set-difference_update=>",
+  "set.difference_update ": {
+    "prefix": "set-difference_update =set",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",
@@ -100,8 +100,8 @@
     "body": ".discard(${1:item})",
     "description": ["set.discard 删除指定项目"]
   },
-  "set.discard=>示例": {
-    "prefix": "set-discard=>",
+  "set.discard ": {
+    "prefix": "set-discard =set",
     "body": [
       "fruits = {'apple', 'banana', 'cherry'}",
       "fruits.discard('banana') ",
@@ -116,8 +116,8 @@
       "set.intersection 返回一个集合, 即其他两个集合的交集\r\n运算符: &"
     ]
   },
-  "set.intersection=>示例1": {
-    "prefix": "set-intersection=>1",
+  "set.intersection 1": {
+    "prefix": "set-intersection =set1",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",
@@ -126,8 +126,8 @@
     ],
     "description": ["使用 set.intersection 的示例"]
   },
-  "set.intersection=>示例2": {
-    "prefix": "set-intersection=>2",
+  "set.intersection 2": {
+    "prefix": "set-intersection =set2",
     "body": [
       "x = {'a', 'b', 'c'}",
       "y = {'c', 'd', 'e'}",
@@ -144,8 +144,8 @@
       "set.intersection_update 删除此集合中其他指定集合中不存在的项目"
     ]
   },
-  "set.intersection_update=>示例1": {
-    "prefix": "set-intersection_update=>1",
+  "set.intersection_update 1": {
+    "prefix": "set-intersection_update =set1",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",
@@ -154,8 +154,8 @@
     ],
     "description": ["使用 set.intersection_update 的示例"]
   },
-  "set.intersection_update=>2": {
-    "prefix": "set-intersection_update=>2",
+  "set.intersection_update =set2": {
+    "prefix": "set-intersection_update =set2",
     "body": [
       "x = {'a', 'b', 'c'}",
       "y = {'c', 'd', 'e'}",
@@ -172,8 +172,8 @@
       "set.isdisjoint 判断两个集合是否包含相同的元素, 如果没有返回 True, 否则返回 False"
     ]
   },
-  "set.isdisjoint=>示例1": {
-    "prefix": "set-isdisjoint=>1",
+  "set.isdisjoint 1": {
+    "prefix": "set-isdisjoint =set1",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'facebook'}",
@@ -182,8 +182,8 @@
     ],
     "description": ["使用 set.isdisjoint 的示例"]
   },
-  "set.isdisjoint=>示例2": {
-    "prefix": "set-isdisjoint=>2",
+  "set.isdisjoint 2": {
+    "prefix": "set-isdisjoint =set2",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'cherry', 'banana', 'apple'}",
@@ -197,8 +197,8 @@
     "body": ".issubset(${1:set})",
     "description": ["set.issubset 判断指定集合是否为该方法参数集合的子集"]
   },
-  "set.issubset=>示例1": {
-    "prefix": "set-set.issubset=>1",
+  "set.issubset 1": {
+    "prefix": "set-set.issubset =set1",
     "body": [
       "x = {'a', 'b', 'c'}",
       "y = {'f', 'e', 'd', 'c', 'b', 'a'}",
@@ -207,8 +207,8 @@
     ],
     "description": ["使用 set.issubset 的示例"]
   },
-  "set.issubset=>示例2": {
-    "prefix": "set-issubset=>2",
+  "set.issubset 2": {
+    "prefix": "set-issubset =set2",
     "body": [
       "x = {'a', 'b', 'c'}",
       "y = {'f', 'e', 'd', 'c', 'b'}",
@@ -222,8 +222,8 @@
     "body": ".issuperset(${1:set})",
     "description": ["set.issuperset 判断该方法的参数集合是否为指定集合的子集"]
   },
-  "set.issuperset=>示例1": {
-    "prefix": "set-issuperset=>1",
+  "set.issuperset 1": {
+    "prefix": "set-issuperset =set1",
     "body": [
       "x = {'f', 'e', 'd', 'c', 'b', 'a'}",
       "y = {'a', 'b', 'c'}",
@@ -232,8 +232,8 @@
     ],
     "description": ["使用 set.issuperset 的示例"]
   },
-  "set.issuperset=>示例2": {
-    "prefix": "set-issuperset=>2",
+  "set.issuperset 2": {
+    "prefix": "set-issuperset =set2",
     "body": [
       "x = {'f', 'e', 'd', 'c', 'b'}",
       "y = {'a', 'b', 'c'}",
@@ -247,8 +247,8 @@
     "body": ".pop()",
     "description": ["set.pop 删除指定元素 或 随机移除元素"]
   },
-  "set.pop=>示例": {
-    "prefix": "set-pop=>",
+  "set.pop ": {
+    "prefix": "set-pop =set",
     "body": [
       "fruits = {'apple', 'banana', 'cherry'}",
       "fruits.pop() ",
@@ -261,8 +261,8 @@
     "body": ".remove(${1:item})",
     "description": ["set.remove 移除指定元素"]
   },
-  "set.remove=>示例": {
-    "prefix": "set-remove=>",
+  "set.remove ": {
+    "prefix": "set-remove =set",
     "body": [
       "fruits = {'apple', 'banana', 'cherry'}",
       "fruits.remove('banana') ",
@@ -277,8 +277,8 @@
       "set.symmetric_difference 返回两个集合中不重复的元素集合\r\n运算符: ^"
     ]
   },
-  "set.symmetric_difference=>示例": {
-    "prefix": "set-symmetric_difference=>",
+  "set.symmetric_difference ": {
+    "prefix": "set-symmetric_difference =set",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",
@@ -294,8 +294,8 @@
       "set.symmetric_difference_update 移除当前集合中在另外一个指定集合相同的元素, 并将另外一个指定集合中不同的元素插入到当前集合中"
     ]
   },
-  "set.symmetric_difference_update=>示例": {
-    "prefix": "set-symmetric_difference_update=>",
+  "set.symmetric_difference_update ": {
+    "prefix": "set-symmetric_difference_update =set",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",
@@ -309,8 +309,8 @@
     "body": ".union(${1:set})",
     "description": ["set.union 返回两个集合的并集\r\n运算符: |"]
   },
-  "set.union=>示例1": {
-    "prefix": "set-union=>1",
+  "set.union 1": {
+    "prefix": "set-union =set1",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",
@@ -319,8 +319,8 @@
     ],
     "description": ["使用 set.union 的示例"]
   },
-  "set.union=>2": {
-    "prefix": "set-union=>2",
+  "set.union =set2": {
+    "prefix": "set-union =set2",
     "body": [
       "x = {'a', 'b', 'c'}",
       "y = {'f', 'd', 'a'}",
@@ -335,8 +335,8 @@
     "body": ".update(${1:set})",
     "description": ["set.update 给集合添加元素"]
   },
-  "set.update=>示例": {
-    "prefix": "set-update=>",
+  "set.update ": {
+    "prefix": "set-update =set",
     "body": [
       "x = {'apple', 'banana', 'cherry'}",
       "y = {'google', 'microsoft', 'apple'}",

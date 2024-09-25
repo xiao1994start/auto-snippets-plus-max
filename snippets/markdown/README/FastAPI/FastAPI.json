@@ -1,6 +1,6 @@
 {
   "-FastAPIHelp": {
-    "prefix": "help -FastAPI",
+    "prefix": "help =FastAPI",
     "body": [
       "# FastAPIHelp",
       "",

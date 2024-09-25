@@ -1,6 +1,6 @@
 {
   "match:case -switch条件判断开关": {
-    "prefix": "add_match:case -switch",
+    "prefix": "add_match:case -matchSwitch",
     "body": [
       "match (${1:object_arg_kwarg}):",
       "    case ():",

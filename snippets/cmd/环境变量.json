@@ -115,7 +115,7 @@
     "description": ["当前用户Documents文档"]
   },
   "设置变量": {
-    "prefix": ["var =", "let ="],
+    "prefix": ["var =ECHO", "let =ECHO"],
     "body": ["set $0"],
     "description": "设置变量"
   },
@@ -166,26 +166,26 @@
     "prefix": "pathInfo",
     "body": [
       "goto :aboutPathInfo",
-      "%SystemDrive%   ^|  %HOMEDRIVE%       => C:\\               当前系统盘符",
-      "%SystemRoot%    ^|  %Windir%          => C:\\WINDOWS        当前系统目录",
-      "%ALLUSERSPROFILE%                     => C:\\ProgramData",
-      "%APPDATA%                             => C:\\Users\\用户名\\AppData\\Roaming",
-      "%COMMONPROGRAMFILES%                  => C:\\Program Files\\Common Files",
-      "%COMMONPROGRAMFILES(x86)%             => C:\\Program Files (x86)\\Common Files",
-      "%COMSPEC%       ^|  %USERPROFILE%     => C:\\Windows\\System32\\cmd.exe",
-      "%HOMEPATH%                            => C:\\Users用户名",
-      "%LOCALAPPDATA%                        => C:\\Users用户名AppDataLocal",
-      "%PROGRAMDATA%                         => C:\\ProgramData",
-      "%PROGRAMFILES%                        => C:\\Program Files",
-      "%PROGRAMFILES(X86)%                   => C:\\Program Files (x86)",
-      "%PUBLIC%                              => C:\\UsersPublic",
-      "%TEMP%          ^|   %TMP%            => C:\\Users用户名AppDataLocalTemp",
+      "%SystemDrive%   ^|  %HOMEDRIVE%       = C:\\               当前系统盘符",
+      "%SystemRoot%    ^|  %Windir%          = C:\\WINDOWS        当前系统目录",
+      "%ALLUSERSPROFILE%                     = C:\\ProgramData",
+      "%APPDATA%                             = C:\\Users\\用户名\\AppData\\Roaming",
+      "%COMMONPROGRAMFILES%                  = C:\\Program Files\\Common Files",
+      "%COMMONPROGRAMFILES(x86)%             = C:\\Program Files (x86)\\Common Files",
+      "%COMSPEC%       ^|  %USERPROFILE%     = C:\\Windows\\System32\\cmd.exe",
+      "%HOMEPATH%                            = C:\\Users用户名",
+      "%LOCALAPPDATA%                        = C:\\Users用户名AppDataLocal",
+      "%PROGRAMDATA%                         = C:\\ProgramData",
+      "%PROGRAMFILES%                        = C:\\Program Files",
+      "%PROGRAMFILES(X86)%                   = C:\\Program Files (x86)",
+      "%PUBLIC%                              = C:\\UsersPublic",
+      "%TEMP%          ^|   %TMP%            = C:\\Users用户名AppDataLocalTemp",
       ":aboutPathInfo"
     ],
     "description": "windows系统路径环境变量常用"
   },
   "%%~应用说明": {
-    "prefix": ["var =>info", "let =>info"],
+    "prefix": ["var =info", "let =info"],
     "body": [
       "goto :参数扩展处理特殊语法",
       "@REM @ %%~ 参数及其含义:",

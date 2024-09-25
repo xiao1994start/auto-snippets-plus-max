@@ -4,8 +4,8 @@
     "body": ["import logging", "import logging.handlers"],
     "description": ["引入 logging 内置日志库"]
   },
-  "引入 logging 内置日志库=>模板": {
-    "prefix": "im -logging=>",
+  "引入 logging 内置日志库 模板": {
+    "prefix": "im -logging =logging",
     "body": [
       "import logging",
       "import logging.handlers",
@@ -218,10 +218,10 @@
       "                return logging.NOTSET",
       ""
     ],
-    "description": "引入 logging 内置日志库=>模板"
+    "description": "引入 logging 内置日志库 模板"
   },
   "logging.Logger 模板": {
-    "prefix": "createLogger -logging=>",
+    "prefix": "createLogger =logging",
     "body": [
       "# * Object: 日志输出",
       "class LOG:",

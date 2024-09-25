@@ -1,6 +1,6 @@
 {
   "-vueHelp": {
-    "prefix": "help -vue",
+    "prefix": "help =vue",
     "body": [
       "# vue 初始设置帮助文档",
       "",
