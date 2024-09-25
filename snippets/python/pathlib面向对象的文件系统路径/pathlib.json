@@ -135,7 +135,9 @@
   },
   "Path.walk 遍历目录->tuple(list)": {
     "prefix": ".walk -Path",
-    "body": [".walk()"],
+    "body": [
+      ".walk()  # =>generator(生成器) =解包> root: str, dirs: list, files: list"
+    ],
     "description": [
       "Path.walk 通过对目录树自上而下或自下而上的遍历来生成其中的文件名",
       "\r\n对于根位置为 self 的目录树中的每个目录(包括 self 但不包括 '.' 和 '..'), 该方法会产生一个 3 元组 (dirpath, dirnames, filenames)",
@@ -149,7 +151,7 @@
   "Path.walk 示例": {
     "prefix": "walk =Path",
     "body": [
-      "for root, dirs, files in ${1:Path(path)}.walk():",
+      "for root, dirs, files in ${1:Path(path)}.walk():  # =>generator(生成器) =解包> root: str, dirs: list, files: list",
       "\tfor dir in dirs:",
       "\t\tprint(root / dir)",
       "\tfor file in files:",
