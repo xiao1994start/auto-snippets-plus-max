@@ -30,51 +30,67 @@
     "snippets": [
       {
         "language": "bat",
+        "path": "./snippets/cmd/管理员权限获取.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/cmd/基础语法.json"
+      },
+      {
+        "language": "bat",
         "path": "./snippets/cmd/文件操作.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/系统操作.json"
+        "path": "./snippets/cmd/bat2exe模板.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/通用模板.json"
+        "path": "./snippets/cmd/certutil系统证书.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/逻辑运算.json"
+        "path": "./snippets/cmd/encoding编码语言页.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/环境变量.json"
+        "path": "./snippets/cmd/env环境变量.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/编码语言页.json"
+        "path": "./snippets/cmd/for循环语句.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/注册表.json"
+        "path": "./snippets/cmd/if条件语句.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/npm功能.json"
+        "path": "./snippets/cmd/kill进程关闭.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/git_VSCode.json"
+        "path": "./snippets/cmd/reg注册表.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/Python功能.json"
+        "path": "./snippets/cmd/src/git_VSCode.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/vscodePlugin插件创建.json"
+        "path": "./snippets/cmd/src/npm功能.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/Vue功能.json"
+        "path": "./snippets/cmd/src/Python功能.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/cmd/src/vscodePlugin插件创建.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/cmd/src/Vue功能.json"
       },
       {
         "language": "javascript",

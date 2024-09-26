@@ -51,50 +51,5 @@
       "goto:eof"
     ],
     "description": ["检查并获得管理员权限"]
-  },
-  "安全终止进程": {
-    "prefix": ["kill -f", "kill_safe"],
-    "body": ["taskkill /F /IM \"${1:dst终止目标进程名称}\""],
-    "description": ["安全终止进程"]
-  },
-  "终止进程": {
-    "prefix": ["kill -t", "kill -all"],
-    "body": ["taskkill /F /T /IM \"${1:dst终止目标进程名称}\""],
-    "description": ["终止进程(可能会发生错误)"]
-  },
-  "暂停": {
-    "prefix": ["pause", "pass"],
-    "body": ["PAUSE"],
-    "description": ["暂停"]
-  },
-  "暂停(无提示)": {
-    "prefix": ["pause -NUL", "pass -NUL"],
-    "body": ["PAUSE > NUL"],
-    "description": ["暂停(无提示)"]
-  },
-  "运行程序": {
-    "prefix": "start",
-    "body": ["start ${2| ,\"窗口标题\"|} \"${1:dst运行程序路径}\""],
-    "description": ["运行程序(第一个双引号为空->等待运行程序关闭继续)"]
-  },
-  "等待n秒后继续": {
-    "prefix": "timeout",
-    "body": ["timeout /T ${1:等待秒数} > NUL"],
-    "description": ["等待n秒后继续"]
-  },
-  "CMD /C": {
-    "prefix": "cmd -C",
-    "body": ["CMD /C ${1:命令}"],
-    "description": ["CMD /C"]
-  },
-  "start CMD /K": {
-    "prefix": "cmd -K",
-    "body": ["start CMD /K ${1:命令}"],
-    "description": ["在新的终端窗口执行"]
-  },
-  "ECHO | clip 设置剪切板内容": {
-    "prefix": "clip -ECHO",
-    "body": ["@ECHO 设置剪切板内容| clip"],
-    "description": ["ECHO | clip 设置剪切板内容"]
   }
 }
