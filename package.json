@@ -74,23 +74,23 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/src/git_VSCode.json"
+        "path": "./snippets/cmd/扩展功能/git_VSCode.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/src/npm功能.json"
+        "path": "./snippets/cmd/扩展功能/npm功能.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/src/Python功能.json"
+        "path": "./snippets/cmd/扩展功能/Python功能.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/src/vscodePlugin插件创建.json"
+        "path": "./snippets/cmd/扩展功能/vscodePlugin插件创建.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/src/Vue功能.json"
+        "path": "./snippets/cmd/扩展功能/Vue功能.json"
       },
       {
         "language": "javascript",
