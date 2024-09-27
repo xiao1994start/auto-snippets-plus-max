@@ -140,7 +140,7 @@
   },
   "list.pop 删除指定位置的元素": {
     "prefix": ".pop -list",
-    "body": ".pop()",
+    "body": ".pop($0)",
     "description": ["list.pop 删除list中指定位置的元素"]
   },
   "list.pop 示例": {

@@ -285,11 +285,15 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt引入.json"
+        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt控制台IO.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt语法.json"
+        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt模板.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt引入.json"
       },
       {
         "language": "python",
