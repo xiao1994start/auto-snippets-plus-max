@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/jsconfig",
   "name": "auto-snippets-plus-max",
   "displayName": "Auto Snippets Plus Max",
   "description": "整理代码片段包括 BAT, Python, JSON, SCSS, TypeScript, JavaScript, Vue, Vue HTML, HTML... 整理代码片段",
@@ -186,7 +185,7 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/基础语法/if_try_control_flow控制流_循环判断.json.json"
+        "path": "./snippets/python/基础语法/if_try_control_flow控制流_循环判断.json"
       },
       {
         "language": "python",
@@ -286,7 +285,15 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/NumPy/NumPy.json"
+        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt引入.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt语法.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/NumPy/NumPy引入.json"
       },
       {
         "language": "python",

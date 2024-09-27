@@ -37,15 +37,6 @@
     "body": ["# * Function: $0", "def ${1:name}():", "    pass"],
     "description": ["创建def函数"]
   },
-  "创建async def函数": {
-    "prefix": "add_asyncdef -def",
-    "body": [
-      "# * async_Function: $0",
-      "async def ${1:name}(${2:arg}):",
-      "    pass"
-    ],
-    "description": ["创建async def函数"]
-  },
   "lambda:匿名函数": {
     "prefix": "add_lambda -lambda",
     "body": [

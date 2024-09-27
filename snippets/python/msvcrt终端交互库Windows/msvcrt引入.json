@@ -1,0 +1,7 @@
+{
+  "引入 curses 终端GUI界面库": {
+    "prefix": "im -curses",
+    "body": ["import curses  # Windows需要安装 windows-curses 库"],
+    "description": ["引入 curses 终端GUI界面库"]
+  }
+}
