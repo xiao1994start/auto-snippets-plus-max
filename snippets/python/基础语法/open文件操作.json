@@ -77,7 +77,7 @@
     ]
   },
   "open -r+ 读写 |->开头": {
-    "prefix": "with_open_file -rb",
+    "prefix": "with_open_file -r+",
     "body": [
       "with open(${1:file_path}, 'r+', encoding='utf-8') as f:",
       "\tf.write()",

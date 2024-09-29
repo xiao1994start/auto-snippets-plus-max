@@ -40,5 +40,16 @@
       "\r\nstderr=subprocess.PIPE 表示将标准错误保存到变量中",
       "\r\n返回值是一个CompletedProcess对象, 包含命令执行的结果"
     ]
+  },
+  "subprocess.getoutput 接收字符串格式的命令": {
+    "prefix": ".getoutput -subprocess",
+    "body": [".getoutput()"],
+    "description": [
+      "subprocess.getoutput 接收字符串格式的命令",
+      "执行命令并返回执行结果, 其功能类似于os.popen(cmd).read()和commands.getoutput(cmd)",
+      "常用 subprocess.getoutput().split() ->list[str] 获取结果列表",
+      "或者 subprocess.getoutput().splitlines() ->list[str] 获取结果列表, 每行一个未去除空白的元素",
+      "也可用 subprocess.getoutput().strip() ->str 获取结果字符串"
+    ]
   }
 }

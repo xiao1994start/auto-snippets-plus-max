@@ -1,6 +1,6 @@
 {
   "print(...)": {
-    "prefix": ["pcl -print", "clp -print"],
+    "prefix": ["prt -print", "pcl -print", "clp -print"],
     "body": "print($0)",
     "description": ["print语句的代码片段."]
   }

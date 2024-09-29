@@ -47,5 +47,16 @@
       ")"
     ],
     "description": ["循环文件计数"]
+  },
+  "搜索获取进程路径": {
+    "prefix": "for -F wmic_process",
+    "body": [
+      "set \"pro=wmic process where \"name='${1:cmd.exe}'\" get ExecutablePath\"",
+      "for /F \"skip=1 delims=\" %%i in ('!pro!') do (",
+      "    @ECHO %%i",
+      ")",
+      ""
+    ],
+    "description": ["搜索获取进程路径"]
   }
 }

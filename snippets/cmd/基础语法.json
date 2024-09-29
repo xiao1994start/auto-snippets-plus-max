@@ -9,9 +9,14 @@
     "description": ["BAT模板"]
   },
   "ECHO_控制台输出": {
-    "prefix": ["pcl -ECHO", "clp -ECHO"],
+    "prefix": ["prt -ECHO", "pcl -ECHO", "clp -ECHO"],
     "body": ["ECHO $0"],
     "description": ["ECHO_控制台输出"]
+  },
+  "设置变量": {
+    "prefix": ["var =set", "let =set"],
+    "body": ["set $0"],
+    "description": "设置变量"
   },
   "暂停": {
     "prefix": ["pause", "pass"],
