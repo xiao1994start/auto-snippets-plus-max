@@ -14,7 +14,7 @@
     "description": ["ECHO_控制台输出"]
   },
   "设置变量": {
-    "prefix": ["var =set", "let =set"],
+    "prefix": ["var -set", "let -set"],
     "body": ["set $0"],
     "description": "设置变量"
   },
