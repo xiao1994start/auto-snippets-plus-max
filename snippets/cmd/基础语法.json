@@ -87,7 +87,7 @@
   },
   "Bandizip压缩Zip": {
     "prefix": "Bandizip -C",
-    "body": ["CALL Bandizip.exe c ${2:压缩到.zip} \"${1:压缩目标}\""],
+    "body": ["CALL Bandizip.exe c ${2:压缩到_zip} \"${1:压缩目标_1_2_3}\""],
     "description": ["Bandizip压缩Zip"]
   },
   "使用记事本打开host文件": {
