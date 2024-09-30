@@ -81,7 +81,11 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/扩展功能/Python功能.json"
+        "path": "./snippets/cmd/扩展功能/Python基础.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/cmd/扩展功能/Python引入包.json"
       },
       {
         "language": "bat",
@@ -245,14 +249,6 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/爬虫_网络模块/json格式转换.json"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/爬虫_网络模块/re正则表达式模块.json"
-      },
-      {
-        "language": "python",
         "path": "./snippets/python/爬虫_网络模块/requests网络请求.json"
       },
       {
@@ -274,6 +270,10 @@
       {
         "language": "python",
         "path": "./snippets/python/FastAPI/FastAPI.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/json数据处理/json格式转换.json"
       },
       {
         "language": "python",
@@ -346,6 +346,10 @@
       {
         "language": "python",
         "path": "./snippets/python/pywin32系统API接口/win32print.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/re正则表达式/re正则表达式模块.json"
       },
       {
         "language": "python",
