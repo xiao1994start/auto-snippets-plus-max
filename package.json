@@ -29,71 +29,71 @@
     "snippets": [
       {
         "language": "bat",
-        "path": "./snippets/cmd/管理员权限获取.json"
+        "path": "./snippets/bat/0基础语法/管理员权限获取.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/基础语法.json"
+        "path": "./snippets/bat/0基础语法/基础语法.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/文件操作.json"
+        "path": "./snippets/bat/0基础语法/文件操作.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/bat2exe模板.json"
+        "path": "./snippets/bat/0基础语法/bat2exe模板.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/certutil系统证书.json"
+        "path": "./snippets/bat/0基础语法/certutil系统证书.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/encoding编码语言页.json"
+        "path": "./snippets/bat/0基础语法/encoding编码语言页.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/env环境变量.json"
+        "path": "./snippets/bat/0基础语法/env环境变量.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/for循环语句.json"
+        "path": "./snippets/bat/0基础语法/for循环语句.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/if条件语句.json"
+        "path": "./snippets/bat/0基础语法/if条件语句.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/kill进程关闭.json"
+        "path": "./snippets/bat/0基础语法/kill进程关闭.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/reg注册表.json"
+        "path": "./snippets/bat/0基础语法/reg注册表.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/扩展功能/git_VSCode.json"
+        "path": "./snippets/bat/github/git_VSCode.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/扩展功能/npm功能.json"
+        "path": "./snippets/bat/HTML/Vue功能.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/扩展功能/Python基础.json"
+        "path": "./snippets/bat/node_modules/npm功能.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/扩展功能/Python引入包.json"
+        "path": "./snippets/bat/python/Python基础.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/扩展功能/vscodePlugin插件创建.json"
+        "path": "./snippets/bat/python/Python引入包.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/cmd/扩展功能/Vue功能.json"
+        "path": "./snippets/bat/vscode/vscodePlugin插件创建.json"
       },
       {
         "language": "javascript",
