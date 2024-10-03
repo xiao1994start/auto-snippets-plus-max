@@ -97,19 +97,19 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/js/基础语法.json"
+        "path": "./snippets/javascript/基础语法.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/js/console控制台.json"
+        "path": "./snippets/javascript/console控制台.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/js/document文档节点.json"
+        "path": "./snippets/javascript/document文档节点.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/js/HTML_DOM对象方法.json"
+        "path": "./snippets/javascript/HTML_DOM对象方法.json"
       },
       {
         "language": "json",

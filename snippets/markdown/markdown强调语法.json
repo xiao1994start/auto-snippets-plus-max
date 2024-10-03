@@ -1,6 +1,6 @@
 {
   "粗体(Bold)": {
-    "prefix": [".Bold ", ".strong "],
+    "prefix": [".Bold -markdown", ".strong -markdown"],
     "body": ["**${1:boldText}**"],
     "description": ["粗体(Bold)"]
   },

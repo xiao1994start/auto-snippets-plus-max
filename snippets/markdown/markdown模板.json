@@ -1,6 +1,6 @@
 {
   "Markdown模板": {
-    "prefix": "help -md_Template",
+    "prefix": "md_Template -markdown",
     "body": [
       "# Headers",
       "",
