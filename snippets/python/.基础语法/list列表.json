@@ -154,7 +154,7 @@
   },
   "list.remove 删除具有指定值的项目": {
     "prefix": ".remove -list",
-    "body": ".remove(${1:element})",
+    "body": ".remove(${1:value})",
     "description": ["list.remove 删除具有指定值的项目(默认删除第一个)"]
   },
   "list.remove 示例": {

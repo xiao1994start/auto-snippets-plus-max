@@ -9,7 +9,7 @@
     "body": [
       ".CreateKey(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
-      "    r\"SOFTWARE\",  # sub_key注册表路径",
+      "    SOFTWARE,  # sub_key注册表路径",
       ")"
     ],
     "description": ["winreg.CreateKey 创建或打开特定的键"]
@@ -19,7 +19,7 @@
     "body": [
       ".CreateKeyEx(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
-      "    r\"SOFTWARE\",  # sub_key注册表路径",
+      "    SOFTWARE,  # sub_key注册表路径",
       "    0,  # reserved 是一个保留的整数, 必须是0, 默认值为0",
       "    winreg.KEY_ALL_ACCESS,  # access(访问权限), KEY_ALL_ACCESS 表示所有权限; 默认值为 KEY_WRITE",
       ")"
@@ -31,7 +31,7 @@
     "body": [
       ".DeleteKey(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
-      "    r\"SOFTWARE\",  # sub_key注册表路径",
+      "    SOFTWARE,  # sub_key注册表路径",
       ")"
     ],
     "description": [
@@ -43,7 +43,7 @@
     "body": [
       ".DeleteKeyEx(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
-      "    r\"SOFTWARE\",  # sub_key注册表路径",
+      "    SOFTWARE,  # sub_key注册表路径",
       "    0,  # reserved 是一个保留的整数, 必须是0, 默认值为0",
       "    winreg.KEY_ALL_ACCESS,  # access(访问权限), KEY_ALL_ACCESS 表示所有权限; 默认值为 KEY_WRITE",
       ")"
@@ -67,12 +67,26 @@
     "body": [
       ".OpenKey(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
-      "    r\"SOFTWARE\",  # sub_key注册表路径",
+      "    SOFTWARE,  # sub_key注册表路径",
       "    0,  # reserved 是一个保留的整数, 必须是0, 默认值为0",
       "    winreg.KEY_ALL_ACCESS,  # access(访问权限), KEY_ALL_ACCESS 表示所有权限; 默认值为 KEY_WRITE",
       ")"
     ],
     "description": ["winreg.OpenKey 打开注册表"]
+  },
+  "with winreg.OpenKey 打开注册表": {
+    "prefix": ["with winreg.OpenKey -winreg"],
+    "body": [
+      "with winreg.OpenKey(",
+      "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
+      "    SOFTWARE,  # sub_key注册表路径",
+      "    0,  # reserved 是一个保留的整数, 必须是0, 默认值为0",
+      "    winreg.KEY_ALL_ACCESS,  # access(访问权限), KEY_ALL_ACCESS 表示所有权限; 默认值为 KEY_WRITE",
+      ") as key:",
+      "    print(key)",
+      ""
+    ],
+    "description": ["with winreg.OpenKey 打开注册表"]
   },
   "winreg.QueryValue 读取某键的未命名值, 形式为字符串": {
     "prefix": ".QueryValue -winreg",
