@@ -13,11 +13,11 @@
     "prefix": "snippets.new -json.snippets",
     "body": [
       "\"描述\": {",
-      "  \"prefix\": \"${2:钩子}\",",
+      "  \"prefix\": [\"${2:钩子}\"],",
       "  \"body\": [",
       "    \"$0\"",
       "  ],",
-      "  \"description\": \"描述\"",
+      "  \"description\": [\"描述\"]",
       "},"
     ],
     "description": ["新建代码片段"]
@@ -26,11 +26,11 @@
     "prefix": "newObject -json.snippets",
     "body": [
       "\"type.object 描述\": {",
-      "  \"prefix\": \".object -type\",",
+      "  \"prefix\": [\".object -type\"],",
       "  \"body\": [",
       "    \".object()\"",
       "  ],",
-      "  \"description\": \"type.object 描述\"",
+      "  \"description\": [\"type.object 描述\"]",
       "},"
     ],
     "description": ["新建代码片段"]
@@ -39,7 +39,7 @@
     "prefix": "snippets-new =json.snippets",
     "body": [
       "\"${1:fname} -object\": {",
-      "\t\"prefix\": \"${3:prefix}\",",
+      "\t\"prefix\": [\"${3:prefix}\"],",
       "\t\"body\": [",
       "\t\t\"${4:\\${1|1,2,3,4,5,6,7,8,9|\\}:\\${2:example\\}\\$0}\",",
       "\t\t\"\",",

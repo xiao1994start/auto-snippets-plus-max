@@ -8,7 +8,7 @@
       "@ECHO 激活虚拟环境...",
       "call ./.venv/Scripts/activate.bat",
       "@ECHO 安装Jupyter内核ipykernel依赖库...",
-      "pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "",
       "@ECHO 安装依赖库...",
       "$0",
@@ -66,7 +66,7 @@
       "@REM pip install -r \"%~dp0requirements.txt\" -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "",
       "@ECHO 安装Jupyter内核ipykernel依赖库...",
-      "pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
       "",
       "@ECHO 安装依赖库...(使用虚拟环境开发时, 直接使用requirements.txt安装依赖库)",
       "",
@@ -96,8 +96,13 @@
     "description": "python-embed 嵌入式环境激活"
   },
   "python-embed 嵌入式环境启动": {
-    "prefix": ["py -emenv.run", "py -embed.run"],
-    "body": ["CALL \"%~dp0python/python.exe\" ${1:py脚本路径} ${2:参数}"],
+    "prefix": ["callPythonEmbed"],
+    "body": [
+      "@ECHO 修改 python*embed* 目录名为 python",
+      "for /D %%i in (python*embed*) do ( ren %%i \"python\" )",
+      "",
+      "CALL \"%~dp0python/python.exe\" ${1:py脚本路径} ${2:参数}"
+    ],
     "description": ["python-embed 嵌入式环境启动"]
   },
   "pip.Jupyter内核ipykernel依赖库": {

@@ -1,0 +1,17 @@
+{
+  "激活GitPortable便携环境": {
+    "prefix": "runPortableGit -git",
+    "body": [
+      "if exist \"%~dp0*Git*\" (",
+      "    for /D %%i in (*Git*) do (",
+      "        ren \"%~dp0%%i\" \"PortableGit\"",
+      "    )",
+      ")",
+      "@set path=%path%;\\\"%~dp0PortableGit\\\";\\\"%~dp0PortableGit\\\\bin\\\";\\\"%~dp0PortableGit\\\\usr\\\\bin\\\";",
+      "@ECHO Git版本号:",
+      "call git -v",
+      ""
+    ],
+    "description": "激活GitPortable便携环境"
+  }
+}

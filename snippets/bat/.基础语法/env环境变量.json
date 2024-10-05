@@ -14,6 +14,11 @@
     "body": ["\"%~dp0${1:}\""],
     "description": ["当前目录"]
   },
+  "设置适用于当前批处理的环境变量": {
+    "prefix": "set_env_path -set.path",
+    "body": ["@set path=%path%;${1:临时环境变量};"],
+    "description": "设置适用于当前批处理的环境变量"
+  },
   "当前目录下R2R文件夹": {
     "prefix": "dr2r",
     "body": ["\"%~dp0R2R\\\\${1:example}\""],
@@ -113,11 +118,6 @@
     "prefix": "Documents",
     "body": ["\"%USERPROFILE%\\Documents\\\\${1:example}\""],
     "description": ["当前用户Documents文档"]
-  },
-  "设置适用于当前批处理的环境变量": {
-    "prefix": "SETenvPath -set.path",
-    "body": ["@set Path=临时环境变量;%Path%"],
-    "description": "设置适用于当前批处理的环境变量"
   },
   "DesktopDir 系统桌面路径": {
     "prefix": ["DesktopDir", "sdd"],
