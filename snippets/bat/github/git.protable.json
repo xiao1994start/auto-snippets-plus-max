@@ -1,17 +1,26 @@
 {
-  "激活GitPortable便携环境": {
-    "prefix": "runPortableGit -git",
+  "激活 GitPortable 临时环境设置": {
+    "prefix": ["Git_Portable -git"],
     "body": [
       "if exist \"%~dp0*Git*\" (",
       "    for /D %%i in (*Git*) do (",
-      "        ren \"%~dp0%%i\" \"PortableGit\"",
+      "        ren \"%~dp0%%i\" \"GitPortable\"",
       "    )",
       ")",
-      "@set path=%path%;\\\"%~dp0PortableGit\\\";\\\"%~dp0PortableGit\\\\bin\\\";\\\"%~dp0PortableGit\\\\usr\\\\bin\\\";",
+      "@set gitEnv=\"%~dp0GitPortable\\cmd\";\"%~dp0GitPortable\";\"%~dp0GitPortable\\bin\";\"%~dp0GitPortable\\usr\\bin\";",
+      "@set path=%path%;%gitEnv%;",
       "@ECHO Git版本号:",
       "call git -v",
       ""
     ],
-    "description": "激活GitPortable便携环境"
+    "description": ["激活 GitPortable 临时环境设置"]
+  },
+  "GitPortable 环境变量": {
+    "prefix": ["Git_Env_Path -git"],
+    "body": [
+      "@set gitEnv=\"%~dp0GitPortable\\cmd\";\"%~dp0GitPortable\";\"%~dp0GitPortable\\bin\";\"%~dp0GitPortable\\usr\\bin\";",
+      ""
+    ],
+    "description": ["GitPortable 环境变量"]
   }
 }

@@ -29,7 +29,7 @@
     "snippets": [
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/0.BasicSyntax.json"
+        "path": "./snippets/bat/.基础语法/.basic.json"
       },
       {
         "language": "bat",
@@ -85,7 +85,7 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/node/.BasicSyntax.json"
+        "path": "./snippets/bat/node/.basic.json"
       },
       {
         "language": "bat",
@@ -105,7 +105,7 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/javascript/.基础语法/0.BasicSyntax.json"
+        "path": "./snippets/javascript/.基础语法/.basic.json"
       },
       {
         "language": "javascript",

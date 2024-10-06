@@ -1,6 +1,6 @@
 {
   "Git 配置user.name&user.email": {
-    "prefix": "git user-config",
+    "prefix": "git_Config_User -git.config",
     "body": [
       "@REM --global 全局配置",
       "git config ${3:--global} user.name '${1:name}'",
@@ -9,7 +9,7 @@
     "description": ["配置user.name&user.email"]
   },
   "Git 验证ssl": {
-    "prefix": "git sslverify-config",
+    "prefix": "git_Config_Http_SSL -git.config",
     "body": ["git config --global http.sslVerify \"${1|false,true|}\""],
     "description": ["Git 验证ssl"]
   }

@@ -96,7 +96,7 @@
     "description": "python-embed 嵌入式环境激活"
   },
   "python-embed 嵌入式环境启动": {
-    "prefix": ["callPythonEmbed"],
+    "prefix": ["call_Python_Embed"],
     "body": [
       "@ECHO 修改 python*embed* 目录名为 python",
       "for /D %%i in (python*embed*) do ( ren %%i \"python\" )",

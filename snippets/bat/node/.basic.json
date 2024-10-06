@@ -1,13 +1,14 @@
 {
   "node|npm 临时环境设置": {
-    "prefix": ["ndoePortable -node|npm", "npmPortable -node|npm"],
+    "prefix": ["ndoe_Portable -node|npm", "npm_Portable -node|npm"],
     "body": [
       "if exist \"%~dp0node*\" (",
       "    for /D %%i in (*node*) do (",
       "        ren \"%~dp0%%i\" \"nodejs\"",
       "    )",
       ")",
-      "@set path=%path%;\"%~dp0nodejs\";\"%~dp0nodejs/node_modules\";",
+      "@set nodeEnv=\"%~dp0nodejs\";\"%~dp0nodejs/node_modules\";",
+      "@set path=%path%;%nodeEnv%;",
       "@ECHO Node.js 版本号:",
       "call node -v",
       "@ECHO NPM 版本号:",
@@ -17,6 +18,11 @@
       ""
     ],
     "description": ["node|npm 临时环境设置"]
+  },
+  "node|npm 环境变量": {
+    "prefix": ["ndoe_Env_Path -node|npm"],
+    "body": ["@set nodeEnv=\"%~dp0nodejs\";\"%~dp0nodejs/node_modules\";", ""],
+    "description": ["node|npm 环境变量"]
   },
   "npm 帮助说明": {
     "prefix": ["npm =npm.help"],
