@@ -1,10 +1,13 @@
 {
   "BAT模板": {
-    "prefix": "ECHO_OFF-CWD",
+    "prefix": "echoOFFdp0",
     "body": [
       "@ECHO OFF",
       "setlocal enabledelayedexpansion",
-      "CD /D \"%~dp0\"\r\n\r\n$0"
+      "CD /D \"%~dp0\"",
+      "",
+      "",
+      "$0"
     ],
     "description": ["BAT模板"]
   },

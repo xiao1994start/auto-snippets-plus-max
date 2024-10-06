@@ -1,11 +1,11 @@
 {
   "进入指定当前目录": {
-    "prefix": "cd-d-cwd",
+    "prefix": "cd -d.cwd",
     "body": ["CD /D \"%~dp0\""],
     "description": ["进入指定当前目录"]
   },
   "CD /D 更改当前directory": {
-    "prefix": "cd-d",
+    "prefix": "cd -d",
     "body": ["CD /D $0"],
     "description": ["CD /D 更改当前directory"]
   },
@@ -14,10 +14,20 @@
     "body": ["\"%~dp0${1:}\""],
     "description": ["当前目录"]
   },
-  "设置适用于当前批处理的环境变量": {
-    "prefix": "set_env_path -set.path",
+  "添加当前批处理环境变量": {
+    "prefix": "set addenv path -set.path",
     "body": ["@set path=%path%;${1:临时环境变量};"],
-    "description": "设置适用于当前批处理的环境变量"
+    "description": "添加设置适用于当前批处理的环境变量"
+  },
+  "设置当前批处理环境变量": {
+    "prefix": "set env path -set.path",
+    "body": [
+      "@set systemEnv=\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin32\";\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin\";\"C:\\WINDOWS\";\"C:\\WINDOWS\\system32\";\"C:\\WINDOWS\\System32\\Wbem\";\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\\";\"C:\\WINDOWS\\System32\\OpenSSH\\\"",
+      "@set path=%systemEnv%;$0",
+      "@ECHO %path%",
+      ""
+    ],
+    "description": "设置当前批处理环境变量"
   },
   "当前目录下R2R文件夹": {
     "prefix": "dr2r",

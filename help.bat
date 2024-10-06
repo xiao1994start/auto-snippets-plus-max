@@ -1,6 +1,9 @@
 @ECHO OFF
+setlocal enabledelayedexpansion
 CD /D "%~dp0"
 
+
+@REM https://blog.csdn.net/weixin_42390185/article/details/137213273#:~:text=%E6%9C%AC%E6%96%87%E5%B0%86%E6%8C%87%E5%AF%BC%E8%AF%BB%E8%80%85%E9%80%90%E6%AD%A5%E5%AD%A6
 goto :yoHELP
 
 echo 构建工具
@@ -44,4 +47,3 @@ vsce -h
 vsce --help
 
 :yoHELP
-"%WINDIR%/"
