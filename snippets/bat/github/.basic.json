@@ -6,7 +6,7 @@
   },
   "git 初始化仓库": {
     "prefix": ["git_init -git"],
-    "body": ["@ECHO 初始化仓库", "call git init ${1:.}", ""],
+    "body": ["@ECHO 初始化仓库", "call git init", ""],
     "description": ["git 初始化仓库"]
   },
   "git 拷贝clone仓库项目": {

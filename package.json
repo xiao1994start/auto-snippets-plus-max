@@ -105,11 +105,15 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/python/Python基础.json"
+        "path": "./snippets/bat/python/python.embed.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/python/Python引入包.json"
+        "path": "./snippets/bat/python/python基础.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/bat/python/python引入包.json"
       },
       {
         "language": "bat",

@@ -1,0 +1,11 @@
+{
+  "python embed 环境变量": {
+    "prefix": "python_embed_env",
+    "body": [
+      "@ECHO 修改 python*embed* 目录名为 python",
+      "for /D %%i in (python*embed*) do ( ren %%i \"python\" )",
+      "@set pyEnv=\"%~dp0python\";\"%~dp0python\\Scripts\""
+    ],
+    "description": ["python embed 环境变量"]
+  }
+}
