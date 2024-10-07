@@ -12,7 +12,7 @@
     "prefix": "git_Config_Http_SSL -git.config",
     "body": [
       "@ECHO 全局配置global ssl验证",
-      "git config --global http.sslVerify \"${1|false,true|}\""
+      "git config --global http.sslVerify '${1|false,true|}'"
     ],
     "description": ["Git 验证ssl"]
   }

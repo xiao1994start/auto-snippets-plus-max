@@ -6,14 +6,14 @@
   },
   "git 初始化仓库": {
     "prefix": ["git_init -git"],
-    "body": ["@ECHO 初始化仓库", "call git init \"%~dp0\"", ""],
+    "body": ["@ECHO 初始化仓库", "call git init ${1:.}", ""],
     "description": ["git 初始化仓库"]
   },
   "git 拷贝clone仓库项目": {
     "prefix": "git_clone -git",
     "body": [
       "@ECHO 拷贝clone仓库项目",
-      "call git clone ${1:url} ${2:\"%~dp0\"}",
+      "call git clone ${1:url} ${2:当前目录下项目名}",
       ""
     ],
     "description": "git 拷贝clone仓库项目"
@@ -22,7 +22,7 @@
     "prefix": "git_clone_depth1 -git",
     "body": [
       "@ECHO 拷贝clone仓库项目 - 最新",
-      "call git clone --depth 1 ${1:url} ${2:\"%~dp0\"}",
+      "call git clone --depth 1 ${1:url} ${2:当前目录下项目名}",
       ""
     ],
     "description": "git 拷贝clone仓库项目(最新)"
