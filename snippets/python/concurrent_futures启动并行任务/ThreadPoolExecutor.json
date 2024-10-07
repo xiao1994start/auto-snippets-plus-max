@@ -1,0 +1,24 @@
+{
+  "引入 ThreadPoolExecutor 线程池库": {
+    "prefix": "im -ThreadPoolExecutor",
+    "body": ["from concurrent.futures import ThreadPoolExecutor"],
+    "description": ["引入 ThreadPoolExecutor 线程池库"]
+  },
+  "ThreadPoolExecutor 模板": {
+    "prefix": "with.ThreadPoolExecutor =ThreadPoolExecutor",
+    "body": [
+      "with ThreadPoolExecutor(max_workers=3) as executor:",
+      "    \"\"\"",
+      "    创建 ThreadPoolExecutor 线程池实例对象 executor",
+      "    future_ = executor.submit(fn, agr1, agr2, *args, **kwargs)",
+      "    fn 参数是要执行的函数, *args 和 **kwargs 是 fn 的参数",
+      "    results_ = executor.map(func, *iterables可迭代对象, timeout=None, chunksize=1)",
+      "    func 参数是要执行的函数, *iterables 是一个或多个迭代器, timeout 和 chunksize 是可选参数",
+      "    _.shutdown(wait=True) 关闭线程池, wait 参数是可选参数, 表示是否等待所有任务执行完毕后才关闭线程池, 默认为 True",
+      "    \"\"\"",
+      "    pass",
+      ""
+    ],
+    "description": ["ThreadPoolExecutor 模板"]
+  }
+}

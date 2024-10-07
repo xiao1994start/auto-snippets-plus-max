@@ -1,0 +1,17 @@
+{
+  "Git 版本号": {
+    "prefix": ["git_v -git"],
+    "body": ["@ECHO Git版本号:", "call git -v", ""],
+    "description": ["Git 版本号"]
+  },
+  "git 初始化仓库": {
+    "prefix": ["git_init -git"],
+    "body": ["@ECHO 初始化仓库", "call git init \"%~dp0\"", ""],
+    "description": ["git 初始化仓库"]
+  },
+  "git 拷贝clone仓库项目": {
+    "prefix": "git_clone -git",
+    "body": ["@ECHO 初始化仓库", "call git clone ${1:url} ${2:\"%~dp0\"}", ""],
+    "description": "git 拷贝clone仓库项目"
+  }
+}

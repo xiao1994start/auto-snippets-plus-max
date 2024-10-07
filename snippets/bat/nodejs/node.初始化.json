@@ -1,0 +1,27 @@
+{
+  "node.js 临时环境设置": {
+    "prefix": ["ndoe_Portable -node.js", "npm_Portable -node.js"],
+    "body": [
+      "if exist \"%~dp0node*\" (",
+      "    for /D %%i in (*node*) do (",
+      "        ren \"%~dp0%%i\" \"nodejs\"",
+      "    )",
+      ")",
+      "@set nodeEnv=\"%~dp0nodejs\";\"%~dp0nodejs\\node_modules\";",
+      "@set path=%path%;%nodeEnv%;",
+      "@ECHO Node.js 版本号:",
+      "call node -v",
+      "@ECHO NPM 版本号:",
+      "call npm -v",
+      "@ECHO 检查 软件仓库位置:",
+      "call npm root -g",
+      ""
+    ],
+    "description": ["node.js 临时环境设置"]
+  },
+  "node.js 环境变量": {
+    "prefix": ["ndoe_Env_Path -node.js"],
+    "body": ["@set nodeEnv=\"%~dp0nodejs\";\"%~dp0nodejs\\node_modules\";", ""],
+    "description": ["node.js 环境变量"]
+  }
+}
