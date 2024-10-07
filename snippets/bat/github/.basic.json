@@ -11,7 +11,20 @@
   },
   "git 拷贝clone仓库项目": {
     "prefix": "git_clone -git",
-    "body": ["@ECHO 初始化仓库", "call git clone ${1:url} ${2:\"%~dp0\"}", ""],
+    "body": [
+      "@ECHO 拷贝clone仓库项目",
+      "call git clone ${1:url} ${2:\"%~dp0\"}",
+      ""
+    ],
     "description": "git 拷贝clone仓库项目"
+  },
+  "git 拷贝clone仓库项目(最新)": {
+    "prefix": "git_clone -git",
+    "body": [
+      "@ECHO 拷贝clone仓库项目 - 最新",
+      "call git clone --depth 1 ${1:url} ${2:\"%~dp0\"}",
+      ""
+    ],
+    "description": "git 拷贝clone仓库项目(最新)"
   }
 }
