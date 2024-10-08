@@ -23,8 +23,8 @@
     "prefix": "set_systemEnv_path -set.path",
     "body": [
       "@set systemEnv=\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin32\";\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin\";\"C:\\WINDOWS\";\"C:\\WINDOWS\\system32\";\"C:\\WINDOWS\\System32\\Wbem\";\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\\";\"C:\\WINDOWS\\System32\\OpenSSH\\\"",
-      "",
-      "@set path=%systemEnv%;$0",
+      "$0",
+      "@set path=%systemEnv%;",
       "@ECHO %path%",
       ""
     ],
