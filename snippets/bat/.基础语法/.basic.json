@@ -56,6 +56,11 @@
     "body": ["@ECHO 设置剪切板内容| clip"],
     "description": ["ECHO | clip 设置剪切板内容"]
   },
+  "修饰符传入参数": {
+    "prefix": "input =",
+    "body": ["%~${1:1}"],
+    "description": ["修饰符传入参数"]
+  },
   "choice模板": {
     "prefix": "choice-C-N-M =choice",
     "body": [
