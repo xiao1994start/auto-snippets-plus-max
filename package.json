@@ -273,11 +273,11 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/beautifulsoup4解析HTML/beautifulsoup4解析HTML.json"
+        "path": "./snippets/python/AsyncIO异步IO协程实现高效并发/asyncio.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/concurrent_futures启动并行任务/ThreadPoolExecutor.json"
+        "path": "./snippets/python/beautifulsoup4解析HTML/beautifulsoup4解析HTML.json"
       },
       {
         "language": "python",
@@ -401,7 +401,11 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/threading基于线程的并行/Thread.json"
+        "path": "./snippets/python/threading线程库/threading.json"
+      },
+      {
+        "language": "snippets",
+        "path": "./snippets/python/ThreadPoolExecutor启动并行任务/ThreadPoolExecutor.json"
       },
       {
         "language": "python",
