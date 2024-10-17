@@ -14,22 +14,6 @@
     "body": ["\"%~dp0${1:}\""],
     "description": ["当前目录"]
   },
-  "添加当前批处理环境变量": {
-    "prefix": "set_addenv_path -set.path",
-    "body": ["@set path=%path%;${1:临时环境变量};"],
-    "description": "添加设置适用于当前批处理的环境变量"
-  },
-  "设置当前批处理环境变量": {
-    "prefix": "set_systemEnv_path -set.path",
-    "body": [
-      "@set systemEnv=\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin32\";\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin\";\"C:\\WINDOWS\";\"C:\\WINDOWS\\system32\";\"C:\\WINDOWS\\System32\\Wbem\";\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\\";\"C:\\WINDOWS\\System32\\OpenSSH\\\"",
-      "$0",
-      "@set path=%systemEnv%;",
-      "@ECHO %path%",
-      ""
-    ],
-    "description": "设置当前批处理环境变量"
-  },
   "当前目录下R2R文件夹": {
     "prefix": "dr2r",
     "body": ["\"%~dp0R2R\\\\${1:example}\""],
@@ -130,44 +114,6 @@
     "body": ["\"%USERPROFILE%\\Documents\\\\${1:example}\""],
     "description": ["当前用户Documents文档"]
   },
-  "DesktopDir 系统桌面路径": {
-    "prefix": ["DesktopDir", "sdd"],
-    "body": [
-      "@REM @ECHO 获取系统桌面路径",
-      "set \"regSF=REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\" /v Desktop\"",
-      "!regSF! > NUL 2>&1",
-      "if %errorlevel%==0 (",
-      "    @ECHO 获取当前桌面路径",
-      "    for /F \"tokens=1,2 delims=:\" %%i in ('\"!regSF!\"') do (",
-      "        set \"root=%%i\"",
-      "        set \"dir=%%j\"",
-      "    )",
-      "    set \"sdd=!root:~-1!:!dir!\"",
-      ") else (",
-      "    @ECHO 无法获取桌面路径, 请使用管理员权限运行脚本",
-      ")"
-    ],
-    "description": ["DesktopDir 系统桌面路径"]
-  },
-  "UserDesktopDir 当前用户桌面路径": {
-    "prefix": ["UserDesktopDir", "udd"],
-    "body": [
-      "@REM @ECHO 获取当前用户桌面路径",
-      "set \"regUSF=REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" /v Desktop\"",
-      "!regUSF! > NUL 2>&1",
-      "if %errorlevel%==0 (",
-      "    @ECHO 获取当前桌面路径",
-      "    for /F \"tokens=1,2 delims=:\" %%i in ('\"!regUSF!\"') do (",
-      "        set \"root=%%i\"",
-      "        set \"dir=%%j\"",
-      "    )",
-      "    set \"udd=!root:~-1!:!dir!\"",
-      ") else (",
-      "    @ECHO 无法获取桌面路径, 请使用管理员权限运行脚本",
-      ")"
-    ],
-    "description": ["UserDesktopDir 当前用户桌面路径"]
-  },
   "windows系统路径环境变量常用": {
     "prefix": "pathInfo",
     "body": [
@@ -204,7 +150,7 @@
       "%%~a        : 文件的属性 (如RASHNOC)",
       "%%~t        : 文件的创建时间",
       "%%~z        : 文件的大小 (以字节为单位)",
-      "%%~$PATH:   : 查找列在PATH环境变量中的目录, 并将扩展到找到的第一个文件的完全合格名称",
+      "%%~\\$PATH:   : 查找列在PATH环境变量中的目录, 并将扩展到找到的第一个文件的完全合格名称",
       "@REM @ 应用实例",
       "%%~fi : 全路径名称 (带驱动器盘符的完整路径)",
       "%%~di : 驱动器盘符",

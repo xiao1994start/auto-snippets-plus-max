@@ -16,11 +16,6 @@
     "body": ["ECHO $0"],
     "description": ["ECHO_控制台输出"]
   },
-  "设置变量": {
-    "prefix": ["var -set", "let -set"],
-    "body": ["set $0"],
-    "description": "设置变量"
-  },
   "暂停": {
     "prefix": ["pause", "pass"],
     "body": ["PAUSE"],
@@ -38,7 +33,7 @@
   },
   "等待n秒后继续": {
     "prefix": "timeout",
-    "body": ["timeout /T ${1:等待秒数} > NUL"],
+    "body": ["timeout /T ${1:1} > NUL"],
     "description": ["等待n秒后继续"]
   },
   "CMD /C": {
@@ -53,24 +48,19 @@
   },
   "ECHO | clip 设置剪切板内容": {
     "prefix": "clip -ECHO",
-    "body": ["@ECHO 设置剪切板内容| clip"],
+    "body": ["ECHO 设置剪切板内容| clip"],
     "description": ["ECHO | clip 设置剪切板内容"]
-  },
-  "修饰符传入参数": {
-    "prefix": "input =",
-    "body": ["%~${1:1}"],
-    "description": ["修饰符传入参数"]
   },
   "choice模板": {
     "prefix": "choice-C-N-M =choice",
     "body": [
       ":begin",
-      "@ECHO ==========================",
-      "@ECHO [指令列表]",
-      "@ECHO    [1] 指令1",
-      "@ECHO    [2] 指令2",
-      "@ECHO    [3] 指令3",
-      "@ECHO ==========================",
+      "ECHO ==========================",
+      "ECHO [指令列表]",
+      "ECHO    [1] 指令1",
+      "ECHO    [2] 指令2",
+      "ECHO    [3] 指令3",
+      "ECHO ==========================",
       "",
       "choice /C \"字符或数字\" /N /M 请输入执行指令:",
       "",
@@ -79,11 +69,11 @@
       "if \"%errorlevel%\"==\"字符或数字\" cls & goto :eof",
       "",
       ":to_1",
-      "@ECHO 1 指令1",
+      "ECHO 1 指令1",
       "",
       "",
       ":to_2",
-      "@ECHO 2 指令2",
+      "ECHO 2 指令2",
       ""
     ],
     "description": ["choice模板"]

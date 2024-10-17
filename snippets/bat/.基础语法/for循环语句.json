@@ -1,19 +1,19 @@
 {
   "循环目录下文件": {
     "prefix": "for -do",
-    "body": ["for %%i in (${1:*}) do (", "    @ECHO %%i", ")$0"],
+    "body": ["for %%i in (${1:*}) do (", "    ECHO %%i", ")$0"],
     "description": ["循环目录下文件"]
   },
   "循环目录下文件夹": {
     "prefix": "for -D.do",
-    "body": ["for /D %%i in (${1:*}) do (", "    @ECHO %%i", ")"],
+    "body": ["for /D %%i in (${1:*}) do (", "    ECHO %%i", ")"],
     "description": ["循环目录下文件夹"]
   },
   "循环提取 文本|列表|对象 信息": {
     "prefix": "for -F.do",
     "body": [
       "for /F \"tokens=* delims= \" %%i in ('tasklist') do (",
-      "    @ECHO %%i",
+      "    ECHO %%i",
       "    $0",
       ")",
       ""
@@ -25,7 +25,7 @@
     "body": [
       "set \"pro=wmic process where \"name='${1:cmd.exe}'\" get ExecutablePath\"",
       "for /F \"skip=1 delims=\" %%i in ('!pro!') do (",
-      "    @ECHO %%i",
+      "    ECHO %%i",
       ")",
       ""
     ],
@@ -51,7 +51,7 @@
   },
   "循环目录及子目录文件": {
     "prefix": "for -R.do",
-    "body": ["for /R %%i in (*) do (", "    @ECHO %%i", ")"],
+    "body": ["for /R %%i in (*) do (", "    ECHO %%i", ")"],
     "description": ["forR循环目录及子目录文件"]
   },
   "循环文件计数": {
