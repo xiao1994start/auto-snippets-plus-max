@@ -1,8 +1,8 @@
 {
-  "导入 subprocess 子进程管理模块": {
+  "导入 subprocess 执行系统命令模块": {
     "prefix": "im -subprocess",
-    "body": ["import subprocess  # 导入子进程管理模块"],
-    "description": ["导入subprocess子进程管理模块"]
+    "body": ["import subprocess  # 执行系统命令模块"],
+    "description": ["导入subprocess执行系统命令模块"]
   },
   "subprocess.run 运行命令": {
     "prefix": ".run -subprocess",

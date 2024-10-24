@@ -393,11 +393,11 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/subprocess子进程管理/subprocess.json"
+        "path": "./snippets/python/subprocess执行系统命令/subprocess.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/subprocess子进程管理/subprocess_CMD句柄.json"
+        "path": "./snippets/python/subprocess执行系统命令/subprocess_CMD句柄.json"
       },
       {
         "language": "python",

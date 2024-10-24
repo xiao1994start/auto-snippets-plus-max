@@ -1,12 +1,12 @@
 {
   "npm 版本号": {
     "prefix": "npm_v -node.js.npm",
-    "body": ["@ECHO NPM 版本号:", "call npm -v", ""],
+    "body": ["ECHO NPM 版本号:", "call npm -v", ""],
     "description": "NPM 版本号"
   },
   "npm 检查 软件仓库位置": {
     "prefix": "npm_root_g -node.js.npm",
-    "body": ["@ECHO 检查 软件仓库位置:", "call npm root -g", ""],
+    "body": ["ECHO 检查 软件仓库位置:", "call npm root -g", ""],
     "description": "npm 检查 软件仓库位置"
   },
   "npm 自定义仓库位置": {

@@ -17,9 +17,9 @@
   "npm安装vscode插件开发环境": {
     "prefix": ["npm_Install_Vscode -npm.i.vscode"],
     "body": [
-      "@ECHO 正在安装 @vscode/vsce",
+      "ECHO 正在安装 @vscode/vsce",
       "call npm install -g @vscode/vsce --registry https://registry.npmmirror.com/",
-      "@ECHO 已安装 @vscode/vsce",
+      "ECHO 已安装 @vscode/vsce",
       ""
     ],
     "description": ["npm安装vscode插件开发环境"]
