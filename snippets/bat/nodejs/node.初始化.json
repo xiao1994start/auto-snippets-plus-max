@@ -21,7 +21,14 @@
   },
   "node.js 环境变量": {
     "prefix": ["ndoe_Env_Path -node.js"],
-    "body": ["set nodeEnv=\"%~dp0nodejs\";\"%~dp0nodejs\\node_modules\";", ""],
+    "body": [
+      "set systemEnv=\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin32\";\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin\";\"C:\\WINDOWS\";\"C:\\WINDOWS\\system32\";\"C:\\WINDOWS\\System32\\Wbem\";\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\\";\"C:\\WINDOWS\\System32\\OpenSSH\\\"",
+      "@REM ECHO 添加临时系统环境变量",
+      "set nodeEnv=\"%~dp0nodejs\";\"%~dp0nodejs\\node_modules\";",
+      "set path=%systemEnv%;%nodeEnv%;",
+      "ECHO %path%",
+      ""
+    ],
     "description": ["node.js 环境变量"]
   }
 }

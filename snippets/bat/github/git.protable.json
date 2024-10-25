@@ -7,8 +7,8 @@
       "        ren \"%~dp0%%i\" \"GitPortable\"",
       "    )",
       ")",
-      "@set gitEnv=\"%~dp0GitPortable\\cmd\";\"%~dp0GitPortable\";\"%~dp0GitPortable\\bin\";\"%~dp0GitPortable\\usr\\bin\";",
-      "@set path=%path%;%gitEnv%;",
+      "set gitEnv=\"%~dp0GitPortable\\cmd\";\"%~dp0GitPortable\";\"%~dp0GitPortable\\bin\";\"%~dp0GitPortable\\usr\\bin\";",
+      "set path=%path%;%gitEnv%;",
       "@ECHO Git版本号:",
       "call git -v",
       ""
@@ -18,7 +18,11 @@
   "GitPortable 环境变量": {
     "prefix": ["Git_Env_Path -git"],
     "body": [
-      "@set gitEnv=\"%~dp0GitPortable\\cmd\";\"%~dp0GitPortable\";\"%~dp0GitPortable\\bin\";\"%~dp0GitPortable\\usr\\bin\";",
+      "set systemEnv=\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin32\";\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin\";\"C:\\WINDOWS\";\"C:\\WINDOWS\\system32\";\"C:\\WINDOWS\\System32\\Wbem\";\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\\";\"C:\\WINDOWS\\System32\\OpenSSH\\\"",
+      "@REM ECHO 添加临时系统环境变量",
+      "set gitEnv=\"%~dp0GitPortable\\cmd\";\"%~dp0GitPortable\";\"%~dp0GitPortable\\bin\";\"%~dp0GitPortable\\usr\\bin\";",
+      "set path=%systemEnv%;%gitEnv%;",
+      "ECHO %path%",
       ""
     ],
     "description": ["GitPortable 环境变量"]
