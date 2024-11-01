@@ -325,6 +325,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/multiprocessing多线程库/multiprocessing.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/NumPy/NumPy引入.json"
       },
       {
