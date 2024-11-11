@@ -348,5 +348,12 @@
       "pip install --upgrade pywin32 -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
     "description": ["pip -pywin32 win系统库"]
+  },
+  "pip.pywebview webGUI框架库": {
+    "prefix": "pip -pywebview",
+    "body": [
+      "pip install --upgrade pywebview -i https://pypi.tuna.tsinghua.edu.cn/simple"
+    ],
+    "description": ["pip -pywebview webGUI框架库"]
   }
 }
