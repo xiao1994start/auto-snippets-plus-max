@@ -285,6 +285,7 @@
   "pip.opencv-python 计算机视觉库": {
     "prefix": "pip -cv2",
     "body": [
+      "@REM opencv 库 (使用opencv-python库时,项目路径不能使用中文)",
       "pip install --upgrade opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
     "description": ["pip -opencv-python 计算机视觉库"]
