@@ -1,0 +1,27 @@
+{
+  "引入 pywebview 创建Webview窗口": {
+    "prefix": "im -Webview",
+    "body": ["import webview  # 引入 pywebview 创建Webview窗口"],
+    "description": ["引入 pywebview 创建Webview窗口"]
+  },
+  "pywebview.create_window 创建桌面应用": {
+    "prefix": ".create_window -pywebview",
+    "body": [
+      ".create_window(",
+      "    title=\"桌面应用\",",
+      "    url=\"https_html\",",
+      "    width=1280,",
+      "    height=720,",
+      "    resizable=True,  # 可调整大小",
+      "    fullscreen=False,  # 无边框窗口",
+      "    min_size=(1280, 720),",
+      ")"
+    ],
+    "description": ["pywebview.create_window 创建桌面应用"]
+  },
+  "webview.start 运行web应用": {
+    "prefix": [".start -webview"],
+    "body": [".start(debug=False)"],
+    "description": ["webview.start 运行web应用"]
+  }
+}

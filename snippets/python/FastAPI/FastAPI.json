@@ -22,11 +22,6 @@
     ],
     "description": ["引入fastapi->FastAPI_all服务"]
   },
-  "引入 pywebview 创建Webview窗口": {
-    "prefix": "im -Webview",
-    "body": ["import webview  # 引入 pywebview 创建Webview窗口"],
-    "description": ["引入pywebview创建Webview窗口"]
-  },
   "引入 Response 响应方法": {
     "prefix": "im -FastAPI.Response",
     "body": [

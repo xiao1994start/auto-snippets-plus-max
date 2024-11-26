@@ -377,6 +377,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/Pywebview创建Webview窗口/webview.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/pywin32系统API接口/win32系统信号模块.json"
       },
       {

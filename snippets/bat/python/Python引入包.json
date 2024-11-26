@@ -2,16 +2,16 @@
   "pip.beautifulsoup4 HTML解析库": {
     "prefix": "pip -beautifulsoup4",
     "body": [
-      "pip install --upgrade beautifulsoup4 -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "pip install --upgrade lxml -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "pip install --upgrade html5lib -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade beautifulsoup4 -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade lxml -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade html5lib -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -beautifulsoup4 HTML解析库"]
   },
   "pip.DrissionPage 自动化网络请求库": {
     "prefix": "pip -DrissionPage",
     "body": [
-      "pip install --upgrade DrissionPage -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade DrissionPage -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
       "@REM chromedriver -> https://getwebdriver.com/chromedriver",
       "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads"
@@ -21,24 +21,24 @@
   "pip.httpx 网络请求库": {
     "prefix": "pip -httpx",
     "body": [
-      "pip install --upgrade httpx -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "pip install --upgrade httpx[http2] -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "pip install --upgrade httpx[brotli] -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "pip install --upgrade httpx[socks] -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade httpx -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade httpx[http2] -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade httpx[brotli] -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade httpx[socks] -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -httpx 网络请求库"]
   },
   "pip.requests 网络请求库": {
     "prefix": "pip -requests",
     "body": [
-      "pip install --upgrade requests -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade requests -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -requests 网络请求库"]
   },
   "pip.selenium 自动化web测试": {
     "prefix": "pip -selenium",
     "body": [
-      "pip install --upgrade selenium -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade selenium -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
       "@REM chromedriver -> https://getwebdriver.com/chromedriver",
       "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads"
@@ -48,21 +48,21 @@
   "pip.lxml lxml解析库": {
     "prefix": "pip -lxml",
     "body": [
-      "pip install --upgrade lxml -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade lxml -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -lxml lxml解析库"]
   },
   "pip.html5lib HTML5解析库": {
     "prefix": "pip -html5lib",
     "body": [
-      "pip install --upgrade html5lib -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade html5lib -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -html5lib HTML5解析库"]
   },
   "pip.Django 库": {
     "prefix": "pip -Django",
     "body": [
-      "pip install --upgrade ${1|django|} -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
       "call python manage.py startapp ${3:apps}",
       "@REM __Django修改默认端口号与地址__",
@@ -79,9 +79,9 @@
   "pip.Django 库DRF组件": {
     "prefix": "pip -DRF",
     "body": [
-      "pip install --upgrade ${1|django|} -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "pip install --upgrade djangorestframework -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "pip install --upgrade django-cors-headers -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade djangorestframework -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade django-cors-headers -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
       "call python manage.py startapp ${3:apps}",
       "@REM __Django修改默认端口号与地址__",
@@ -99,15 +99,15 @@
     "prefix": "pip -fastapi",
     "body": [
       "@REM 安装 fastapi web框架",
-      "pip install --upgrade fastapi -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade fastapi -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM 安装 uvicorn 异步服务器",
-      "pip install --upgrade uvicorn -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade uvicorn -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM 安装 pydantic 数据接口定义检查与设置管理",
-      "pip install --upgrade pydantic -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade pydantic -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM 安装 pywebview webGUI框架库",
-      "pip install --upgrade pywebview -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade pywebview -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM 安装 pyinstaller 打包工具",
-      "pip install --upgrade pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
       "",
       "goto :FastAPIHelp",
       "{./main.py >> 入口配置:",
@@ -271,14 +271,14 @@
   "pip.loguru 日志库": {
     "prefix": "pip -loguru",
     "body": [
-      "pip install --upgrade loguru -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade loguru -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -loguru 日志库"]
   },
   "pip.numpy NumPy维度数组与矩阵运算科学计算的基础库": {
     "prefix": "pip -numpy",
     "body": [
-      "pip install --upgrade numpy -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade numpy -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -numpy NumPy维度数组与矩阵运算科学计算的基础库"]
   },
@@ -286,21 +286,21 @@
     "prefix": "pip -cv2",
     "body": [
       "@REM opencv 库 (使用opencv-python库时,项目路径不能使用中文)",
-      "pip install --upgrade opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade opencv-python -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -opencv-python 计算机视觉库"]
   },
   "pip.pandas CSV数据库": {
     "prefix": "pip -pandas",
     "body": [
-      "pip install --upgrade pandas -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pandas -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -pandas CSV数据库"]
   },
   "pip.Pillow 图像处理库": {
     "prefix": "pip -Pillow",
     "body": [
-      "pip install --upgrade Pillow -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade Pillow -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -Pillow 图像处理库"]
   },
@@ -308,12 +308,12 @@
     "prefix": "pip -pyautogui",
     "body": [
       "@REM pyscreeze 包管理",
-      "pip install --upgrade setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade setuptools -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM pyscreeze 图片处理(截图等功能)必备驱动库",
-      "pip install --upgrade pyscreeze -i https://pypi.tuna.tsinghua.edu.cn/simple",
-      "pip install --upgrade Pillow -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "pip install --upgrade pyscreeze -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade Pillow -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM pyscreeze 主库",
-      "pip install --upgrade pyautogui -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pyautogui -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": [
       "pip -pyautogui 自动化计算机行为库\n它可以用来操作鼠标和键盘, 模拟人类的输入方式, 比如移动鼠标、点击按钮、输入文本等。pyAutoGUI还可以用来开发自动化工具, 比如自动回复聊天机器人、自动游戏挂机等"
@@ -322,7 +322,7 @@
   "pip.setuptools 包管理工具": {
     "prefix": "pip -setuptools",
     "body": [
-      "pip install --upgrade setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade setuptools -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": [
       "pip -setuptools 包管理工具\nsetuptools是Python distutils增强版的集合, 它可以帮助我们更简单的创建和分发Python包, 尤其是拥有依赖关系的。用户在使用setuptools创建的包时, 并不需要已安装setuptools, 只要一个启动模块即可"
@@ -331,7 +331,7 @@
   "pip.PyInstaller 打包库": {
     "prefix": "pip -PyInstaller",
     "body": [
-      "pip install --upgrade pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pyinstaller -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -PyInstaller 打包库"]
   },
@@ -339,21 +339,23 @@
     "prefix": "pip -pyside6",
     "body": [
       "@REM 目前测试 pyside6==6.8.0 版本较为稳定",
-      "pip install --upgrade pyside6 -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pyside6 -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -pyside6 GUI界面库"]
   },
   "pip.pywin32 win系统库": {
     "prefix": "pip -pywin32",
     "body": [
-      "pip install --upgrade pywin32 -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade pywin32 -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -pywin32 win系统库"]
   },
   "pip.pywebview webGUI框架库": {
     "prefix": "pip -pywebview",
     "body": [
-      "pip install --upgrade pywebview -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "@REM 需要注意 pythonnet 版本(https://pypi.org/project/pythonnet/) 和 pywebview 版本需要对应",
+      "pip install --upgrade setuptools -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade pywebview -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -pywebview webGUI框架库"]
   }

@@ -8,7 +8,7 @@
       "@ECHO 激活虚拟环境...",
       "call ./.venv/Scripts/activate.bat",
       "@ECHO 安装Jupyter内核ipykernel依赖库...",
-      "@REM pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple",
+      "@REM pip install --upgrade ipykernel -i https://mirrors.aliyun.com/pypi/simple/",
       "",
       "@ECHO 安装依赖库...",
       "$0",
@@ -37,7 +37,7 @@
     "prefix": ["pip -Jupyter", "pip -ipykernel"],
     "body": [
       "@ECHO 安装Jupyter内核ipykernel依赖库...",
-      "pip install --upgrade ipykernel -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install --upgrade ipykernel -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip.Jupyter内核ipykernel依赖库"]
   },
@@ -70,21 +70,21 @@
   "pip.install 安装库": {
     "prefix": "pip -install",
     "body": [
-      "pip install ${1:库名_whl文件路径} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+      "pip install ${1:库名_whl文件路径} ${2:-i https://mirrors.aliyun.com/pypi/simple/}"
     ],
     "description": ["pip -i 安装库"]
   },
   "pip.-reinstall 强制重装库": {
     "prefix": "pip -install.reinstall",
     "body": [
-      "pip install --force-reinstall ${1:库名_whl文件路径} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+      "pip install --force-reinstall ${1:库名_whl文件路径} ${2:-i https://mirrors.aliyun.com/pypi/simple/}"
     ],
     "description": ["pip -reinstall 强制重装库"]
   },
   "pip.-upgrade 升级库": {
     "prefix": "pip -install--upgrade",
     "body": [
-      "pip install --upgrade ${1:pip} ${2:-i https://pypi.tuna.tsinghua.edu.cn/simple}"
+      "pip install --upgrade ${1:pip} ${2:-i https://mirrors.aliyun.com/pypi/simple/}"
     ],
     "description": ["pip --upgrade 升级库"]
   },
@@ -101,7 +101,7 @@
   "pip.requirements 列式安装库": {
     "prefix": ["pip -requirements.install", "pip -txt.install"],
     "body": [
-      "pip install -r ${1:requirements.txt} -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "pip install -r ${1:requirements.txt} -i https://mirrors.aliyun.com/pypi/simple/"
     ],
     "description": ["pip -requirements 列式安装库"]
   }
