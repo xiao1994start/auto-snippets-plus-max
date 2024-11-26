@@ -338,8 +338,8 @@
   "pip.pyside6 GUI界面库": {
     "prefix": "pip -pyside6",
     "body": [
-      "@REM 目前测试 pyside6==6.7.0 版本较为稳定",
-      "pip install --upgrade pyside6==6.7.0 -i https://pypi.tuna.tsinghua.edu.cn/simple"
+      "@REM 目前测试 pyside6==6.8.0 版本较为稳定",
+      "pip install --upgrade pyside6 -i https://pypi.tuna.tsinghua.edu.cn/simple"
     ],
     "description": ["pip -pyside6 GUI界面库"]
   },

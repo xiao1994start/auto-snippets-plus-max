@@ -7,7 +7,7 @@
   "subprocess.run 运行命令": {
     "prefix": ".run -subprocess",
     "body": [
-      ".run(args=[$0], shell=True, ${1:stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE})"
+      ".run(args=[$0], shell=True, shell=True, capture_output=True, text=True)"
     ],
     "description": [
       "subprocess.run 运行外部命令并等待其完成",
