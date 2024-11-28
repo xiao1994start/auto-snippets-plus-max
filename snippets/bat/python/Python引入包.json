@@ -4,7 +4,8 @@
     "body": [
       "pip install --upgrade beautifulsoup4 -i https://mirrors.aliyun.com/pypi/simple/",
       "pip install --upgrade lxml -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install --upgrade html5lib -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade html5lib -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -beautifulsoup4 HTML解析库"]
   },
@@ -14,7 +15,8 @@
       "pip install --upgrade DrissionPage -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
       "@REM chromedriver -> https://getwebdriver.com/chromedriver",
-      "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads"
+      "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads",
+      ""
     ],
     "description": ["pip -DrissionPage 自动化网络请求库"]
   },
@@ -24,14 +26,16 @@
       "pip install --upgrade httpx -i https://mirrors.aliyun.com/pypi/simple/",
       "pip install --upgrade httpx[http2] -i https://mirrors.aliyun.com/pypi/simple/",
       "pip install --upgrade httpx[brotli] -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install --upgrade httpx[socks] -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade httpx[socks] -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -httpx 网络请求库"]
   },
   "pip.requests 网络请求库": {
     "prefix": "pip -requests",
     "body": [
-      "pip install --upgrade requests -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade requests -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -requests 网络请求库"]
   },
@@ -41,21 +45,24 @@
       "pip install --upgrade selenium -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
       "@REM chromedriver -> https://getwebdriver.com/chromedriver",
-      "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads"
+      "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads",
+      ""
     ],
     "description": ["pip -selenium 自动化web测试"]
   },
   "pip.lxml lxml解析库": {
     "prefix": "pip -lxml",
     "body": [
-      "pip install --upgrade lxml -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade lxml -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -lxml lxml解析库"]
   },
   "pip.html5lib HTML5解析库": {
     "prefix": "pip -html5lib",
     "body": [
-      "pip install --upgrade html5lib -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade html5lib -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -html5lib HTML5解析库"]
   },
@@ -72,7 +79,8 @@
       "@REM     main()",
       "@REM ____",
       "@REM call python manage.py makemigrations",
-      "@REM call python manage.py migrate"
+      "@REM call python manage.py migrate",
+      ""
     ],
     "description": ["pip -Django 库"]
   },
@@ -91,7 +99,8 @@
       "@REM     main()",
       "@REM ____",
       "@REM call python manage.py makemigrations",
-      "@REM call python manage.py migrate"
+      "@REM call python manage.py migrate",
+      ""
     ],
     "description": ["pip -Django 库DRF组件"]
   },
@@ -227,58 +236,24 @@
       "    )",
       "    webview.start()",
       "}",
-      "{./build.py >> 打包runServer.py为可执行文件:",
-      "    import os",
-      "    import shutil",
-      "    from PyInstaller import __main__ as build",
-      "    # 删除 build, dist 目录和 *.spec 文件",
-      "    if os.path.exists(\"./build\"):",
-      "        shutil.rmtree(\"./build\")",
-      "    if os.path.exists(\"./dist\"):",
-      "        shutil.rmtree(\"./dist\")",
-      "    if os.path.exists(f'./{\"runServer\" + \".spec\"}'):",
-      "        os.remove(f'./{\"runServer\" + \".spec\" }')",
-      "    # 执行打包",
-      "    if __name__ == \"__main__\":",
-      "        build.run(",
-      "            [",
-      "                # 入口文件",
-      "                \"runServer.py\",",
-      "                \"-F\",  # -F:创建一个绑定的可执行文件(单文件打包_小项目), -D:创建一个包含可执行文件的单文件夹包(默认情况下_大项目)",
-      "                # 每次打包前, 清除 build 和 dist 目录",
-      "                \"--uac-admin\",  # 需求管理员权限",
-      "                \"--clean\",",
-      "                # 无需用户确认",
-      "                \"--noconfirm\",",
-      "                # --add-data: 要添加到应用程序中的附加数据文件或包含数据文件的目录",
-      "                # 示例:\"source:dest_dir\"",
-      "                #     source 是要收集的文件(或目录)的路径",
-      "                #     dest_dir 是相对于应用程序顶层目录的目标目录",
-      "                #     两个路径之间用冒号(:)分隔",
-      "                #     要将文件放入应用程序顶层目录, 使用 . 作为 dest_dir 该选项可多次使用",
-      "                \"--add-data\",",
-      "                \"static:static\",  # 服务器静态文件",
-      "                # \"-w\",  # 不提供用于标准i/o的控制台窗口",
-      "                \"--icon\",  # 可执行文件的icon图标路径",
-      "                \"vite.ico\",",
-      "            ]",
-      "        )",
-      "    }",
-      ":FastAPIHelp"
+      ":FastAPIHelp",
+      ""
     ],
     "description": ["pip -FastAPI 库"]
   },
   "pip.loguru 日志库": {
     "prefix": "pip -loguru",
     "body": [
-      "pip install --upgrade loguru -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade loguru -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -loguru 日志库"]
   },
   "pip.numpy NumPy维度数组与矩阵运算科学计算的基础库": {
     "prefix": "pip -numpy",
     "body": [
-      "pip install --upgrade numpy -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade numpy -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -numpy NumPy维度数组与矩阵运算科学计算的基础库"]
   },
@@ -286,21 +261,24 @@
     "prefix": "pip -cv2",
     "body": [
       "@REM opencv 库 (使用opencv-python库时,项目路径不能使用中文)",
-      "pip install --upgrade opencv-python -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade opencv-python -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -opencv-python 计算机视觉库"]
   },
   "pip.pandas CSV数据库": {
     "prefix": "pip -pandas",
     "body": [
-      "pip install --upgrade pandas -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade pandas -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -pandas CSV数据库"]
   },
   "pip.Pillow 图像处理库": {
     "prefix": "pip -Pillow",
     "body": [
-      "pip install --upgrade Pillow -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade Pillow -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -Pillow 图像处理库"]
   },
@@ -313,7 +291,8 @@
       "pip install --upgrade pyscreeze -i https://mirrors.aliyun.com/pypi/simple/",
       "pip install --upgrade Pillow -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM pyscreeze 主库",
-      "pip install --upgrade pyautogui -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade pyautogui -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": [
       "pip -pyautogui 自动化计算机行为库\n它可以用来操作鼠标和键盘, 模拟人类的输入方式, 比如移动鼠标、点击按钮、输入文本等。pyAutoGUI还可以用来开发自动化工具, 比如自动回复聊天机器人、自动游戏挂机等"
@@ -322,7 +301,8 @@
   "pip.setuptools 包管理工具": {
     "prefix": "pip -setuptools",
     "body": [
-      "pip install --upgrade setuptools -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade setuptools -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": [
       "pip -setuptools 包管理工具\nsetuptools是Python distutils增强版的集合, 它可以帮助我们更简单的创建和分发Python包, 尤其是拥有依赖关系的。用户在使用setuptools创建的包时, 并不需要已安装setuptools, 只要一个启动模块即可"
@@ -331,7 +311,8 @@
   "pip.PyInstaller 打包库": {
     "prefix": "pip -PyInstaller",
     "body": [
-      "pip install --upgrade pyinstaller -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -PyInstaller 打包库"]
   },
@@ -339,14 +320,16 @@
     "prefix": "pip -pyside6",
     "body": [
       "@REM 目前测试 pyside6==6.8.0 版本较为稳定",
-      "pip install --upgrade pyside6 -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade pyside6 -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -pyside6 GUI界面库"]
   },
   "pip.pywin32 win系统库": {
     "prefix": "pip -pywin32",
     "body": [
-      "pip install --upgrade pywin32 -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade pywin32 -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -pywin32 win系统库"]
   },
@@ -355,8 +338,25 @@
     "body": [
       "@REM 需要注意 pythonnet 版本(https://pypi.org/project/pythonnet/) 和 pywebview 版本需要对应",
       "pip install --upgrade setuptools -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install --upgrade pywebview -i https://mirrors.aliyun.com/pypi/simple/"
+      "pip install --upgrade pywebview -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
     ],
     "description": ["pip -pywebview webGUI框架库"]
+  },
+  "pip.streamlit 快速WebApp框架": {
+    "prefix": "pip -streamlit",
+    "body": [
+      "pip install --upgrade streamlit -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pip -streamlit 快速WebApp框架"]
+  },
+  "pip.reflex 全栈WebApp框架": {
+    "prefix": "pip -reflex",
+    "body": [
+      "pip install --upgrade reflex -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pip -reflex 全栈WebApp框架"]
   }
 }

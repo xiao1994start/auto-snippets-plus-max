@@ -1,7 +1,7 @@
 {
   "引入 pandas 模块": {
     "prefix": "im -pandas",
-    "body": ["import pandas as pd"],
+    "body": ["import pandas as pd  # 数据处理模块"],
     "description": ["引入 pandas 数据处理模块"]
   },
   "pandas.Series 创建一维数组或列表": {

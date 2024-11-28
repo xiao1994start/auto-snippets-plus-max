@@ -405,6 +405,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/Reflex全栈WebApp框架/reflex.basic.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/selenium自动化web测试/selenium.JS句柄.json"
       },
       {
@@ -414,6 +418,10 @@
       {
         "language": "python",
         "path": "./snippets/python/shutil高阶文件操作/shutil.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/streamlit快速WebApp框架/streamlit.json"
       },
       {
         "language": "python",

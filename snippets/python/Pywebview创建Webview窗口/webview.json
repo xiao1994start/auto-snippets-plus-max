@@ -14,7 +14,8 @@
       "    height=720,",
       "    resizable=True,  # 可调整大小",
       "    fullscreen=False,  # 无边框窗口",
-      "    min_size=(1280, 720),",
+      "    min_size=(1280, 720),  # 最小尺寸",
+      "    confirm_close=False,  # 关闭窗口时确认_默认:False",
       ")"
     ],
     "description": ["pywebview.create_window 创建桌面应用"]
