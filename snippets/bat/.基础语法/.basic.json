@@ -1,6 +1,6 @@
 {
   "BAT模板": {
-    "prefix": "echoOFFdp0",
+    "prefix": "xxx",
     "body": [
       "@ECHO OFF",
       "setlocal enabledelayedexpansion",
