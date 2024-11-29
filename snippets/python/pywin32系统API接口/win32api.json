@@ -1,7 +1,0 @@
-{
-  "引入 win32.win32api 打印机API模块": {
-    "prefix": "im -win32.win32api",
-    "body": ["from win32 import win32api"],
-    "description": ["引入 win32.win32api 打印机API模块"]
-  }
-}

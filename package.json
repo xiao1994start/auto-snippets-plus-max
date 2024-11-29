@@ -129,11 +129,11 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/python/python基础.json"
+        "path": "./snippets/bat/python/python.pip.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/python/python引入包.json"
+        "path": "./snippets/bat/python/python基础.json"
       },
       {
         "language": "bat",
@@ -293,19 +293,35 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/AsyncIO异步IO协程实现高效并发/asyncio.json"
+        "path": "./snippets/python/AsyncIO 异步IO协程实现高效并发/asyncio.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/beautifulsoup4 解析HTML/beautifulsoup4.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/beautifulsoup4解析HTML/beautifulsoup4解析HTML.json"
+        "path": "./snippets/python/beautifulsoup4 解析HTML/beautifulsoup4.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/Django/Django.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/Django/Django自定义配置.json"
+        "path": "./snippets/python/Django/Django.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/DrissionPage 自动化网络请求模块/DrissionPage.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/DrissionPage自动化网络请求模块/DrissionPage自动化网络请求模块.json"
+        "path": "./snippets/python/DrissionPage 自动化网络请求模块/DrissionPage.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/FastAPI/FastAPI.bat.json"
       },
       {
         "language": "python",
@@ -313,147 +329,211 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/httpx网络请求/httpx网络请求.json"
+        "path": "./snippets/python/httpx 网络请求/httpx.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/json数据处理/json格式转换.json"
+        "path": "./snippets/python/itertools 迭代器创建/itertools.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/logging日志管理/logging.json"
+        "path": "./snippets/python/json 数据处理/json.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/loguru日志模块/loguru.json"
+        "path": "./snippets/python/logging 日志管理/logging.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/loguru 日志模块/loguru.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt控制台IO.json"
+        "path": "./snippets/python/loguru 日志模块/loguru.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt模板.json"
+        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt.basic.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt终端交互库Windows/msvcrt引入.json"
+        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt控制台IO.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/multiprocessing多线程库/multiprocessing.json"
+        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt模板.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/NumPy/NumPy引入.json"
+        "path": "./snippets/python/multiprocessing 多线程库/multiprocessing.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/NumPy/numpy.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/opencv-python计算机视觉库/cv2.json"
+        "path": "./snippets/python/NumPy/numpy.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/opencv python计算机视觉库/cv2.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/os多种操作系统接口/os.json"
+        "path": "./snippets/python/opencv python计算机视觉库/cv2.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/pandas数据处理/pandas_CSV数据处理.json"
+        "path": "./snippets/python/os 多种操作系统接口/os.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/pandas CSV数据处理/pandas.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/pathlib面向对象的文件系统路径/pathlib.json"
+        "path": "./snippets/python/pandas CSV数据处理/pandas.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/pathlib面向对象的文件系统路径/glob扩展.json"
+        "path": "./snippets/python/pathlib 面向对象的文件系统路径/pathlib.basic.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/Pillow图像处理模块/Pillow图像处理模块.json"
+        "path": "./snippets/python/pathlib 面向对象的文件系统路径/pathlib.glob.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/Pillow 图像处理模块/Pillow.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/pyautogui自动化/pyautogui.json"
+        "path": "./snippets/python/Pillow 图像处理模块/Pillow.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/pyautogui 自动化/pyautogui.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/PyInstaller打包模块/pyinstaller.json"
+        "path": "./snippets/python/pyautogui 自动化/pyautogui.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/PyInstaller 打包模块/pyinstaller.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/PySide_GUI图形界面/pyside6图形界面模块.json"
+        "path": "./snippets/python/PyInstaller 打包模块/pyinstaller.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/PySide GUI图形界面/pyside6.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/Pywebview创建Webview窗口/webview.json"
+        "path": "./snippets/python/PySide GUI图形界面/pyside6.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/Pywebview 创建Webview窗口/webview.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/pywin32系统API接口/win32系统信号模块.json"
+        "path": "./snippets/python/Pywebview 创建Webview窗口/webview.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/pywin32 系统API接口/win32.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/pywin32系统API接口/win32api.json"
+        "path": "./snippets/python/pywin32 系统API接口/win32系统信号模块.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/pywin32系统API接口/win32print.json"
+        "path": "./snippets/python/pywin32 系统API接口/win32api.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/re正则表达式/re正则表达式模块.json"
+        "path": "./snippets/python/pywin32 系统API接口/win32print.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/Reflex全栈WebApp框架/reflex.basic.json"
+        "path": "./snippets/python/re 正则表达式/re.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/Reflex 全栈WebApp框架/reflex.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/selenium自动化web测试/selenium.JS句柄.json"
+        "path": "./snippets/python/Reflex 全栈WebApp框架/reflex.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/selenium 自动化web测试/selenium.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/selenium自动化web测试/selenium自动化web测试.json"
+        "path": "./snippets/python/selenium 自动化web测试/selenium.jsScript.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/shutil高阶文件操作/shutil.json"
+        "path": "./snippets/python/selenium 自动化web测试/selenium.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/streamlit快速WebApp框架/streamlit.json"
+        "path": "./snippets/python/shutil 高阶文件操作/shutil.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/streamlit 快速WebApp框架/streamlit.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/subprocess执行系统命令/subprocess.json"
+        "path": "./snippets/python/streamlit 快速WebApp框架/streamlit.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/subprocess执行系统命令/subprocess_CMD句柄.json"
+        "path": "./snippets/python/subprocess 执行系统命令/subprocess.cmdScript.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/sys系统相关的形参和函数/sys.json"
+        "path": "./snippets/python/subprocess 执行系统命令/subprocess.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/threading线程库/threading.json"
-      },
-      {
-        "language": "snippets",
-        "path": "./snippets/python/ThreadPoolExecutor启动并行任务/ThreadPoolExecutor.json"
+        "path": "./snippets/python/sys 系统相关的形参和函数/sys.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/winreg注册表管理模块/winreg.json"
+        "path": "./snippets/python/threading 线程库/threading.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/zipfile压缩归档ZIP库/zipfile基础引入.json"
+        "path": "./snippets/python/ThreadPoolExecutor 启动并行任务/ThreadPoolExecutor.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/uvicorn ASGI_Web服务器实现/uvicorn.bat.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/zipfile压缩归档ZIP库/with_ZipFile.json"
+        "path": "./snippets/python/uvicorn ASGI_Web服务器实现/uvicorn.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/winreg 注册表管理模块/winreg.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/zipfile 压缩归档ZIP库/zipfile.Import.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/zipfile 压缩归档ZIP库/zipfile.with.json"
       },
       {
         "language": "scss",

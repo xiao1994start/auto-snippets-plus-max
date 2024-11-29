@@ -1,0 +1,12 @@
+{
+  "引入 uvicorn ASGI Web 服务器实现": {
+    "prefix": "im -uvicorn",
+    "body": ["import uvicorn"],
+    "description": ["引入 uvicorn ASGI Web 服务器实现"]
+  },
+  "uvicorn.run 运行服务器": {
+    "prefix": "uvicorn.run -uvicorn",
+    "body": ["uvicorn.run()"],
+    "description": ["uvicorn.run 运行服务器"]
+  }
+}

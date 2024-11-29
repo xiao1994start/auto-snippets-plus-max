@@ -1,9 +1,4 @@
 {
-  "引入 uvicorn ASGI服务器": {
-    "prefix": "im -Uvicorn",
-    "body": ["import uvicorn  # 引入 uvicorn->ASGI服务器"],
-    "description": ["引入uvicorn->ASGI服务器"]
-  },
   "引入 fastapi FastAPI": {
     "prefix": "im -FastAPI",
     "body": [

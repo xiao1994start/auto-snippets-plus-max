@@ -1,0 +1,13 @@
+{
+  "pip.httpx 网络请求库": {
+    "prefix": "pip -httpx",
+    "body": [
+      "pip install --upgrade httpx -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade httpx[http2] -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade httpx[brotli] -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install --upgrade httpx[socks] -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pip -httpx 网络请求库"]
+  }
+}

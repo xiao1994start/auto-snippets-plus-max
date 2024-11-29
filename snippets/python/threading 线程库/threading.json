@@ -1,0 +1,12 @@
+{
+  "引入 threading 线程库": {
+    "prefix": "im -threading",
+    "body": ["import threading"],
+    "description": ["引入 threading 线程库"]
+  },
+  "threading.get_ident 获取线程ID": {
+    "prefix": "threading.get_ident -threading",
+    "body": ["threading.get_ident()"],
+    "description": ["threading.get_ident 获取线程ID"]
+  }
+}

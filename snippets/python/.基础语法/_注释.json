@@ -1,5 +1,5 @@
 {
-  "注释 描述": {
+  "Python 注释_描述": {
     "prefix": "xxx",
     "body": [
       "#!/usr/bin/python",
@@ -13,6 +13,6 @@
       "",
       "$0"
     ],
-    "description": ["注释 描述"]
+    "description": ["Python 注释_描述"]
   }
 }

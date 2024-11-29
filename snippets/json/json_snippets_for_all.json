@@ -4,7 +4,7 @@
     "body": [
       "{",
       "  \"language\": \"${1|python,bat,vue,scss,typescript,markdown,html,vue-html,javascript,json,snippets|}\",",
-      "  \"path\": \"./snippets$0\"",
+      "  \"path\": \"./$0\"",
       "},"
     ],
     "description": ["代码片段语言"]
