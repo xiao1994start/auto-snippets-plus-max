@@ -6,7 +6,9 @@
   },
   "uvicorn.run 运行服务器": {
     "prefix": "uvicorn.run -uvicorn",
-    "body": ["uvicorn.run()"],
+    "body": [
+      "uvicorn.run(app=${1:py:app}, host='localhost', port=8000, debug=True, reload=True)"
+    ],
     "description": ["uvicorn.run 运行服务器"]
   }
 }
