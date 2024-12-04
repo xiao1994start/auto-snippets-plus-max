@@ -51,33 +51,6 @@
     "body": ["ECHO 设置剪切板内容| clip"],
     "description": ["ECHO | clip 设置剪切板内容"]
   },
-  "choice模板": {
-    "prefix": "choice-C-N-M =choice",
-    "body": [
-      ":begin",
-      "ECHO ==========================",
-      "ECHO [指令列表]",
-      "ECHO    [1] 指令1",
-      "ECHO    [2] 指令2",
-      "ECHO    [3] 指令3",
-      "ECHO ==========================",
-      "",
-      "choice /C \"字符或数字\" /N /M 请输入执行指令:",
-      "",
-      "if \"%errorlevel%\"==\"字符或数字\" call :to_1",
-      "if \"%errorlevel%\"==\"字符或数字\" call :to_2",
-      "if \"%errorlevel%\"==\"字符或数字\" cls & goto :eof",
-      "",
-      ":to_1",
-      "ECHO 1 指令1",
-      "",
-      "",
-      ":to_2",
-      "ECHO 2 指令2",
-      ""
-    ],
-    "description": ["choice模板"]
-  },
   "脚本跳转到文件的结束处": {
     "prefix": "goto_eof",
     "body": ["goto :eof"],
