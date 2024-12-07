@@ -3,11 +3,15 @@
     "prefix": "xxx",
     "body": [
       "@ECHO OFF",
-      "setlocal enabledelayedexpansion",
+      "setlocal EnableDelayedExpansion",
       "CD /D \"%~dp0\"",
       "",
       "",
-      "$0"
+      "$0",
+      "",
+      "",
+      "endlocal",
+      ""
     ],
     "description": ["BAT模板"]
   },

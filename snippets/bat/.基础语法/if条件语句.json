@@ -1,11 +1,11 @@
 {
   "判断文件夹存在": {
-    "prefix": "if -Exist",
+    "prefix": "if -exist",
     "body": ["if exist ${1:判断目标} (", "    ECHO 目标存在", ")"],
     "description": ["判断文件夹存在"]
   },
   "判断文件夹不存在": {
-    "prefix": "if -Not-Exist",
+    "prefix": "if -not-exist",
     "body": ["if not exist ${1:判断目标} (", "    ECHO 目标不存在", ")"],
     "description": ["判断文件夹不存在"]
   },
@@ -46,7 +46,7 @@
     "description": ["判断字符串完全不一致且忽略大小写"]
   },
   "判断字符串包含": {
-    "prefix": "ifString==",
+    "prefix": "if_String==",
     "body": [
       "if not \"!被比较字符串:包含字符串=!\"==\"!被比较字符串!\" (",
       "    ECHO 包含",
