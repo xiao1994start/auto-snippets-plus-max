@@ -106,8 +106,8 @@
     ]
   },
   "Path.home ~:用户目录绝对路径": {
-    "prefix": ".home -Path",
-    "body": [".home()"],
+    "prefix": "Path.home -Path",
+    "body": ["Path.home()"],
     "description": [
       "Path.home 返回一个表示用户家目录的新路径对象(与带 ~ 构造的 os.path.expanduser() 所返回的相同)",
       "\r\n如果无法解析家目录, 则会引发 RuntimeError"
