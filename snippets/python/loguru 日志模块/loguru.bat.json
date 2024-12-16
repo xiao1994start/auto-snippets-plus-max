@@ -2,7 +2,7 @@
   "pip.loguru 日志库": {
     "prefix": "pip -loguru",
     "body": [
-      "pip install --upgrade loguru -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U loguru -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["pip -loguru 日志库"]

@@ -3,12 +3,12 @@
     "prefix": "pip -pyautogui",
     "body": [
       "@REM pyscreeze 包管理",
-      "pip install --upgrade setuptools -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM pyscreeze 图片处理(截图等功能)必备驱动库",
-      "pip install --upgrade pyscreeze -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install --upgrade Pillow -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U pyscreeze -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U Pillow -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM pyscreeze 主库",
-      "pip install --upgrade pyautogui -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U pyautogui -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": [

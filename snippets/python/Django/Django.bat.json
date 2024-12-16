@@ -2,7 +2,7 @@
   "pip.Django 库": {
     "prefix": "pip -Django",
     "body": [
-      "pip install --upgrade ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
       "call python manage.py startapp ${3:apps}",
       "@REM __Django修改默认端口号与地址__",
@@ -20,9 +20,9 @@
   "pip.Django 库DRF组件": {
     "prefix": "pip -DRF",
     "body": [
-      "pip install --upgrade ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install --upgrade djangorestframework -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install --upgrade django-cors-headers -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U djangorestframework -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U django-cors-headers -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
       "call python manage.py startapp ${3:apps}",
       "@REM __Django修改默认端口号与地址__",

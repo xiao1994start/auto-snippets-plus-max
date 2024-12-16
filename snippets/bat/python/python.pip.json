@@ -2,7 +2,7 @@
   "pip.requests 网络请求库": {
     "prefix": "pip -requests",
     "body": [
-      "pip install --upgrade requests -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U requests -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["pip -requests 网络请求库"]
@@ -10,7 +10,7 @@
   "pip.lxml lxml解析库": {
     "prefix": "pip -lxml",
     "body": [
-      "pip install --upgrade lxml -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U lxml -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["pip -lxml lxml解析库"]
@@ -18,7 +18,7 @@
   "pip.html5lib HTML5解析库": {
     "prefix": "pip -html5lib",
     "body": [
-      "pip install --upgrade html5lib -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U html5lib -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["pip -html5lib HTML5解析库"]
@@ -26,7 +26,7 @@
   "pip.setuptools 包管理工具": {
     "prefix": "pip -setuptools",
     "body": [
-      "pip install --upgrade setuptools -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": [

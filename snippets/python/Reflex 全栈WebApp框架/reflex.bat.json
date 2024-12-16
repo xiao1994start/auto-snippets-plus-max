@@ -2,7 +2,7 @@
   "pip.reflex 全栈WebApp框架": {
     "prefix": "pip -reflex",
     "body": [
-      "pip install --upgrade reflex -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U reflex -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["pip -reflex 全栈WebApp框架"]

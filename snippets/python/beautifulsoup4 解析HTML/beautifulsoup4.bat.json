@@ -2,9 +2,9 @@
   "pip.beautifulsoup4 HTML解析库": {
     "prefix": "pip -beautifulsoup4",
     "body": [
-      "pip install --upgrade beautifulsoup4 -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install --upgrade lxml -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install --upgrade html5lib -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U beautifulsoup4 -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U lxml -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U html5lib -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["pip -beautifulsoup4 HTML解析库"]
