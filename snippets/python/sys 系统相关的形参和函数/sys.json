@@ -24,7 +24,7 @@
     ]
   },
   "sys.path.append 添加python环境模块路径": {
-    "prefix": "sys.path -sys",
+    "prefix": "sys.path.append -sys",
     "body": ["sys.path.append($0)", ""],
     "description": ["sys.path.append 添加python环境模块路径"]
   },

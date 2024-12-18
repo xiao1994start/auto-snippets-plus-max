@@ -1,0 +1,18 @@
+{
+  "引入 nicegui web应用开发框架": {
+    "prefix": "im -nicegui.ui",
+    "body": [
+      "from ex4nicegui import effect, ref_computed, to_ref",
+      "from ex4nicegui.reactive import rxui",
+      "from nicegui import app, events, ui"
+    ],
+    "description": ["引入 nicegui web应用开发框架"]
+  },
+  "nicegui.run_package 独立窗口运行": {
+    "prefix": "ui.run_package -nicegui",
+    "body": [
+      "ui.run(reload=False, title=\"My_NiceGUI_App\", favicon='🚀', native=True, window_size=(1024, 786))"
+    ],
+    "description": ["nicegui.run_package 独立窗口运行"]
+  }
+}

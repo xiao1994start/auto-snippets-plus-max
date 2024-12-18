@@ -373,6 +373,14 @@
       },
       {
         "language": "bat",
+        "path": "./snippets/python/niceGUI web应用开发/nicegui.bat.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/niceGUI web应用开发/nicegui.json"
+      },
+      {
+        "language": "bat",
         "path": "./snippets/python/NumPy/numpy.bat.json"
       },
       {
@@ -492,6 +500,10 @@
         "path": "./snippets/python/shutil 高阶文件操作/shutil.json"
       },
       {
+        "language": "python",
+        "path": "./snippets/python/socket 网络通讯模块/socket.json"
+      },
+      {
         "language": "bat",
         "path": "./snippets/python/streamlit 快速WebApp框架/streamlit.bat.json"
       },
@@ -522,6 +534,10 @@
       {
         "language": "bat",
         "path": "./snippets/python/uvicorn ASGI_Web服务器实现/uvicorn.bat.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/tkinter 内置TkGUI界面框架/tkinter.json"
       },
       {
         "language": "python",

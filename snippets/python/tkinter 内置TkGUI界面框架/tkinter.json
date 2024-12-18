@@ -1,0 +1,24 @@
+{
+  "引入 tkinter 内置TkGUI界面框架": {
+    "prefix": "im -tkinter",
+    "body": ["import tkinter as tk", "from tkinter import Tk, filedialog"],
+    "description": ["引入 tkinter 内置TkGUI界面框架"]
+  },
+  "tkinter 目录选中器": {
+    "prefix": "tk=select_folder -tkinter",
+    "body": [
+      "def select_folder():",
+      "    from tkinter import Tk, filedialog",
+      "    root = Tk()  # 创建窗口对象",
+      "    root.withdraw()  # 隐藏主窗口",
+      "    root.wm_attributes(\"-topmost\", True)  # 窗口置顶",
+      "    folder_selected = filedialog.askdirectory()  # 弹出目录选择对话框",
+      "    if folder_selected:",
+      "        print(folder_selected)",
+      "    else:",
+      "        print(\"No Folder Select\")",
+      "        return"
+    ],
+    "description": ["tkinter 目录选中器"]
+  }
+}
