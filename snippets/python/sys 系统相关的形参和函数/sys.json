@@ -28,6 +28,13 @@
     "body": ["sys.path.append($0)", ""],
     "description": ["sys.path.append 添加python环境模块路径"]
   },
+  "sys.path.append_file 添加当前文件所在目录到python环境模块路径": {
+    "prefix": "sys.path.append_file -sys",
+    "body": ["sys.path.append(str(Path(__file__).parent.resolve()))", ""],
+    "description": [
+      "sys.path.append_file 添加当前文件所在目录到python环境模块路径"
+    ]
+  },
   "sys.path.insert 脚本传入参数": {
     "prefix": "sys.insert -sys",
     "body": ["sys.insert(0, '${1:path}')"],

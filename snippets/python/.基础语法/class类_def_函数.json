@@ -1,6 +1,6 @@
 {
   "创建class对象": {
-    "prefix": "add_class-OOP -class",
+    "prefix": ["new_class-newClassOOP -class", "add_class-OOP -class"],
     "body": [
       "class ${1:NewObject}:",
       "    # * class signal",
@@ -15,7 +15,7 @@
     "description": ["创建class对象"]
   },
   "class初始化": {
-    "prefix": ["add_def-init -class", "add_class-init -class"],
+    "prefix": ["class_init -class"],
     "body": [
       "def __init__(self) -> None:",
       "    \"\"\"",
@@ -26,12 +26,12 @@
     "description": ["class初始化"]
   },
   "class类self": {
-    "prefix": "slf -class.self",
-    "body": ["self$0"],
+    "prefix": ["sf. -class.self", "self. -class.self"],
+    "body": ["self.$0"],
     "description": ["class类self"]
   },
   "创建class - def函数": {
-    "prefix": "add_class-def -class.def",
+    "prefix": ["class-def -class.def", "add_class-def -class.def"],
     "body": [
       "def ${1:name}(self):",
       "    \"\"\"",
@@ -42,7 +42,7 @@
     "description": ["创建class - def函数"]
   },
   "创建def函数": {
-    "prefix": "add_def-newFunction -def",
+    "prefix": ["new_def-newFunction -def", "add_def-newFunction -def"],
     "body": [
       "def ${1:name}():",
       "    \"\"\"",

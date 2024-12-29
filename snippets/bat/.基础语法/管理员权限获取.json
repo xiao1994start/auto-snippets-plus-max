@@ -21,9 +21,9 @@
       ":gotAdmin",
       "\tif exist \"%temp%\\getadmin.vbs\" ( del \"%temp%\\getadmin.vbs\" )",
       "\tpushd \"%CD%\"",
-      "\tCD /D \"%~dp0\"",
+      "\tCD /D \"%~dp0\\\"",
       ":--------------------------------------",
-      "CD /D \"%~dp0\"",
+      "CD /D \"%~dp0\\\"",
       ""
     ],
     "description": ["检查并获得管理员权限"]

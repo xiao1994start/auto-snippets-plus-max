@@ -14,8 +14,8 @@
     "prefix": "snippets.python.object =json.snippets",
     "body": [
       "\"${1:type}.${2:object} ${3:描述}\": {",
-      "  \"prefix\": [\".${2:object} -${1:type}\"],",
-      "  \"body\": [\".${2:object}\"],",
+      "  \"prefix\": [\"${1:type}.${2:object} -${1:type}\"],",
+      "  \"body\": [\"${1:type}.${2:object}\"],",
       "  \"description\": [\"${1:type}.${2:object} ${3:描述}\"]",
       "},"
     ],

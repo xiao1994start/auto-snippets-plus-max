@@ -4,7 +4,7 @@
     "body": [
       "@ECHO OFF",
       "setlocal enabledelayedexpansion",
-      "CD /D \"%~dp0\"",
+      "CD /D \"%~dp0\\\"",
       "",
       "",
       "@ECHO 创建虚拟环境...",

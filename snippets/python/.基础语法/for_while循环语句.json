@@ -1,0 +1,31 @@
+{
+  "终止循环": {
+    "prefix": "continue ",
+    "body": ["continue"],
+    "description": ["停止循环"]
+  },
+  "结束循环": {
+    "prefix": "break ",
+    "body": ["break"],
+    "description": ["跳出一个循环体或者完全结束一个循环"]
+  },
+  "for循环结构的代码片段": {
+    "prefix": "for =for",
+    "body": ["for ${1:value} in ${2:iterable}:", "    pass"],
+    "description": ["for循环结构的代码片段"]
+  },
+  "for_inEnumerate循环枚举": {
+    "prefix": "for_inEnumerate =for",
+    "body": [
+      "for ${1:i}, ${2:itemIter} in enumerate(${3:iterable}):  # 循环遍历行",
+      "    # comment: 注释",
+      "    pass"
+    ],
+    "description": ["for_inEnumerate循环枚举"]
+  },
+  "while循环结构的代码片段": {
+    "prefix": "while =while",
+    "body": ["while ${1:condition}:", "    ${2:pass}"],
+    "description": ["while循环结构的代码片段"]
+  }
+}

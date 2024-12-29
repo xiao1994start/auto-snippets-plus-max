@@ -126,7 +126,7 @@
   },
   "list.insert 指定位置添加元素": {
     "prefix": ".insert -list",
-    "body": ".insert(${1:element})",
+    "body": ".insert(index, element)",
     "description": ["list.insert 在list中指定位置添加元素"]
   },
   "list.insert 示例": {

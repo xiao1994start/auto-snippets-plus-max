@@ -563,7 +563,7 @@
   },
   "str.lstrip left去除空白": {
     "prefix": ".lstrip -str",
-    "body": ".lstrip(${1:leading_characters})",
+    "body": ".lstrip(${1:' '})",
     "description": [
       "str.lstrip 返回str的left(起始/左侧)去除空白(包括\\n, \\r, \\t)版本"
     ]
@@ -654,7 +654,7 @@
   },
   "str.replace 替换": {
     "prefix": ".replace -str",
-    "body": ".replace(${1:old}, ${2:new})",
+    "body": ".replace('${1:old}', '${2:new}')",
     "description": ["str.replace 返回指定值替换为指定值的str"]
   },
   "str.replace 示例1": {
@@ -794,7 +794,7 @@
   },
   "str.rsplit 反向分割->list": {
     "prefix": ".rsplit -str",
-    "body": ".rsplit(${1:separator}, ${2:maxsplit})",
+    "body": ".rsplit(${1:separator}, maxsplit=-1)",
     "description": [
       "str.rsplit 返回str的right(右/末尾)分割版本, 返回一个list (maxsplit=分割次数)"
     ]
@@ -820,7 +820,7 @@
   },
   "str.rstrip right去除空白": {
     "prefix": ".rstrip -str",
-    "body": ".rstrip(${1:trailing_characters})",
+    "body": ".rstrip(${1:' '})",
     "description": [
       "str.rstrip 返回str的right(末尾/右侧)去除空白(包括\\n, \\r, \\t)版本"
     ]
@@ -836,7 +836,7 @@
   },
   "str.split 分割->list": {
     "prefix": ".split -str",
-    "body": ".split(${1:separator}, ${2:maxsplit})",
+    "body": ".split(${1:separator}, maxsplit=-1)",
     "description": [
       "str.split 在指定分隔符处分割str, 并返回一个list (maxsplit=分割次数)"
     ]
@@ -924,7 +924,7 @@
   },
   "str.strip 去除空白": {
     "prefix": ".strip -str",
-    "body": ".strip(${1:trailing_characters})",
+    "body": ".strip(${1:' '})",
     "description": ["str.strip 返回str的开始位置和结束位置去除空白版本"]
   },
   "str.swapcase 大小写互换": {

@@ -4,7 +4,7 @@
     "body": [
       "@ECHO OFF",
       "setlocal EnableDelayedExpansion",
-      "CD /D \"%~dp0\"",
+      "CD /D \"%~dp0\\\"",
       "",
       "",
       "$0",

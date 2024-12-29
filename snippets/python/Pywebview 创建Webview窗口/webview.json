@@ -5,16 +5,16 @@
     "description": ["引入 pywebview 创建Webview窗口"]
   },
   "webview.create_window 创建桌面应用": {
-    "prefix": ".create_window -pywebview",
+    "prefix": "webview.create_window -pywebview",
     "body": [
       "webview.create_window(",
       "    title=\"桌面应用\",",
-      "    url=\"https_html\",",
+      "    url=\"http://localhost:port\",",
       "    width=1280,",
       "    height=720,",
-      "    resizable=True,  # 可调整大小",
+      "    resizable=True,  # 窗口缩放大小调整",
       "    fullscreen=False,  # 无边框窗口",
-      "    min_size=(1280, 720),  # 最小尺寸",
+      "    # min_size=(1280, 720),  # 窗口最小尺寸",
       "    confirm_close=False,  # 关闭窗口时确认_默认:False",
       ")"
     ],

@@ -221,7 +221,7 @@
     "description": "引入 logging 内置日志库 模板"
   },
   "logging.Logger 模板": {
-    "prefix": "createLogger =logging",
+    "prefix": "Logger =logging",
     "body": [
       "# * Object: 日志输出",
       "class LOG:",

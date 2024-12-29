@@ -7,6 +7,51 @@
   "socket.GetLocalHostName 获取本地计算机名(IP)": {
     "prefix": "socketGetLocalHostName -socket",
     "body": ["socket.gethostbyname(socket.gethostname())"],
-    "description": ["socket.object 获取本地计算机名(IP)"]
+    "description": ["socket.GetLocalHostName 获取本地计算机名(IP)"]
+  },
+  "socket.is_port_in_use 查看端口是否被占用": {
+    "prefix": "socket.is_port_in_use -socket",
+    "body": [
+      "import socket",
+      "",
+      "",
+      "def is_port_in_use(port):",
+      "    \"\"\"",
+      "    查看端口是否被占用",
+      "    \"\"\"",
+      "",
+      "    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:",
+      "        try:",
+      "            s.bind(('localhost', port))  # 尝试绑定端口",
+      "            return True  # 端口未被占用",
+      "        except OSError:",
+      "            print(f'端口 {port} 已被占用')",
+      "            return False  # 端口已被占用",
+      ""
+    ],
+    "description": "socket.is_port_in_use 查看端口是否被占用"
+  },
+  "socket.random_port 获取一个随机可用的端口": {
+    "prefix": "socket.random_port -socket",
+    "body": [
+      "import random",
+      "import socket",
+      "",
+      "",
+      "def random_port():",
+      "    \"\"\"",
+      "    获取一个随机可用的端口",
+      "    \"\"\"",
+      "    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:",
+      "        while True:",
+      "            port = random.randint(1024, 65535)",
+      "            try:",
+      "                s.bind(('localhost', port))",
+      "                return port",
+      "            except OSError:",
+      "                pass",
+      ""
+    ],
+    "description": "socket.random_port 获取一个随机可用的端口"
   }
 }
