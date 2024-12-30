@@ -12,13 +12,13 @@
   "REG添加键值": {
     "prefix": "REG -add",
     "body": [
-      "CALL REG add ${1:reg路径} /v \"key_名称\" /t REG_SZ /d \"value_数据\" /F"
+      "CALL REG add \"${1:reg路径}\" /v \"key_名称\" /t REG_SZ /d \"value_数据\" /F"
     ],
     "description": ["REG添加键值"]
   },
   "REG删除键值": {
     "prefix": "REG -delete",
-    "body": ["CALL REG delete ${1:reg路径} /v \"key_名称\" /F"],
+    "body": ["CALL REG delete \"${1:reg路径\" /v \"key_名称}\" /F"],
     "description": ["REG删除键值"]
   },
   "路径变量path设置并添加修复注册表": {

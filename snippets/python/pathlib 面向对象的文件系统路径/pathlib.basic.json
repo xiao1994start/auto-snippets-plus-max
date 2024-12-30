@@ -27,6 +27,13 @@
       "    在 3.8 版本发生变更: 返回一个新的表示当前目录的路径对象, 而不是一个 Path 实例"
     ]
   },
+  "Path__file__.parent 当前脚本文件父级绝对路径(脚本所在文件夹路径)": {
+    "prefix": ["Path__file__.parent -Path"],
+    "body": ["Path(__file__).parent"],
+    "description": [
+      "Path__file__.parent 当前脚本文件父级绝对路径(脚本所在文件夹路径)"
+    ]
+  },
   "Path__file__.parent.resolve 当前脚本文件父级绝对路径(脚本所在文件夹路径)": {
     "prefix": ["Path__file__.parent.resolve -Path"],
     "body": ["Path(__file__).parent.resolve()"],

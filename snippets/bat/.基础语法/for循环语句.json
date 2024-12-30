@@ -31,6 +31,17 @@
     ],
     "description": ["搜索获取进程路径"]
   },
+  "注册表通过键获取对应的值": {
+    "prefix": "for -F.reg",
+    "body": [
+      "set \"value=\"",
+      "for /F \"tokens=3*\" %%a in ('reg query \"HKEY_LOCAL_MACHINE\" /v KEY') do (",
+      "    set \"clsid=%%a\"",
+      "    ECHO KEY: !value!",
+      ")"
+    ],
+    "description": "注册表通过键获取对应的值"
+  },
   "for /F [参数] 帮助文档": {
     "prefix": "for -F.do =for",
     "body": [
