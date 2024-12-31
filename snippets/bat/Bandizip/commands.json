@@ -1,13 +1,16 @@
 {
   "Bandizip c 新建压缩文件(或覆盖现有文件)": {
     "prefix": "bandizip -c",
-    "body": ["CALL Bandizip.exe c ${2:压缩到_zip} ${1:压缩目标_1_2_3}"],
+    "body": [
+      "@ECHO 新建压缩文件(或覆盖现有文件)",
+      "CALL Bandizip.exe c ${2:压缩到_zip} ${1:压缩目标_1_2_3}"
+    ],
     "description": ["Bandizip 新建压缩文件(或覆盖现有文件)"]
   },
   "Bandizip a 添加文件到压缩文件": {
     "prefix": "bandizip -a",
     "body": [
-      "@ECHO 新建压缩文件 或 覆盖现有文件",
+      "@ECHO 添加文件到压缩文件",
       "CALL Bandizip.exe a ${2:压缩到_zip} ${1:压缩目标_1_2_3}"
     ],
     "description": ["Bandizip a 添加文件到压缩文件"]

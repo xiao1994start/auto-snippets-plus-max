@@ -1,6 +1,6 @@
 {
   "pyinstaller 打包 python -> exe": {
-    "prefix": "im =pyinstaller",
+    "prefix": ["pkg =pyinstaller", "im =pyinstaller"],
     "body": [
       "import os",
       "import shutil",
