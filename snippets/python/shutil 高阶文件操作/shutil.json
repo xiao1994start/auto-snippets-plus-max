@@ -7,7 +7,7 @@
   "shutil.copyfile 文件拷贝": {
     "prefix": "shutil.copyfile -shutil",
     "body": [
-      "shutil.copyfile(str(${1:src_StrOrBytesPath}), str(${2:dst_StrOrBytesPath}))"
+      "shutil.copyfile(${1:src_StrOrBytesPath}, ${2:dst_StrOrBytesPath})"
     ],
     "description": [
       "shutil.copyfile",
@@ -59,7 +59,7 @@
   "shutil.copytree 递归目录树拷贝": {
     "prefix": "shutil.copytree -shutil",
     "body": [
-      "shutil.copytree(str(${1:src}), str(${2:dst}), dirs_exist_ok=${3|True,False|})"
+      "shutil.copytree(${1:src}, ${2:dst}, dirs_exist_ok=${3|True,False|})"
     ],
     "description": [
       "shutil.copytree 递归地将以 src 为根起点的整个目录树拷贝到名为 dst 的目录并返回目标目录.  所需的包含 dst 的中间目录在默认情况下也将被创建",
@@ -76,7 +76,7 @@
   },
   "shutil.rmtree 删除一个完整的目录树": {
     "prefix": "shutil.rmtree -shutil",
-    "body": ["shutil.rmtree(str(${1:path}))"],
+    "body": ["shutil.rmtree(${1:StrPath_Path})"],
     "description": [
       "shutil.rmtree 删除一个完整的目录树; path 必须指向一个目录(但不能是一个目录的符号链接).  如果 ignore_errors 为真值, 则删除失败导致的错误将被忽略; 如果为假值或被省略, 则此类错误将通过调用由 onexc 或 onerror 所指定的处理句柄来处理, 或者如果此参数被省略, 异常将被传播给调用方",
       "    如果提供了 onexc, 它必须为接受三个形参的可调用对象: function, path 和 excinfo",

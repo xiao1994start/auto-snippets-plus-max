@@ -9,6 +9,8 @@
       "# * 引入静态资源文件 可以使用 .classes 属性访问静态资源文件",
       "# app.add_static_files(url_path='/asstes', local_directory='asstes')",
       "",
+      "",
+      "",
       ""
     ],
     "description": ["引入 nicegui web应用开发框架"]
