@@ -18,14 +18,24 @@
   "nicegui.ui.run 独立窗口运行": {
     "prefix": "ui.run -nicegui.ui",
     "body": [
-      "port = 8080  # 端口号",
-      "debug_switch = True  # 调试模式开关 (开发True, 生产False)",
+      "def startup_port():",
+      "    \"\"\"",
+      "    启动时执行获取随机端口函数",
+      "    \"\"\"",
+      "    port = 8080",
+      "    return port",
+      "",
+      "",
+      "port = app.on_startup(startup_port)  # todo 启动时执行获取随机端口函数",
+      "",
+      "is_debug = True  # ! 调试模式开关 (开发True, 生产False)",
+      "",
       "# Native Mode 调用 Pywebview 运行参数配置: https://nicegui.io/documentation/section_configuration_deployment#native_mode",
       "app.native.window_args['min_size'] = (1080, 720)  # 窗口最小尺寸",
       "app.native.window_args['resizable'] = False  # 窗口缩放大小调整",
-      "app.native.start_args['debug'] = debug_switch  # 调试模式开关",
+      "app.native.start_args['debug'] = is_debug  # 调试模式开关",
       "ui.run(",
-      "    reload=debug_switch,  # 开发True, 生产False",
+      "    reload=is_debug,  # 开发True, 生产False",
       "    # port=port,  # 端口",
       "    title=\"My_NiceGUI_App\",",
       "    favicon='🚀',",
@@ -45,7 +55,7 @@
     "description": ["nicegui.ui.notification 通知_loading"]
   },
   "nicegui.ui.button_color 自定义 UI 按钮颜色样式": {
-    "prefix": ["nicegui.ui.button_color -nicegui.ui"],
+    "prefix": ["ui.button_color -nicegui.ui"],
     "body": ["ui.button(color=None).style('background:#1e40af')"],
     "description": ["nicegui.ui.button_color 自定义 UI 按钮颜色样式"]
   }

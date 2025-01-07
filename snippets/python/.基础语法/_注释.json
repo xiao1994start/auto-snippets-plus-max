@@ -9,8 +9,6 @@
       "# @Date    : $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
       "# @File    : $TM_FILENAME",
       "# @version 0.0.1",
-      "",
-      "",
       "$0"
     ],
     "description": ["Python 注释_描述"]

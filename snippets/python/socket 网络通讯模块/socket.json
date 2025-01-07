@@ -10,13 +10,13 @@
     "description": ["socket.GetLocalHostName 获取本地计算机名(IP)"]
   },
   "socket.socketPort 端口号相关处理": {
-    "prefix": "socket.socketPort =socket",
+    "prefix": "socket=SocketPort =socket",
     "body": [
       "import random",
       "import socket",
       "",
       "",
-      "class socketPort:",
+      "class SocketPort:",
       "    # * class signal",
       "    def __init__(self) -> None:",
       "        \"\"\"",
@@ -64,6 +64,6 @@
       "                return False  # 端口已被占用",
       ""
     ],
-    "description": "socket.socketPort 端口号相关处理"
+    "description": "socket.SocketPort 端口号相关处理"
   }
 }
