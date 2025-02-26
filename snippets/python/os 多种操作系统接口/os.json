@@ -9,6 +9,11 @@
     "body": ["os.getenv($0)"],
     "description": ["os.getenv 获取系统环境变量路径"]
   },
+  "os.startfile 打开文件 或 文件夹": {
+    "prefix": "os.startfile -os",
+    "body": ["os.startfile($0)"],
+    "description": ["os.startfile 打开文件 或 文件夹"]
+  },
   "os.popen 从一个命令打开一个管道": {
     "prefix": "os.popen -os",
     "body": ["os.popen()"],

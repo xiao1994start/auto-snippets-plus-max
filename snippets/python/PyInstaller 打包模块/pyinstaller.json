@@ -37,6 +37,9 @@
       "",
       "run(command)",
       "",
+      "# * 打开打包后的文件夹",
+      "os.startfile(Path(Path(__file__).parent, '_pyinstaller', 'dist'))",
+      "",
       "print('>> 打包完成 <<')",
       ""
     ],
