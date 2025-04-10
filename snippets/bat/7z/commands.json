@@ -3,7 +3,7 @@
     "prefix": "zx",
     "body": [
       "@REM 7z.exe x [解压文件] -o[到指定目录] -y{自动覆盖同名文件} -p[密码]",
-      "call path_7z_exe x path_file_zip -o\\OutPath -y",
+      "call path_7za_exe x path_file_zip -o\\OutPath -y",
       ""
     ],
     "description": ["对象.方法 描述"]
