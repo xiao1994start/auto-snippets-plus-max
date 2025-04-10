@@ -1,0 +1,30 @@
+{
+  "添加 装饰器 模板": {
+    "prefix": "add_decorator =decorator",
+    "body": [
+      "# * Function: 装饰器说明",
+      "def decorater(func):",
+      "    \"\"\"# ! 装饰器: 执行完清理程序后重新传入路径对象",
+      "    @decorater",
+      "    def func():",
+      "    \"\"\"",
+      "    def warpper(*args, **kwargs):",
+      "        \"\"\"",
+      "        装饰器的功能介绍",
+      "        \"\"\"",
+      "        # todo 装饰函数执行前",
+      "        ",
+      "        ",
+      "        # todo 装饰函数执行中",
+      "        result_function = func(*args, **kwargs)",
+      "        ",
+      "        # todo 装饰函数执行后",
+      "        ",
+      "        ",
+      "        return ",
+      "    return warpper",
+      ""
+    ],
+    "description": ["添加 装饰器 模板"]
+  }
+}

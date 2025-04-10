@@ -1,0 +1,7 @@
+{
+  "console.log 控制台输出Log日志": {
+    "prefix": ["prt -js.console", "pcl -js.console", "clp -js.console"],
+    "body": ["console.log($0);"],
+    "description": ["console.log 控制台输出Log日志"]
+  }
+}

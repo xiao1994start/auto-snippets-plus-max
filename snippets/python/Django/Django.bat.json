@@ -1,0 +1,40 @@
+{
+  "pip.Django 库": {
+    "prefix": "pip -Django",
+    "body": [
+      "pip install -U ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
+      "call django-admin startproject ${2:__DjangoServer_BE_ .}",
+      "call python manage.py startapp ${3:apps}",
+      "@REM __Django修改默认端口号与地址__",
+      "@REM manage.py : from django.core.management.commands.runserver import Command",
+      "@REM if __name__ == '__main__':",
+      "@REM     Command.default_port = '修改默认端口'",
+      "@REM     main()",
+      "@REM ____",
+      "@REM call python manage.py makemigrations",
+      "@REM call python manage.py migrate",
+      ""
+    ],
+    "description": ["pip -Django 库"]
+  },
+  "pip.Django 库DRF组件": {
+    "prefix": "pip -DRF",
+    "body": [
+      "pip install -U ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U djangorestframework -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U django-cors-headers -i https://mirrors.aliyun.com/pypi/simple/",
+      "call django-admin startproject ${2:__DjangoServer_BE_ .}",
+      "call python manage.py startapp ${3:apps}",
+      "@REM __Django修改默认端口号与地址__",
+      "@REM manage.py : from django.core.management.commands.runserver import Command",
+      "@REM if __name__ == '__main__':",
+      "@REM     Command.default_port = '修改默认端口'",
+      "@REM     main()",
+      "@REM ____",
+      "@REM call python manage.py makemigrations",
+      "@REM call python manage.py migrate",
+      ""
+    ],
+    "description": ["pip -Django 库DRF组件"]
+  }
+}

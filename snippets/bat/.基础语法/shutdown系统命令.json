@@ -1,0 +1,27 @@
+{
+  "关机": {
+    "prefix": ["shutdownShutdown"],
+    "body": ["shutdown -s -t ${1:10} -f"],
+    "description": "关机"
+  },
+  "重启": {
+    "prefix": ["shutdownRestart"],
+    "body": ["shutdown -r -t ${1:10}"],
+    "description": "重启"
+  },
+  "注销": {
+    "prefix": ["shutdownLogout"],
+    "body": ["shutdown -l -t ${1:10}"],
+    "description": "注销"
+  },
+  "定时关机": {
+    "prefix": ["shutdownAt"],
+    "body": ["at ${1:23:00} shutdown -s"],
+    "description": "定时关机"
+  },
+  "取消所有的shutdown命令": {
+    "prefix": ["shutdownAll"],
+    "body": ["shutdown -a"],
+    "description": "取消所有的shutdown命令"
+  }
+}

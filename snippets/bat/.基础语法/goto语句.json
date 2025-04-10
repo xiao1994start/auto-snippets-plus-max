@@ -1,0 +1,37 @@
+{
+  "脚本跳转到文件的结束处": {
+    "prefix": "goto_eof",
+    "body": ["goto eof"],
+    "description": ["脚本跳转到文件的结束处"]
+  },
+  "批量拖入文件处理": {
+    "prefix": "input_files",
+    "body": [
+      ":process_files",
+      "if \"%~1\"==\"\" goto end",
+      "",
+      "set \"fullpath=%~f1\"",
+      "ECHO 完整路径: !fullpath!",
+      "set \"fullfilename=%~nx1\"",
+      "ECHO 文件名: !fullfilename!",
+      "set \"filename=%~n1\"",
+      "ECHO 仅文件名: !filename!",
+      "set \"filepath=%~dp1\"",
+      "ECHO 文件目录: !filepath!",
+      "set \"filesize=%~z1\"",
+      "ECHO 文件大小: !filesize! 字节",
+      "set \"fileext=%~x1\"",
+      "ECHO 文件扩展名: !fileext!",
+      "",
+      "",
+      ":output_files",
+      "shift",
+      "goto process_files",
+      "",
+      ":end",
+      "ECHO 所有文件处理完成",
+      ""
+    ],
+    "description": "批量拖入文件处理"
+  }
+}

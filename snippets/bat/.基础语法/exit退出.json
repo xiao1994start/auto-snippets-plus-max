@@ -1,0 +1,7 @@
+{
+  "退出": {
+    "prefix": ["exit -b"],
+    "body": ["exit /B"],
+    "description": "退出"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "pip.pywebview webGUI框架库": {
+    "prefix": "pip -pywebview",
+    "body": [
+      "@REM 需要注意 pythonnet 版本(https://pypi.org/project/pythonnet/) 和 pywebview 版本需要对应",
+      "pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U pywebview -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pip -pywebview webGUI框架库"]
+  }
+}

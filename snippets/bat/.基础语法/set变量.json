@@ -1,0 +1,89 @@
+{
+  "设置变量": {
+    "prefix": ["var -set", "let -set"],
+    "body": ["set $0"],
+    "description": "设置变量"
+  },
+  "提示输入信息": {
+    "prefix": ["set.p -set", "input -set"],
+    "body": ["set /p name="],
+    "description": "提示输入信息"
+  },
+  "添加当前批处理环境变量": {
+    "prefix": "set_addenv_path -set.path",
+    "body": ["set path=%path%;${1:临时环境变量};"],
+    "description": "添加设置适用于当前批处理的环境变量"
+  },
+  "修饰符传入单个参数": {
+    "prefix": ["setInput =", "letInput =", "varInput ="],
+    "body": ["set \"command=%~${1:1}\""],
+    "description": [
+      "修饰符传入单个参数",
+      "*注意: 仅能传入单个参数, 对多个参数无效"
+    ]
+  },
+  "修饰符传入多个参数": {
+    "prefix": ["setInputs =", "letInputs =", "varInputs ="],
+    "body": ["set \"commands=%*\""],
+    "description": ["修饰符传入多个参数"]
+  },
+  "获取并设置自身bet文件名及后缀": {
+    "prefix": ["self", "sf"],
+    "body": ["set \"bat=%~n0%~x0\""],
+    "description": ["获取并设置自身bet文件名及后缀"]
+  },
+  "设置当前批处理环境变量": {
+    "prefix": "set_systemEnv_path -set.path",
+    "body": [
+      "set systemEnv=\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin32\";\"C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin\";\"C:\\WINDOWS\";\"C:\\WINDOWS\\system32\";\"C:\\WINDOWS\\System32\\Wbem\";\"C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\\";\"C:\\WINDOWS\\System32\\OpenSSH\\\"",
+      "@REM ECHO 添加临时系统环境变量",
+      "$0",
+      "set path=%systemEnv%;",
+      "ECHO %path%",
+      ""
+    ],
+    "description": "设置当前批处理环境变量"
+  },
+  "DesktopDir 系统桌面路径": {
+    "prefix": ["DesktopDir", "dt"],
+    "body": [
+      "@REM ECHO 获取系统桌面路径",
+      "set \"regSF=REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\" /v Desktop\"",
+      "!regSF! > NUL 2>&1",
+      "if %errorlevel%==0 (",
+      "    ECHO 获取当前桌面路径",
+      "    for /F \"tokens=1,2 delims=:\" %%i in ('\"!regSF!\"') do (",
+      "        set \"root=%%i\"",
+      "        set \"dir=%%j\"",
+      "    )",
+      "    set \"dt=!root:~-1!:!dir!\"",
+      ") else (",
+      "    ECHO 无法获取桌面路径, 请使用管理员权限运行脚本",
+      ")",
+      "ECHO !dt!",
+      "$0"
+    ],
+    "description": ["DesktopDir 系统桌面路径"]
+  },
+  "UserDesktopDir 当前用户桌面路径": {
+    "prefix": ["UserDesktopDir", "udt"],
+    "body": [
+      "@REM ECHO 获取当前用户桌面路径",
+      "set \"regUSF=REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" /v Desktop\"",
+      "!regUSF! > NUL 2>&1",
+      "if %errorlevel%==0 (",
+      "    ECHO 获取当前桌面路径",
+      "    for /F \"tokens=1,2 delims=:\" %%i in ('\"!regUSF!\"') do (",
+      "        set \"root=%%i\"",
+      "        set \"dir=%%j\"",
+      "    )",
+      "    set \"udt=!root:~-1!:!dir!\"",
+      ") else (",
+      "    ECHO 无法获取桌面路径, 请使用管理员权限运行脚本",
+      ")",
+      "ECHO !udt!",
+      "$0"
+    ],
+    "description": ["UserDesktopDir 当前用户桌面路径"]
+  }
+}

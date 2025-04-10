@@ -1,0 +1,10 @@
+{
+  "pip.Pillow 图像处理库": {
+    "prefix": "pip -Pillow",
+    "body": [
+      "pip install -U Pillow -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pip -Pillow 图像处理库"]
+  }
+}

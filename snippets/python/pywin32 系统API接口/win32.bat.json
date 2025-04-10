@@ -1,0 +1,10 @@
+{
+  "pip.pywin32 win系统库": {
+    "prefix": "pip -pywin32",
+    "body": [
+      "pip install -U pywin32 -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pip -pywin32 win系统库"]
+  }
+}

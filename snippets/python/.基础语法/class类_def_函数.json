@@ -1,0 +1,74 @@
+{
+  "创建class对象": {
+    "prefix": ["new_class-newClassOOP -class", "add_class-OOP -class"],
+    "body": [
+      "class ${1:NewObject}:",
+      "    # * class signal",
+      "    def __init__(self) -> None:",
+      "        \"\"\"",
+      "        ${2:_summary_}",
+      "        \"\"\"",
+      "        pass",
+      "",
+      "    pass"
+    ],
+    "description": ["创建class对象"]
+  },
+  "class初始化": {
+    "prefix": ["class_init -class"],
+    "body": [
+      "def __init__(self) -> None:",
+      "    \"\"\"",
+      "    ${2:_summary_}",
+      "    \"\"\"",
+      "    pass"
+    ],
+    "description": ["class初始化"]
+  },
+  "class类self": {
+    "prefix": ["sf. -class.self", "self. -class.self"],
+    "body": ["self.$0"],
+    "description": ["class类self"]
+  },
+  "创建class - def函数": {
+    "prefix": ["class-def -class.def", "add_class-def -class.def"],
+    "body": [
+      "def ${1:name}(self):",
+      "    \"\"\"",
+      "    ${2:_summary_}",
+      "    \"\"\"",
+      "    pass"
+    ],
+    "description": ["创建class - def函数"]
+  },
+  "创建def函数": {
+    "prefix": ["new_def-newFunction -def", "add_def-newFunction -def"],
+    "body": [
+      "def ${1:name}():",
+      "    \"\"\"",
+      "    ${2:_summary_}",
+      "    \"\"\"",
+      "    pass"
+    ],
+    "description": ["创建def函数"]
+  },
+  "lambda:匿名函数": {
+    "prefix": "add_lambda -lambda",
+    "body": [
+      "lambda ${1:args}: ${2:expr表达式}  # lambda(匿名函数) [参数]: 表达式"
+    ],
+    "description": ["lambda(匿名函数)"]
+  },
+  "ifmain:主程序运行入口 | 调试运行": {
+    "prefix": ["ifmain", "ifname==main"],
+    "body": [
+      "if __name__ == \"__main__\":",
+      "    \"\"\"",
+      "    主程序运行入口 | 调试运行",
+      "    \"\"\"",
+      "    $0",
+      "    pass"
+    ],
+    "description": ["主程序运行入口 | 调试运行"]
+  }
+}

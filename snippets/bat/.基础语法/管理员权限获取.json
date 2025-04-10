@@ -1,0 +1,55 @@
+{
+  "UAC管理员权限": {
+    "prefix": "BatchGotAdmin",
+    "body": [
+      "@ECHO off",
+      ":: BatchGotAdmin",
+      ":-------------------------------------",
+      "REM  --> Check for permissions",
+      ">nul 2>&1 \"%SYSTEMROOT%\\system32\\cacls.exe\" \"%SYSTEMROOT%\\system32\\config\\system\"",
+      "REM --> If error flag set, we do not have admin.",
+      "if '%errorlevel%' NEQ '0' (",
+      "\tECHO Requesting administrative privileges...",
+      "\tECHO 请求管理权限...",
+      "\tgoto UACPrompt",
+      ") else ( goto gotAdmin )",
+      ":UACPrompt",
+      "\tECHO Set UAC = CreateObject^(\"Shell.Application\"^) > \"%temp%\\getadmin.vbs\"",
+      "\tECHO UAC.ShellExecute \"%~s0\", \"\", \"\", \"runas\", 1 >> \"%temp%\\getadmin.vbs\"",
+      "\t\"%temp%\\getadmin.vbs\"",
+      "\texit /B",
+      ":gotAdmin",
+      "\tif exist \"%temp%\\getadmin.vbs\" ( del \"%temp%\\getadmin.vbs\" )",
+      "\tpushd \"%CD%\"",
+      "\tCD /D \"%~dp0\"",
+      ":--------------------------------------",
+      "CD /D \"%~dp0\"",
+      ""
+    ],
+    "description": ["检查并获得管理员权限"]
+  },
+  "AsAdmin": {
+    "prefix": "AsAdmin",
+    "body": [
+      "@ECHO Off",
+      "Title AsAdmin & Color A",
+      "cd %systemroot%\\system32",
+      "call :IsAdmin",
+      "",
+      "$0",
+      "",
+      "PAUSE > NUL",
+      "Exit",
+      "",
+      ":IsAdmin",
+      "Reg.exe query \"HKU\\S-1-5-19\\Environment\"",
+      "If Not %ERRORLEVEL% EQU 0 (",
+      " Cls & ECHO You must have administrator rights to continue ... ",
+      " Pause & Exit",
+      ")",
+      "Cls",
+      "goto:eof"
+    ],
+    "description": ["检查并获得管理员权限"]
+  }
+}

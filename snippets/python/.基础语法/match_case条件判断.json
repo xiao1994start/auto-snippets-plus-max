@@ -1,0 +1,23 @@
+{
+  "match:case -switch条件判断开关": {
+    "prefix": "add_match:case -matchSwitch",
+    "body": [
+      "match (${1:object_arg_kwarg}):",
+      "    case ():",
+      "        # comment: 注释",
+      "        pass",
+      "    # * End_case",
+      "    case (_):",
+      "        # comment: OtherState",
+      "        pass",
+      "    # * End_case",
+      "# * End_match"
+    ],
+    "description": ["match:case -switch条件判断开关"]
+  },
+  "case -switch条件判断开关": {
+    "prefix": "add_case -switch",
+    "body": ["case ($0):", "    # comment: 注释", "    pass", "# * End_case"],
+    "description": ["case -switch条件判断开关"]
+  }
+}

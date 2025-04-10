@@ -1,0 +1,19 @@
+{
+  "pip.pyautogui 自动化计算机行为库": {
+    "prefix": "pip -pyautogui",
+    "body": [
+      "@REM pyscreeze 包管理",
+      "pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",
+      "@REM pyscreeze 图片处理(截图等功能)必备驱动库",
+      "pip install -U pyscreeze -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U Pillow -i https://mirrors.aliyun.com/pypi/simple/",
+      "@REM pyscreeze 主库",
+      "pip install -U pyautogui -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": [
+      "pip -pyautogui 自动化计算机行为库",
+      "它可以用来操作鼠标和键盘, 模拟人类的输入方式, 比如移动鼠标、点击按钮、输入文本等。pyAutoGUI还可以用来开发自动化工具, 比如自动回复聊天机器人、自动游戏挂机等"
+    ]
+  }
+}

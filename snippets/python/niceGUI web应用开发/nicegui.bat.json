@@ -1,0 +1,16 @@
+{
+  "pip.nicegui Python开发web应用框架": {
+    "prefix": "pip -nicegui",
+    "body": [
+      "@REM nicegui Web界面设计框架(基于 Quasar 框架)",
+      "pip install -U nicegui -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U ex4nicegui -i https://mirrors.aliyun.com/pypi/simple/",
+      "@REM 打包独立应用必备框架",
+      "pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U pywebview -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pip -nicegui Python开发web应用框架"]
+  }
+}

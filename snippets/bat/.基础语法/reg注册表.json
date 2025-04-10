@@ -1,0 +1,44 @@
+{
+  "REG静默运行": {
+    "prefix": "REG -s",
+    "body": ["CALL REG -s ${1:reg文件路径}"],
+    "description": ["REG静默运行"]
+  },
+  "REG导入": {
+    "prefix": "REG -import",
+    "body": ["CALL REG import ${1:reg文件路径}"],
+    "description": ["REG导入"]
+  },
+  "REG添加键值": {
+    "prefix": "REG -add",
+    "body": [
+      "CALL REG add \"${1:reg路径}\" /v \"key_名称\" /t REG_SZ /d \"value_数据\" /F"
+    ],
+    "description": ["REG添加键值"]
+  },
+  "REG删除键值": {
+    "prefix": "REG -delete",
+    "body": ["CALL REG delete \"${1:reg路径\" /v \"key_名称}\" /F"],
+    "description": ["REG删除键值"]
+  },
+  "路径变量path设置并添加修复注册表": {
+    "prefix": "REG =Edit",
+    "body": [
+      "@REM 注册表自定义编辑注入",
+      "@REM 获取当前路径 并 设为变量df",
+      "@REM set df=%~dp0",
+      "@REM 强调显示变量 %df%",
+      "@REM ECHO %df%",
+      "@REM 注册表中的应用",
+      "@REM 注册表创建自启动项",
+      "@REM REG add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /v \"key_名称\" /t REG_SZ /d \"value_数据\" /F",
+      "@REM 注册表删除自启动项",
+      "@REM REG delete \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /v \"key_名称\" /F",
+      "@REM REG add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /F",
+      "@REM 也可以不用变量直接写入",
+      "@REM REG add \"HKEY_CURRENT_USER\\Software\\illusion\" /v \"key_名称\" /d \"value_数据\" /F",
+      "@REM 路径“%~dp0”就是注册路径"
+    ],
+    "description": ["路径变量path设置并添加修复注册表"]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "random.choice": {
+    "prefix": "random.choice -choice",
+    "body": "random.choice(${1:sequence})",
+    "description": ["从非空序列中返回一个随机元素"]
+  },
+  "random.random": {
+    "prefix": "random.random -float",
+    "body": "random.random()",
+    "description": ["返回下一个随机浮点值"]
+  },
+  "random.randint": {
+    "prefix": "random.randint -int",
+    "body": "random.randint(${1:Start}, ${2:InclusiveEnd})",
+    "description": ["返回下一个随机整数值"]
+  },
+  "random.randrange": {
+    "prefix": "random.randrange -int:step",
+    "body": "random.randrange(${1:Start}, ${2:ExclusiveEnd}, ${3:Step})",
+    "description": ["返回下一个随机整数值, 使用给定的步长"]
+  },
+  "random.seed": {
+    "prefix": "random.seed -seed",
+    "body": "random.seed(1)",
+    "description": ["重新运行时生成具有种子值的相同随机数"]
+  },
+  "random.TextGenerate": {
+    "prefix": "random -TextGen",
+    "body": [
+      "x = \"\" # import string",
+      "length = 5$0 # import random",
+      "for i in range(length):",
+      "\tx = x + random.choice(string.ascii_letters)",
+      "# end for",
+      "print(x)"
+    ],
+    "description": ["根据给定长度生成字符串"]
+  },
+  "random.DateGenerate": {
+    "prefix": "random -DateGen",
+    "body": [
+      "start_date = datetime.date(2022, 2, 24)  # import random",
+      "end_date = datetime.date(2022, 3, 7)  # import datetime",
+      "random_duration = random.randrange((end_date - start_date).days)",
+      "random_date = start_date + datetime.timedelta(random_duration)",
+      "print(random_date)"
+    ],
+    "description": ["生成 2 个给定日期之间的日期"]
+  },
+  "random 示例": {
+    "prefix": "random =random",
+    "body": [
+      "sides = ['heads', 'tails']  # list of string options",
+      "outcomes = [0, 0]           # list of tallies heads/tails\n",
+      "for i in range(10000):",
+      "\ttoss = random.choice(sides)",
+      "\tif toss == \"heads\":",
+      "\t\toutcomes[0] += 1      # add one to current tally",
+      "\telse:",
+      "\t\toutcomes[1] += 1",
+      "\t# end if",
+      "# end for",
+      "print('Heads:', outcomes[0])",
+      "print('Tails:', outcomes[1])"
+    ],
+    "description": ["重新运行时生成具有种子值的相同随机数"]
+  }
+}

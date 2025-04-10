@@ -1,0 +1,34 @@
+{
+  "choice模板": {
+    "prefix": "choice-C-N-M =choice",
+    "body": [
+      ":begin",
+      "ECHO ==========================",
+      "ECHO [指令列表]",
+      "ECHO    [1] 指令1",
+      "ECHO    [2] 指令2",
+      "ECHO    [3] 指令3",
+      "ECHO ==========================",
+      "",
+      "choice /C 123 /M 请输入执行指令:",
+      "ECHO %errorlevel%",
+      "",
+      "if %errorlevel%==1 (",
+      "    call :to_1",
+      ") else if %errorlevel%==2 (",
+      "    call :to_2",
+      ") else (",
+      "    exit /B",
+      ")",
+      "",
+      ":to_1",
+      "ECHO 1 指令1",
+      "",
+      "",
+      ":to_2",
+      "ECHO 2 指令2",
+      ""
+    ],
+    "description": ["choice模板"]
+  }
+}
