@@ -16,7 +16,6 @@
       ")",
       "",
       "",
-      "",
       "if not exist \"%~dp0.vscode\\settings.json\" (",
       "    ECHO 配置项目工作配置文件",
       "    ECHO {> \"%~dp0.vscode\\settings.json\"",
