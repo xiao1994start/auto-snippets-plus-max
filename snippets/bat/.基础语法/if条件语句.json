@@ -1,16 +1,16 @@
 {
   "判断文件夹存在": {
-    "prefix": "if -exist",
+    "prefix": "if exist",
     "body": ["if exist ${1:判断目标} (", "    ECHO 目标存在", ")"],
     "description": ["判断文件夹存在"]
   },
   "判断文件夹不存在": {
-    "prefix": "if -not-exist",
+    "prefix": "if not exist",
     "body": ["if not exist ${1:判断目标} (", "    ECHO 目标不存在", ")"],
     "description": ["判断文件夹不存在"]
   },
   "判断字符串相等且忽略大小写": {
-    "prefix": "if -IEQU",
+    "prefix": ["if IEQU", "if I =="],
     "body": [
       "if /I \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
       "    ECHO 一致",
@@ -19,7 +19,7 @@
     "description": ["判断字符串相等且忽略大小写"]
   },
   "判断字符串完全相等": {
-    "prefix": "if -EQU",
+    "prefix": ["if EQU", "if =="],
     "body": [
       "if \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
       "    ECHO 完全一致",
@@ -28,7 +28,7 @@
     "description": ["判断字符串完全相等"]
   },
   "判断字符串不一致且忽略大小写": {
-    "prefix": "if -INEQ",
+    "prefix": ["if INEQ", "if not I =="],
     "body": [
       "if /I \"${1:被比较字符串}\" NEQ \"${2:对比字符串}\" (",
       "    ECHO 不一致",
@@ -37,7 +37,7 @@
     "description": ["字符串不一致且忽略大小写"]
   },
   "判断字符串完全不一致且忽略大小写": {
-    "prefix": "if -NEQ",
+    "prefix": ["if NEQ", "if not =="],
     "body": [
       "if not \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
       "    ECHO 完全不一致",
@@ -46,7 +46,7 @@
     "description": ["判断字符串完全不一致且忽略大小写"]
   },
   "判断字符串包含": {
-    "prefix": "if_String==",
+    "prefix": "if String ==",
     "body": [
       "if not \"!被比较字符串:包含字符串=!\"==\"!被比较字符串!\" (",
       "    ECHO 包含",
@@ -58,7 +58,7 @@
     "description": ["判断字符串包含"]
   },
   "判断文件夹是否为空": {
-    "prefix": ["dir-B-findstr-Empty", "ifDirEmpty"],
+    "prefix": ["dir B findstrEmpty", "if Dir Empty"],
     "body": [
       "dir /B ${1:文件夹路径} | findstr . >nul && ECHO NoEmpty || ECHO Empty"
     ],
