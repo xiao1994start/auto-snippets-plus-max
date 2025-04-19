@@ -17,6 +17,7 @@
       "@REM todo <switches> 选项:",
       "@REM * -l:<0...9> 设置压缩级别(0:存储, 5:默认, 9:最大)",
       "@REM * -p:<password> 设置密码",
+      "@REM * -ex:{list} 指定压缩时被排除在外的一列文件 (例如: -ex:hello.txt ; -ex:\"*.bak\" ; -ex:\"*.bak;*.tmp\" ; -ex:*\\.git)",
       "",
       "CALL Bandizip.exe c -l:1 ${2:压缩到_zip} ${1:压缩目标_1_2_3}",
       ""
