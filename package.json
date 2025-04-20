@@ -101,6 +101,10 @@
       },
       {
         "language": "bat",
+        "path": "./snippets/bat/cURL/cURL.json"
+      },
+      {
+        "language": "bat",
         "path": "./snippets/bat/DeskEdit/commands.json"
       },
       {
