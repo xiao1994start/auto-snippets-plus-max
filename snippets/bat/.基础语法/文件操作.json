@@ -113,7 +113,7 @@
   "创建快捷方式": {
     "prefix": ["Desktop_Lnk -vbs", "Shortcut -vbs"],
     "body": [
-      "mshta VBScript:Execute(\"Set a=CreateObject(\"\"WScript.Shell\"\"):Set b=a.CreateShortcut(a.SpecialFolders(\"\"Desktop\"\") & \"\"\\\\${1:快捷方式名称}.lnk\"\"):b.TargetPath=\"${2:exe绝对路径_需要双引号包裹}\":b.Arguments=\"\"--${3:启动选项可选}\"\":b.WorkingDirectory=\"\"${4:程序工作目录或起始位置}\"\":b.IconLocation=\"\"${5:可选ico图标路径}\"\":b.Save:close\"^)"
+      "mshta VBScript:Execute(\"Set a=CreateObject(\"\"WScript.Shell\"\"):Set b=a.CreateShortcut(a.SpecialFolders(\"\"Desktop\"\") & \"\"\\\\${1:快捷方式名称}.lnk\"\"):b.TargetPath=\"${2:exe绝对路径_需要双引号包裹}\":${3:b.Arguments=\"\"--启动选项可选\"\"}:b.WorkingDirectory=\"${4:程序工作目录或起始位置}\":${5:b.IconLocation=\"\"可选ico图标路径\"\"}:b.Save:close\"^)"
     ],
     "description": ["创建快捷方式"]
   },
