@@ -336,6 +336,12 @@
       "    例如, Path('spam.tar.gz').suffixes 返回 ['gz', 'tar']"
     ]
   },
+  "Path.with_suffix 扩展名替换": {
+    "prefix": ".with_suffix -Path",
+    "body": [".with_suffix('.${1:suffix}')"],
+    "description": ["Path.with_suffix 有扩展名则替换, 无则补充扩展名"]
+  },
+
   "Path.stem 除去后缀": {
     "prefix": ".stem -Path",
     "body": [".stem"],
