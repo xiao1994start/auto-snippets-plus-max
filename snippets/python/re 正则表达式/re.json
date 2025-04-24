@@ -6,7 +6,7 @@
   },
   "re.findall 查找匹配字符串->list": {
     "prefix": "re.findall -re",
-    "body": ["re.findall(${1:正则条件}, ${2:匹配对象})"],
+    "body": ["re.findall(r'${1:正则条件}', ${2:匹配对象})"],
     "description": [
       "re.findall 查找匹配字符串\r\n在字符串中找到正则表达式所匹配的所有子串, 并返回一个列表, 如果有多个匹配模式, 则返回元组列表, 如果没有找到匹配的, 则返回空列表"
     ]
@@ -18,18 +18,18 @@
   },
   "re.match 起始位置匹配": {
     "prefix": "re.match -re",
-    "body": ["re.match(${1:正则条件}, ${2:匹配对象})"],
+    "body": ["re.match(r'${1:正则条件}', ${2:匹配对象})"],
     "description": ["re.match 起始位置匹配, 返回匹配成功后的第一个对象"]
   },
   "re.search 匹配整个字符串": {
     "prefix": "re.search -re",
-    "body": ["re.search(${1:正则条件}, ${2:匹配对象})"],
+    "body": ["re.search(r'${1:正则条件}', ${2:匹配对象})"],
     "description": ["re.search 匹配整个字符串, 返回第一个成功的匹配"]
   },
   "re.sub 替换": {
     "prefix": "re.sub -re",
     "body": [
-      "re.sub(r'[${1:正则条件}]', ${2:替换内容}, ${3:匹配对象})",
+      "re.sub(r'[${1:正则条件}]', r'${2:替换内容}', ${3:匹配对象})",
       "# pattern=r'([匹配内容{匹配次数}])' 可以指定匹配组",
       "# repl=r'\\1' 可以指定替换组, \\1表示第一个匹配组, 配合()使用"
     ],
