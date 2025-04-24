@@ -1,11 +1,11 @@
 {
   "判断文件夹存在": {
-    "prefix": "if exist",
+    "prefix": ["if exists", "if exist"],
     "body": ["if exist ${1:判断目标} (", "    ECHO 目标存在", ")"],
     "description": ["判断文件夹存在"]
   },
   "判断文件夹不存在": {
-    "prefix": "if not exist",
+    "prefix": ["if not exists", "if not exist"],
     "body": ["if not exist ${1:判断目标} (", "    ECHO 目标不存在", ")"],
     "description": ["判断文件夹不存在"]
   },
