@@ -211,6 +211,7 @@
       "pip freeze  > \"%~dp0\\requirements.txt\"",
       "",
       "ECHO 完成",
+      "endlocal",
       ""
     ],
     "description": ["python-embed 嵌入式环境激活"]
@@ -239,6 +240,8 @@
       "",
       "",
       "CALL \"%~dp0python/python.exe\" ${1:py脚本路径} ${2:参数}",
+      "",
+      "endlocal",
       ""
     ],
     "description": "python-embed 嵌入式环境启动"
