@@ -27,7 +27,6 @@
   ],
   "contributes": {
     "snippets": [
-      // TODO : 添加其他语言的代码片段
       {
         "language": "bat",
         "path": "./snippets/bat/.基础语法/.basic.json"
