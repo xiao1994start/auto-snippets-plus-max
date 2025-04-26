@@ -12,6 +12,6 @@
       "$0",
       ""
     ],
-    "description": ["pip.uv 环境管理工具"]
+    "description": ["uv 环境管理工具"]
   }
 }

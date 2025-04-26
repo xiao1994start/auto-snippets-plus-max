@@ -1,7 +1,11 @@
 {
   "uv 当前文件夹创建新项目": {
     "prefix": ["uv venv"],
-    "body": ["ECHO uv 当前文件夹创建新项目...", "uv init ${1:项目名}", ""],
+    "body": [
+      "ECHO uv 当前文件夹创建新项目...(默认当前文件夹)",
+      "uv init ${1:项目名}",
+      ""
+    ],
     "description": ["uv 当前文件夹创建新项目"]
   },
 
@@ -24,6 +28,11 @@
     "body": ["ECHO 激活 python 虚拟环境", ".venv\\Scripts\\activate", ""],
     "description": ["激活 python 虚拟环境"]
   },
+  "uv 运行 py 脚本": {
+    "prefix": ["uv run"],
+    "body": ["uv run ${1:main.py}", ""],
+    "description": ["uv 运行 py 脚本"]
+  },
   "uv 安装依赖": {
     "prefix": ["uv add"],
     "body": [
@@ -39,7 +48,7 @@
   "uv 更新配置项目环境": {
     "prefix": ["uv sync"],
     "body": ["uv sync", "@REM     已存在项目安装项目依赖 (自动解析锁定文件)"],
-    "description": ["uv 更新配置项目环境"]
+    "description": ["uv 更新配置项目环境", "管理 python 版本 和 依赖包版本"]
   },
   "uv 仅同步生产依赖": {
     "prefix": ["uv sync -p"],

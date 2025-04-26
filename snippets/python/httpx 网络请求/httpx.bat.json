@@ -2,12 +2,25 @@
   "pip.httpx 网络请求库": {
     "prefix": "pip httpx",
     "body": [
-      "pip install -U httpx -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install -U httpx[http2] -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install -U httpx[brotli] -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install -U httpx[socks] -i https://mirrors.aliyun.com/pypi/simple/",
+      "pip install -U httpx httpx[http2] httpx[brotli] httpx[socks] -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
-    "description": ["pip -httpx 网络请求库"]
+    "description": ["httpx 网络请求库"]
+  },
+  "uv pip.httpx 网络请求库": {
+    "prefix": "uv pip httpx",
+    "body": [
+      "uv pip install -U httpx httpx[http2] httpx[brotli] httpx[socks] -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["httpx 网络请求库"]
+  },
+  "uv.httpx 网络请求库": {
+    "prefix": "uv httpx",
+    "body": [
+      "uv add httpx httpx[http2] httpx[brotli] httpx[socks] --index https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["httpx 网络请求库"]
   }
 }

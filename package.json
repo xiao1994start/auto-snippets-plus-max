@@ -149,10 +149,6 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/python/python.pip.json"
-      },
-      {
-        "language": "bat",
         "path": "./snippets/bat/python/python基础.json"
       },
       {
@@ -322,6 +318,10 @@
       {
         "language": "python",
         "path": "./snippets/python/.基础语法/type数据类型.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/其他pip依赖/python.pip.json"
       },
       {
         "language": "python",

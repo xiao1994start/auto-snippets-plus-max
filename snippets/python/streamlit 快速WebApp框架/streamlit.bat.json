@@ -5,6 +5,22 @@
       "pip install -U streamlit -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
-    "description": ["pip -streamlit 快速WebApp框架"]
+    "description": ["streamlit 快速WebApp框架"]
+  },
+  "uv pip.streamlit 快速WebApp框架": {
+    "prefix": "uv pip streamlit",
+    "body": [
+      "uv pip install -U streamlit -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["streamlit 快速WebApp框架"]
+  },
+  "uv.streamlit 快速WebApp框架": {
+    "prefix": "uv streamlit",
+    "body": [
+      "uv add streamlit --index https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["streamlit 快速WebApp框架"]
   }
 }

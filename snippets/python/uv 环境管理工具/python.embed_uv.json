@@ -47,7 +47,7 @@
       "    ECHO       \"env\": {>> \"%~dp0.vscode\\launch.json\"",
       "    ECHO         \"PATH\": \"\\${workspaceFolder}/python;\\${workspaceFolder}/python/Scripts;\\${env:PATH}\">> \"%~dp0.vscode\\launch.json\"",
       "    ECHO       },>> \"%~dp0.vscode\\launch.json\"",
-      "    ECHO       \"envFile\": \"\\${workspaceFolder}/.env\">> \"%~dp0.vscode\\launch.json\"",
+      "    ECHO       \"envFile\": \"\\${workspaceFolder}/.venv\">> \"%~dp0.vscode\\launch.json\"",
       "    ECHO     }>> \"%~dp0.vscode\\launch.json\"",
       "    ECHO   ]>> \"%~dp0.vscode\\launch.json\"",
       "    ECHO }>> \"%~dp0.vscode\\launch.json\"",

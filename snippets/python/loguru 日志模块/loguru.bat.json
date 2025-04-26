@@ -5,6 +5,22 @@
       "pip install -U loguru -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
-    "description": ["pip -loguru 日志库"]
+    "description": ["loguru 日志库"]
+  },
+  "uv pip.loguru 日志库": {
+    "prefix": "uv pip loguru",
+    "body": [
+      "uv pip install -U loguru -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["loguru 日志库"]
+  },
+  "uv.loguru 日志库": {
+    "prefix": "uv loguru",
+    "body": [
+      "uv add loguru --index https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["loguru 日志库"]
   }
 }

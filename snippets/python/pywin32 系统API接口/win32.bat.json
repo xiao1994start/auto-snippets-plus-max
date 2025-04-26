@@ -5,6 +5,22 @@
       "pip install -U pywin32 -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
-    "description": ["pip -pywin32 win系统库"]
+    "description": ["pywin32 win系统库"]
+  },
+  "uv pip.pywin32 win系统库": {
+    "prefix": "uv pip pywin32",
+    "body": [
+      "uv pip install -U pywin32 -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pywin32 win系统库"]
+  },
+  "uv.pywin32 win系统库": {
+    "prefix": "uv pywin32",
+    "body": [
+      "uv add pywin32 --index https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pywin32 win系统库"]
   }
 }

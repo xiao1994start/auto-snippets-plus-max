@@ -2,11 +2,28 @@
   "pip.pywebview webGUI框架库": {
     "prefix": "pip pywebview",
     "body": [
+      "pip install -U pywebview setuptools -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM 需要注意 pythonnet 版本(https://pypi.org/project/pythonnet/) 和 pywebview 版本需要对应",
-      "pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",
-      "pip install -U pywebview -i https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
-    "description": ["pip -pywebview webGUI框架库"]
+    "description": ["pywebview webGUI框架库"]
+  },
+  "uv pip.pywebview webGUI框架库": {
+    "prefix": "uv pip pywebview",
+    "body": [
+      "uv pip install -U pywebview setuptools -i https://mirrors.aliyun.com/pypi/simple/",
+      "@REM 需要注意 pythonnet 版本(https://pypi.org/project/pythonnet/) 和 pywebview 版本需要对应",
+      ""
+    ],
+    "description": ["pywebview webGUI框架库"]
+  },
+  "uv.pywebview webGUI框架库": {
+    "prefix": "uv pywebview",
+    "body": [
+      "uv add pywebview setuptools --index https://mirrors.aliyun.com/pypi/simple/",
+      "@REM 需要注意 pythonnet 版本(https://pypi.org/project/pythonnet/) 和 pywebview 版本需要对应",
+      ""
+    ],
+    "description": ["pywebview webGUI框架库"]
   }
 }
