@@ -1,6 +1,6 @@
 {
   "pip.nicegui Python开发web应用框架": {
-    "prefix": "pip -nicegui",
+    "prefix": "pip nicegui",
     "body": [
       "@REM nicegui Web界面设计框架(基于 Quasar 框架)",
       "pip install -U nicegui -i https://mirrors.aliyun.com/pypi/simple/",

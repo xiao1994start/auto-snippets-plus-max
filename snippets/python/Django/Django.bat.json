@@ -1,6 +1,6 @@
 {
   "pip.Django 库": {
-    "prefix": "pip -Django",
+    "prefix": "pip Django",
     "body": [
       "pip install -U ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
@@ -18,7 +18,7 @@
     "description": ["pip -Django 库"]
   },
   "pip.Django 库DRF组件": {
-    "prefix": "pip -DRF",
+    "prefix": "pip DRF",
     "body": [
       "pip install -U ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
       "pip install -U djangorestframework -i https://mirrors.aliyun.com/pypi/simple/",

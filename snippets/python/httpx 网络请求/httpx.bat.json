@@ -1,6 +1,6 @@
 {
   "pip.httpx 网络请求库": {
-    "prefix": "pip -httpx",
+    "prefix": "pip httpx",
     "body": [
       "pip install -U httpx -i https://mirrors.aliyun.com/pypi/simple/",
       "pip install -U httpx[http2] -i https://mirrors.aliyun.com/pypi/simple/",

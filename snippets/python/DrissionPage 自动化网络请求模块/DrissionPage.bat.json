@@ -1,6 +1,6 @@
 {
   "pip.DrissionPage 自动化网络请求库": {
-    "prefix": "pip -DrissionPage",
+    "prefix": "pip DrissionPage",
     "body": [
       "pip install -U DrissionPage -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",

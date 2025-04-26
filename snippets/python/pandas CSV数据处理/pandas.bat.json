@@ -1,6 +1,6 @@
 {
   "pip.pandas CSV数据库": {
-    "prefix": "pip -pandas",
+    "prefix": "pip pandas",
     "body": [
       "pip install -U pandas -i https://mirrors.aliyun.com/pypi/simple/",
       ""

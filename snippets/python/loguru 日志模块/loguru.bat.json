@@ -1,6 +1,6 @@
 {
   "pip.loguru 日志库": {
-    "prefix": "pip -loguru",
+    "prefix": "pip loguru",
     "body": [
       "pip install -U loguru -i https://mirrors.aliyun.com/pypi/simple/",
       ""

@@ -1,6 +1,6 @@
 {
   "pip.FastAPI 库": {
-    "prefix": "pip -fastapi",
+    "prefix": "pip fastapi",
     "body": [
       "@REM 安装 fastapi web框架",
       "pip install -U fastapi -i https://mirrors.aliyun.com/pypi/simple/",

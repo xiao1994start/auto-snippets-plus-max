@@ -1,6 +1,6 @@
 {
   "pip.selenium 自动化web测试": {
-    "prefix": "pip -selenium",
+    "prefix": "pip selenium",
     "body": [
       "pip install -U selenium -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",

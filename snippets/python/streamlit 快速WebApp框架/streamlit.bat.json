@@ -1,6 +1,6 @@
 {
   "pip.streamlit 快速WebApp框架": {
-    "prefix": "pip -streamlit",
+    "prefix": "pip streamlit",
     "body": [
       "pip install -U streamlit -i https://mirrors.aliyun.com/pypi/simple/",
       ""

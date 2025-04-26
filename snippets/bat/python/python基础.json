@@ -73,28 +73,28 @@
     "description": ["pipconfig.index批量镜像源"]
   },
   "pip.install 安装库": {
-    "prefix": "pip -install",
+    "prefix": ["pip -install", "pip -I"],
     "body": [
       "pip install ${1:库名_whl文件路径} ${2:-i https://mirrors.aliyun.com/pypi/simple/}"
     ],
     "description": ["pip -i 安装库"]
   },
   "pip.-reinstall 强制重装库": {
-    "prefix": "pip -install.reinstall",
+    "prefix": ["pip -reinstall"],
     "body": [
       "pip install --force-reinstall ${1:库名_whl文件路径} ${2:-i https://mirrors.aliyun.com/pypi/simple/}"
     ],
     "description": ["pip -reinstall 强制重装库"]
   },
-  "pip.-upgrade 升级库": {
-    "prefix": "pip -install-U",
+  "pip.install-upgrade 安装最新发布库": {
+    "prefix": ["pip -install-U", "pip -U"],
     "body": [
       "pip install -U ${1:pip} ${2:-i https://mirrors.aliyun.com/pypi/simple/}"
     ],
-    "description": ["pip -U 升级库"]
+    "description": ["pip.install-upgrade 安装最新发布库"]
   },
   "pip.uninstall 卸载": {
-    "prefix": "pip -uninstall",
+    "prefix": ["pip -uninstall", "pip -UN"],
     "body": ["pip uninstall ${1:库名} -y"],
     "description": ["pip -uninstall 卸载"]
   },
@@ -104,7 +104,7 @@
     "description": ["pip -freeze 获取安装库列表"]
   },
   "pip.requirements 列式安装库": {
-    "prefix": ["pip -requirements.install", "pip -txt.install"],
+    "prefix": ["pip -install.requirements", "pip -install.txt"],
     "body": [
       "pip install -r ${1:requirements.txt} -i https://mirrors.aliyun.com/pypi/simple/"
     ],

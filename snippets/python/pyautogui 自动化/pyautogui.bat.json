@@ -1,6 +1,6 @@
 {
   "pip.pyautogui 自动化计算机行为库": {
-    "prefix": "pip -pyautogui",
+    "prefix": "pip pyautogui",
     "body": [
       "@REM pyscreeze 包管理",
       "pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",

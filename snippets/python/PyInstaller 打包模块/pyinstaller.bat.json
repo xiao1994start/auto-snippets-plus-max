@@ -1,6 +1,6 @@
 {
   "pip.PyInstaller 打包库": {
-    "prefix": "pip -PyInstaller",
+    "prefix": "pip PyInstaller",
     "body": [
       "pip install -U pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
       ""

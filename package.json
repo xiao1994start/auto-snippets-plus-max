@@ -576,6 +576,18 @@
         "path": "./snippets/python/tkinter 内置TkGUI界面框架/tkinter.json"
       },
       {
+        "language": "bat",
+        "path": "./snippets/python/uv 环境管理工具/python.embed_uv.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/uv 环境管理工具/uv.base.bat.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/uv 环境管理工具/uv.bat.json"
+      },
+      {
         "language": "python",
         "path": "./snippets/python/uvicorn ASGI_Web服务器实现/uvicorn.json"
       },
