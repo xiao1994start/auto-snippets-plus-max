@@ -1,0 +1,42 @@
+{
+  "引入 wxauto.WeChat 微信自动化操作接口": {
+    "prefix": "im -wxauto.WeChat",
+    "body": [
+      "import _ctypes  # 解决 wxauto 库 except _ctypes.COMError 的报错 bug",
+      "from wxauto import WeChat  # 微信自动化"
+    ],
+    "description": ["引入 wxauto.WeChat 微信自动化操作接口"]
+  },
+  "WeChat 实例化获取微信窗口对象": {
+    "prefix": ["wx =wxauto.WeChat"],
+    "body": ["# 获取微信窗口对象", "wx = WeChat()"],
+    "description": ["WeChat 实例化获取微信窗口对象"]
+  },
+  "WeChat.AddListenChat 添加监听对象(str)": {
+    "prefix": ["wx.AddListenChat -wxauto.WeChat"],
+    "body": [
+      "wx.AddListenChat('监听对象who')",
+      "# savepic=True 保存聊天记录图片",
+      "# savefile=True 保存聊天记录文件",
+      "# savevoice=True 保存聊天记录语音"
+    ],
+    "description": ["WeChat.AddListenChat 添加监听对象(str)"]
+  },
+  "WeChat.GetListenMessage 获取到监听对象的聊天消息列表": {
+    "prefix": ["wx.GetListenMessage -wxauto.WeChat"],
+    "body": [
+      "wx.GetListenMessage()",
+      "# msgs = wx.GetListenMessage() 获取到监听对象的聊天消息列表"
+    ],
+    "description": ["WeChat.GetListenMessage 获取到监听对象的聊天消息列表"]
+  },
+  "WeChat.get 获取监听对象的聊天消息列表": {
+    "prefix": ["wx.get -wxauto.WeChat"],
+    "body": [
+      "get(${1:chat})",
+      "# who_msgs = msgs.get(chat) 获取监听对象的聊天消息列表 (chat = *wx.GetListenMessage() 返回的列表的解包) -> list",
+      "# who_msgs 解包后 msg 包括 msg.type (对象类型); msg.sender (发送者); msg.content (消息内容)"
+    ],
+    "description": ["WeChat.get 获取监听对象的聊天消息列表"]
+  }
+}

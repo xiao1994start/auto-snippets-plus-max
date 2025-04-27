@@ -1,7 +1,7 @@
 {
   "引入 httpx 模块": {
     "prefix": "im -httpx",
-    "body": ["import httpx"],
+    "body": ["import httpx  # httpx 新一代全能网络请求库"],
     "description": ["引入 httpx 模块"]
   },
   "httpx.Client 跨请求共享配置": {
@@ -43,7 +43,7 @@
       "    # event_hooks={\"request\": [], \"response\": []},",
       ") as client:",
       "    # r = client.get(url=URL, params={},)",
-      "    # r = client.post(url=URL, data={}, json={}, content=b'content', files=files)",
+      "    # r = client.post(url=URL, data=json.dumps({}), json={}, content=b'content', files=files)",
       "    ${0:pass}"
     ],
     "description": ["with httpx.Client 使用with进行Client构造函数 模板"]
@@ -86,19 +86,35 @@
     "prefix": ".content -httpx",
     "body": [".content"],
     "description": [
-      "httpx.content b.二进制响应内容.\r\n对于非文本响应, 响应内容也可以作为字节访问"
+      "httpx.content b.二进制响应内容",
+      "    对于非文本响应, 响应内容也可以作为字节访问"
     ]
   },
   "httpx.json JSON解码器": {
     "prefix": ".json -httpx",
     "body": [".json()"],
     "description": [
-      "httpx.json JSON 响应内容.\r\nWeb API 响应通常会被编码为 JSON"
+      "httpx.json JSON 响应内容",
+      "    Web API 响应通常会被编码为 JSON"
     ]
   },
   "httpx.status_cod 响应状态代码": {
     "prefix": ".status_code -httpx",
     "body": [".status_code"],
     "description": ["httpx.status_cod 检查响应的 HTTP 状态代码"]
+  },
+  "httpx.get 发送 GET 请求": {
+    "prefix": ["httpx.get -httpx"],
+    "body": ["httpx.get(url=${1:url}, headers=${2:headers})"],
+    "description": ["httpx.get 发送 GET 请求"]
+  },
+  "httpx.post 发送 POST 请求": {
+    "prefix": ["httpx.post -httpx"],
+    "body": [
+      "httpx.post(url=${1:url}, headers=${2:headers}, json=${3:dist})",
+      "# data=json.dumps(转换为json格式); json=直接转换为json格式",
+      ""
+    ],
+    "description": ["httpx.post 发送 POST 请求"]
   }
 }

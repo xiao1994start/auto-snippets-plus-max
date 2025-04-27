@@ -364,6 +364,10 @@
         "path": "./snippets/python/FastAPI/FastAPI.json"
       },
       {
+        "language": "bat",
+        "path": "./snippets/python/httpx 网络请求/httpx.bat.json"
+      },
+      {
         "language": "python",
         "path": "./snippets/python/httpx 网络请求/httpx.json"
       },
@@ -374,6 +378,14 @@
       {
         "language": "python",
         "path": "./snippets/python/json 数据处理/json.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/lmstudio-python Python SDK/lmstudio.bat.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/lmstudio-python Python SDK/lmstudio.json"
       },
       {
         "language": "python",
@@ -594,6 +606,14 @@
       {
         "language": "python",
         "path": "./snippets/python/winreg 注册表管理模块/winreg.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/wxauto 微信自动化操作接口/wxauto.bat.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/wxauto 微信自动化操作接口/wxauto.json"
       },
       {
         "language": "python",

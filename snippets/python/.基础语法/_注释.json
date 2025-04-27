@@ -8,7 +8,8 @@
       "# @Author  : ${1:Administrator}",
       "# @Date    : $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
       "# @File    : $TM_FILENAME",
-      "# @version 0.0.1",
+      "# @version : 0.0.1",
+      "# @Desc    : ${2:描述}",
       "$0"
     ],
     "description": ["Python 注释_描述"]
