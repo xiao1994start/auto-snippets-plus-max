@@ -2,9 +2,10 @@
   "创建class对象": {
     "prefix": ["new_class-newClassOOP -class", "add_class-OOP -class"],
     "body": [
-      "class ${1:NewObject}:",
-      "    # * class signal",
+      "class ${1:NewObject}():",
+      "    # * class default args(参数) | signal(信号)",
       "    def __init__(self) -> None:",
+      "        # * class input args(参数)",
       "        \"\"\"",
       "        ${2:_summary_}",
       "        \"\"\"",
@@ -18,7 +19,9 @@
     "prefix": ["class_init -class"],
     "body": [
       "def __init__(self) -> None:",
+      "    # * class input args(参数)",
       "    \"\"\"",
+      "    接收参数",
       "    ${2:_summary_}",
       "    \"\"\"",
       "    pass"
