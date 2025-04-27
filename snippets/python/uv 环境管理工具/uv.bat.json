@@ -1,6 +1,6 @@
 {
   "uv 当前文件夹创建新项目": {
-    "prefix": ["uv venv"],
+    "prefix": ["uv init"],
     "body": [
       "ECHO uv 当前文件夹创建新项目...(默认当前文件夹)",
       "uv init ${1:项目名}",
