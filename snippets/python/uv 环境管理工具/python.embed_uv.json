@@ -185,7 +185,7 @@
       "",
       "",
       ":setting_ruff",
-      "配置 Ruff ruff.toml 格式化规则 ",
+      "配置 Ruff [ruff.toml] [pyproject.toml] 格式化规则 ",
       "# 帮助文档: https://docs.astral.sh/ruff/configuration/",
       "",
       "[lint]",

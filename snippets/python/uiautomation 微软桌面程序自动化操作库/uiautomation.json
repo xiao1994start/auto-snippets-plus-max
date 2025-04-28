@@ -1,11 +1,8 @@
 {
-  "引入 wxauto.WeChat 微信自动化操作接口": {
-    "prefix": "im -wxauto.WeChat",
-    "body": [
-      "import _ctypes  # 解决 wxauto 库 except _ctypes.COMError 的报错 bug",
-      "from wxauto import WeChat  # 微信自动化"
-    ],
-    "description": ["引入 wxauto.WeChat 微信自动化操作接口"]
+  "引入 uiautomation Windows桌面程序自动化控制依赖": {
+    "prefix": "im -uiautomation",
+    "body": ["from wxauto import WeChat  # Windows桌面程序自动化控制依赖"],
+    "description": ["引入 uiautomation Windows桌面程序自动化控制依赖"]
   },
   "WeChat 实例化获取微信窗口对象": {
     "prefix": ["wx =wxauto.WeChat"],
