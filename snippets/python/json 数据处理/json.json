@@ -36,8 +36,10 @@
     "prefix": "with open_json -r",
     "body": [
       "with open(${1:file_path}, 'r', encoding='utf-8') as f_json:",
+      "    # r 只读(不清空文件), 文件必须存在, 不存在抛出错误, 文件指针在开头",
       "    json_data = json.load(f_json)",
-      "    $0"
+      "    $0",
+      ""
     ],
     "description": [
       "open -r 以只读方式打开文件文件的指针将会放在文件的开头这是默认模式",
@@ -48,25 +50,35 @@
     "prefix": "with open_json -w",
     "body": [
       "with open(${1:json_path}, 'w', encoding='utf-8') as f_json:",
+      "    # w 只写(清空文件), 不可读, 文件不存在创建新文件, 文件存在清空文件, 文件指针在开头",
       "    json_data = {}",
       "    f_json.write(json.dumps(json_data, indent=2, ensure_ascii=False))",
-      "    f_json.flush()  # 写文件刷新缓存"
+      "    f_json.flush()  # 写文件刷新缓存",
+      ""
     ],
     "description": [
-      "open -w+ 打开一个文件用于读写如果该文件已存在则打开文件, 并从开头开始编辑, 即原有内容会被删除如果该文件不存在, 创建新文件"
+      "open -w 打开一个文件用于写如果该文件已存在则打开文件, 并从开头开始编辑, 即原有内容会被删除如果该文件不存在, 创建新文件"
     ]
   },
-  "with.open.json -w+ 读写json": {
-    "prefix": "with open_json -w+",
+  "with.open.json -rw 更新读写json": {
+    "prefix": ["with open_json -rw--updata"],
     "body": [
-      "with open(${1:json_path}, 'w+', encoding='utf-8') as f_json:",
+      "with open(${1:file_path}, 'r', encoding='utf-8') as f_json:",
+      "    # r 只读(不清空文件), 文件必须存在, 不存在抛出错误, 文件指针在开头",
       "    json_data = json.load(f_json)",
-      "    $0",
-      "    f_json.write(json.dumps(json_data, indent=2, ensure_ascii=False))",
-      "    f_json.flush()  # 写文件刷新缓存"
+      "",
+      "# 数据更新操作$0",
+      "",
+      "with open(${1:json_path}, 'w', encoding='utf-8') as f_json:",
+      "    # w 只写(清空文件), 不可读, 文件不存在创建新文件, 文件存在清空文件, 文件指针在开头",
+      "    json_updata = json_data",
+      "    f_json.write(json.dumps(json_updata, indent=2, ensure_ascii=False))",
+      "    f_json.flush()  # 写文件刷新缓存",
+      ""
     ],
     "description": [
-      "open -w+ 打开一个文件用于读写如果该文件已存在则打开文件, 并从开头开始编辑, 即原有内容会被删除如果该文件不存在, 创建新文件"
+      "open -r 只读(不清空文件)打开原始json文件 ->",
+      "open -w 只写(清空文件)将更新后的json数据写入文件"
     ]
   }
 }

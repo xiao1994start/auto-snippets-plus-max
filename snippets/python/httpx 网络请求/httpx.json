@@ -105,13 +105,13 @@
   },
   "httpx.get 发送 GET 请求": {
     "prefix": ["httpx.get -httpx"],
-    "body": ["httpx.get(url=${1:url}, headers=${2:headers})"],
+    "body": ["httpx.get(url=${1:url}, headers=${2:headers}, timeout=None)"],
     "description": ["httpx.get 发送 GET 请求"]
   },
   "httpx.post 发送 POST 请求": {
     "prefix": ["httpx.post -httpx"],
     "body": [
-      "httpx.post(url=${1:url}, headers=${2:headers}, json=${3:dist})",
+      "httpx.post(url=${1:url}, headers=${2:headers}, json=${3:dist}, timeout=None)",
       "# data=json.dumps(转换为json格式); json=直接转换为json格式",
       ""
     ],

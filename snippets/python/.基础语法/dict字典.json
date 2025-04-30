@@ -235,7 +235,7 @@
   },
   "dict.update 使用指定的键值对更新dict": {
     "prefix": ".update -dict",
-    "body": ".update(${1:key}, ${2:value})",
+    "body": ".update(${1:dicts})",
     "description": ["dict.update 使用指定的键值对更新dict"]
   },
   "dict.update 示例": {
