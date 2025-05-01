@@ -51,8 +51,8 @@
     "description": ["uiautomation.Exists 检查目标控件是否存在"]
   },
   "uiautomation.SetTopmost 窗口置顶": {
-    "prefix": ["uiautomation.SetTopmost -uiautomation"],
-    "body": [".SetTopmost(True)", "# 窗口置顶"],
+    "prefix": [".SetTopmost -uiautomation"],
+    "body": [".SetTopmost(${1:True})", "# 窗口置顶"],
     "description": ["uiautomation.SetTopmost 窗口置顶"]
   },
   "uiautomation.SetFocus 获取文本框焦点": {
