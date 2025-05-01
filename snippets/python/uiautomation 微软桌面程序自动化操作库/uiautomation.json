@@ -95,6 +95,14 @@
     "body": [".Click(simulateMove=False)"],
     "description": ["uiautomation.Click 点击(不显示鼠标移动的过程)"]
   },
+  "uiautomation.SendKeys 点击(不显示鼠标移动的过程)": {
+    "prefix": [".SendKeys -uiautomation"],
+    "body": [
+      ".SendKeys(${1:text}, waitTime=0.5)",
+      "# waitTime 可以更好的模拟输入的过程"
+    ],
+    "description": ["uiautomation.SendKeys 点击(不显示鼠标移动的过程)"]
+  },
   "uiautomation.GetChildren 获取窗口内所有控件": {
     "prefix": [
       "GetChildren =uiautomation",
