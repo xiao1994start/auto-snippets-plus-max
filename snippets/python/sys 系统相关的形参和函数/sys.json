@@ -2,7 +2,7 @@
   "导入 sys 模块": {
     "prefix": "im -sys",
     "body": ["import sys"],
-    "description": ["导入sys模块"]
+    "description": ["导入 sys 模块"]
   },
   "sys.argv 脚本传入参数": {
     "prefix": "sys.argv -sys",
@@ -16,34 +16,52 @@
       "\r\n如果没有脚本名被传递给 Python 解释器,  argv[0] 为空字符串"
     ]
   },
-  "sys.path 解释器搜索模块的路径列表": {
+  "sys.path 解释器搜索依赖的路径列表": {
     "prefix": "sys.path -sys",
     "body": ["sys.path"],
     "description": [
-      "sys.path 一个列表, 其中包含了 Python 解释器搜索模块的路径列表"
+      "sys.path 一个列表, 其中包含了 Python 解释器搜索依赖的路径列表"
     ]
   },
-  "sys.path.append 添加python环境模块路径": {
+  "sys.path.append 添加python环境依赖路径": {
     "prefix": "sys.path.append -sys",
     "body": ["sys.path.append($0)", ""],
-    "description": ["sys.path.append 添加python环境模块路径"]
+    "description": ["sys.path.append 添加python环境依赖路径"]
   },
-  "sys.path.append_file 添加当前文件所在目录到python环境模块路径": {
+  "sys.path.append_file 添加当前文件所在目录到python环境依赖路径": {
     "prefix": "sys.path.append_file -sys",
     "body": ["sys.path.append(str(Path(__file__).parent.resolve()))", ""],
     "description": [
-      "sys.path.append_file 添加当前文件所在目录到python环境模块路径"
+      "sys.path.append_file 添加当前文件所在目录到python环境依赖路径"
     ]
   },
-  "sys.path.append_list 添加当前文件所在目录到python环境模块路径": {
+  "sys.path.append_list 添加当前文件所在目录到python环境依赖路径": {
     "prefix": "sys.path.append_list -sys",
     "body": [
       "[sys.path.append(str(i)) for i in [Path(__file__).parent.resolve()] if str(i) not in sys.path]",
       ""
     ],
     "description": [
-      "sys.path.append_list 添加当前文件所在目录到python环境模块路径"
+      "sys.path.append_list 添加当前文件所在目录到python环境依赖路径"
     ]
+  },
+  "sys.path.__init__.py添加当前文件所在目录到python环境依赖路径 init模版": {
+    "prefix": "sys.path.init =sys",
+    "body": [
+      "import sys",
+      "from pathlib import Path",
+      "",
+      "[",
+      "    sys.path.append(str(i))",
+      "    for i in [",
+      "        Path(__file__).parent.resolve(),",
+      "        # Path(__file__).parent.parent.resolve(),",
+      "    ]",
+      "    if str(i) not in sys.path and i",
+      "]",
+      ""
+    ],
+    "description": "sys.path.__init__.py添加当前文件所在目录到python环境依赖路径 init模版"
   },
   "sys.path.insert 脚本传入参数": {
     "prefix": "sys.insert -sys",
