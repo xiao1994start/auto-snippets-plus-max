@@ -47,5 +47,10 @@
       ":yoHELP"
     ],
     "description": ["yoHELP - 创建 vscode 插件"]
+  },
+  "使用 VSCode 打开...": {
+    "prefix": ["code", "vscode"],
+    "body": ["call code ${1:.}"],
+    "description": ["使用 VSCode 打开..."]
   }
 }
