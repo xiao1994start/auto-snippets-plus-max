@@ -1,5 +1,11 @@
 @ECHO OFF
 setlocal enabledelayedexpansion
+CD /D "%~dp0"
+for %%v in ("auto-snippets-plus-max-*.vsix") do (
+    ECHO 清理旧版插件 %%v
+    del /F /Q "%%v"
+)
+
 CD /D "%~dp0\.."
 ECHO %cd%
 
@@ -27,7 +33,8 @@ ECHO 封装完成
 for %%i in (*.vsix) do (
     echo %%i
     call code --install-extension %%i
-    move /Y "%%i" "../%%i"
+    @REM move /Y "%%i" "..\%%i"
+    copy /V /Y "%%i" "..\%%i"
 )
 ECHO 插件封装脚本执行完毕
 @REM PAUSE > NUL

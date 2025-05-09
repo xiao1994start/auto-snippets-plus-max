@@ -289,10 +289,6 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/random随机数.json"
-      },
-      {
-        "language": "python",
         "path": "./snippets/python/.基础语法/requests网络请求.json"
       },
       {
@@ -518,6 +514,10 @@
       {
         "language": "python",
         "path": "./snippets/python/pywin32 系统API接口/win32print.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/random 随机模块/random.json"
       },
       {
         "language": "python",
