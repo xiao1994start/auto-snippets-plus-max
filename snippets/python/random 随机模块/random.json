@@ -12,7 +12,14 @@
   "random.random": {
     "prefix": "random.random -float",
     "body": "random.random()",
-    "description": ["返回下一个随机浮点值"]
+    "description": ["返回 0.0 <= X < 1.0 范围内的下一个随机浮点数。"]
+  },
+  "random.uniform": {
+    "prefix": "random.uniform -float",
+    "body": "random.uniform(${1:a}, ${2:b})",
+    "description": [
+      "返回一个随机浮点数 N ，当 a <= b 时 a <= N <= b ，当 b < a 时 b <= N <= a 。"
+    ]
   },
   "random.randint": {
     "prefix": "random.randint -int",
