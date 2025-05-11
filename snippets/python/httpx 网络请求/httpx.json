@@ -105,15 +105,24 @@
   },
   "httpx.get 发送 GET 请求": {
     "prefix": ["httpx.get -httpx"],
-    "body": ["httpx.get(url=${1:url}, headers=${2:headers}, timeout=None)"],
+    "body": [
+      "httpx.get(",
+      "    url=${1:'url'},",
+      "    headers={'Content-Type': 'application/json'},",
+      "    timeout=None,  # None:无限制等待时间",
+      ")"
+    ],
     "description": ["httpx.get 发送 GET 请求"]
   },
   "httpx.post 发送 POST 请求": {
     "prefix": ["httpx.post -httpx"],
     "body": [
-      "httpx.post(url=${1:url}, headers=${2:headers}, json=${3:dist}, timeout=None)",
-      "# data=json.dumps(转换为json格式); json=直接转换为json格式",
-      ""
+      "httpx.post(",
+      "    url=${1:'url'},",
+      "    headers={'Content-Type': 'application/json'},",
+      "    json={$0},  # json=直接转换dict为json格式(推荐); data=json.dumps(转换dict为json格式)",
+      "    timeout=None,  # 设置超时时间 (None:无限制等待时间;  0:表示不设置超时)",
+      ")"
     ],
     "description": ["httpx.post 发送 POST 请求"]
   }
