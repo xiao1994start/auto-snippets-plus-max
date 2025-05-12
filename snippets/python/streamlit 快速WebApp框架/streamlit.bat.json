@@ -18,7 +18,7 @@
   "uv.streamlit 快速WebApp框架": {
     "prefix": "uv streamlit",
     "body": [
-      "uv add streamlit --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"streamlit\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["streamlit 快速WebApp框架"]

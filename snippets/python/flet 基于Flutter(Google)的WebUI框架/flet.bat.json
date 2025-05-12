@@ -20,7 +20,7 @@
   "uv.flet 基于 Flutter(Google) 的WebUI框架": {
     "prefix": "uv flet",
     "body": [
-      "uv add flet[all] setuptools pyinstaller --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"flet[all]\" \"setuptools\" \"pyinstaller\" --index https://mirrors.aliyun.com/pypi/simple/",
       "@REM Flet 基于 Flutter(Google) 的WebUI框架",
       ""
     ],

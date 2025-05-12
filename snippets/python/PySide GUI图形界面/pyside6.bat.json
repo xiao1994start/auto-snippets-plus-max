@@ -20,7 +20,7 @@
   "uv.pyside6 GUI界面库": {
     "prefix": "uv pyside6",
     "body": [
-      "uv add pyside6 --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"pyside6==6.8.0\" --index https://mirrors.aliyun.com/pypi/simple/",
       "@REM 目前测试 pyside6==6.8.0 版本较为稳定",
       ""
     ],

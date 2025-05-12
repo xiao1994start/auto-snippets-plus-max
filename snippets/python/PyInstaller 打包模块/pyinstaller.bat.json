@@ -18,7 +18,7 @@
   "uv.PyInstaller 打包库": {
     "prefix": "uv PyInstaller",
     "body": [
-      "uv add pyinstaller --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"pyinstaller\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["PyInstaller 打包库"]

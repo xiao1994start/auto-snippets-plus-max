@@ -18,7 +18,7 @@
   "uv.beautifulsoup4 HTML解析库": {
     "prefix": "uv beautifulsoup4",
     "body": [
-      "uv add beautifulsoup4 lxml html5lib --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"beautifulsoup4\" lxml html5lib --index https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["beautifulsoup4 HTML解析库"]
