@@ -1,0 +1,7 @@
+{
+  "flet.main(page: ft.Page) 创建主界面框架函数": {
+    "prefix": ["main_flet_page -flet"],
+    "body": [".object"],
+    "description": ["flet.object 创建主界面框架函数"]
+  }
+}
