@@ -49,10 +49,13 @@
     "prefix": ["uv sync"],
     "body": [
       "ECHO 将项目的依赖项与环境同步",
-      "@REM * 已存在项目安装项目依赖 (自动解析锁定文件)",
+      "@REM * 根据 pyproject.toml 和 uv.lock 锁文件创建或更新虚拟环境",
       "uv sync"
     ],
-    "description": ["uv 更新配置项目环境", "管理 python 版本 和 依赖包版本"]
+    "description": [
+      "uv 更新配置项目环境",
+      "根据 pyproject.toml 和锁文件创建或更新虚拟环境"
+    ]
   },
   "uv 仅同步生产依赖": {
     "prefix": ["uv sync -p"],

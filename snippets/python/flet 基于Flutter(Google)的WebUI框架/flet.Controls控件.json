@@ -1,0 +1,12 @@
+{
+  "ft.Row 以水平阵列显示其子项的控件": {
+    "prefix": ["ft.Row -ft"],
+    "body": ["ft.Row($0)"],
+    "description": ["ft.Row 以水平阵列显示其子项的控件"]
+  },
+  "ft.Column 以垂直阵列显示其子项的控件": {
+    "prefix": ["ft.Column -ft"],
+    "body": ["ft.Column($0)"],
+    "description": ["ft.Column 以垂直阵列显示其子项的控件"]
+  }
+}

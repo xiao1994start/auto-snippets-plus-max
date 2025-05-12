@@ -14,5 +14,10 @@
       ""
     ],
     "description": ["flet.app 运行 Flet 应用"]
+  },
+  "ft.update() 更新 Flet 应用": {
+    "prefix": ["ft.update -ft"],
+    "body": ["ft.update()"],
+    "description": ["ft.update() 更新 Flet 应用"]
   }
 }
