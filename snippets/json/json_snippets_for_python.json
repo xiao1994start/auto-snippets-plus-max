@@ -1,6 +1,6 @@
 {
   "snippets.python.import =>模板": {
-    "prefix": "snippets.python.import =json.snippets",
+    "prefix": ["snippets.python.import =json.snippets"],
     "body": [
       "\"引入 ${1:type} ${2:描述}\": {",
       "  \"prefix\": [\"im -${1:type}\"],",
@@ -11,11 +11,11 @@
     "description": ["snippets.python.import =>模板"]
   },
   "snippets.python.object =>模板": {
-    "prefix": "snippets.python.object =json.snippets",
+    "prefix": ["snippets.python.object =json.snippets"],
     "body": [
       "\"${1:type}.${2:object} ${3:描述}\": {",
-      "  \"prefix\": [\"${1:type}.${2:object} -${1:type}\"],",
-      "  \"body\": [\"${1:type}.${2:object}\"],",
+      "  \"prefix\": [\"prefix -${1:type}\"],",
+      "  \"body\": [\"body\"],",
       "  \"description\": [\"${1:type}.${2:object} ${3:描述}\"]",
       "},"
     ],

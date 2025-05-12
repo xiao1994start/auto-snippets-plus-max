@@ -1,13 +1,23 @@
 {
-  "引入 flet flet WebUI框架": {
-    "prefix": "im -flet",
-    "body": ["import flet as ft  # 引入 flet WebUI框架"],
-    "description": ["引入 flet flet WebUI框架"]
+  "引入 flet WebUI框架": {
+    "prefix": ["im -flet"],
+    "body": ["import flet as ft  # * 引入 flet WebUI框架"],
+    "description": ["引入 flet WebUI框架"]
+  },
+  "引入 flet WebUI框架 及 控件组件": {
+    "prefix": ["from -flet"],
+    "body": [
+      "import flet as ft  # * 引入 flet WebUI框架",
+      "# * 引入 flet 组件",
+      "from flet import Button, ElevatedButton, Icons, Page, Row, TextField, ThemeMode, app",
+      ""
+    ],
+    "description": ["引入 flet WebUI框架 及 控件组件"]
   },
   "ft.app 运行 Flet 应用": {
     "prefix": ["ft.app -flet"],
     "body": [
-      "ft.app(",
+      "app(",
       "    target=main,",
       "    # view=ft.WEB_BROWSER,  # *运行模式: (默认:独立窗口, WEB_BROWSER:浏览器)",
       ")",
@@ -16,8 +26,13 @@
     "description": ["flet.app 运行 Flet 应用"]
   },
   "ft.update() 更新 Flet 应用": {
-    "prefix": ["ft.update -ft"],
+    "prefix": ["update -ft"],
     "body": ["ft.update()"],
     "description": ["ft.update() 更新 Flet 应用"]
+  },
+  "ft.page.add 添加页面控件和处理事件": {
+    "prefix": ["page.add -ft"],
+    "body": ["page.add($0)"],
+    "description": ["ft.page.add 添加页面控件和处理事件"]
   }
 }

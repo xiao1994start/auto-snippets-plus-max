@@ -1,12 +1,33 @@
 {
   "ft.Row 以水平阵列显示其子项的控件": {
     "prefix": ["ft.Row -ft"],
-    "body": ["ft.Row($0)"],
+    "body": ["Row(controls=[$0])"],
     "description": ["ft.Row 以水平阵列显示其子项的控件"]
   },
   "ft.Column 以垂直阵列显示其子项的控件": {
     "prefix": ["ft.Column -ft"],
-    "body": ["ft.Column($0)"],
+    "body": ["Column(controls=[$0])"],
     "description": ["ft.Column 以垂直阵列显示其子项的控件"]
+  },
+  "ft.TextField 文本输入控件": {
+    "prefix": ["ft.TextField -ft"],
+    "body": ["TextField"],
+    "description": [
+      "ft.TextField 文本输入控件",
+      "文本字段允许用户使用硬件键盘或屏幕键盘输入文本"
+    ]
+  },
+  "ft.Button 按钮": {
+    "prefix": ["ft.Button -ft"],
+    "body": ["ElevatedBuButtontton(text='按钮')"],
+    "description": ["ft.Button 按钮"]
+  },
+  "ft.ElevatedButton 凸起按钮": {
+    "prefix": ["ft.ElevatedButton -ft"],
+    "body": ["ElevatedButton(text='凸起按钮')"],
+    "description": [
+      "ft.ElevatedButton 凸起按钮",
+      "ElevatedButton 有别名 Button , 可以互换使用"
+    ]
   }
 }
