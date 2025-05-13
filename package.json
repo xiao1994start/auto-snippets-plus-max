@@ -337,6 +337,14 @@
       },
       {
         "language": "bat",
+        "path": "./snippets/python/darkdetect 智能主题模式检测库/darkdetect.bat.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/darkdetect 智能主题模式检测库/darkdetect.json"
+      },
+      {
+        "language": "bat",
         "path": "./snippets/python/Django/Django.bat.json"
       },
       {
@@ -365,15 +373,19 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.example.json"
-      },
-      {
-        "language": "python",
         "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls控件.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.ft.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.page.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.example.json"
       },
       {
         "language": "bat",
@@ -413,7 +425,7 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt.basic.json"
+        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt.import.json"
       },
       {
         "language": "python",

@@ -18,7 +18,7 @@
   "uv.依赖名 依赖描述": {
     "prefix": ["uv 依赖名"],
     "body": [
-      "uv add 依赖名 --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"依赖名\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["依赖名 依赖描述"]

@@ -8,15 +8,6 @@
     ],
     "description": ["pywebview webGUI框架库"]
   },
-  "uv pip.pywebview webGUI框架库": {
-    "prefix": ["uv pip pywebview"],
-    "body": [
-      "uv pip install -U pywebview setuptools -i https://mirrors.aliyun.com/pypi/simple/",
-      "@REM 需要注意 pythonnet 版本(https://pypi.org/project/pythonnet/) 和 pywebview 版本需要对应",
-      ""
-    ],
-    "description": ["pywebview webGUI框架库"]
-  },
   "uv.pywebview webGUI框架库": {
     "prefix": ["uv pywebview"],
     "body": [

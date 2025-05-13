@@ -1,41 +1,41 @@
 {
   "引入 PIL.Image 图像处理模块": {
-    "prefix": ["import -PIL.Image"],
+    "prefix": ["import PIL_Image"],
     "body": ["from PIL import Image"],
     "description": ["引入 PIL.Image 图像处理模块"]
   },
   "PIL.Image.open 打开图形文件": {
-    "prefix": ["Image.open -PIL.Image"],
+    "prefix": ["PIL_Image_open"],
     "body": ["Image.open(${1:strImgPath})"],
     "description": ["PIL.Image.open 打开图形文件"]
   },
   "PIL.Image.save 打开图形文件": {
-    "prefix": ["Image.save -PIL.Image"],
+    "prefix": ["PIL_Image_save"],
     "body": ["Image.save($0)"],
     "description": ["PIL.Image.open 打开图形文件"]
   },
   "PIL.Image.convert('RGB') 转换图像格式RGB彩色": {
-    "prefix": [".convertRGB -PIL.Image"],
+    "prefix": ["PIL_Image_convertRGB"],
     "body": [".convert('RGB')"],
     "description": ["PIL.Image.convert 转换图像格式RGB彩色"]
   },
   "PIL.Image.convert('L') 转换图像格式RGB灰度": {
-    "prefix": [".convertL -PIL.Image"],
+    "prefix": ["PIL_Image_convertL"],
     "body": [".convert('L')"],
     "description": ["PIL.Image.convert 转换图像格式RGB灰度"]
   },
   "PIL.Image.format 识别图像格式": {
-    "prefix": [".format -PIL.Image"],
+    "prefix": ["PIL_Image_format"],
     "body": [".format"],
     "description": ["PIL.Image.format 识别图像格式"]
   },
   "PIL.Image.mode 图像色彩模式": {
-    "prefix": [".mode -PIL.Image"],
+    "prefix": ["PIL_Image_mode"],
     "body": [".mode"],
     "description": ["PIL.Image.mode 图像色彩模式"]
   },
   "PIL.Image.size 图像尺寸": {
-    "prefix": [".size -PIL.Image"],
+    "prefix": ["PIL_Image_size"],
     "body": [".size"],
     "description": ["PIL.Image.size 图像尺寸"]
   }

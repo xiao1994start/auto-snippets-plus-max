@@ -1,6 +1,6 @@
 {
   "msvcrt.创建控制台交互入口函数模板": {
-    "prefix": ["msvcrt_main =msvcrt"],
+    "prefix": ["msvcrt_main="],
     "body": [
       "def main(commands=sys.argv):",
       "    if isinstance(commands, list):",

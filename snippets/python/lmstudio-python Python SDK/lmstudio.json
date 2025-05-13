@@ -1,6 +1,6 @@
 {
   "引入 LM Studio SDK python 操作依赖(不使用 LM Studio 界面化窗口)": {
-    "prefix": ["import -lmstudio"],
+    "prefix": ["import lmstudio"],
     "body": [
       "import lmstudio as lms  # SDK python 操作依赖(不使用 LM Studio 界面化窗口)"
     ],

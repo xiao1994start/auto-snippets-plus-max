@@ -1,11 +1,11 @@
 {
   "引入 pandas 模块": {
-    "prefix": ["import -pandas"],
+    "prefix": ["import pandas", "import pd"],
     "body": ["import pandas as pd  # 数据处理模块"],
     "description": ["引入 pandas 数据处理模块"]
   },
   "pandas.Series 创建一维数组或列表": {
-    "prefix": ["pd.Series -pandas"],
+    "prefix": ["pd_Series", "pandas_Series"],
     "body": ["pd.Series(data=${1:data}, index=None)"],
     "description": [
       "pandas.Series 创建一维数组或列表",
@@ -17,7 +17,7 @@
     ]
   },
   "pandas.DataFrame 创建二维表格": {
-    "prefix": ["pd.DataFrame -pandas"],
+    "prefix": ["pd_DataFrame", "pandas_DataFrame"],
     "body": ["pd.DataFrame(data=${1:data}, index=None)"],
     "description": [
       "pandas.DataFrame 创建二维表格",
@@ -31,7 +31,7 @@
     ]
   },
   "pandas.drop 删除指定列": {
-    "prefix": [".drop -pandas"],
+    "prefix": ["pd_drop", "pandas_drop"],
     "body": [".drop(labels=[labelsList], axis=1, inplace=True)"],
     "description": [
       "pandas.values 删除指定列",
@@ -41,7 +41,7 @@
     ]
   },
   "pandas.to_csv 保存为CSV文件": {
-    "prefix": [".to_csv -pandas"],
+    "prefix": ["pd_to_csv", "pandas_to_csv"],
     "body": [".to_csv(path_or_buf=${1:file_path}, header=True, index=True)"],
     "description": [
       "pandas.values 保存为CSV文件",
@@ -53,22 +53,22 @@
     ]
   },
   "pandas.values 值": {
-    "prefix": [".values -pandas"],
+    "prefix": ["pd_values", "pandas_values"],
     "body": [".values"],
     "description": ["pandas.values 值"]
   },
   "pandas.isnull NaN空值->True": {
-    "prefix": [".isnull -pandas"],
+    "prefix": ["pd_isnull", "pandas_isnull"],
     "body": [".isnull()"],
     "description": ["pandas.isnull NaN空值->True"]
   },
   "pandas.notnull NaN空值->False": {
-    "prefix": [".notnull -pandas"],
+    "prefix": ["pd_notnull", "pandas_notnull"],
     "body": [".notnull()"],
     "description": ["pandas.notnull NaN空值->False"]
   },
   "pandas.loc 索引取值": {
-    "prefix": [".loc -pandas"],
+    "prefix": ["pd_loc", "pandas_loc"],
     "body": [".loc[$0]"],
     "description": [
       "pandas.loc 索引取值",

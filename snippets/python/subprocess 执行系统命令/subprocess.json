@@ -1,11 +1,11 @@
 {
   "导入 subprocess 执行系统命令模块": {
-    "prefix": ["import -subprocess"],
+    "prefix": ["import subprocess"],
     "body": ["import subprocess  # 执行系统命令模块"],
     "description": ["导入subprocess执行系统命令模块"]
   },
   "subprocess.run 运行命令": {
-    "prefix": ["subprocess.run -subprocess"],
+    "prefix": ["subprocess_run"],
     "body": [
       "subprocess.run($0, shell=True, capture_output=True, check=True, text=True)"
     ],
@@ -22,7 +22,7 @@
     ]
   },
   "try:subprocess.run 捕获异常": {
-    "prefix": ["try:subprocess.run -try:subprocess"],
+    "prefix": ["try_ subprocess_run"],
     "body": [
       "try:",
       "    subprocess.run($0, shell=True, capture_output=True, check=True, text=True)",
@@ -35,7 +35,7 @@
     "description": "try:subprocess.run 捕获异常"
   },
   "subprocess.Popen 构造函数": {
-    "prefix": ["subprocess.Popen =subprocess"],
+    "prefix": ["subprocess_Popen="],
     "body": [
       "subprocess.Popen(",
       "    $0,  # * 传递给Popen的命令列表",
@@ -58,7 +58,7 @@
     ]
   },
   "subprocess.getoutput 接收字符串格式的命令": {
-    "prefix": ["subprocess.getoutput -subprocess"],
+    "prefix": ["subprocess_getoutput"],
     "body": ["subprocess.getoutput()"],
     "description": [
       "subprocess.getoutput 接收字符串格式的命令",

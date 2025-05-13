@@ -1,6 +1,6 @@
 {
   "引入 tkinter 内置TkGUI界面框架": {
-    "prefix": ["import -tkinter"],
+    "prefix": ["import tkinter"],
     "body": ["import tkinter as tk", "from tkinter import Tk, filedialog"],
     "description": ["引入 tkinter 内置TkGUI界面框架"]
   },
@@ -32,7 +32,7 @@
     "description": ["tkinter 目录选择器"]
   },
   "tkinter 文件选择器": {
-    "prefix": ["tk=select_file =tkinter"],
+    "prefix": ["tk_select_file=", "tkinter_select_file="],
     "body": [
       "def select_file():",
       "    \"\"\"",

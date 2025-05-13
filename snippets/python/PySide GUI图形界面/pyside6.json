@@ -1,6 +1,6 @@
 {
   "引入 PySide6 图形界面库": {
-    "prefix": ["import -PySide6"],
+    "prefix": ["import PySide6"],
     "body": [
       "import sys",
       "from pathlib import Path",
@@ -44,7 +44,7 @@
     "description": ["引入 PySide6 图形界面库"]
   },
   "引入 PySide6 图形界面库 模板": {
-    "prefix": ["import =PySide6"],
+    "prefix": ["import PySide6="],
     "body": [
       "import sys",
       "from pathlib import Path",
@@ -117,7 +117,7 @@
     "description": ["引入 PySide6 图形界面库 模板"]
   },
   "PySide6.MainUI 创建窗体对象": {
-    "prefix": ["QT=QWidget =PySide6"],
+    "prefix": ["PySide6_QWidget="],
     "body": [
       "class MainUI(QWidget, Ui_Form):  # 继承 Ui_Form 类的实例",
       "    # ! 信号: 窗体 -> 子线程",
@@ -137,7 +137,7 @@
     "description": ["PySide6.MainUI 创建窗体对象"]
   },
   "PySide6.MainUI.createQThread 窗体创建子线程对象": {
-    "prefix": ["QT=createQThread =PySide6"],
+    "prefix": ["PySide6_createQThread="],
     "body": [
       "def createThread(self):",
       "    \"\"\"",
@@ -187,7 +187,7 @@
     "description": ["PySide6.MainUI.createQThread 窗体创建子线程对象"]
   },
   "PySide6.MainUI.closeEvent 重写窗体关闭事件": {
-    "prefix": ["QT=closeEvent =PySide6"],
+    "prefix": ["PySide6_closeEvent="],
     "body": [
       "def closeEvent(self, event):",
       "    \"\"\"",
@@ -217,7 +217,7 @@
     "description": ["PySide6.MainUI.closeEvent 重写窗体关闭事件"]
   },
   "PySide6.MainThread 创建子线程对象": {
-    "prefix": ["QT=add_classQWidget =PySide6"],
+    "prefix": ["PySide6_add_classQWidget="],
     "body": [
       "class MainThread(QObject):",
       "    # * 信号: 子线程 -> 窗体",
@@ -229,7 +229,7 @@
     "description": ["PySide6.MainUI 创建窗体对象"]
   },
   "PySide6.QApplication 运行窗口": {
-    "prefix": ["QT=ifMainUI =PySide6"],
+    "prefix": ["PySide6_QT_if_main_UI="],
     "body": [
       "if __name__ == \"__main__\":",
       "    app = QApplication(sys.argv)  # 创建应用程序对象, 传入命令行参数",
@@ -241,12 +241,12 @@
     "description": ["PySide6.QApplication 运行窗口"]
   },
   "PySide6.QThread.terminate 中断子线程": {
-    "prefix": [".terminate -PySide6"],
+    "prefix": ["PySide6_terminate"],
     "body": [".terminate()"],
     "description": ["PySide6.QThread.terminate 中断子线程"]
   },
   "PySide6.QtGui.QKeySequence:QShortcut 设置快捷键": {
-    "prefix": ["QT=createQShortcut.QKeySequence =PySide6"],
+    "prefix": ["PySide6_createQShortcut=QKeySequence="],
     "body": [
       "# * 定义快捷键",
       "def setupShortcutKey(self):",
@@ -261,7 +261,7 @@
     "description": ["PySide6.QtGui.QKeySequence:QShortcut 设置快捷键"]
   },
   "PySide6.QtWidgets.QTableWidget 导入DataFrame数据": {
-    "prefix": ["QT=load_DataFrame.add_tableButton =PySide6"],
+    "prefix": ["PySide6_load_DataFrame=add_tableButton="],
     "body": [
       "# * Class Function: 导入DataFrame -> QTableWidget表格数据",
       "def loading_DF(self, data: DataFrame, qtable: QTableWidget):",
@@ -322,7 +322,7 @@
     "description": ["PySide6.QtWidgets.QTableWidget 导入DataFrame数据"]
   },
   "PySide6.QtCore.QTimer 定时器": {
-    "prefix": ["QT=createTimer =PySide6"],
+    "prefix": ["PySide6_createTimer="],
     "body": [
       "# * Class Function: 创建定时器",
       "def createTimer(self):",
@@ -335,7 +335,7 @@
     "description": "PySide6.QtCore.QTimer 定时器"
   },
   "PySide6.sender().pos 获取点击按钮坐标位置": {
-    "prefix": ["QT.pos -PySide6"],
+    "prefix": ["PySide6_pos"],
     "body": [".pos()"],
     "description": ["PySide6.sender().pos 获取点击按钮坐标位置"]
   }

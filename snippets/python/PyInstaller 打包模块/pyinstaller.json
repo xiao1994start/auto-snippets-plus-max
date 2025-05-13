@@ -1,6 +1,6 @@
 {
   "pyinstaller 打包 python -> exe": {
-    "prefix": ["import =pyinstaller", "pkg =pyinstaller"],
+    "prefix": ["import pyinstaller=", "pkg pyinstaller="],
     "body": [
       "import os",
       "import shutil",
@@ -46,7 +46,7 @@
     "description": "pyinstaller 打包 python -> exe"
   },
   "pyinstaller 库打包python脚本exe": {
-    "prefix": ["import -pyinstaller.class =pyinstaller"],
+    "prefix": ["import pyinstaller_class="],
     "body": [
       "import os",
       "import shutil",

@@ -1,6 +1,6 @@
 {
   "引入 nicegui web应用开发框架": {
-    "prefix": ["import -nicegui.ui"],
+    "prefix": ["import nicegui_ui"],
     "body": [
       "from ex4nicegui import effect, effect_refreshable, ref_computed, to_ref",
       "from ex4nicegui.reactive import rxui",
@@ -16,7 +16,7 @@
     "description": ["引入 nicegui web应用开发框架"]
   },
   "nicegui.ui.run 独立窗口运行": {
-    "prefix": ["ui.run -nicegui.ui"],
+    "prefix": ["nicegui_ui_run"],
     "body": [
       "def startup_port():",
       "    \"\"\"",
@@ -50,12 +50,12 @@
     "description": ["nicegui.ui.run 独立窗口运行"]
   },
   "nicegui.ui.notification 通知_loading": {
-    "prefix": ["ui.notification -nicegui.ui"],
+    "prefix": ["nicegui_ui_notification"],
     "body": ["ui.notification(position='top', timeout=None)"],
     "description": ["nicegui.ui.notification 通知_loading"]
   },
   "nicegui.ui.button_color 自定义 UI 按钮颜色样式": {
-    "prefix": ["ui.button_color -nicegui.ui"],
+    "prefix": ["nicegui_ui_button_color"],
     "body": ["ui.button(color=None).style('background:#1e40af')"],
     "description": ["nicegui.ui.button_color 自定义 UI 按钮颜色样式"]
   }

@@ -1,6 +1,6 @@
 {
   "flet.main(page: ft.Page) 创建主界面框架函数.示例": {
-    "prefix": ["main_flet_page =flet.def"],
+    "prefix": ["flet_def_main_flet_page="],
     "body": ["object"],
     "description": ["flet.object 创建主界面框架函数.示例"]
   }

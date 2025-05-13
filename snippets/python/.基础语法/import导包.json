@@ -1,11 +1,11 @@
 {
   "from 包/模块 import name": {
-    "prefix": ["from -import"],
+    "prefix": ["from import"],
     "body": ["from ${1:package/module} import ${2:names}$0"],
     "description": ["from 包/模块 import name"]
   },
   "import name": {
-    "prefix": ["im -import"],
+    "prefix": ["import"],
     "body": ["import ${1:names}$0"],
     "description": ["import name"]
   }

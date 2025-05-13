@@ -1,6 +1,6 @@
 {
   "引入 uiautomation Windows桌面程序自动化控制依赖": {
-    "prefix": ["import -uiautomation"],
+    "prefix": ["import uiautomation"],
     "body": [
       "from uiautomation import ButtonControl, ListItemControl, MenuControl, WalkControl, WindowControl  # Windows桌面程序自动化控制依赖",
       ""
@@ -11,7 +11,7 @@
     ]
   },
   "uiautomation.WindowControl 实例化绑定窗口": {
-    "prefix": ["WindowControl -uiautomation"],
+    "prefix": ["uiautomation_WindowControl"],
     "body": [
       "WindowControl(searchDepth=1, searchInterval=0.1, Name=${1:'窗口名称'})",
       "# 实例化绑定窗口",
@@ -28,7 +28,7 @@
     ]
   },
   "uiautomation.WalkControl 遍历控件": {
-    "prefix": ["WalkControl -uiautomation"],
+    "prefix": ["uiautomation_WalkControl"],
     "body": ["WalkControl(${1:Control}, maxDepth=4294967295)$0"],
     "description": [
       "uiautomation.WalkControl 遍历控件",
@@ -46,57 +46,57 @@
     "description": "uiautomation.WalkControl 遍历控件.示例"
   },
   "uiautomation.Exists 检查目标控件是否存在": {
-    "prefix": [".Exists -uiautomation"],
+    "prefix": ["uiautomation_Exists"],
     "body": [".Exists()"],
     "description": ["uiautomation.Exists 检查目标控件是否存在"]
   },
   "uiautomation.SetTopmost 窗口置顶": {
-    "prefix": [".SetTopmost -uiautomation"],
+    "prefix": ["uiautomation_SetTopmost"],
     "body": [".SetTopmost(${1:True})", "# 窗口置顶"],
     "description": ["uiautomation.SetTopmost 窗口置顶"]
   },
   "uiautomation.SetFocus 获取文本框焦点": {
-    "prefix": [".SetFocus -uiautomation"],
+    "prefix": ["uiautomation_SetFocus"],
     "body": [".SetFocus()"],
     "description": ["uiautomation.SetFocus 获取文本框焦点"]
   },
   "uiautomation.SwitchToThisWindow 切换到绑定的窗口": {
-    "prefix": [".SwitchToThisWindow -uiautomation"],
+    "prefix": ["uiautomation_SwitchToThisWindow"],
     "body": [".SwitchToThisWindow()", "# 切换到绑定的窗口"],
     "description": ["uiautomation.SwitchToThisWindow 切换到绑定的窗口"]
   },
   "uiautomation.MoveToCenter 移动窗口到屏幕中心位置": {
-    "prefix": [".MoveToCenter -uiautomation"],
+    "prefix": ["uiautomation_MoveToCenter"],
     "body": [".MoveToCenter()", "# 移动窗口到屏幕中心位置"],
     "description": ["uiautomation.MoveToCenter 移动窗口到屏幕中心位置"]
   },
   "uiautomation.EditControl 输入框控件": {
-    "prefix": [".EditControl -uiautomation"],
+    "prefix": ["uiautomation_EditControl"],
     "body": [".EditControl(Name=${1:输入框名称})"],
     "description": ["uiautomation.EditControl 输入框控件"]
   },
   "uiautomation.ButtonControl 按钮控件": {
-    "prefix": [".ButtonControl -uiautomation"],
+    "prefix": ["uiautomation_ButtonControl"],
     "body": [".ButtonControl(Name=${1:按钮名称})"],
     "description": ["uiautomation.ButtonControl 按钮控件"]
   },
   "uiautomation.TextControl 文本控件": {
-    "prefix": [".TextControl -uiautomation"],
+    "prefix": ["uiautomation_TextControl"],
     "body": [".TextControl(Name=${1:文本名称})"],
     "description": ["uiautomation.TextControl 文本控件"]
   },
   "uiautomation.ListControl 列表控件": {
-    "prefix": [".ListControl -uiautomation"],
+    "prefix": ["uiautomation_ListControl"],
     "body": [".ListControl(Name=${1:列表名称})"],
     "description": ["uiautomation.ListControl 列表控件"]
   },
   "uiautomation.Click 点击(不显示鼠标移动的过程)": {
-    "prefix": [".Click -uiautomation"],
+    "prefix": ["uiautomation_Click"],
     "body": [".Click(simulateMove=False)"],
     "description": ["uiautomation.Click 点击(不显示鼠标移动的过程)"]
   },
   "uiautomation.SendKeys 点击(不显示鼠标移动的过程)": {
-    "prefix": [".SendKeys -uiautomation"],
+    "prefix": ["uiautomation_SendKeys"],
     "body": [
       ".SendKeys(${1:text}, waitTime=0.5)",
       "# waitTime 可以更好的模拟输入的过程"
@@ -105,8 +105,8 @@
   },
   "uiautomation.GetChildren 获取窗口内所有控件": {
     "prefix": [
-      "GetChildren =uiautomation",
-      "get_windows_control =uiautomation"
+      "uiautomation_GetChildren=",
+      "uiautomation_get_windows_control="
     ],
     "body": [
       "def get_windows_control(windows):",

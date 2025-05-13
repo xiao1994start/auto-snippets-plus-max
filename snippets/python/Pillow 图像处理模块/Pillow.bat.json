@@ -7,14 +7,6 @@
     ],
     "description": ["Pillow 图像处理库"]
   },
-  "uv pip.Pillow 图像处理库": {
-    "prefix": ["uv pip Pillow"],
-    "body": [
-      "uv pip install -U Pillow -i https://mirrors.aliyun.com/pypi/simple/",
-      ""
-    ],
-    "description": ["Pillow 图像处理库"]
-  },
   "uv.Pillow 图像处理库": {
     "prefix": ["uv Pillow"],
     "body": [

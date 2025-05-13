@@ -1,11 +1,11 @@
 {
   "引入 winreg 注册表管理库": {
-    "prefix": ["import -winreg"],
+    "prefix": ["import winreg"],
     "body": ["import winreg"],
     "description": ["引入 winreg 注册表管理库"]
   },
   "winreg.CreateKey 创建或打开特定的键": {
-    "prefix": ["winreg.CreateKey -winreg"],
+    "prefix": ["winreg_CreateKey"],
     "body": [
       "winreg.CreateKey(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
@@ -15,7 +15,7 @@
     "description": ["winreg.CreateKey 创建或打开特定的键"]
   },
   "winreg.CreateKeyEx 创建或打开特定的键": {
-    "prefix": ["winreg.CreateKeyEx -winreg"],
+    "prefix": ["winreg_CreateKeyEx"],
     "body": [
       "winreg.CreateKeyEx(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
@@ -27,7 +27,7 @@
     "description": ["winreg.CreateKeyEx 创建或打开特定的键"]
   },
   "winreg.DeleteKey 删除指定的键": {
-    "prefix": ["winreg.DeleteKey -winreg"],
+    "prefix": ["winreg_DeleteKey"],
     "body": [
       "winreg.DeleteKey(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
@@ -39,7 +39,7 @@
     ]
   },
   "winreg.DeleteKeyEx 删除指定的键": {
-    "prefix": ["winreg.DeleteKeyEx -winreg"],
+    "prefix": ["winreg_DeleteKeyEx"],
     "body": [
       "winreg.DeleteKeyEx(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
@@ -53,7 +53,7 @@
     ]
   },
   "winreg.DeleteValue 从某个注册键中删除一个命名值项": {
-    "prefix": ["winreg.DeleteValue -winreg"],
+    "prefix": ["winreg_DeleteValue"],
     "body": [
       "winreg.DeleteValue(",
       "    ${1:key_OpenKey},  # key 为某个winreg.OpenKey已经打开的键",
@@ -63,7 +63,7 @@
     "description": ["winreg.DeleteValue 从某个注册键中删除一个命名值项"]
   },
   "winreg.OpenKey 打开注册表": {
-    "prefix": ["winreg.OpenKey -winreg"],
+    "prefix": ["winreg_OpenKey"],
     "body": [
       "winreg.OpenKey(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
@@ -75,7 +75,7 @@
     "description": ["winreg.OpenKey 打开注册表"]
   },
   "with winreg.OpenKey 打开注册表": {
-    "prefix": ["with winreg.OpenKey -winreg"],
+    "prefix": ["with_winreg_OpenKey"],
     "body": [
       "with winreg.OpenKey(",
       "    winreg.HKEY_LOCAL_MACHINE,  # HKEY_CLASSES_ROOT(文件类型及相关属性) HKEY_CURRENT_USER(当前用户的偏好) HKEY_LOCAL_MACHINE(计算机的物理状态) HKEY_USERS(当前计算机中新用户的默认配置和当前用户配置)",
@@ -89,7 +89,7 @@
     "description": ["with winreg.OpenKey 打开注册表"]
   },
   "winreg.QueryValue 读取某键的未命名值, 形式为字符串": {
-    "prefix": ["winreg.QueryValue -winreg"],
+    "prefix": ["winreg_QueryValue"],
     "body": [
       "winreg.QueryValue(",
       "    ${1:key_OpenKey},  # key 为某个winreg.OpenKey已经打开的键",
@@ -101,7 +101,7 @@
     ]
   },
   "winreg.QueryValueEx 读取已打开注册表键指定值名称的类型和数据": {
-    "prefix": ["winreg.QueryValueEx -winreg"],
+    "prefix": ["winreg_QueryValueEx"],
     "body": [
       "winreg.QueryValueEx(",
       "    ${1:key_OpenKey},  # key 为某个winreg.OpenKey已经打开的键",
@@ -113,7 +113,7 @@
     ]
   },
   "winreg.SetValueEx 写入注册表键值": {
-    "prefix": ["winreg.SetValueEx -winreg"],
+    "prefix": ["winreg_SetValueEx"],
     "body": [
       "winreg.SetValueEx(",
       "    ${1:key_OpenKey},  # key 为某个winreg.OpenKey已经打开的键",
@@ -126,7 +126,7 @@
     "description": ["winreg.SetValueEx 写入注册表键值"]
   },
   "winreg.CloseKey 关闭注册表键": {
-    "prefix": ["winreg.CloseKey -winreg"],
+    "prefix": ["winreg_CloseKey"],
     "body": ["winreg.CloseKey($0)"],
     "description": ["winreg.CloseKey 关闭注册表键"]
   }

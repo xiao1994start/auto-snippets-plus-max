@@ -1,0 +1,35 @@
+{
+  "flet.Page.update 更新 Flet 应用": {
+    "prefix": ["ft_Page_update", "flet_Page_update"],
+    "body": ["page.update()"],
+    "description": ["flet.Page.update() 更新 Flet 应用"]
+  },
+  "flet.Page.add 添加页面控件和处理事件": {
+    "prefix": ["ft_Page_add", "flet_Page_add"],
+    "body": ["page.add($0)"],
+    "description": ["flet.Page.add 添加页面控件和处理事件"]
+  },
+  "flet.Page.title 页面标题": {
+    "prefix": ["ft_Page_title", "flet_Page_title"],
+    "body": ["page.title = 'Flet counter example'  # * 页面标题"],
+    "description": ["flet.Page.title 页面标题"]
+  },
+  "flet.Page.theme_mode 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)": {
+    "prefix": ["ft_Page_theme_mode", "flet_Page_theme_mode"],
+    "body": ["page.theme_mode = "],
+    "description": [
+      "flet.Page.theme_mode 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)"
+    ]
+  },
+  "创建flet def函数": {
+    "prefix": ["ft_def", "flet_def"],
+    "body": [
+      "def ${1:name}(e):",
+      "    \"\"\"",
+      "    ${2:_summary_}",
+      "    \"\"\"",
+      "    pass"
+    ],
+    "description": ["创建flet def函数"]
+  }
+}

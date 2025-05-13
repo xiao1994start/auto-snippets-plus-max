@@ -1,6 +1,6 @@
 {
   "dict多态性代替if-elif": {
-    "prefix": ["dictIf =dict_if", "dictPolymorphism =dict_if"],
+    "prefix": ["dict_if=", "dict_Polymorphism="],
     "body": [
       "commands = {",
       "    \"condition1\": condition1_function1,",

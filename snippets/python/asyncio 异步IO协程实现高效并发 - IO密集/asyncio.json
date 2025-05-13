@@ -1,11 +1,11 @@
 {
   "引入 asyncio 异步IO实现更高的并发性": {
-    "prefix": ["import -asyncio"],
+    "prefix": ["import asyncio"],
     "body": ["import asyncio  # 异步IO实现更高的并发性"],
     "description": ["引入 asyncio 异步IO实现更高的并发性"]
   },
   "asyncio.async def 创建异步IO函数": {
-    "prefix": ["async def -asyncio"],
+    "prefix": ["async_def", "asyncio_def"],
     "body": [
       "async def ${1:name}():",
       "    \"\"\"",
@@ -17,22 +17,22 @@
     "description": ["asyncio.async def 创建异步IO函数"]
   },
   "asyncio 协程异步IO函数": {
-    "prefix": ["ascio -asyncio"],
+    "prefix": ["asyncio_ascio"],
     "body": ["asyncio.$0"],
     "description": ["asyncio.run 运行异步程序"]
   },
   "asyncio.run 运行异步程序": {
-    "prefix": ["asyncio.run -asyncio"],
+    "prefix": ["asyncio_run"],
     "body": ["asyncio.run(${1:asynicFunction})"],
     "description": ["asyncio.run 运行异步程序"]
   },
   "asyncio.gather 解包异步程序列表": {
-    "prefix": ["asyncio.gather -asyncio"],
+    "prefix": ["asyncio_gather"],
     "body": ["asyncio.gather(*${1:tasksList})"],
     "description": ["asyncio.gather 解包异步程序列表"]
   },
   "asyncio.create_task 创建异步程序": {
-    "prefix": ["asyncio.create_task -asyncio"],
+    "prefix": ["asyncio_create_task"],
     "body": ["asyncio.create_task(${1:asynicFunction})"],
     "description": [
       "asyncio.create_task 创建异步程序",
@@ -41,7 +41,7 @@
     ]
   },
   "asyncio.to_thread 将同步函数转换为异步函数": {
-    "prefix": ["asyncio.to_thread -asyncio"],
+    "prefix": ["asyncio_to_thread"],
     "body": ["asyncio.to_thread(${1:函数名}, ${2:参数})"],
     "description": [
       "asyncio.to_thread 将同步函数转换为异步函数",

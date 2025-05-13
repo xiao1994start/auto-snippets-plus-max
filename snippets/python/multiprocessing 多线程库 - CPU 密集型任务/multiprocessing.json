@@ -1,11 +1,11 @@
 {
   "引入 multiprocessing 多线线程库": {
-    "prefix": ["import -multiprocessing"],
+    "prefix": ["import multiprocessing"],
     "body": ["import multiprocessing"],
     "description": ["引入 multiprocessing 多线线程库"]
   },
   "multiprocessing.Process 创建单个进程": {
-    "prefix": [".Process -multiprocessing"],
+    "prefix": ["multiprocessing_Process"],
     "body": [".Process(target=${1:func}, args=[${2:args}])"],
     "description": [
       "multiprocessing.Process 创建单个进程",
@@ -17,12 +17,12 @@
     ]
   },
   "multiprocessing.start 启动进程": {
-    "prefix": [".start -multiprocessing"],
+    "prefix": ["multiprocessing_start"],
     "body": [".start()"],
     "description": ["multiprocessing.start 启动进程"]
   },
   "multiprocessing.join 在当前位置阻塞主进程": {
-    "prefix": [".join -multiprocessing"],
+    "prefix": ["multiprocessing_join"],
     "body": [".join"],
     "description": [
       "multiprocessing.join 在当前位置阻塞主进程",
@@ -30,7 +30,7 @@
     ]
   },
   "with multiprocessing.Pool 创建进程池": {
-    "prefix": ["with multiprocessing.Pool -multiprocessing"],
+    "prefix": ["with_multiprocessing_Pool"],
     "body": [
       "with multiprocessing.Pool(${1:processes=4}) as pool:  # 适用于多进程复用",
       "    $0",
@@ -46,12 +46,12 @@
     ]
   },
   "multiprocessing.Pool.map 创建线程池(单一参数)": {
-    "prefix": [".map -multiprocessing.Pool"],
+    "prefix": ["multiprocessing_Pool_map"],
     "body": [".map(${1:func}, [${2:args}])"],
     "description": ["multiprocessing.Pool.map 创建线程池(单一参数)"]
   },
   "multiprocessing.Pool.starmap 创建线程池(多参数)": {
-    "prefix": [".starmap -multiprocessing.Pool"],
+    "prefix": ["multiprocessing_Pool_starmap"],
     "body": [
       ".starmap(${1:func}, ${2:iterable})  # 无需传入参数时, 使用 itertools.repeat 生成一个空元组"
     ],

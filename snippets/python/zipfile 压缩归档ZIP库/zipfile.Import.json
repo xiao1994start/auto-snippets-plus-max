@@ -1,11 +1,11 @@
 {
   "引入 zipfile 引入zipfile归档ZIP库": {
-    "prefix": ["import -zipfile"],
+    "prefix": ["import zipfile"],
     "body": ["import zipfile"],
     "description": ["引入 zipfile 引入zipfile归档ZIP库"]
   },
   "引入 ZipFile 引入zipfile归档ZIP库子类": {
-    "prefix": ["import -zipfile.ZipFile"],
+    "prefix": ["import zipfile_ZipFile"],
     "body": ["import zipfile", "from zipfile import ZipFile"],
     "description": ["引入 ZipFile 引入zipfile归档ZIP库子类"]
   }

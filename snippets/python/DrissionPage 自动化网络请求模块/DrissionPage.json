@@ -1,6 +1,6 @@
 {
-  "引入 DrissionPage 模块": {
-    "prefix": ["import -DrissionPage"],
+  "引入 DrissionPage 网页自动化工具": {
+    "prefix": ["import DrissionPage"],
     "body": [
       "from pathlib import Path",
       "from DrissionPage import ChromiumOptions, ChromiumPage",
@@ -11,6 +11,6 @@
       "url = \"url\"",
       "co.get(url=url)  # 打开url"
     ],
-    "description": ["引入 DrissionPage 模块"]
+    "description": ["引入 DrissionPage 网页自动化工具"]
   }
 }

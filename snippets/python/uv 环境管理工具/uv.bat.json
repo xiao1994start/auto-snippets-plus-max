@@ -89,7 +89,7 @@
   },
   "UV 使用兼容PIP兼容的接口管理Python软件包": {
     "prefix": ["uv pip"],
-    "body": ["uv ${1:pip命令}"],
+    "body": ["uv pip ${1:pip命令}"],
     "description": ["UV 使用兼容PIP兼容的接口管理Python软件包"]
   },
   "显示UV的版本": {

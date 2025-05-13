@@ -1,0 +1,56 @@
+{
+  "flet.app 运行 Flet 应用": {
+    "prefix": ["ft_app", "flet_app"],
+    "body": [
+      "ft.app(",
+      "    target=main,",
+      "    # view=ft.WEB_BROWSER,  # *运行模式: (默认:独立窗口, WEB_BROWSER:浏览器)",
+      ")",
+      ""
+    ],
+    "description": ["flet.app 运行 Flet 应用"]
+  },
+  "flet.Row 以水平阵列显示其子项的控件": {
+    "prefix": ["ft_Row", "flet_Row"],
+    "body": ["ft.Row(controls=[$0])"],
+    "description": ["flet.Row 以水平阵列显示其子项的控件"]
+  },
+  "flet.Column 以垂直阵列显示其子项的控件": {
+    "prefix": ["ft_Column", "flet_Column"],
+    "body": ["ft.Column(controls=[$0])"],
+    "description": ["flet.Column 以垂直阵列显示其子项的控件"]
+  },
+  "flet.TextField 文本输入控件": {
+    "prefix": ["ft_TextField", "flet_TextField"],
+    "body": ["ft.TextField"],
+    "description": [
+      "flet.TextField 文本输入控件",
+      "文本字段允许用户使用硬件键盘或屏幕键盘输入文本"
+    ]
+  },
+  "flet.Button 按钮": {
+    "prefix": ["ft_Button", "flet_Button"],
+    "body": ["ft.ElevatedBuButtontton(text='按钮')"],
+    "description": ["flet.Button 按钮"]
+  },
+  "flet.ElevatedButton 凸起按钮": {
+    "prefix": ["ft_ElevatedButton", "flet_ElevatedButton"],
+    "body": ["ft.ElevatedButton(text='凸起按钮')"],
+    "description": [
+      "flet.ElevatedButton 凸起按钮",
+      "ElevatedButton 有别名 Button , 可以互换使用"
+    ]
+  },
+  "flet.Colors 自定义颜色": {
+    "prefix": ["ft_Colors_with_opacity", "flet_Colors_with_opacity"],
+    "body": ["ft.Colors.with_opacity(opacity=0, color='#000000')"],
+    "description": ["flet.Colors 自定义颜色"]
+  },
+  "flet.ThemeMode 主题模式": {
+    "prefix": ["ft_ThemeMode", "flet_ThemeMode"],
+    "body": [
+      "ft.ThemeMode.SYSTEM  # SYSTEM[默认]: 系统默认, LIGHT: 浅色, DARK: 深色"
+    ],
+    "description": ["flet.ThemeMode 主题模式"]
+  }
+}

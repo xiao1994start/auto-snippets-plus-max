@@ -1,6 +1,6 @@
 {
   "pyinstaller 打包 nicegui": {
-    "prefix": ["pkg nicegui =pyinstaller"],
+    "prefix": ["pkg_nicegui=", "pyinstaller_nicegui="],
     "body": [
       "import os",
       "import shutil",
