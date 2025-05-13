@@ -56,7 +56,7 @@
     "description": ["创建def函数"]
   },
   "lambda:匿名函数": {
-    "prefix": "add_lambda -lambda",
+    "prefix": ["add_lambda -lambda"],
     "body": [
       "lambda ${1:args}: ${2:expr表达式}  # lambda(匿名函数) [参数]: 表达式"
     ],

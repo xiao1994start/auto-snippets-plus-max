@@ -46,7 +46,7 @@
     "description": ["判断字符串完全不一致且忽略大小写"]
   },
   "判断字符串包含": {
-    "prefix": "if String ==",
+    "prefix": ["if String =="],
     "body": [
       "if not \"!被比较字符串:包含字符串=!\"==\"!被比较字符串!\" (",
       "    ECHO 包含",

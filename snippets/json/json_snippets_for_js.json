@@ -1,6 +1,6 @@
 {
   "snippets.js.Function =>模板": {
-    "prefix": "snippets.js.Function =json.snippets",
+    "prefix": ["snippets.js.Function =json.snippets"],
     "body": [
       "\"${1:Object}.${2:Function} ${3:描述}\": {",
       "  \"prefix\": [\"${2:Function} -js\"],",

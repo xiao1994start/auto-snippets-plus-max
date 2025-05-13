@@ -1,6 +1,6 @@
 {
   "pip.pyside6 GUI界面库": {
-    "prefix": "pip pyside6",
+    "prefix": ["pip pyside6"],
     "body": [
       "pip install -U pyside6 -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM 目前测试 pyside6==6.8.0 版本较为稳定",
@@ -9,7 +9,7 @@
     "description": ["pyside6 GUI界面库"]
   },
   "uv pip.pyside6 GUI界面库": {
-    "prefix": "uv pip pyside6",
+    "prefix": ["uv pip pyside6"],
     "body": [
       "uv pip install -U pyside6 -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM 目前测试 pyside6==6.8.0 版本较为稳定",
@@ -18,7 +18,7 @@
     "description": ["pyside6 GUI界面库"]
   },
   "uv.pyside6 GUI界面库": {
-    "prefix": "uv pyside6",
+    "prefix": ["uv pyside6"],
     "body": [
       "uv add \"pyside6==6.8.0\" --index https://mirrors.aliyun.com/pypi/simple/",
       "@REM 目前测试 pyside6==6.8.0 版本较为稳定",

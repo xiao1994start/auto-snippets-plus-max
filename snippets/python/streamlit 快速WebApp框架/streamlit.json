@@ -1,6 +1,6 @@
 {
   "引入 streamlit 快速创建web应用框架": {
-    "prefix": "im -streamlit",
+    "prefix": ["import -streamlit"],
     "body": ["import streamlit as st  # 引入 streamlit 快速创建web应用框架"],
     "description": ["引入 streamlit 快速创建web应用框架"]
   }

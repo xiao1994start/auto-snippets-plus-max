@@ -1,21 +1,21 @@
 {
   "引入 time 日期时间模块": {
-    "prefix": "im -time",
+    "prefix": ["im -time"],
     "body": ["import time"],
     "description": ["time的模块, 输出常规格式时间"]
   },
   "time.time 当前时间戳": {
-    "prefix": ".time -time",
+    "prefix": [".time -time"],
     "body": ".time()",
     "description": ["当前时间戳"]
   },
   "time.ctime 转换可读时间格式": {
-    "prefix": ".ctime -time",
+    "prefix": [".ctime -time"],
     "body": ".ctime(${1:time.time()})$0",
     "description": ["将时间戳转换为可读的时间格式"]
   },
   "time.strftime 格式化当前时间戳": {
-    "prefix": ".strftime -time",
+    "prefix": [".strftime -time"],
     "body": ".strftime(${1:'%Y-%m-%d %H:%M:%S', time.localtime(time.time())})",
     "description": ["格式化当前时间戳"]
   }

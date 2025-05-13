@@ -1,11 +1,11 @@
 {
   "引入 webview 创建Webview窗口": {
-    "prefix": "im -webview",
+    "prefix": ["import -webview"],
     "body": ["import webview  # 引入 pywebview 创建Webview窗口"],
     "description": ["引入 pywebview 创建Webview窗口"]
   },
   "webview.create_window 创建桌面应用": {
-    "prefix": "webview.create_window -pywebview",
+    "prefix": ["webview.create_window -pywebview"],
     "body": [
       "webview.create_window(",
       "    title=\"桌面应用\",",

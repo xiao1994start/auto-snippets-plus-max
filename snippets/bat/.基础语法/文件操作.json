@@ -5,12 +5,12 @@
     "description": ["新建路径"]
   },
   "复制文件": {
-    "prefix": "copy -V",
+    "prefix": ["copy -V"],
     "body": ["copy /V /Y ${1:src源路径} ${2:dst目标路径}"],
     "description": ["复制文件"]
   },
   "二进制合并文件": {
-    "prefix": "copy -B",
+    "prefix": ["copy -B"],
     "body": [
       "copy /B ${1:src图片源路径} + ${2:src数据源路径} ${3:dst目标路径_jpg_png}"
     ],
@@ -19,27 +19,27 @@
     ]
   },
   "复制文件夹": {
-    "prefix": "xcopy",
+    "prefix": ["xcopy"],
     "body": ["xcopy /S /E /I /Y ${1:src源路径} ${2:dst目标路径}"],
     "description": ["复制文件夹"]
   },
   "移动文件夹": {
-    "prefix": "move",
+    "prefix": ["move"],
     "body": ["move /Y ${1:src源路径} ${2:dst目标路径}"],
     "description": ["移动文件夹"]
   },
   "重命名": {
-    "prefix": "ren",
+    "prefix": ["ren"],
     "body": ["ren ${1:src源文件路径_后缀} \"${2:dst修改后的文件名_后缀}\""],
     "description": ["重命名"]
   },
   "删除文件 强制|安静": {
-    "prefix": "del -FQ",
+    "prefix": ["del -FQ"],
     "body": ["del /F /Q ${1:dst目标文件路径}"],
     "description": ["删除文件", "/F 强制删除只读文件", "/Q 安静模式"]
   },
   "删除文件 强制|子目录|安静": {
-    "prefix": "del -FSQ",
+    "prefix": ["del -FSQ"],
     "body": ["del /F /S /Q ${1:dst目标文件路径_含子目录}"],
     "description": [
       "删除文件",
@@ -49,27 +49,27 @@
     ]
   },
   "删除文件夹": {
-    "prefix": "rd -SQ",
+    "prefix": ["rd -SQ"],
     "body": ["rd /S /Q ${1:dst目标文件夹路径}"],
     "description": ["删除文件夹"]
   },
   "删除符号链接_删除空文件夹": {
-    "prefix": "rmdir",
+    "prefix": ["rmdir"],
     "body": ["rmdir ${1:dst删除目标_空文件夹_符号链接_路径}"],
     "description": ["删除符号链接_删除空文件夹"]
   },
   "创建符号链接文件": {
-    "prefix": "mklink",
+    "prefix": ["mklink"],
     "body": ["mklink ${2:dst目标文件_文件夹路径} ${1:src源文件_文件夹路径}"],
     "description": ["创建符号链接文件"]
   },
   "创建符号链接文件或文件夹": {
-    "prefix": "mklink -D",
+    "prefix": ["mklink -D"],
     "body": ["mklink /D ${2:dst目标文件_文件夹路径} ${1:src源文件_文件夹路径}"],
     "description": ["创建符号链接文件或文件夹(可以使用相对路径_快捷方式)"]
   },
   "创建符号链接文件或文件夹(必须绝对路径)": {
-    "prefix": "mklink -J",
+    "prefix": ["mklink -J"],
     "body": ["mklink /J ${2:dst目标文件夹路径} ${1:src源文件夹路径}"],
     "description": ["创建符号链接文件或文件夹(必须绝对路径)"]
   },
@@ -106,12 +106,12 @@
     "description": ["重建mklink /J符号链接"]
   },
   "打开文件夹": {
-    "prefix": "open -explorer",
+    "prefix": ["open -explorer"],
     "body": ["explorer.exe ${1:dst目标文件夹路径}"],
     "description": ["打开文件夹"]
   },
   "向上一级目录寻找文件夹或文件": {
-    "prefix": "findLoop =",
+    "prefix": ["findLoop ="],
     "body": [
       "set \"root=%cd:~,3%\"",
       "ECHO 当前根目录: %root%",

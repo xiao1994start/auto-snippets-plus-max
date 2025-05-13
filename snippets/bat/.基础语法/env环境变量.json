@@ -1,21 +1,21 @@
 {
   "进入指定当前目录": {
-    "prefix": "cd -d.cwd",
+    "prefix": ["cd -d.cwd"],
     "body": ["CD /D \"%~dp0\""],
     "description": ["进入指定当前目录"]
   },
   "CD /D 更改当前directory": {
-    "prefix": "cd -d",
+    "prefix": ["cd -d"],
     "body": ["CD /D $0"],
     "description": ["CD /D 更改当前directory"]
   },
   "当前目录": {
-    "prefix": "cwd",
+    "prefix": ["cwd"],
     "body": ["\"%~dp0${1:}\""],
     "description": ["当前目录"]
   },
   "当前目录下R2R文件夹": {
-    "prefix": "dr2r",
+    "prefix": ["dr2r"],
     "body": ["\"%~dp0R2R\\\\${1:example}\""],
     "description": ["当前目录下R2R文件夹"]
   },
@@ -25,97 +25,97 @@
     "description": ["当前系统盘"]
   },
   "ProTools系统默认文件夹": {
-    "prefix": "AXX -ProTools",
+    "prefix": ["AXX -ProTools"],
     "body": ["\"%COMMONPROGRAMFILES%\\Avid\\Audio\\Plug-Ins\\\\${1:example}\""],
     "description": ["ProTools系统默认文件夹"]
   },
   "CommonFiles": {
-    "prefix": "CommonFiles",
+    "prefix": ["CommonFiles"],
     "body": ["\"%COMMONPROGRAMFILES%\\\\${1:example}\""],
     "description": ["CommonFiles"]
   },
   "CommonFiles(x86)": {
-    "prefix": "CommonFiles -86",
+    "prefix": ["CommonFiles -86"],
     "body": ["\"%COMMONPROGRAMFILES(x86)%\\\\${1:example}\""],
     "description": ["CommonFiles(x86)"]
   },
   "ProgramData": {
-    "prefix": "ProgramData",
+    "prefix": ["ProgramData"],
     "body": ["\"%PROGRAMDATA%\\\\${1:example}\""],
     "description": ["ProgramData"]
   },
   "ProgramFiles": {
-    "prefix": "ProgramFiles",
+    "prefix": ["ProgramFiles"],
     "body": ["\"%PROGRAMFILES%\\\\${1:example}\""],
     "description": ["ProgramFiles"]
   },
   "ProgramFiles(x86)": {
-    "prefix": "ProgramFiles -86",
+    "prefix": ["ProgramFiles -86"],
     "body": ["\"%PROGRAMFILES(X86)%\\\\${1:example}\""],
     "description": ["ProgramFiles(x86)"]
   },
   "系统公共用户文件夹": {
-    "prefix": "public",
+    "prefix": ["public"],
     "body": ["\"%PUBLIC%\\\\${1:example}\""],
     "description": ["系统公共用户文件夹"]
   },
   "AppData文件夹": {
-    "prefix": "AppData",
+    "prefix": ["AppData"],
     "body": ["\"%USERPROFILE%\\AppData\\\\${1:example}\""],
     "description": ["AppData文件夹"]
   },
   "Local安装程序相关的文件": {
-    "prefix": "Local",
+    "prefix": ["Local"],
     "body": ["\"%USERPROFILE%\\AppData\\Local\\\\${1:example}\""],
     "description": ["Local安装程序相关的文件"]
   },
   "LocalLow无法随用户配置文件移动的数据": {
-    "prefix": "LocalLow",
+    "prefix": ["LocalLow"],
     "body": ["\"%USERPROFILE%\\AppData\\LocalLow\\\\${1:example}\""],
     "description": ["LocalLow无法随用户配置文件移动的数据"]
   },
   "Roaming可以轻松与服务器同步的文件夹": {
-    "prefix": "Roaming",
+    "prefix": ["Roaming"],
     "body": ["\"%USERPROFILE%\\AppData\\Roaming\\\\${1:example}\""],
     "description": ["Roaming可以轻松与服务器同步的文件夹"]
   },
   "当前用户文件夹": {
-    "prefix": "Users",
+    "prefix": ["Users"],
     "body": ["\"%USERPROFILE%\\\\${1:example}\""],
     "description": ["当前用户文件夹"]
   },
   "VSTPlugins系统默认文件夹": {
-    "prefix": "VSTPlugins",
+    "prefix": ["VSTPlugins"],
     "body": ["\"%PROGRAMFILES%\\VSTPlugins\\\\${1:example}\""],
     "description": ["VSTPlugins系统默认文件夹"]
   },
   "VST3系统默认文件夹": {
-    "prefix": "VST3",
+    "prefix": ["VST3"],
     "body": ["\"%COMMONPROGRAMFILES%\\VST3\\\\${1:example}\""],
     "description": ["VST3系统默认文件夹"]
   },
   "Windows系统目录": {
-    "prefix": "Windir",
+    "prefix": ["Windir"],
     "body": ["\"%WINDIR%\\\\${1:example}\""],
     "description": ["Windows系统目录"]
   },
   "WindowsSystem32系统文件目录": {
-    "prefix": "System32",
+    "prefix": ["System32"],
     "body": ["\"%WINDIR%\\system32\\\\${1:example}\""],
     "description": ["WindowsSystem32系统文件目录"]
   },
   "用户 Desktop 桌面": {
-    "prefix": "UserDesktop",
+    "prefix": ["UserDesktop"],
     "body": ["\"%USERPROFILE%\\Desktop\\\\${1:example}\""],
     "description": ["用户 Desktop 桌面"]
   },
   "当前用户Documents文档": {
-    "prefix": "Documents",
+    "prefix": ["Documents"],
     "body": ["\"%USERPROFILE%\\Documents\\\\${1:example}\""],
     "description": ["当前用户Documents文档"]
   },
   "windows系统路径环境变量常用": {
-    "prefix": "pathInfo",
+    "prefix": ["pathInfo"],
     "body": [
       "goto :aboutPathInfo",
       "%SystemDrive%   ^|  %HOMEDRIVE%       = C:\\               当前系统盘符",

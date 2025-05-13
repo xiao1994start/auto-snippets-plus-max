@@ -1,33 +1,33 @@
 {
   "REG静默运行": {
-    "prefix": "REG -s",
+    "prefix": ["REG -s"],
     "body": ["CALL REG -s ${1:reg文件路径}"],
     "description": ["REG静默运行"]
   },
   "REG导入": {
-    "prefix": "REG -import",
+    "prefix": ["REG -import"],
     "body": ["CALL REG import ${1:reg文件路径}"],
     "description": ["REG导入"]
   },
   "REG添加键值": {
-    "prefix": "REG -add",
+    "prefix": ["REG -add"],
     "body": [
       "CALL REG add \"${1:reg路径}\" /v \"key_名称\" /t REG_SZ /d \"value_数据\" /F"
     ],
     "description": ["REG添加键值"]
   },
   "REG删除键值": {
-    "prefix": "REG -delete",
+    "prefix": ["REG -delete"],
     "body": ["CALL REG delete \"${1:reg路径\" /v \"key_名称}\" /F"],
     "description": ["REG删除键值"]
   },
   "REG批量注入": {
-    "prefix": "for REG -import",
+    "prefix": ["for REG -import"],
     "body": ["for %%r in (${1:reg_path}) do ( CALL REG import \"%%r\" )", ""],
     "description": "REG批量注入"
   },
   "路径变量path设置并添加修复注册表": {
-    "prefix": "REG =Edit",
+    "prefix": ["REG =Edit"],
     "body": [
       "@REM 注册表自定义编辑注入",
       "@REM 获取当前路径 并 设为变量df",

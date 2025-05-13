@@ -1,6 +1,6 @@
 {
   "server.proxyAPI跨域代理": {
-    "prefix": "server.proxy -vue",
+    "prefix": ["server.proxy -vue"],
     "body": [
       "server: {",
       "proxy: {",

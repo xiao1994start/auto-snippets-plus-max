@@ -1,43 +1,43 @@
 {
   "引入 random 随机模块": {
-    "prefix": "im -random",
+    "prefix": ["import -random"],
     "body": ["import random  # * (伪)随机模块"],
     "description": ["引入 random 随机模块，实现了各种分布的伪随机数生成器"]
   },
   "random.choice": {
-    "prefix": "random.choice -choice",
+    "prefix": ["random.choice -choice"],
     "body": "random.choice(${1:sequence})",
     "description": ["从非空序列中返回一个随机元素"]
   },
   "random.random": {
-    "prefix": "random.random -float",
+    "prefix": ["random.random -float"],
     "body": "random.random()",
     "description": ["返回 0.0 <= X < 1.0 范围内的下一个随机浮点数。"]
   },
   "random.uniform": {
-    "prefix": "random.uniform -float",
+    "prefix": ["random.uniform -float"],
     "body": "random.uniform(${1:a}, ${2:b})",
     "description": [
       "返回一个随机浮点数 N ，当 a <= b 时 a <= N <= b ，当 b < a 时 b <= N <= a 。"
     ]
   },
   "random.randint": {
-    "prefix": "random.randint -int",
+    "prefix": ["random.randint -int"],
     "body": "random.randint(${1:Start}, ${2:InclusiveEnd})",
     "description": ["返回下一个随机整数值"]
   },
   "random.randrange": {
-    "prefix": "random.randrange -int:step",
+    "prefix": ["random.randrange -int:step"],
     "body": "random.randrange(${1:Start}, ${2:ExclusiveEnd}, ${3:Step})",
     "description": ["返回下一个随机整数值, 使用给定的步长"]
   },
   "random.seed": {
-    "prefix": "random.seed -seed",
+    "prefix": ["random.seed -seed"],
     "body": "random.seed(1)",
     "description": ["重新运行时生成具有种子值的相同随机数"]
   },
   "random.TextGenerate": {
-    "prefix": "random -TextGen",
+    "prefix": ["random -TextGen"],
     "body": [
       "x = \"\" # import string",
       "length = 5$0 # import random",
@@ -49,7 +49,7 @@
     "description": ["根据给定长度生成字符串"]
   },
   "random.DateGenerate": {
-    "prefix": "random -DateGen",
+    "prefix": ["random -DateGen"],
     "body": [
       "start_date = datetime.date(2022, 2, 24)  # import random",
       "end_date = datetime.date(2022, 3, 7)  # import datetime",
@@ -60,7 +60,7 @@
     "description": ["生成 2 个给定日期之间的日期"]
   },
   "random 示例": {
-    "prefix": "random =random",
+    "prefix": ["random =random"],
     "body": [
       "sides = ['heads', 'tails']  # list of string options",
       "outcomes = [0, 0]           # list of tallies heads/tails\n",

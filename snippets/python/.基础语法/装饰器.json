@@ -1,6 +1,6 @@
 {
   "添加 装饰器 模板": {
-    "prefix": "add_decorator =decorator",
+    "prefix": ["add_decorator =decorator"],
     "body": [
       "# * Function: 装饰器说明",
       "def decorater(func):",

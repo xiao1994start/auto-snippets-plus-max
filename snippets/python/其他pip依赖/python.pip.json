@@ -1,6 +1,6 @@
 {
   "pip.requests 网络请求库": {
-    "prefix": "pip requests",
+    "prefix": ["pip requests"],
     "body": [
       "pip install -U requests -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -8,7 +8,7 @@
     "description": ["requests 网络请求库"]
   },
   "uv pip.requests 网络请求库": {
-    "prefix": "uv pip requests",
+    "prefix": ["uv pip requests"],
     "body": [
       "uv pip install -U requests -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -16,7 +16,7 @@
     "description": ["requests 网络请求库"]
   },
   "uv.requests 网络请求库": {
-    "prefix": "uv requests",
+    "prefix": ["uv requests"],
     "body": [
       "uv add requests --index https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -24,7 +24,7 @@
     "description": ["requests 网络请求库"]
   },
   "pip.lxml lxml解析库": {
-    "prefix": "pip lxml",
+    "prefix": ["pip lxml"],
     "body": [
       "pip install -U lxml -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -32,7 +32,7 @@
     "description": ["lxml解析库"]
   },
   "uv pip.lxml lxml解析库": {
-    "prefix": "uv pip lxml",
+    "prefix": ["uv pip lxml"],
     "body": [
       "uv pip install -U lxml -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -40,7 +40,7 @@
     "description": ["lxml解析库"]
   },
   "uv.lxml lxml解析库": {
-    "prefix": "uv lxml",
+    "prefix": ["uv lxml"],
     "body": [
       "uv add \"lxml\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -48,7 +48,7 @@
     "description": ["lxml解析库"]
   },
   "pip.html5lib HTML5解析库": {
-    "prefix": "pip html5lib",
+    "prefix": ["pip html5lib"],
     "body": [
       "pip install -U html5lib -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -56,7 +56,7 @@
     "description": ["html5lib HTML5解析库"]
   },
   "uv pip.html5lib HTML5解析库": {
-    "prefix": "uv pip html5lib",
+    "prefix": ["uv pip html5lib"],
     "body": [
       "uv pip install -U html5lib -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -64,7 +64,7 @@
     "description": ["html5lib HTML5解析库"]
   },
   "uv.html5lib HTML5解析库": {
-    "prefix": "uv html5lib",
+    "prefix": ["uv html5lib"],
     "body": [
       "uv add \"html5lib\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -72,7 +72,7 @@
     "description": ["html5lib HTML5解析库"]
   },
   "pip.setuptools 包管理工具": {
-    "prefix": "pip setuptools",
+    "prefix": ["pip setuptools"],
     "body": [
       "pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -83,7 +83,7 @@
     ]
   },
   "uv pip.setuptools 包管理工具": {
-    "prefix": "uv pip setuptools",
+    "prefix": ["uv pip setuptools"],
     "body": [
       "uv pip install -U setuptools -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -94,7 +94,7 @@
     ]
   },
   "uv.setuptools 包管理工具": {
-    "prefix": "uv setuptools",
+    "prefix": ["uv setuptools"],
     "body": [
       "uv add \"setuptools\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""

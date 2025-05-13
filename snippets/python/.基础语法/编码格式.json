@@ -1,11 +1,11 @@
 {
   "编码: UTF-8": {
-    "prefix": "coding_utf8 -coding",
+    "prefix": ["coding_utf8 -coding"],
     "body": ["'utf-8'"],
     "description": ["编码: UTF-8"]
   },
   "编码: GBK": {
-    "prefix": "coding_gbk -coding",
+    "prefix": ["coding_gbk -coding"],
     "body": ["'gbk'"],
     "description": ["编码: GBK"]
   }

@@ -1,6 +1,6 @@
 {
   "choice模板": {
-    "prefix": "choice-C-N-M =choice",
+    "prefix": ["choice-C-N-M =choice"],
     "body": [
       ":begin",
       "ECHO ==========================",

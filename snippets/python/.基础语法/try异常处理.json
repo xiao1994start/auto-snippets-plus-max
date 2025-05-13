@@ -1,6 +1,6 @@
 {
   "try:正常执行 except:异常处理": {
-    "prefix": "try_except =try",
+    "prefix": ["try_except =try"],
     "body": [
       "try:",
       "    $0",
@@ -13,7 +13,7 @@
     "description": ["try:正常执行 except:异常处理"]
   },
   "except 抛出异常": {
-    "prefix": "except_error =try",
+    "prefix": ["except_error =try"],
     "body": [
       "except Exception as error:",
       "    print(\"错误类型: \", type(error))",
@@ -28,7 +28,7 @@
     "description": ["except 异常处理"]
   },
   "try:正常执行 finally:强制执行": {
-    "prefix": "try_finally =try",
+    "prefix": ["try_finally =try"],
     "body": [
       "try:",
       "    $0",
@@ -39,7 +39,7 @@
     "description": ["try:正常执行 finally:强制执行"]
   },
   "try:正常执行 except:异常处理 else:try之后执行 finally:强制执行": {
-    "prefix": "try_except_telse_finally =try",
+    "prefix": ["try_except_telse_finally =try"],
     "body": [
       "try:",
       "    $0",

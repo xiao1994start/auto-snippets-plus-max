@@ -1,16 +1,16 @@
 {
   "分隔线语法1": {
-    "prefix": ".hr1 -markdown",
+    "prefix": [".hr1 -markdown"],
     "body": ["======", "", "$0"],
     "description": ["分隔线语法1"]
   },
   "分隔线语法2": {
-    "prefix": ".hr2 -markdown",
+    "prefix": [".hr2 -markdown"],
     "body": ["------", "", "$0"],
     "description": ["分隔线语法2"]
   },
   "分隔线语法3": {
-    "prefix": ".hr3 -markdown",
+    "prefix": [".hr3 -markdown"],
     "body": ["******", "", "$0"],
     "description": ["分隔线语法3"]
   }

@@ -1,6 +1,6 @@
 {
   "BAT模板": {
-    "prefix": "xxx",
+    "prefix": ["xxx"],
     "body": [
       "@ECHO OFF",
       "setlocal EnableDelayedExpansion",
@@ -31,32 +31,32 @@
     "description": ["暂停(无提示)"]
   },
   "运行程序": {
-    "prefix": "start",
+    "prefix": ["start"],
     "body": ["start ${2| ,\"Windows窗口\"|} ${1:\"dst运行程序_或_网址\"}"],
     "description": ["运行程序(第一个双引号为空->等待运行程序关闭继续)"]
   },
   "等待n秒后继续": {
-    "prefix": "timeout",
+    "prefix": ["timeout"],
     "body": ["timeout /T ${1:1} > NUL"],
     "description": ["等待n秒后继续"]
   },
   "CMD /C": {
-    "prefix": "cmd -C",
+    "prefix": ["cmd -C"],
     "body": ["CMD /C ${1:命令}"],
     "description": ["CMD /C"]
   },
   "start CMD /K": {
-    "prefix": "cmd -K",
+    "prefix": ["cmd -K"],
     "body": ["start CMD /K ${1:命令}"],
     "description": ["在新的终端窗口执行"]
   },
   "ECHO | clip 设置剪切板内容": {
-    "prefix": "clip -ECHO",
+    "prefix": ["clip -ECHO"],
     "body": ["ECHO 设置剪切板内容| clip"],
     "description": ["ECHO | clip 设置剪切板内容"]
   },
   "使用记事本打开host文件": {
-    "prefix": "Host -Edit",
+    "prefix": ["Host -Edit"],
     "body": [
       ":: 取消 hosts 只读",
       "attrib -R C:\\WINDOWS\\system32\\drivers\\etc\\hosts",
@@ -68,14 +68,14 @@
     "description": ["使用记事本打开host文件"]
   },
   "使用cmd静默安装innosetup安装包": {
-    "prefix": "inno -Install",
+    "prefix": ["inno -Install"],
     "body": [
       "${1:InnoSetup安装程序路径} /SILENT /COMPONENTS=\"${2:InnoExtractor提取的安装参数_使用英文逗号隔开}\""
     ],
     "description": ["使用cmd静默安装innosetup安装包"]
   },
   "msi安装_静默": {
-    "prefix": "msi -Install",
+    "prefix": ["msi -Install"],
     "body": [
       "@REM msiexec /i [安装] \"安装包路径\" /qb [指定在安装过程中有一个基本 UI]",
       "msiexec /i ${1:安装包路径} /qb"

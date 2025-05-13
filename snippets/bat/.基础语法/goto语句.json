@@ -1,11 +1,11 @@
 {
   "脚本跳转到文件的结束处": {
-    "prefix": "goto_eof",
+    "prefix": ["goto_eof"],
     "body": ["goto eof"],
     "description": ["脚本跳转到文件的结束处"]
   },
   "批量拖入文件处理": {
-    "prefix": "input_files",
+    "prefix": ["input_files"],
     "body": [
       ":process_files",
       "if \"%~1\"==\"\" goto end",

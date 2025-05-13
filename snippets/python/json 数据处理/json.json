@@ -1,23 +1,23 @@
 {
   "引入 json 格式模块": {
-    "prefix": "im -json",
+    "prefix": ["import -json"],
     "body": ["import json"],
     "description": ["引入JSON格式模块"]
   },
   "json.dumps 编码JSON->字符串": {
-    "prefix": "json.dumps -json",
+    "prefix": ["json.dumps -json"],
     "body": ["json.dumps(${1:数据对象}, indent = ${2:2}, ensure_ascii=False)"],
     "description": ["json.dumps 用于将 Python 对象编码成 JSON 字符串"]
   },
   "json.dump 编码JSON->文件": {
-    "prefix": "json.dump -json",
+    "prefix": ["json.dump -json"],
     "body": [
       "json.dump(${1:文件对象}, ${2:as_file}, indent = 2, ensure_ascii=False)"
     ],
     "description": ["json.dump 用于将 Python 对象编码成 JSON -> 文件"]
   },
   "json.loads 解码JSON数据->dict": {
-    "prefix": "json.loads -json",
+    "prefix": ["json.loads -json"],
     "body": ["json.loads(${1:JSON数据})"],
     "description": [
       "json.loads 用于解码 JSON 数据, 将已编码的 JSON 字符串解码为 Python 对象",
@@ -25,7 +25,7 @@
     ]
   },
   "json.load 文件->解码JSON数据": {
-    "prefix": "json.load -json",
+    "prefix": ["json.load -json"],
     "body": ["json.load(${1:JSON文件})"],
     "description": [
       "json.load 用于解码 JSON 文件, 将已编码的 JSON 字符串解码为 Python 对象",
@@ -33,7 +33,7 @@
     ]
   },
   "with.open.json -r 只读json": {
-    "prefix": "with open_json -r",
+    "prefix": ["with open_json -r"],
     "body": [
       "with open(${1:file_path}, 'r', encoding='utf-8') as f_json:",
       "    # r 只读(不清空文件), 文件必须存在, 不存在抛出错误, 文件指针在开头",
@@ -47,7 +47,7 @@
     ]
   },
   "with.open.json -w 只写json": {
-    "prefix": "with open_json -w",
+    "prefix": ["with open_json -w"],
     "body": [
       "with open(${1:json_path}, 'w', encoding='utf-8') as f_json:",
       "    # w 只写(清空文件), 不可读, 文件不存在创建新文件, 文件存在清空文件, 文件指针在开头",

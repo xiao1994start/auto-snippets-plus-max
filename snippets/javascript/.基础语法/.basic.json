@@ -1,6 +1,6 @@
 {
   "Node.nodeType 查看节点类型": {
-    "prefix": ".nodeType -js",
+    "prefix": [".nodeType -js"],
     "body": [
       ".nodeType",
       "// 查看节点类型",

@@ -1,6 +1,6 @@
 {
   "pip.reflex 全栈WebApp框架": {
-    "prefix": "pip reflex",
+    "prefix": ["pip reflex"],
     "body": [
       "pip install -U reflex -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -8,7 +8,7 @@
     "description": ["reflex 全栈WebApp框架"]
   },
   "uv pip.reflex 全栈WebApp框架": {
-    "prefix": "uv pip reflex",
+    "prefix": ["uv pip reflex"],
     "body": [
       "uv pip install -U reflex -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -16,7 +16,7 @@
     "description": ["reflex 全栈WebApp框架"]
   },
   "uv.reflex 全栈WebApp框架": {
-    "prefix": "uv reflex",
+    "prefix": ["uv reflex"],
     "body": [
       "uv add \"reflex\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""

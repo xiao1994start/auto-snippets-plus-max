@@ -1,6 +1,6 @@
 {
   "引入 uiautomation Windows桌面程序自动化控制依赖": {
-    "prefix": "im -uiautomation",
+    "prefix": ["import -uiautomation"],
     "body": [
       "from uiautomation import ButtonControl, ListItemControl, MenuControl, WalkControl, WindowControl  # Windows桌面程序自动化控制依赖",
       ""
@@ -36,7 +36,7 @@
     ]
   },
   "uiautomation.WalkControl 遍历控件.示例": {
-    "prefix": "for WalkControl =uiautomation",
+    "prefix": ["for WalkControl =uiautomation"],
     "body": [
       "for c, d in WalkControl(${1:Control}, maxDepth=4294967295):",
       "    # 遍历搜索控件对象, c: 控件对象, d: 控件深度; maxDepth: 最大遍历深度(减少需要检查的控件数量,提升效率)",

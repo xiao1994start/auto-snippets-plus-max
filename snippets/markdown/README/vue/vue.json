@@ -1,6 +1,6 @@
 {
   "-vueHelp": {
-    "prefix": "vue =markdown",
+    "prefix": ["vue =markdown"],
     "body": [
       "# vue 初始设置帮助文档",
       "",

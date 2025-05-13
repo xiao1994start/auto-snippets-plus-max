@@ -1,6 +1,6 @@
 {
   "pip.uv 环境管理工具": {
-    "prefix": "pip uv",
+    "prefix": ["pip uv"],
     "body": [
       "ECHO UV 环境管理器...",
       "pip install -U uv -i https://mirrors.aliyun.com/pypi/simple/",

@@ -1,16 +1,16 @@
 {
   "循环目录下文件": {
-    "prefix": "for -do",
+    "prefix": ["for -do"],
     "body": ["for %%${1:i} in (${2:*}) do (", "    ECHO %%${1:i}", ")$0"],
     "description": ["循环目录下文件"]
   },
   "循环目录下文件夹": {
-    "prefix": "for -D.do",
+    "prefix": ["for -D.do"],
     "body": ["for /D %%${1:i} in (${2:*}) do (", "    ECHO %%${1:i}", ")"],
     "description": ["循环目录下文件夹"]
   },
   "循环提取 文本|列表|对象 信息": {
-    "prefix": "for -F.do",
+    "prefix": ["for -F.do"],
     "body": [
       "for /F \"tokens=* delims= \" %%${1:i} in ('tasklist') do (",
       "    ECHO %%${1:i}",
@@ -21,7 +21,7 @@
     "description": "循环提取 文本|列表|对象 信息"
   },
   "搜索获取进程路径": {
-    "prefix": "for -F.do wmic_process",
+    "prefix": ["for -F.do wmic_process"],
     "body": [
       "set \"pro=wmic process where \"name='${1:cmd.exe}'\" get ExecutablePath\"",
       "for /F \"skip=1 delims=\" %%${1:i} in ('!pro!') do (",
@@ -32,7 +32,7 @@
     "description": ["搜索获取进程路径"]
   },
   "注册表通过键获取对应的值": {
-    "prefix": "for -F.reg",
+    "prefix": ["for -F.reg"],
     "body": [
       "set \"value=\"",
       "for /F \"tokens=3*\" %%a in ('reg query \"HKEY_LOCAL_MACHINE\" /v KEY') do (",
@@ -43,7 +43,7 @@
     "description": "注册表通过键获取对应的值"
   },
   "for /F [参数] 帮助文档": {
-    "prefix": "for -F.do =for",
+    "prefix": ["for -F.do =for"],
     "body": [
       "@REM tokens=[Number] : 指每行的哪一个符号被传递到每个迭代的 for 本身. 这会导致额外变量名称的分配. ",
       "@REM                   [Number]=1   : 指定从每行中提取的列数, 默认为1; 在和 delims 参数一起使用时, 指定要提取到被分割的字符串的段数",
@@ -61,12 +61,12 @@
     "description": "for /F [参数] 帮助文档"
   },
   "循环目录及子目录文件": {
-    "prefix": "for -R.do",
+    "prefix": ["for -R.do"],
     "body": ["for /R %%${1:i} in (*) do (", "    ECHO %%${1:i}", ")"],
     "description": ["forR循环目录及子目录文件"]
   },
   "循环文件计数": {
-    "prefix": "for -FileNumber",
+    "prefix": ["for -FileNumber"],
     "body": [
       "set num=0",
       "for %%${1:i} in (*) do (",

@@ -1,6 +1,6 @@
 {
   "引入 DrissionPage 模块": {
-    "prefix": "im -DrissionPage",
+    "prefix": ["import -DrissionPage"],
     "body": [
       "from pathlib import Path",
       "from DrissionPage import ChromiumOptions, ChromiumPage",

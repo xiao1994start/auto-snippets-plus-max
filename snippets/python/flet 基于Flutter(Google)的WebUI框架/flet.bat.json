@@ -1,6 +1,6 @@
 {
   "pip.flet 基于 Flutter(Google) 的WebUI框架": {
-    "prefix": "pip flet",
+    "prefix": ["pip flet"],
     "body": [
       "pip install -U flet[all] setuptools pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM Flet 基于 Flutter(Google) 的WebUI框架",
@@ -9,7 +9,7 @@
     "description": ["flet 基于 Flutter(Google) 的WebUI框架"]
   },
   "uv pip.flet 基于 Flutter(Google) 的WebUI框架": {
-    "prefix": "uv pip flet",
+    "prefix": ["uv pip flet"],
     "body": [
       "uv pip install -U flet[all] setuptools pyinstaller pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM Flet 基于 Flutter(Google) 的WebUI框架",
@@ -18,7 +18,7 @@
     "description": ["flet 基于 Flutter(Google) 的WebUI框架"]
   },
   "uv.flet 基于 Flutter(Google) 的WebUI框架": {
-    "prefix": "uv flet",
+    "prefix": ["uv flet"],
     "body": [
       "uv add \"flet[all]\" \"setuptools\" \"pyinstaller\" --index https://mirrors.aliyun.com/pypi/simple/",
       "@REM Flet 基于 Flutter(Google) 的WebUI框架",

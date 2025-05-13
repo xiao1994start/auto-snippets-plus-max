@@ -1,13 +1,13 @@
 {
   "引入 ThreadPoolExecutor 线程池库": {
-    "prefix": "im -ThreadPoolExecutor",
+    "prefix": ["import -ThreadPoolExecutor"],
     "body": [
       "from concurrent.futures import ThreadPoolExecutor  # 操作系统级别线程池"
     ],
     "description": ["引入 ThreadPoolExecutor 线程池库"]
   },
   "with ThreadPoolExecutor 应用模板": {
-    "prefix": "with.ThreadPoolExecutor =ThreadPoolExecutor",
+    "prefix": ["with.ThreadPoolExecutor =ThreadPoolExecutor"],
     "body": [
       "with ThreadPoolExecutor(max_workers=3) as ${1:executor}:",
       "    \"\"\"",

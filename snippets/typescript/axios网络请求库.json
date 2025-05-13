@@ -1,6 +1,6 @@
 {
   "axios.API配置": {
-    "prefix": "axios -API",
+    "prefix": ["axios -API"],
     "body": [
       "import axios from \"axios\";",
       "/**",

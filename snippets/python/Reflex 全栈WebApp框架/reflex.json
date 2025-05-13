@@ -1,7 +1,7 @@
 {
-  "引入 reflex 库描述": {
-    "prefix": "im -reflex",
+  "引入 reflex 全栈WebApp框架": {
+    "prefix": ["im -reflex"],
     "body": ["import reflex as rx"],
-    "description": ["引入 reflex 库描述"]
+    "description": ["引入 reflex 全栈WebApp框架"]
   }
 }

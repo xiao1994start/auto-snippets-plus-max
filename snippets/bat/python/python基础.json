@@ -29,12 +29,12 @@
     "description": ["创建_激活 虚拟环境"]
   },
   "python 版本号": {
-    "prefix": "py_version -python",
+    "prefix": ["py_version -python"],
     "body": ["@ECHO python 版本号", "call python --version", ""],
     "description": "python 版本号"
   },
   "pip 版本号": {
-    "prefix": "pip_version -python",
+    "prefix": ["pip_version -python"],
     "body": ["@ECHO pip 版本号", "call pip --version", ""],
     "description": "pip 版本号"
   },
@@ -47,7 +47,7 @@
     "description": ["pip.Jupyter内核ipykernel依赖库"]
   },
   "pip.镜像源": {
-    "prefix": "pip -config.index-url",
+    "prefix": ["pip -config.index-url"],
     "body": [
       "@ECHO 重置pip.ini...",
       "@REM ECHO.> %USERPROFILE%/AppData/Roaming/pip/pip.ini",
@@ -64,7 +64,7 @@
     "description": ["pipconfig.index镜像源"]
   },
   "pip.批量镜像源": {
-    "prefix": "pip -config.extra-index-url",
+    "prefix": ["pip -config.extra-index-url"],
     "body": [
       "@ECHO 重置pip.ini...",
       "@REM ECHO.> %USERPROFILE%/AppData/Roaming/pip/pip.ini",
@@ -99,7 +99,7 @@
     "description": ["pip -uninstall 卸载"]
   },
   "pip.freeze 获取安装库列表": {
-    "prefix": "pip -freeze",
+    "prefix": ["pip -freeze"],
     "body": ["pip freeze  > ${1:requirements.txt}"],
     "description": ["pip -freeze 获取安装库列表"]
   },

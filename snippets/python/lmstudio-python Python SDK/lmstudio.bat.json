@@ -1,6 +1,6 @@
 {
   "pip.lmstudio lmstudio-python (Python SDK)": {
-    "prefix": "pip lmstudio",
+    "prefix": ["pip lmstudio"],
     "body": [
       "pip install -U lmstudio -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -8,7 +8,7 @@
     "description": ["lmstudio lmstudio-python (Python SDK)"]
   },
   "uv pip.lmstudio lmstudio-python (Python SDK)": {
-    "prefix": "uv pip lmstudio",
+    "prefix": ["uv pip lmstudio"],
     "body": [
       "pip install -U lmstudio -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -16,7 +16,7 @@
     "description": ["lmstudio lmstudio-python (Python SDK)"]
   },
   "uv.lmstudio lmstudio-python (Python SDK)": {
-    "prefix": "uv lmstudio",
+    "prefix": ["uv lmstudio"],
     "body": [
       "uv add \"lmstudio\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""

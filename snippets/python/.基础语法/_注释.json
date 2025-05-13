@@ -1,6 +1,6 @@
 {
   "Python 注释_描述": {
-    "prefix": "xxx",
+    "prefix": ["xxx"],
     "body": [
       "#!/usr/bin/python",
       "# -*- coding: utf-8 -*-",

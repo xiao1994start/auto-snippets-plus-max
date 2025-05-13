@@ -1,6 +1,6 @@
 {
   "pip.PyInstaller 打包库": {
-    "prefix": "pip PyInstaller",
+    "prefix": ["pip PyInstaller"],
     "body": [
       "pip install -U pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -8,7 +8,7 @@
     "description": ["PyInstaller 打包库"]
   },
   "uv pip.PyInstaller 打包库": {
-    "prefix": "uv pip PyInstaller",
+    "prefix": ["uv pip PyInstaller"],
     "body": [
       "uv pip install -U pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -16,7 +16,7 @@
     "description": ["PyInstaller 打包库"]
   },
   "uv.PyInstaller 打包库": {
-    "prefix": "uv PyInstaller",
+    "prefix": ["uv PyInstaller"],
     "body": [
       "uv add \"pyinstaller\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""

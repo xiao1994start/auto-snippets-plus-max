@@ -1,6 +1,6 @@
 {
   "UAC管理员权限": {
-    "prefix": "BatchGotAdmin",
+    "prefix": ["BatchGotAdmin"],
     "body": [
       "@ECHO off",
       ":: BatchGotAdmin",
@@ -29,7 +29,7 @@
     "description": ["检查并获得管理员权限"]
   },
   "AsAdmin": {
-    "prefix": "AsAdmin",
+    "prefix": ["AsAdmin"],
     "body": [
       "@ECHO Off",
       "Title AsAdmin & Color A",

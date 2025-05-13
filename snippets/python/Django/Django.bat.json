@@ -1,6 +1,6 @@
 {
   "pip.Django 库": {
-    "prefix": "pip Django",
+    "prefix": ["pip Django"],
     "body": [
       "pip install -U ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
@@ -18,7 +18,7 @@
     "description": ["Django 库"]
   },
   "uv pip.Django 库": {
-    "prefix": "uv pip Django",
+    "prefix": ["uv pip Django"],
     "body": [
       "uv pip install -U ${1|django|} -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
@@ -36,7 +36,7 @@
     "description": ["Django 库"]
   },
   "uv.Django 库": {
-    "prefix": "uv Django",
+    "prefix": ["uv Django"],
     "body": [
       "uv add \"${1|django|}\" --index https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
@@ -54,7 +54,7 @@
     "description": ["Django 库"]
   },
   "pip.Django 库DRF组件": {
-    "prefix": "pip DRF",
+    "prefix": ["pip DRF"],
     "body": [
       "pip install -U ${1|django|} djangorestframework django-cors-headers -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
@@ -72,7 +72,7 @@
     "description": ["Django 库DRF组件"]
   },
   "uv pip.Django 库DRF组件": {
-    "prefix": "uv pip DRF",
+    "prefix": ["uv pip DRF"],
     "body": [
       "uv pip install -U ${1|django|} djangorestframework django-cors-headers -i https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",
@@ -90,7 +90,7 @@
     "description": ["Django 库DRF组件"]
   },
   "uv.Django 库DRF组件": {
-    "prefix": "uv DRF",
+    "prefix": ["uv DRF"],
     "body": [
       "uv add \"${1|django|}\" \"djangorestframework\" \"django-cors-headers\" --index https://mirrors.aliyun.com/pypi/simple/",
       "call django-admin startproject ${2:__DjangoServer_BE_ .}",

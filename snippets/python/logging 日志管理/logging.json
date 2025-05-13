@@ -1,11 +1,11 @@
 {
   "引入 logging 内置日志库": {
-    "prefix": "im -logging",
+    "prefix": ["import -logging"],
     "body": ["import logging", "import logging.handlers"],
     "description": ["引入 logging 内置日志库"]
   },
   "引入 logging 内置日志库 模板": {
-    "prefix": "im -logging =logging",
+    "prefix": ["import -logging =logging"],
     "body": [
       "import logging",
       "import logging.handlers",
@@ -221,7 +221,7 @@
     "description": "引入 logging 内置日志库 模板"
   },
   "logging.Logger 模板": {
-    "prefix": "Logger =logging",
+    "prefix": ["Logger =logging"],
     "body": [
       "# * Object: 日志输出",
       "class LOG:",

@@ -1,6 +1,6 @@
 {
   "引入 flet WebUI框架": {
-    "prefix": ["im -flet"],
+    "prefix": ["import -flet"],
     "body": ["import flet as ft  # * 引入 flet WebUI框架"],
     "description": ["引入 flet WebUI框架"]
   },

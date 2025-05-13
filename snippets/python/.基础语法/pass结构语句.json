@@ -1,6 +1,6 @@
 {
   "pass空语句(结构语句)": {
-    "prefix": "pass ",
+    "prefix": ["pass "],
     "body": ["pass"],
     "description": [
       "空语句, 是为了保持程序结构的完整性",

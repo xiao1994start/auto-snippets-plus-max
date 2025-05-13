@@ -1,6 +1,6 @@
 {
   "cURL 下载": {
-    "prefix": "cURL",
+    "prefix": ["cURL"],
     "body": [
       "ECHO cURL 下载",
       "@REM * -sSL (组合命令) --silent(静默模式) --show-error(静默模式下显示错误) --location(自动跟随重定向)",

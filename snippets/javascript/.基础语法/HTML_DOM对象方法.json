@@ -1,16 +1,16 @@
 {
   "DOM.innerHTML 获取|设置对象内容": {
-    "prefix": ".innerHTML -js.DOM",
+    "prefix": [".innerHTML -js.DOM"],
     "body": [".innerHTML"],
     "description": ["DOM.innerHTML 获取|设置对象内容"]
   },
   "DOM.addEventListener 添加二级DOM事件": {
-    "prefix": ".addEventListener -js.DOM",
+    "prefix": [".addEventListener -js.DOM"],
     "body": [".addEventListener('click', $0)"],
     "description": ["DOM.addEventListener 添加二级DOM事件"]
   },
   "DOM.appendChild 添加子节点": {
-    "prefix": "appendChild -js.DOM",
+    "prefix": ["appendChild -js.DOM"],
     "body": ["appendChild(${1:子节点对象})"],
     "description": ["DOM.appendChild 添加子节点"]
   }

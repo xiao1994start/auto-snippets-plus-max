@@ -1,6 +1,6 @@
 {
   "pip.nicegui Python开发web应用框架": {
-    "prefix": "pip nicegui",
+    "prefix": ["pip nicegui"],
     "body": [
       "pip install -U nicegui ex4nicegui setuptools pywebview pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM nicegui Web界面设计框架(基于 Quasar 框架)",
@@ -10,7 +10,7 @@
     "description": ["nicegui Python开发web应用框架"]
   },
   "uv pip.nicegui Python开发web应用框架": {
-    "prefix": "uv pip nicegui",
+    "prefix": ["uv pip nicegui"],
     "body": [
       "uv pip install -U nicegui ex4nicegui setuptools pywebview pyinstaller -i https://mirrors.aliyun.com/pypi/simple/",
       "@REM nicegui Web界面设计框架(基于 Quasar 框架)",
@@ -20,7 +20,7 @@
     "description": ["nicegui Python开发web应用框架"]
   },
   "uv.nicegui Python开发web应用框架": {
-    "prefix": "uv nicegui",
+    "prefix": ["uv nicegui"],
     "body": [
       "uv add \"nicegui\" \"ex4nicegui\" \"setuptools\" \"pywebview\" \"pyinstaller\" --index https://mirrors.aliyun.com/pypi/simple/",
       "@REM nicegui Web界面设计框架(基于 Quasar 框架)",

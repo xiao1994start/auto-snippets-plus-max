@@ -1,6 +1,6 @@
 {
   "pip.pandas CSV数据库": {
-    "prefix": "pip pandas",
+    "prefix": ["pip pandas"],
     "body": [
       "pip install -U pandas -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -8,7 +8,7 @@
     "description": ["pandas CSV数据库"]
   },
   "uv pip.pandas CSV数据库": {
-    "prefix": "uv pip pandas",
+    "prefix": ["uv pip pandas"],
     "body": [
       "uv pip install -U pandas -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -16,7 +16,7 @@
     "description": ["pandas CSV数据库"]
   },
   "uv.pandas CSV数据库": {
-    "prefix": "uv pandas",
+    "prefix": ["uv pandas"],
     "body": [
       "uv add \"pandas\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""

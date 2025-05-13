@@ -1,18 +1,18 @@
 {
   "引入 beautifulsoup4 模块": {
-    "prefix": "im -bs4.beautifulsoup4",
+    "prefix": ["import -bs4.beautifulsoup4"],
     "body": ["from bs4 import BeautifulSoup"],
     "description": ["引入 beautifulsoup4 模块"]
   },
   "bs4.BeautifulSoup 转换HTML对象": {
-    "prefix": "BeautifulSoup -bs4",
+    "prefix": ["BeautifulSoup -bs4"],
     "body": [
       "BeautifulSoup(${1:HTML.text}, features=${2|'html.parser','lxml','html5lib','xml'|})"
     ],
     "description": ["BeautifulSoup 转换HTML对象"]
   },
   "bs4.select 选择器匹配->list": {
-    "prefix": ".select -bs4",
+    "prefix": [".select -bs4"],
     "body": [".select('$0')"],
     "description": [
       "bs4.select 选择器(Selector)来定位和提取 HTML 页面中的元素",
@@ -34,7 +34,7 @@
     ]
   },
   "bs4.find 第一个匹配的标签": {
-    "prefix": ".find -bs4",
+    "prefix": [".find -bs4"],
     "body": [
       ".find(",
       "\tname=['${1:Tag标签}'],",
@@ -48,7 +48,7 @@
     ]
   },
   "bs4.find_all 全局搜索标签": {
-    "prefix": ".find_all -bs4",
+    "prefix": [".find_all -bs4"],
     "body": [
       ".find_all(",
       "\tname=['${1:Tag标签}'],",
@@ -62,19 +62,19 @@
     ]
   },
   "bs4.get_text 标签内容": {
-    "prefix": ".get_text -bs4",
+    "prefix": [".get_text -bs4"],
     "body": [".get_text()"],
     "description": [
       "bs4.get_text 返回Tag标签中的文本内容.\r\n不包括子标签中的文本内容"
     ]
   },
   "bs4.prettify -bs4 打印格式美化": {
-    "prefix": ".prettify -bs4",
+    "prefix": [".prettify -bs4"],
     "body": [".prettify(formatter=${1|'html','html5','minimal'|})"],
     "description": ["bs4.prettify 打印格式解构化美化处理"]
   },
   "bs4.attrs 标签属性:值->dict": {
-    "prefix": ".attrs -bs4",
+    "prefix": [".attrs -bs4"],
     "body": [".attrs"],
     "description": ["bs4.attrs 获取Tag标签的属性, 返回一个字典"]
   }

@@ -1,11 +1,11 @@
 {
   "引入 multiprocessing 多线线程库": {
-    "prefix": "im -multiprocessing",
+    "prefix": ["import -multiprocessing"],
     "body": ["import multiprocessing"],
     "description": ["引入 multiprocessing 多线线程库"]
   },
   "multiprocessing.Process 创建单个进程": {
-    "prefix": ".Process -multiprocessing",
+    "prefix": [".Process -multiprocessing"],
     "body": [".Process(target=${1:func}, args=[${2:args}])"],
     "description": [
       "multiprocessing.Process 创建单个进程",

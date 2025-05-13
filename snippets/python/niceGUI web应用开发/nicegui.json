@@ -1,6 +1,6 @@
 {
   "引入 nicegui web应用开发框架": {
-    "prefix": "im -nicegui.ui",
+    "prefix": ["import -nicegui.ui"],
     "body": [
       "from ex4nicegui import effect, effect_refreshable, ref_computed, to_ref",
       "from ex4nicegui.reactive import rxui",
@@ -16,7 +16,7 @@
     "description": ["引入 nicegui web应用开发框架"]
   },
   "nicegui.ui.run 独立窗口运行": {
-    "prefix": "ui.run -nicegui.ui",
+    "prefix": ["ui.run -nicegui.ui"],
     "body": [
       "def startup_port():",
       "    \"\"\"",

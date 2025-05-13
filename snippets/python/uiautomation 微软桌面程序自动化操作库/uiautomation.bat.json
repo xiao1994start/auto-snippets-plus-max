@@ -1,6 +1,6 @@
 {
   "pip.uiautomation Windows桌面程序自动化控制依赖": {
-    "prefix": "pip uiautomation",
+    "prefix": ["pip uiautomation"],
     "body": [
       "pip install -U uiautomation -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -8,7 +8,7 @@
     "description": ["uiautomation Windows桌面程序自动化控制依赖"]
   },
   "uv pip.uiautomation Windows桌面程序自动化控制依赖": {
-    "prefix": "uv pip uiautomation",
+    "prefix": ["uv pip uiautomation"],
     "body": [
       "pip install -U uiautomation -i https://mirrors.aliyun.com/pypi/simple/",
       ""
@@ -16,7 +16,7 @@
     "description": ["uiautomation Windows桌面程序自动化控制依赖"]
   },
   "uv.uiautomation Windows桌面程序自动化控制依赖": {
-    "prefix": "uv uiautomation",
+    "prefix": ["uv uiautomation"],
     "body": [
       "uv add \"uiautomation\" --index https://mirrors.aliyun.com/pypi/simple/",
       ""
