@@ -3,7 +3,7 @@
     "prefix": ["snippets.python.import =json.snippets"],
     "body": [
       "\"引入 ${1:type} ${2:描述}\": {",
-      "  \"prefix\": [\"import -${1:type}\"],",
+      "  \"prefix\": [\"import ${1:type}\"],",
       "  \"body\": [\"import ${1:type}\"],",
       "  \"description\": [\"引入 ${1:type} ${2:描述}\"]",
       "},"
@@ -14,7 +14,7 @@
     "prefix": ["snippets.python.object =json.snippets"],
     "body": [
       "\"${1:type}.${2:object} ${3:描述}\": {",
-      "  \"prefix\": [\"${1:type}_${2:object} -${1:type}\"],",
+      "  \"prefix\": [\"${1:type}_${2:object}\"],",
       "  \"body\": [\"${1:type}.${2:object}$0\"],",
       "  \"description\": [\"${1:type}.${2:object} ${3:描述}\"]",
       "},"
