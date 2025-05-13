@@ -55,7 +55,7 @@
     "description": "REG数据类型"
   },
   "REG帮助": {
-    "prefix": ["REG Type"],
+    "prefix": ["REG Help"],
     "body": [
       "@REM * 参数",
       "@REM * /ve 指定[默认值]",
