@@ -1,4 +1,38 @@
 {
+  "flet.Page.window.icon 桌面应用 图标": {
+    "prefix": ["ft_Page_window_icon", "flet_Page_window_icon"],
+    "body": [
+      "# * 桌面应用 图标 (相对路径)",
+      "page.window.icon = 'assets/icon.png'"
+    ],
+    "description": ["flet.Page.window.icon 桌面应用 图标"]
+  },
+  "flet.Page.window.alignment 桌面应用 对齐方式(初始位置)": {
+    "prefix": ["ft_Page_window_alignment", "flet_Page_window_alignment"],
+    "body": [
+      "# * 桌面应用 对齐方式(初始位置) [ft.Alignment: 居中:(0,0); 左上:(-1, -1); 右下:(1, 1)]",
+      "page.window.alignment = ft.Alignment(0, 0)"
+    ],
+    "description": ["flet.Page.window.alignment 桌面应用 对齐方式(初始位置)"]
+  },
+  "flet.Page.window.size 桌面应用 宽度 | 高度": {
+    "prefix": ["ft_Page_window_size", "flet_Page_window_size"],
+    "body": [
+      "# * 桌面应用 宽度 | 高度",
+      "page.window.width = 1280",
+      "page.window.height = 720"
+    ],
+    "description": ["flet.Page.window.size 桌面应用 宽度 | 高度"]
+  },
+  "flet.Page.window.min_size 桌面应用 宽度 | 高度": {
+    "prefix": ["ft_Page_window_min_size", "flet_Page_window_min_size"],
+    "body": [
+      "# * 桌面应用 最小宽度 | 最小高度",
+      "page.window.min_width = 1280",
+      "page.window.min_height = 720"
+    ],
+    "description": ["flet.Page.window.min_size 桌面应用 宽度 | 高度"]
+  },
   "flet.Page.update 更新 Flet 应用": {
     "prefix": ["ft_Page_update", "flet_Page_update"],
     "body": ["page.update()"],
@@ -9,23 +43,38 @@
     "body": ["page.add($0)"],
     "description": ["flet.Page.add 添加页面控件和处理事件"]
   },
-  "flet.Page.title 页面标题": {
+  "flet.Page.title 标题": {
     "prefix": ["ft_Page_title", "flet_Page_title"],
-    "body": ["page.title = 'Flet counter example'  # * 页面标题"],
-    "description": ["flet.Page.title 页面标题"]
+    "body": ["# * 标题", "page.title = 'Flet counter example'"],
+    "description": ["flet.Page.title 标题"]
   },
   "flet.Page.fonts 字体": {
     "prefix": ["ft_Page_fonts", "flet_Page_fonts"],
     "body": [
-      "page.fonts = {'MiSans': '/src/assets/fonts/MiSans/MiSans-Normal.ttf'}  # * 字体"
+      "# * 字体",
+      "page.fonts = {'MiSans': '/src/assets/fonts/MiSans/MiSans-Normal.ttf'}"
     ],
     "description": ["flet.Page.fonts 字体"]
   },
   "flet.Page.theme_mode 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)": {
     "prefix": ["ft_Page_theme_mode", "flet_Page_theme_mode"],
-    "body": ["page.theme_mode = ft.ThemeMode.SYSTEM"],
+    "body": [
+      "# * 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)",
+      "page.theme_mode = ft.ThemeMode.SYSTEM"
+    ],
     "description": [
       "flet.Page.theme_mode 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)"
+    ]
+  },
+  "flet.Page.vertical_alignment 页面主要垂直对齐方式": {
+    "prefix": ["ft_Page_vertical_alignment", "flet_Page_vertical_alignment"],
+    "body": [
+      "# * 页面主要垂直对齐方式 (START[默认]: 顶部, END: 底部, CENTER: 居中, SPACE_BETWEEN: 上下两端对齐, SPACE_AROUND: 上下两端对齐, SPACE_EVENLY: 上下两端对齐)",
+      "# page.vertical_alignment = ft.MainAxisAlignment.CENTER"
+    ],
+    "description": [
+      "flet.Page.vertical_alignment 页面主要垂直对齐方式",
+      "START[默认]: 顶部, END: 底部, CENTER: 居中, SPACE_BETWEEN: 上下两端对齐, SPACE_AROUND: 上下两端对齐, SPACE_EVENLY: 上下两端对齐"
     ]
   },
   "创建flet def函数": {

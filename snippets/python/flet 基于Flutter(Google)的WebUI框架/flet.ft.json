@@ -10,6 +10,14 @@
     ],
     "description": ["flet.app 运行 Flet 应用"]
   },
+  "flet.Alignment 对齐方式": {
+    "prefix": ["ft_Alignment", "flet_Alignment"],
+    "body": ["ft.Alignment(0, 0)"],
+    "description": [
+      "flet.Alignment 对齐方式",
+      "[ft.Alignment: 居中:(0,0); 左上:(-1, -1); 右下:(1, 1)]"
+    ]
+  },
   "flet.Row 以水平阵列显示其子项的控件": {
     "prefix": ["ft_Row", "flet_Row"],
     "body": ["ft.Row(controls=[$0])"],
