@@ -76,10 +76,7 @@
   },
   "dir.object 查看对象属性": {
     "prefix": ["dir", "dir_object"],
-    "body": [
-      "dir(${1:object})",
-      "# 返回当前作用域中的所有变量, 方法和定义的类型"
-    ],
+    "body": ["dir($0)"],
     "description": [
       "dir.object 查看对象属性",
       "返回当前作用域中的所有变量, 方法和定义的类型"

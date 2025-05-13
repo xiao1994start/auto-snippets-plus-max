@@ -14,9 +14,16 @@
     "body": ["page.title = 'Flet counter example'  # * 页面标题"],
     "description": ["flet.Page.title 页面标题"]
   },
+  "flet.Page.fonts 字体": {
+    "prefix": ["ft_Page_fonts", "flet_Page_fonts"],
+    "body": [
+      "page.fonts = {'MiSans': '/src/assets/fonts/MiSans/MiSans-Normal.ttf'}  # * 字体"
+    ],
+    "description": ["flet.Page.fonts 字体"]
+  },
   "flet.Page.theme_mode 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)": {
     "prefix": ["ft_Page_theme_mode", "flet_Page_theme_mode"],
-    "body": ["page.theme_mode = "],
+    "body": ["page.theme_mode = ft.ThemeMode.SYSTEM"],
     "description": [
       "flet.Page.theme_mode 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)"
     ]

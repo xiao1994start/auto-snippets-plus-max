@@ -1,13 +1,21 @@
 {
   "导入 subprocess 执行系统命令模块": {
     "prefix": ["import subprocess"],
-    "body": ["import subprocess  # 执行系统命令模块"],
+    "body": ["import subprocess  # * 执行系统命令模块"],
     "description": ["导入subprocess执行系统命令模块"]
   },
   "subprocess.run 运行命令": {
     "prefix": ["subprocess_run"],
     "body": [
-      "subprocess.run($0, shell=True, capture_output=True, check=True, text=True)"
+      "subprocess.run($0,)",
+      "    $0,",
+      "    shell=True,",
+      "    # 下面的参数可以省略",
+      "    # capture_output=True,  # * 捕获输出",
+      "    # check=True,  # * 检查命令是否执行成功",
+      "    # text=True  # * 将输出作为字符串返回",
+      ")",
+      ""
     ],
     "description": [
       "subprocess.run 运行外部命令并等待其完成",
