@@ -1,6 +1,6 @@
 {
   "引入 pprint 高级打印": {
-    "prefix": ["import pprint"],
+    "prefix": ["import_pprint"],
     "body": ["from pprint import pp"],
     "description": ["引入 pprint 高级打印"]
   },

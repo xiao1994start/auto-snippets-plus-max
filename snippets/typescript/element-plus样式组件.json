@@ -1,6 +1,6 @@
 {
   "导入element-plus": {
-    "prefix": ["import -ElementPlus", "im -ElementPlus"],
+    "prefix": ["import_ElementPlus", "import_ElementPlus"],
     "body": [
       "import ElementPlus from 'element-plus'",
       "import 'element-plus/dist/index.css'",

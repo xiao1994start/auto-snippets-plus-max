@@ -1,6 +1,6 @@
 {
   "引入 threading 线程库": {
-    "prefix": ["import threading"],
+    "prefix": ["import_threading"],
     "body": ["import threading"],
     "description": ["引入 threading 线程库"]
   },

@@ -62,17 +62,29 @@
     ],
     "description": ["lambda(匿名函数)"]
   },
-  "ifmain:主程序运行入口 | 调试运行": {
-    "prefix": ["if_main", "if_name==main"],
+  "if_main:运行入口 | 调试运行": {
+    "prefix": ["if_main", "if_name_main="],
     "body": [
-      "if __name__ == \"__main__\":",
+      "if __name__ == '__main__':",
       "    \"\"\"",
-      "    主程序运行入口 | 调试运行",
+      "    运行入口 | 调试运行",
       "    \"\"\"",
       "    $0",
       "    pass"
     ],
-    "description": ["主程序运行入口 | 调试运行"]
+    "description": ["if_main:运行入口 | 调试运行"]
+  },
+  "if_in_main:运行入口 | 调试运行": {
+    "prefix": ["if_mmain", "if_name_in_main="],
+    "body": [
+      "if __name__ in {'__main__', '__mp_main__'}:",
+      "    \"\"\"",
+      "    运行入口 | 调试运行 | 多进程[multiprocessing]运行",
+      "    \"\"\"",
+      "    $0",
+      "    pass"
+    ],
+    "description": ["if_in_main:运行入口 | 调试运行"]
   },
   "dir.object 查看对象属性": {
     "prefix": ["dir", "dir_object"],

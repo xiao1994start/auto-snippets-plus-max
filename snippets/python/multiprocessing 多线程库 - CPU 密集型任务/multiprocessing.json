@@ -1,6 +1,6 @@
 {
   "引入 multiprocessing 多线线程库": {
-    "prefix": ["import multiprocessing"],
+    "prefix": ["import_multiprocessing"],
     "body": ["import multiprocessing"],
     "description": ["引入 multiprocessing 多线线程库"]
   },

@@ -1,6 +1,6 @@
 {
   "引入 ThreadPoolExecutor 线程池库": {
-    "prefix": ["import ThreadPoolExecutor"],
+    "prefix": ["import_ThreadPoolExecutor"],
     "body": [
       "from concurrent.futures import ThreadPoolExecutor  # 操作系统级别线程池"
     ],
