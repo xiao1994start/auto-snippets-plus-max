@@ -6,11 +6,7 @@
   },
   "引入 flet WebUI框架 及 控件组件": {
     "prefix": ["import flet=", "from flet="],
-    "body": [
-      "import darkdetect  # * 引入 darkdetect 智能主题模式检测库",
-      "import flet as ft  # * 引入 flet WebUI框架",
-      ""
-    ],
+    "body": ["import flet as ft  # * 引入 flet WebUI框架", ""],
     "description": ["引入 flet WebUI框架 及 控件组件"]
   }
 }

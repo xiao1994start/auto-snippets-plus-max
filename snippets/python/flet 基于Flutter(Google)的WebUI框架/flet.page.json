@@ -52,7 +52,8 @@
     "prefix": ["ft_Page_fonts", "flet_Page_fonts"],
     "body": [
       "# * 字体",
-      "page.fonts = {'MiSans': '/src/assets/fonts/MiSans/MiSans-Normal.ttf'}"
+      "page.fonts = {'字体': '字体路径'}",
+      "page.theme = ft.Theme(font_family='字体')"
     ],
     "description": ["flet.Page.fonts 字体"]
   },
@@ -66,16 +67,16 @@
       "flet.Page.theme_mode 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)"
     ]
   },
-  "flet.Page.vertical_alignment 页面主要垂直对齐方式": {
-    "prefix": ["ft_Page_vertical_alignment", "flet_Page_vertical_alignment"],
+  "flet.Page.vertical_alignment 页面子控件对齐方式": {
+    "prefix": ["ft_Page_alignment", "flet_Page_alignment"],
     "body": [
-      "# * 页面主要垂直对齐方式 (START[默认]: 顶部, END: 底部, CENTER: 居中, SPACE_BETWEEN: 垂直均匀分布[顶-底], SPACE_AROUND: 垂直均匀分布[周围间隔相等], SPACE_EVENLY: 垂直均匀分布[边缘空间相等])",
-      "# page.vertical_alignment = ft.MainAxisAlignment.CENTER"
+      "# * 子控件[垂直]对齐方式 (START[默认]: 顶部, CENTER: 居中, END: 底部, SPACE_BETWEEN: 上下两端对齐, SPACE_AROUND: 上下两端对齐, SPACE_EVENLY: 上下两端对齐)",
+      "# page.vertical_alignment = ft.MainAxisAlignment.CENTER",
+      "# * 子控件[水平]对齐方式 (START[默认]: 左侧, CENTER: 居中, END: 右侧, STRETCH: 拉伸, BASELINE: 基线对齐)",
+      "# page.horizontal_alignment = ft.CrossAxisAlignment.CENTER",
+      ""
     ],
-    "description": [
-      "flet.Page.vertical_alignment 页面主要垂直对齐方式",
-      "START[默认]: 顶部, END: 底部, CENTER: 居中, SPACE_BETWEEN: 垂直均匀分布[顶-底], SPACE_AROUND: 垂直均匀分布[周围间隔相等], SPACE_EVENLY: 垂直均匀分布[边缘空间相等]"
-    ]
+    "description": ["flet.Page.vertical_alignment 页面子控件对齐方式"]
   },
   "创建flet def函数": {
     "prefix": ["ft_def", "flet_def"],

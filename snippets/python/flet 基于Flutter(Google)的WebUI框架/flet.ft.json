@@ -49,6 +49,13 @@
       "ElevatedButton 有别名 Button , 可以互换使用"
     ]
   },
+  "flet.ThemeMode 主题模式": {
+    "prefix": ["ft_ThemeMode", "flet_ThemeMode"],
+    "body": [
+      "ft.ThemeMode.SYSTEM  # SYSTEM[默认]: 系统默认, LIGHT: 浅色, DARK: 深色"
+    ],
+    "description": ["flet.ThemeMode 主题模式"]
+  },
   "flet.Icons 使用Flet自带图标": {
     "prefix": ["ft_Icons", "flet_Icons"],
     "body": ["ft.Icons.${1:HOUSE}"],
@@ -57,16 +64,16 @@
       "https://gallery.flet.dev/icons-browser/"
     ]
   },
+  "flet.Image 图像": {
+    "prefix": ["ft_Image", "flet_Image"],
+    "body": [
+      "ft.Image(src='最好使用Path获取完整路径', width=32, height=32, border_radius=16)"
+    ],
+    "description": ["flet.Image 图像"]
+  },
   "flet.Colors.with_opacity 自定义颜色": {
     "prefix": ["ft_Colors_with_opacity", "flet_Colors_with_opacity"],
     "body": ["ft.Colors.with_opacity(opacity=0, color='#000000')"],
     "description": ["flet.Colors.with_opacity 自定义颜色"]
-  },
-  "flet.ThemeMode 主题模式": {
-    "prefix": ["ft_ThemeMode", "flet_ThemeMode"],
-    "body": [
-      "ft.ThemeMode.SYSTEM  # SYSTEM[默认]: 系统默认, LIGHT: 浅色, DARK: 深色"
-    ],
-    "description": ["flet.ThemeMode 主题模式"]
   }
 }
