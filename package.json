@@ -449,7 +449,11 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/niceGUI web应用开发/nicegui.json"
+        "path": "./snippets/python/niceGUI web应用开发/nicegui.import.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/niceGUI web应用开发/nicegui.ui.json"
       },
       {
         "language": "python",
