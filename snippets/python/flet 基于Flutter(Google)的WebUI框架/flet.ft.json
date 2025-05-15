@@ -20,12 +20,22 @@
   },
   "flet.Row 以水平阵列显示其子项的控件": {
     "prefix": ["ft_Row", "flet_Row"],
-    "body": ["ft.Row(controls=[$0])"],
+    "body": [
+      "ft.Row(",
+      "    controls=[$0],",
+      "    expand=True,  # * 扩展并填充可用的水平空间",
+      ")"
+    ],
     "description": ["flet.Row 以水平阵列显示其子项的控件"]
   },
   "flet.Column 以垂直阵列显示其子项的控件": {
     "prefix": ["ft_Column", "flet_Column"],
-    "body": ["ft.Column(controls=[$0])"],
+    "body": [
+      "ft.Column(",
+      "    controls=[$0],",
+      "    expand=True,  # * 扩展并填充可用的垂直空间",
+      ")"
+    ],
     "description": ["flet.Column 以垂直阵列显示其子项的控件"]
   },
   "flet.Text 文本显示控件": {
