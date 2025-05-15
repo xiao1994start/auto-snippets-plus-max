@@ -23,6 +23,7 @@
     "body": [
       "ft.Row(",
       "    expand=True,  # * 扩展并填充可用的水平空间",
+      "    spacing=20,  # * 元素间距",
       "    controls=[$0],",
       ")"
     ],
