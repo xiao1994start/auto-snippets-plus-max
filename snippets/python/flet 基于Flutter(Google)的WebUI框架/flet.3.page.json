@@ -47,7 +47,7 @@
   },
   "flet.Page.title 标题": {
     "prefix": ["ft_Page_title", "flet_Page_title"],
-    "body": ["# * 标题", "page.title = 'Flet counter example'"],
+    "body": ["# * 标题", "page.title = 'Flet Counter Example'"],
     "description": ["flet.Page.title 标题"]
   },
   "flet.Page.fonts 字体": {

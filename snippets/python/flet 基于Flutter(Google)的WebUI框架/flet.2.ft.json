@@ -22,8 +22,8 @@
     "prefix": ["ft_Row", "flet_Row"],
     "body": [
       "ft.Row(",
-      "    controls=[$0],",
       "    expand=True,  # * 扩展并填充可用的水平空间",
+      "    controls=[$0],",
       ")"
     ],
     "description": ["flet.Row 以水平阵列显示其子项的控件"]
@@ -32,11 +32,19 @@
     "prefix": ["ft_Column", "flet_Column"],
     "body": [
       "ft.Column(",
-      "    controls=[$0],",
       "    expand=True,  # * 扩展并填充可用的垂直空间",
+      "    controls=[$0],",
       ")"
     ],
     "description": ["flet.Column 以垂直阵列显示其子项的控件"]
+  },
+  "flet.Container 容器": {
+    "prefix": ["ft_Container", "flet_Container"],
+    "body": ["ft.Container($0)"],
+    "description": [
+      "flet.Container 容器",
+      "容器允许使用背景颜色和边框来装饰控件, 并使用填充/边距和对齐来定位它"
+    ]
   },
   "flet.Container_True 占据剩余空间": {
     "prefix": ["ft_Container_True", "flet_Container_True"],

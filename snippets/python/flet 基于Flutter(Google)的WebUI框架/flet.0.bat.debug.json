@@ -1,11 +1,6 @@
 {
   "Flet Hot Reload CMD": {
-    "prefix": [
-      "embed_uv_Ft_HotReload",
-      "embed_uv_Ft_Debug",
-      "embed_uv_Flet_HotReload",
-      "embed_uv_Flet_Debug"
-    ],
+    "prefix": ["ft_HotReload", "ft_Debug", "flet_HotReload", "flet_Debug"],
     "body": [
       "@ECHO OFF",
       "setlocal EnableDelayedExpansion",
@@ -22,7 +17,7 @@
       "set path=%PYTHON_HOME%;%systemPath%;",
       "@REM ECHO %path%",
       "",
-      "ECHO 开发热重载建议使用IDE调试模式运行",
+      "ECHO 开发环境[embed]热重载建议使用IDE调试模式运行",
       "",
       "call \"%~dp0.venv/Scripts/flet.exe\" run main.py",
       "",
