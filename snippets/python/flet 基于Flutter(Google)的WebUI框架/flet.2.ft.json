@@ -28,7 +28,7 @@
   },
   "flet.Container_True 占据剩余空间": {
     "prefix": ["ft_Container_True", "flet_Container_True"],
-    "body": ["ft.Container(expand=True$0)"],
+    "body": ["ft.Container(expand=True,$0)"],
     "description": ["flet.Container_True 占据剩余空间"]
   },
   "flet.Row 以水平阵列显示其子项的控件": {
@@ -70,6 +70,46 @@
       "START[默认]: 左侧, CENTER: 居中, END: 右侧, STRETCH: 拉伸, BASELINE: 基线对齐"
     ]
   },
+  "flet.Stack 堆叠容器": {
+    "prefix": ["flet_Stack"],
+    "body": ["ft.Stack([$0])"],
+    "description": ["flet.Stack 堆叠容器", "用于将多个子容器堆叠在一起"]
+  },
+  "flet.NavigationRail 创建 NavigationRail 常驻导航栏": {
+    "prefix": ["ft_NavigationRail", "flet_NavigationRail"],
+    "body": [
+      "ft.NavigationRail(",
+      "    selected_index=0,  # 0: 默认选中第一个[e.control.selected_index: 当前选中控件索引]",
+      "    label_type=ft.NavigationRailLabelType.ALL,  # ft.NavigationRailLabelType.ALL: 显示所有标签",
+      "    min_width=100,  # 最小宽度",
+      "    min_extended_width=400,  # 最小扩展宽度",
+      "    leading=ft.Icon(name=ft.Icons.ACCOUNT_CIRCLE_ROUNDED, size=64),  # 导航栏第一顺位控件",
+      "    group_alignment=0.0,  # 导航栏控件对齐方式[-1.0: 左/顶 对齐; 0.0: 居中对齐; 1.0: 右/底 对齐]",
+      "    destinations=[  # 导航栏中间控件(不少于 2 个)[ft.NavigationRailDestination: 导航栏中间控件]",
+      "        ft.NavigationRailDestination(icon=ft.Icons.CHAT_BUBBLE_OUTLINE_ROUNDED, selected_icon=ft.Icons.CHAT_BUBBLE_OUTLINED, label='选项一'),",
+      "        ft.NavigationRailDestination(icon=ft.Icons.SETTINGS_OUTLINED, selected_icon=ft.Icons.SETTINGS, label='设置'),",
+      "    ],",
+      "    on_change=lambda e: print(e, e.control.selected_index),  # 导航栏中间控件点击事件[e.control.selected_index: 当前选中控件索引]",
+      "    trailing=self.btn_theme,  # 导航栏最后顺位控件",
+      ")",
+      ""
+    ],
+    "description": ["flet.NavigationRail 创建 NavigationRail 常驻导航栏"]
+  },
+  "flet.NavigationRailDestination 常驻导航栏(NavigationRail)内部 NavigationRailDestination 控件": {
+    "prefix": ["flet_NavigationRailDestination"],
+    "body": [
+      "ft.NavigationRailDestination(",
+      "    icon=ft.Icons.SETTINGS_OUTLINED,  # icon: 图标",
+      "    selected_icon=ft.Icons.SETTINGS,  # selected_icon: 选中时的图标",
+      "    label='设置',  # label: 标签",
+      ")",
+      ""
+    ],
+    "description": [
+      "flet.NavigationRailDestination 常驻导航栏(NavigationRail)内部 NavigationRailDestination 控件"
+    ]
+  },
   "flet.Offset 控件的相对偏移": {
     "prefix": ["ft_Offset", "flet_Offset"],
     "body": ["ft.Offset(0, 0)"],
@@ -77,7 +117,7 @@
   },
   "flet.Text 文本显示控件": {
     "prefix": ["ft_Text", "flet_Text"],
-    "body": ["ft.Text(value=${1:'Hello, world!'})"],
+    "body": ["ft.Text(value='${1:Hello, world!}')"],
     "description": ["flet.Text 文本显示控件"]
   },
   "flet.TextField 文本输入控件": {
@@ -90,7 +130,7 @@
   },
   "flet.Button 按钮": {
     "prefix": ["ft_Button", "flet_Button"],
-    "body": ["ft.Button(text='按钮')"],
+    "body": ["ft.Button(text='${1:按钮}')"],
     "description": ["flet.Button 按钮"]
   },
   "flet.ElevatedButton 凸起按钮": {
@@ -109,8 +149,8 @@
     "description": ["flet.ThemeMode 主题模式"]
   },
   "flet.Icon 使用Flet自带图标": {
-    "prefix": ["ft_Icons", "flet_Icons"],
-    "body": ["ft.Icon(${1:'settings'})"],
+    "prefix": ["ft_Icon", "flet_Icon"],
+    "body": ["ft.Icon(name=${1:'settings'})"],
     "description": ["flet.Icon 使用Flet自带图标"]
   },
   "flet.Icons 使用Flet自带图标": {

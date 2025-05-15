@@ -15,7 +15,7 @@
     "body": [
       "\"${1:type}.${2:object} ${3:描述}\": {",
       "  \"prefix\": [\"${1:type}_${2:object}\"],",
-      "  \"body\": [\"${1:type}.${2:object}$0\"],",
+      "  \"body\": [],",
       "  \"description\": [\"${1:type}.${2:object} ${3:描述}\"]",
       "},"
     ],
