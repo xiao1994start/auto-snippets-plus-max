@@ -1,37 +1,39 @@
 {
-  "flet.Page.window.icon 桌面应用 图标": {
+  "flet.Page.window.icon 桌面应用/页面 图标": {
     "prefix": ["ft_Page_window_icon", "flet_Page_window_icon"],
     "body": [
-      "# * 桌面应用 图标 (相对路径)",
+      "# * 桌面应用/页面 图标 (相对路径)",
       "page.window.icon = 'assets/icon.png'"
     ],
-    "description": ["flet.Page.window.icon 桌面应用 图标"]
+    "description": ["flet.Page.window.icon 桌面应用/页面 图标"]
   },
-  "flet.Page.window.alignment 桌面应用 对齐方式(初始位置)": {
+  "flet.Page.window.alignment 桌面应用/页面 对齐方式(初始位置)": {
     "prefix": ["ft_Page_window_alignment", "flet_Page_window_alignment"],
     "body": [
-      "# * 桌面应用 对齐方式(初始位置) [ft.Alignment: 居中:(0,0); 左上:(-1, -1); 右下:(1, 1)]",
+      "# * 桌面应用/页面 对齐方式(初始位置) [ft.Alignment: 居中:(0,0); 左上:(-1, -1); 右下:(1, 1)]",
       "page.window.alignment = ft.Alignment(0, 0)"
     ],
-    "description": ["flet.Page.window.alignment 桌面应用 对齐方式(初始位置)"]
+    "description": [
+      "flet.Page.window.alignment 桌面应用/页面 对齐方式(初始位置)"
+    ]
   },
-  "flet.Page.window.size 桌面应用 宽度 | 高度": {
+  "flet.Page.window.size 桌面应用/页面 宽度 | 高度": {
     "prefix": ["ft_Page_window_size", "flet_Page_window_size"],
     "body": [
-      "# * 桌面应用 宽度 | 高度",
+      "# * 桌面应用/页面 宽度 | 高度",
       "page.window.width = 1280",
       "page.window.height = 720"
     ],
-    "description": ["flet.Page.window.size 桌面应用 宽度 | 高度"]
+    "description": ["flet.Page.window.size 桌面应用/页面 宽度 | 高度"]
   },
-  "flet.Page.window.min_size 桌面应用 宽度 | 高度": {
+  "flet.Page.window.min_size 桌面应用/页面 宽度 | 高度": {
     "prefix": ["ft_Page_window_min_size", "flet_Page_window_min_size"],
     "body": [
-      "# * 桌面应用 最小宽度 | 最小高度",
+      "# * 桌面应用/页面 最小宽度 | 最小高度",
       "page.window.min_width = 1280",
       "page.window.min_height = 720"
     ],
-    "description": ["flet.Page.window.min_size 桌面应用 宽度 | 高度"]
+    "description": ["flet.Page.window.min_size 桌面应用/页面 宽度 | 高度"]
   },
   "flet.Page.update 更新 Flet 应用": {
     "prefix": ["ft_Page_update", "flet_Page_update"],
