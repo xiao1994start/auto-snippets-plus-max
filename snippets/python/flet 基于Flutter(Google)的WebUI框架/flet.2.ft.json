@@ -70,6 +70,11 @@
       "START[默认]: 左侧, CENTER: 居中, END: 右侧, STRETCH: 拉伸, BASELINE: 基线对齐"
     ]
   },
+  "flet.Offset 控件的相对偏移": {
+    "prefix": ["ft_Offset", "flet_Offset"],
+    "body": ["ft.Offset(0, 0)"],
+    "description": ["flet.Offset 控件的相对偏移"]
+  },
   "flet.Text 文本显示控件": {
     "prefix": ["ft_Text", "flet_Text"],
     "body": ["ft.Text(value=${1:'Hello, world!'})"],
