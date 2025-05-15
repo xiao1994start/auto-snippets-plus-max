@@ -38,6 +38,11 @@
     ],
     "description": ["flet.Column 以垂直阵列显示其子项的控件"]
   },
+  "flet.Container_True 占据剩余空间": {
+    "prefix": ["ft_Container_True", "flet_Container_True"],
+    "body": ["ft.Container(expand=True)"],
+    "description": ["flet.Container_True 占据剩余空间"]
+  },
   "flet.Text 文本显示控件": {
     "prefix": ["ft_Text", "flet_Text"],
     "body": ["ft.Text(value=${1:'Hello, world!'})"],
@@ -53,7 +58,7 @@
   },
   "flet.Button 按钮": {
     "prefix": ["ft_Button", "flet_Button"],
-    "body": ["ft.ElevatedBuButtontton(text='按钮')"],
+    "body": ["ft.Button(text='按钮')"],
     "description": ["flet.Button 按钮"]
   },
   "flet.ElevatedButton 凸起按钮": {
@@ -70,6 +75,11 @@
       "ft.ThemeMode.SYSTEM  # SYSTEM[默认]: 系统默认, LIGHT: 浅色, DARK: 深色"
     ],
     "description": ["flet.ThemeMode 主题模式"]
+  },
+  "flet.Icon 使用Flet自带图标": {
+    "prefix": ["ft_Icons", "flet_Icons"],
+    "body": ["ft.Icon(${1:'settings'})"],
+    "description": ["flet.Icon 使用Flet自带图标"]
   },
   "flet.Icons 使用Flet自带图标": {
     "prefix": ["ft_Icons", "flet_Icons"],
