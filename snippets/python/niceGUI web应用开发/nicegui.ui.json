@@ -1,11 +1,11 @@
 {
   "nicegui.ui.notification 通知 loading": {
-    "prefix": ["nicegui_ui_notification"],
+    "prefix": ["ui_notification", "nicegui_notification"],
     "body": ["ui.notification(position='top', timeout=None)"],
     "description": ["nicegui.ui.notification 通知 loading"]
   },
   "nicegui.ui.button_color 自定义 UI 按钮颜色样式": {
-    "prefix": ["nicegui_ui_button_color"],
+    "prefix": ["ui_button_color", "nicegui_button_color"],
     "body": ["ui.button(color=None).style('background:#1e40af')"],
     "description": ["nicegui.ui.button_color 自定义 UI 按钮颜色样式"]
   }

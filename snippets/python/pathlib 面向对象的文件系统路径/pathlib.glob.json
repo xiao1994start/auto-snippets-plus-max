@@ -1,6 +1,6 @@
 {
   "Path.glob 遍历/搜索 -> object": {
-    "prefix": ["Path_glob", "_glob_Path"],
+    "prefix": ["Path_glob", "glob_Path"],
     "body": [
       "glob(\"${1|*,**,**/*.*,*.py|}\")  # =>generator(生成器) '*':匹配当前目录下; '**':匹配当前目录及其子目录下; '**/*.*':匹配当前目录及其子目录下"
     ],
@@ -12,7 +12,7 @@
     ]
   },
   "Path.rglob 递归遍历/搜索 -> object": {
-    "prefix": ["Path_rglob", "_rglob_Path"],
+    "prefix": ["Path_rglob", "rglob_Path"],
     "body": [
       "rglob(\"${1|*,**,**/*.*,*.py|}\")  # =>generator(生成器) '*':匹配当前目录下; '**':匹配当前目录及其子目录下; '**/*.*':匹配当前目录及其子目录下"
     ],
