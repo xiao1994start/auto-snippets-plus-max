@@ -17,6 +17,8 @@
       "set path=%PYTHON_HOME%;%systemPath%;",
       "@REM ECHO %path%",
       "",
+      "ECHO 开发热重载建议使用IDE调试模式运行",
+      "",
       "call \"%~dp0.venv/Scripts/flet.exe\" run main.py -d",
       "",
       "",

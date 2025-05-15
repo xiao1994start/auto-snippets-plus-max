@@ -41,7 +41,7 @@
       "    改变主题模式",
       "    :param e: 事件对象",
       "    \"\"\"",
-      "    import darkdetect  # * 引入 darkdetect 检测系统主题",
+      "    # * import darkdetect  # * 引入 darkdetect 检测系统主题",
       "    if page.theme_mode == ft.ThemeMode.DARK:",
       "        page.theme_mode = ft.ThemeMode.LIGHT",
       "        btn_theme.icon = ft.Icons.LIGHT_MODE",

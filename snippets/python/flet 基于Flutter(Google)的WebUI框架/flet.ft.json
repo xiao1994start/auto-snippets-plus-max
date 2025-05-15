@@ -28,6 +28,11 @@
     "body": ["ft.Column(controls=[$0])"],
     "description": ["flet.Column 以垂直阵列显示其子项的控件"]
   },
+  "flet.Text 文本显示控件": {
+    "prefix": ["ft_Text", "flet_Text"],
+    "body": ["ft.Text(value=${1:'Hello, world!'})"],
+    "description": ["flet.Text 文本显示控件"]
+  },
   "flet.TextField 文本输入控件": {
     "prefix": ["ft_TextField", "flet_TextField"],
     "body": ["ft.TextField"],
