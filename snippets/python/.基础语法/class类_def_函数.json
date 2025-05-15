@@ -57,10 +57,8 @@
   },
   "lambda:匿名函数": {
     "prefix": ["add_lambda"],
-    "body": [
-      "lambda ${1:args}: ${2:expr表达式}  # lambda(匿名函数) [参数]: 表达式"
-    ],
-    "description": ["lambda(匿名函数)"]
+    "body": ["lambda ${1:args参数}: ${2:expr表达式}"],
+    "description": ["lambda(匿名函数)", "lambda(匿名函数) [参数]: 表达式"]
   },
   "if_main:运行入口 | 调试运行": {
     "prefix": ["if_main", "if_name_main="],

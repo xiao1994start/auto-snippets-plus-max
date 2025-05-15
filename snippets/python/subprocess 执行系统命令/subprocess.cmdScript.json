@@ -1,13 +1,13 @@
 {
   "subprocess.CMD 打印指令_构造函数": {
-    "prefix": ["subprocess_ CMD_printerIMG"],
+    "prefix": ["subprocess_CMD_printerIMG"],
     "body": [
       "['rundll32', 'shimgvw.dll', 'ImageView_PrintTo', '/pt', 打印文件路径, 打印机名称,]"
     ],
     "description": ["subprocess.CMD 打印指令_构造函数"]
   },
   "subprocess.CMD 结束进程": {
-    "prefix": ["subprocess_ CMD_taskkillSafe"],
+    "prefix": ["subprocess_CMD_taskkillSafe"],
     "body": ["['taskkill', '/F', '/IM', '进程名.exe']"],
     "description": ["subprocess.CMD 结束进程"]
   }
