@@ -1,15 +1,12 @@
 {
   "flet.main(page: ft.Page) 创建主界面框架函数.示例": {
-    "prefix": [
-      "ft_def_main_page=",
-      "flet_def_main_page="
-    ],
+    "prefix": ["ft_def_main_page=", "flet_def_main_page="],
     "body": [
       "def main(page: ft.Page):",
       "    # * 页面标题",
       "    page.title = 'Flet Counter Example'",
       "    # * 字体",
-      "    page.fonts = {'字体': '字体路径'}",
+      "    page.fonts = {'字体': str('字体路径')}",
       "    page.theme = ft.Theme(font_family='字体')",
       "    # * 主题模式 (LIGHT: 浅色, DARK: 深色, SYSTEM[默认]: 系统默认)",
       "    page.theme_mode = ft.ThemeMode.SYSTEM",
@@ -34,15 +31,10 @@
       "",
       ""
     ],
-    "description": [
-      "flet.main(page: ft.Page) 创建主界面框架函数.示例"
-    ]
+    "description": ["flet.main(page: ft.Page) 创建主界面框架函数.示例"]
   },
   "flet.AppBar Flet顶部应用栏.示例": {
-    "prefix": [
-      "ft_AppBar_toggle_theme=",
-      "flet_AppBar_toggle_theme="
-    ],
+    "prefix": ["ft_AppBar_toggle_theme=", "flet_AppBar_toggle_theme="],
     "body": [
       "# * AppBar[顶部应用栏]",
       "page.headbar = ft.AppBar(",
@@ -56,9 +48,7 @@
       ")",
       ""
     ],
-    "description": [
-      "flet.AppBar Flet顶部应用栏.示例"
-    ]
+    "description": ["flet.AppBar Flet顶部应用栏.示例"]
   },
   "flet.NavigationRail Flet侧边导航栏.示例": {
     "prefix": [
@@ -66,15 +56,10 @@
       "flet_def_NavigationRail_toggle_theme="
     ],
     "body": [],
-    "description": [
-      "flet.NavigationRail Flet侧边导航栏.示例"
-    ]
+    "description": ["flet.NavigationRail Flet侧边导航栏.示例"]
   },
   "flet.page.theme_mode.button Flet主题按钮.示例": {
-    "prefix": [
-      "ft_def_theme_mod_button=",
-      "flet_def_theme_mod_button="
-    ],
+    "prefix": ["ft_def_theme_mod_button=", "flet_def_theme_mod_button="],
     "body": [
       "def toggle_theme(e):",
       "    \"\"\"",
@@ -101,8 +86,6 @@
       "btn_theme = ft.IconButton(icon=ft.Icons.DARK_MODE, tooltip='切换主题', on_click=toggle_theme)",
       ""
     ],
-    "description": [
-      "flet.page.theme_mode.button Flet主题按钮.示例"
-    ]
+    "description": ["flet.page.theme_mode.button Flet主题按钮.示例"]
   }
 }

@@ -1,9 +1,6 @@
 {
   "创建class对象": {
-    "prefix": [
-      "create_class",
-      "c_class"
-    ],
+    "prefix": ["create_class", "c_class"],
     "body": [
       "class ${1:NewObject}(${2:}):",
       "    # * class default args(参数) | signal(信号)",
@@ -16,27 +13,15 @@
       "",
       "    pass"
     ],
-    "description": [
-      "创建class对象"
-    ]
+    "description": ["创建class对象"]
   },
   "class 父类初始化方法初始化继承属性": {
-    "prefix": [
-      "super_init_class",
-      "class_super_init"
-    ],
-    "body": [
-      "super().__init__()",
-      ""
-    ],
-    "description": [
-      "class 父类初始化方法初始化继承属性"
-    ]
+    "prefix": ["super_init_class", "class_super_init"],
+    "body": ["super().__init__()", ""],
+    "description": ["class 父类初始化方法初始化继承属性"]
   },
   "class初始化": {
-    "prefix": [
-      "class_init"
-    ],
+    "prefix": ["class_init"],
     "body": [
       "def __init__(self) -> None:",
       "    # * class input args(参数)",
@@ -46,27 +31,15 @@
       "    \"\"\"",
       "    pass"
     ],
-    "description": [
-      "class初始化"
-    ]
+    "description": ["class初始化"]
   },
   "class类self": {
-    "prefix": [
-      "class_sf",
-      "class_self"
-    ],
-    "body": [
-      "self.$0"
-    ],
-    "description": [
-      "class类self"
-    ]
+    "prefix": ["class_sf", "class_self"],
+    "body": ["self.$0"],
+    "description": ["class类self"]
   },
   "创建class - def函数": {
-    "prefix": [
-      "create_class_def",
-      "c_class_def"
-    ],
+    "prefix": ["create_class_def", "c_class_def"],
     "body": [
       "def ${1:name}(self):",
       "    \"\"\"",
@@ -74,15 +47,10 @@
       "    \"\"\"",
       "    pass"
     ],
-    "description": [
-      "创建class - def函数"
-    ]
+    "description": ["创建class - def函数"]
   },
   "创建def函数": {
-    "prefix": [
-      "create_def",
-      "c_def"
-    ],
+    "prefix": ["create_def", "c_def"],
     "body": [
       "def ${1:name}():",
       "    \"\"\"",
@@ -90,28 +58,15 @@
       "    \"\"\"",
       "    pass"
     ],
-    "description": [
-      "创建def函数"
-    ]
+    "description": ["创建def函数"]
   },
   "lambda:匿名函数": {
-    "prefix": [
-      "create_lambda",
-      "c_lambda"
-    ],
-    "body": [
-      "lambda ${1:args参数}: ${2:expr表达式}"
-    ],
-    "description": [
-      "lambda(匿名函数)",
-      "lambda(匿名函数) [参数]: 表达式"
-    ]
+    "prefix": ["create_lambda", "c_lambda"],
+    "body": ["lambda ${1:args参数}: ${2:expr表达式}"],
+    "description": ["lambda(匿名函数)", "lambda(匿名函数) [参数]: 表达式"]
   },
   "if_main:运行入口 | 调试运行": {
-    "prefix": [
-      "if_main",
-      "if_name_main="
-    ],
+    "prefix": ["if_main", "if_name_main="],
     "body": [
       "if __name__ == '__main__':",
       "    \"\"\"",
@@ -120,15 +75,10 @@
       "    $0",
       "    pass"
     ],
-    "description": [
-      "if_main:运行入口 | 调试运行"
-    ]
+    "description": ["if_main:运行入口 | 调试运行"]
   },
   "if_in_main:运行入口 | 调试运行": {
-    "prefix": [
-      "if_mmain",
-      "if_name_in_main="
-    ],
+    "prefix": ["if_mmain", "if_name_in_main="],
     "body": [
       "if __name__ in {'__main__', '__mp_main__'}:",
       "    \"\"\"",
@@ -137,18 +87,11 @@
       "    $0",
       "    pass"
     ],
-    "description": [
-      "if_in_main:运行入口 | 调试运行"
-    ]
+    "description": ["if_in_main:运行入口 | 调试运行"]
   },
   "dir.object 查看对象属性": {
-    "prefix": [
-      "dir",
-      "dir_object"
-    ],
-    "body": [
-      "dir($0)"
-    ],
+    "prefix": ["dir", "dir_object"],
+    "body": ["dir($0)"],
     "description": [
       "dir.object 查看对象属性",
       "返回当前作用域中的所有变量, 方法和定义的类型"
