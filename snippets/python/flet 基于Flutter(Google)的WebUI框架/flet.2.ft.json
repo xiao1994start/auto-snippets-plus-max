@@ -18,6 +18,11 @@
       "[ft.Alignment: 居中:(0,0); 左上:(-1, -1); 右下:(1, 1)]"
     ]
   },
+  "flet.Control 控件父级对象": {
+    "prefix": ["ft_Control", "flet_Control"],
+    "body": ["ft.Control"],
+    "description": ["flet.Control 控件父级对象"]
+  },
   "flet.Container 容器": {
     "prefix": ["ft_Container", "flet_Container"],
     "body": ["ft.Container($0)"],
@@ -71,7 +76,7 @@
     ]
   },
   "flet.Stack 堆叠容器": {
-    "prefix": ["flet_Stack"],
+    "prefix": ["ft_Stack", "flet_Stack"],
     "body": ["ft.Stack([$0])"],
     "description": ["flet.Stack 堆叠容器", "用于将多个子容器堆叠在一起"]
   },
@@ -97,7 +102,10 @@
     "description": ["flet.NavigationRail 创建 NavigationRail 常驻导航栏"]
   },
   "flet.NavigationRailDestination 常驻导航栏(NavigationRail)内部控件": {
-    "prefix": ["flet_NavigationRailDestination"],
+    "prefix": [
+      "ft_NavigationRailDestination",
+      "flet_NavigationRailDestination"
+    ],
     "body": [
       "ft.NavigationRailDestination(",
       "    icon=ft.Icons.SETTINGS_OUTLINED,  # icon: 图标",
@@ -168,10 +176,20 @@
     ],
     "description": ["flet.Image 图像"]
   },
+  "flet.Colors 颜色": {
+    "prefix": ["ft_Colors", "flet_Colors"],
+    "body": ["ft.Colors.${1:RED}"],
+    "description": ["flet.Colors 颜色"]
+  },
   "flet.Colors.with_opacity 自定义颜色": {
     "prefix": ["ft_Colors_with_opacity", "flet_Colors_with_opacity"],
     "body": ["ft.Colors.with_opacity(opacity=0, color='#000000')"],
     "description": ["flet.Colors.with_opacity 自定义颜色"]
+  },
+  "flet.Divider 水平分割线": {
+    "prefix": ["ft_Divider", "flet_Divider"],
+    "body": ["ft.Divider(height=${1:1})"],
+    "description": ["flet.Divider 水平分割线"]
   },
   "flet.VerticalDivider 垂直分割线": {
     "prefix": ["ft_VerticalDivider", "flet_VerticalDivider"],

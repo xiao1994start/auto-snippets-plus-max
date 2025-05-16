@@ -15,6 +15,11 @@
     ],
     "description": ["创建class对象"]
   },
+  "class 父类初始化方法初始化继承属性": {
+    "prefix": ["super_init", "class_super_init"],
+    "body": ["super().__init__()", ""],
+    "description": ["class 父类初始化方法初始化继承属性"]
+  },
   "class初始化": {
     "prefix": ["class_init"],
     "body": [
