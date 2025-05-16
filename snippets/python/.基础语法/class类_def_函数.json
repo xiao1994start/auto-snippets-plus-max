@@ -34,7 +34,7 @@
     "description": ["class初始化"]
   },
   "class类self": {
-    "prefix": ["class_sf", "class_self"],
+    "prefix": ["sf_class", "self_class", "class_sf", "class_self"],
     "body": ["self.$0"],
     "description": ["class类self"]
   },
