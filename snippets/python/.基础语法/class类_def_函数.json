@@ -1,16 +1,16 @@
 {
   "创建class对象": {
     "prefix": [
-      "new_class_newClass_OOP",
-      "add_class_OOP"
+      "create_class",
+      "c_class"
     ],
     "body": [
-      "class ${1:NewObject}():",
+      "class ${1:NewObject}(${2:}):",
       "    # * class default args(参数) | signal(信号)",
       "    def __init__(self) -> None:",
       "        # * class input args(参数)",
       "        \"\"\"",
-      "        ${2:_summary_}",
+      "        ${3:_summary_}",
       "        \"\"\"",
       "        pass",
       "",
@@ -22,7 +22,7 @@
   },
   "class 父类初始化方法初始化继承属性": {
     "prefix": [
-      "super_init",
+      "super_init_class",
       "class_super_init"
     ],
     "body": [
@@ -64,8 +64,8 @@
   },
   "创建class - def函数": {
     "prefix": [
-      "class_def",
-      "add_class_def"
+      "create_class_def",
+      "c_class_def"
     ],
     "body": [
       "def ${1:name}(self):",
@@ -80,8 +80,8 @@
   },
   "创建def函数": {
     "prefix": [
-      "new_def_Function",
-      "add_def_newFunction"
+      "create_def",
+      "c_def"
     ],
     "body": [
       "def ${1:name}():",
@@ -96,7 +96,8 @@
   },
   "lambda:匿名函数": {
     "prefix": [
-      "add_lambda"
+      "create_lambda",
+      "c_lambda"
     ],
     "body": [
       "lambda ${1:args参数}: ${2:expr表达式}"

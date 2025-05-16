@@ -38,6 +38,28 @@
       "flet.main(page: ft.Page) 创建主界面框架函数.示例"
     ]
   },
+  "flet.AppBar Flet顶部应用栏.示例": {
+    "prefix": [
+      "ft_AppBar_toggle_theme=",
+      "flet_AppBar_toggle_theme="
+    ],
+    "body": [
+      "# * AppBar[顶部应用栏]",
+      "page.headbar = ft.AppBar(",
+      "    leading=ft.Icon(ft.Icons.HOUSE),  # * 左侧图标 | ft.Image(src='最好使用Path获取完整路径', width=32, height=32, border_radius=[圆角])",
+      "    title=ft.Text('Flet Counter Example'),  # * 标题",
+      "    center_title=True,  # * 标题居中",
+      "    bgcolor=ft.Colors.with_opacity(opacity=0, color='#000000'),  # * 背景颜色",
+      "    actions=[  # * 右侧图标",
+      "        ft.Text('ft_def_theme_mod_button=Flet主题模式切换按钮'),",
+      "    ],",
+      ")",
+      ""
+    ],
+    "description": [
+      "flet.AppBar Flet顶部应用栏.示例"
+    ]
+  },
   "flet.NavigationRail Flet侧边导航栏.示例": {
     "prefix": [
       "ft_def_NavigationRail_toggle_theme=",
@@ -81,28 +103,6 @@
     ],
     "description": [
       "flet.page.theme_mode.button Flet主题按钮.示例"
-    ]
-  },
-  "flet.AppBar Flet顶部应用栏.示例": {
-    "prefix": [
-      "ft_AppBar_toggle_theme=",
-      "flet_AppBar_toggle_theme="
-    ],
-    "body": [
-      "# * AppBar[顶部应用栏]",
-      "page.appbar = ft.AppBar(",
-      "    leading=ft.Icon(ft.Icons.HOUSE),  # * 左侧图标 | ft.Image(src='最好使用Path获取完整路径', width=32, height=32, border_radius=[圆角])",
-      "    title=ft.Text('Flet Counter Example'),  # * 标题",
-      "    center_title=True,  # * 标题居中",
-      "    bgcolor=ft.Colors.with_opacity(opacity=0, color='#000000'),  # * 背景颜色",
-      "    actions=[  # * 右侧图标",
-      "        ft.Text('ft_def_theme_mod_button=Flet主题模式切换按钮'),",
-      "    ],",
-      ")",
-      ""
-    ],
-    "description": [
-      "flet.AppBar Flet顶部应用栏.示例"
     ]
   }
 }
