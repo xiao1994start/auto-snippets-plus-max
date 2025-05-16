@@ -1,11 +1,21 @@
 {
   "引入 flet WebUI框架": {
-    "prefix": ["import_flet", "import ft"],
-    "body": ["import flet as ft  # * 引入 flet WebUI框架"],
-    "description": ["引入 flet WebUI框架"]
+    "prefix": [
+      "import_flet",
+      "import ft"
+    ],
+    "body": [
+      "import flet as ft  # * 引入 flet WebUI框架"
+    ],
+    "description": [
+      "引入 flet WebUI框架"
+    ]
   },
   "引入 flet WebUI框架 及 控件组件": {
-    "prefix": ["import_flet=", "from flet="],
+    "prefix": [
+      "import_flet=",
+      "from flet="
+    ],
     "body": [
       "from pathlib import Path",
       "",
@@ -55,6 +65,8 @@
       "    )",
       ""
     ],
-    "description": ["引入 flet WebUI框架 及 控件组件"]
+    "description": [
+      "引入 flet WebUI框架 及 控件组件"
+    ]
   }
 }

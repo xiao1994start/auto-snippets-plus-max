@@ -1,6 +1,9 @@
 {
   "flet.app 运行 Flet 应用": {
-    "prefix": ["ft_app", "flet_app"],
+    "prefix": [
+      "ft_app",
+      "flet_app"
+    ],
     "body": [
       "ft.app(",
       "    target=main,",
@@ -8,36 +11,65 @@
       ")",
       ""
     ],
-    "description": ["flet.app 运行 Flet 应用"]
+    "description": [
+      "flet.app 运行 Flet 应用"
+    ]
   },
   "flet.Alignment 对齐方式": {
-    "prefix": ["ft_Alignment", "flet_Alignment"],
-    "body": ["ft.Alignment(0, 0)"],
+    "prefix": [
+      "ft_Alignment",
+      "flet_Alignment"
+    ],
+    "body": [
+      "ft.Alignment(0, 0)"
+    ],
     "description": [
       "flet.Alignment 对齐方式",
       "[ft.Alignment: 居中:(0,0); 左上:(-1, -1); 右下:(1, 1)]"
     ]
   },
   "flet.Control 控件父级对象": {
-    "prefix": ["ft_Control", "flet_Control"],
-    "body": ["ft.Control"],
-    "description": ["flet.Control 控件父级对象"]
+    "prefix": [
+      "ft_Control",
+      "flet_Control"
+    ],
+    "body": [
+      "ft.Control"
+    ],
+    "description": [
+      "flet.Control 控件父级对象"
+    ]
   },
   "flet.Container 容器": {
-    "prefix": ["ft_Container", "flet_Container"],
-    "body": ["ft.Container($0)"],
+    "prefix": [
+      "ft_Container",
+      "flet_Container"
+    ],
+    "body": [
+      "ft.Container($0)"
+    ],
     "description": [
       "flet.Container 容器",
       "容器允许使用背景颜色和边框来装饰控件, 并使用填充/边距和对齐来定位它"
     ]
   },
   "flet.Container_True 占据剩余空间": {
-    "prefix": ["ft_Container_True", "flet_Container_True"],
-    "body": ["ft.Container(expand=True,$0)"],
-    "description": ["flet.Container_True 占据剩余空间"]
+    "prefix": [
+      "ft_Container_True",
+      "flet_Container_True"
+    ],
+    "body": [
+      "ft.Container(expand=True,$0)"
+    ],
+    "description": [
+      "flet.Container_True 占据剩余空间"
+    ]
   },
   "flet.Row 以水平阵列显示其子项的控件": {
-    "prefix": ["ft_Row", "flet_Row"],
+    "prefix": [
+      "ft_Row",
+      "flet_Row"
+    ],
     "body": [
       "ft.Row(",
       "    expand=True,  # * 扩展并填充可用的水平空间",
@@ -45,21 +77,33 @@
       "    controls=[$0],",
       ")"
     ],
-    "description": ["flet.Row 以水平阵列显示其子项的控件"]
+    "description": [
+      "flet.Row 以水平阵列显示其子项的控件"
+    ]
   },
   "flet.Column 以垂直阵列显示其子项的控件": {
-    "prefix": ["ft_Column", "flet_Column"],
+    "prefix": [
+      "ft_Column",
+      "flet_Column"
+    ],
     "body": [
       "ft.Column(",
       "    expand=True,  # * 扩展并填充可用的垂直空间",
       "    controls=[$0],",
       ")"
     ],
-    "description": ["flet.Column 以垂直阵列显示其子项的控件"]
+    "description": [
+      "flet.Column 以垂直阵列显示其子项的控件"
+    ]
   },
   "flet.MainAxisAlignment Y轴(vertical_alignment|垂直)对齐": {
-    "prefix": ["ft_MainAxisAlignment", "flet_MainAxisAlignment"],
-    "body": ["ft.MainAxisAlignment.${1:CENTER}"],
+    "prefix": [
+      "ft_MainAxisAlignment",
+      "flet_MainAxisAlignment"
+    ],
+    "body": [
+      "ft.MainAxisAlignment.${1:CENTER}"
+    ],
     "description": [
       "flet.MainAxisAlignment Y轴(vertical_alignment|垂直)对齐",
       "对齐方式:",
@@ -67,8 +111,13 @@
     ]
   },
   "flet.CrossAxisAlignment X轴(horizontal_alignment|水平)对齐": {
-    "prefix": ["ft_CrossAxisAlignment", "flet_CrossAxisAlignment"],
-    "body": ["ft.CrossAxisAlignment.${1:CENTER}"],
+    "prefix": [
+      "ft_CrossAxisAlignment",
+      "flet_CrossAxisAlignment"
+    ],
+    "body": [
+      "ft.CrossAxisAlignment.${1:CENTER}"
+    ],
     "description": [
       "flet.CrossAxisAlignment X轴(horizontal_alignment|水平)对齐",
       "对齐方式:",
@@ -76,30 +125,45 @@
     ]
   },
   "flet.Stack 堆叠容器": {
-    "prefix": ["ft_Stack", "flet_Stack"],
-    "body": ["ft.Stack([$0])"],
-    "description": ["flet.Stack 堆叠容器", "用于将多个子容器堆叠在一起"]
+    "prefix": [
+      "ft_Stack",
+      "flet_Stack"
+    ],
+    "body": [
+      "ft.Stack([$0])"
+    ],
+    "description": [
+      "flet.Stack 堆叠容器",
+      "用于将多个子容器堆叠在一起"
+    ]
   },
   "flet.NavigationRail 创建 NavigationRail 常驻导航栏": {
-    "prefix": ["ft_NavigationRail", "flet_NavigationRail"],
+    "prefix": [
+      "ft_NavigationRail",
+      "flet_NavigationRail"
+    ],
     "body": [
       "ft.NavigationRail(",
       "    selected_index=0,  # 0: 默认选中[destinations]中第一个[e.control.selected_index: 当前选中控件索引]",
       "    label_type=ft.NavigationRailLabelType.ALL,  # ft.NavigationRailLabelType.ALL: 显示所有标签",
       "    min_width=100,  # 最小宽度",
       "    min_extended_width=400,  # 最小扩展宽度",
-      "    leading=ft.IconButton(icon=ft.Icons.ACCOUNT_CIRCLE_ROUNDED, icon_size=64, on_click=lambda e: print(e)),  # 导航栏第一顺位控件(不参与selected_index)",
+      "    # 导航栏第一顺位控件(不参与selected_index)",
+      "    leading=ft.IconButton(icon=ft.Icons.ACCOUNT_CIRCLE_ROUNDED, icon_size=64, on_click=lambda e: print(e)),",
       "    group_alignment=0.0,  # 导航栏控件对齐方式[-1.0: 左/顶 对齐; 0.0: 居中对齐; 1.0: 右/底 对齐]",
       "    destinations=[  # 导航栏中间控件(不少于 2 个, selected_index: 当前选中控件索引,从 0 开始)[ft.NavigationRailDestination: 导航栏中间控件]",
       "        ft.NavigationRailDestination(icon=ft.Icons.CHAT_BUBBLE_OUTLINE_ROUNDED, selected_icon=ft.Icons.CHAT_BUBBLE_OUTLINED, label='选项一'),",
       "        ft.NavigationRailDestination(icon=ft.Icons.SETTINGS_OUTLINED, selected_icon=ft.Icons.SETTINGS, label='设置'),",
       "    ],",
       "    on_change=lambda e: print(e, e.control.selected_index),  # 导航栏中间控件点击事件[e.control.selected_index: 当前选中控件索引]",
-      "    trailing=btn_theme,  # 导航栏最后顺位控件(不参与selected_index)",
+      "    # 导航栏最后顺位控件(不参与selected_index)",
+      "    trailing=ft.Text('END'),",
       ")",
       ""
     ],
-    "description": ["flet.NavigationRail 创建 NavigationRail 常驻导航栏"]
+    "description": [
+      "flet.NavigationRail 创建 NavigationRail 常驻导航栏"
+    ]
   },
   "flet.NavigationRailDestination 常驻导航栏(NavigationRail)内部控件": {
     "prefix": [
@@ -119,81 +183,162 @@
     ]
   },
   "flet.Offset 控件的相对偏移": {
-    "prefix": ["ft_Offset", "flet_Offset"],
-    "body": ["ft.Offset(0, 0)"],
-    "description": ["flet.Offset 控件的相对偏移"]
+    "prefix": [
+      "ft_Offset",
+      "flet_Offset"
+    ],
+    "body": [
+      "ft.Offset(0, 0)"
+    ],
+    "description": [
+      "flet.Offset 控件的相对偏移"
+    ]
   },
   "flet.Text 文本显示控件": {
-    "prefix": ["ft_Text", "flet_Text"],
-    "body": ["ft.Text(value='${1:Hello, world!}')"],
-    "description": ["flet.Text 文本显示控件"]
+    "prefix": [
+      "ft_Text",
+      "flet_Text"
+    ],
+    "body": [
+      "ft.Text(value='${1:Hello, world!}')"
+    ],
+    "description": [
+      "flet.Text 文本显示控件"
+    ]
   },
   "flet.TextField 文本输入控件": {
-    "prefix": ["ft_TextField", "flet_TextField"],
-    "body": ["ft.TextField"],
+    "prefix": [
+      "ft_TextField",
+      "flet_TextField"
+    ],
+    "body": [
+      "ft.TextField"
+    ],
     "description": [
       "flet.TextField 文本输入控件",
       "文本字段允许用户使用硬件键盘或屏幕键盘输入文本"
     ]
   },
   "flet.Button 按钮": {
-    "prefix": ["ft_Button", "flet_Button"],
-    "body": ["ft.Button(text='${1:按钮}')"],
-    "description": ["flet.Button 按钮"]
+    "prefix": [
+      "ft_Button",
+      "flet_Button"
+    ],
+    "body": [
+      "ft.Button(text='${1:按钮}')"
+    ],
+    "description": [
+      "flet.Button 按钮"
+    ]
   },
   "flet.ElevatedButton 凸起按钮": {
-    "prefix": ["ft_ElevatedButton", "flet_ElevatedButton"],
-    "body": ["ft.ElevatedButton(text='凸起按钮')"],
+    "prefix": [
+      "ft_ElevatedButton",
+      "flet_ElevatedButton"
+    ],
+    "body": [
+      "ft.ElevatedButton(text='凸起按钮')"
+    ],
     "description": [
       "flet.ElevatedButton 凸起按钮",
       "ElevatedButton 有别名 Button , 可以互换使用"
     ]
   },
   "flet.ThemeMode 主题模式": {
-    "prefix": ["ft_ThemeMode", "flet_ThemeMode"],
+    "prefix": [
+      "ft_ThemeMode",
+      "flet_ThemeMode"
+    ],
     "body": [
       "ft.ThemeMode.SYSTEM  # SYSTEM[默认]: 系统默认, LIGHT: 浅色, DARK: 深色"
     ],
-    "description": ["flet.ThemeMode 主题模式"]
+    "description": [
+      "flet.ThemeMode 主题模式"
+    ]
   },
   "flet.Icon 使用Flet自带图标": {
-    "prefix": ["ft_Icon", "flet_Icon"],
-    "body": ["ft.Icon(name=${1:'settings'})"],
-    "description": ["flet.Icon 使用Flet自带图标"]
+    "prefix": [
+      "ft_Icon",
+      "flet_Icon"
+    ],
+    "body": [
+      "ft.Icon(name=${1:'settings'})"
+    ],
+    "description": [
+      "flet.Icon 使用Flet自带图标"
+    ]
   },
   "flet.Icons 使用Flet自带图标": {
-    "prefix": ["ft_Icons", "flet_Icons"],
-    "body": ["ft.Icons.${1:HOUSE}"],
+    "prefix": [
+      "ft_Icons",
+      "flet_Icons"
+    ],
+    "body": [
+      "ft.Icons.${1:HOUSE}"
+    ],
     "description": [
       "flet.Icons 使用Flet自带图标",
       "https://gallery.flet.dev/icons-browser/"
     ]
   },
   "flet.Image 图像": {
-    "prefix": ["ft_Image", "flet_Image"],
+    "prefix": [
+      "ft_Image",
+      "flet_Image"
+    ],
     "body": [
       "ft.Image(src='最好使用Path获取完整路径', width=32, height=32, border_radius=16)"
     ],
-    "description": ["flet.Image 图像"]
+    "description": [
+      "flet.Image 图像"
+    ]
   },
   "flet.Colors 颜色": {
-    "prefix": ["ft_Colors", "flet_Colors"],
-    "body": ["ft.Colors.${1:RED}"],
-    "description": ["flet.Colors 颜色"]
+    "prefix": [
+      "ft_Colors",
+      "flet_Colors"
+    ],
+    "body": [
+      "ft.Colors.${1:BLUE}"
+    ],
+    "description": [
+      "flet.Colors 颜色"
+    ]
   },
   "flet.Colors.with_opacity 自定义颜色": {
-    "prefix": ["ft_Colors_with_opacity", "flet_Colors_with_opacity"],
-    "body": ["ft.Colors.with_opacity(opacity=0, color='#000000')"],
-    "description": ["flet.Colors.with_opacity 自定义颜色"]
+    "prefix": [
+      "ft_Colors_with_opacity",
+      "flet_Colors_with_opacity"
+    ],
+    "body": [
+      "ft.Colors.with_opacity(opacity=0, color='#000000')"
+    ],
+    "description": [
+      "flet.Colors.with_opacity 自定义颜色"
+    ]
   },
   "flet.Divider 水平分割线": {
-    "prefix": ["ft_Divider", "flet_Divider"],
-    "body": ["ft.Divider(height=${1:1})"],
-    "description": ["flet.Divider 水平分割线"]
+    "prefix": [
+      "ft_Divider",
+      "flet_Divider"
+    ],
+    "body": [
+      "ft.Divider(height=${1:1})"
+    ],
+    "description": [
+      "flet.Divider 水平分割线"
+    ]
   },
   "flet.VerticalDivider 垂直分割线": {
-    "prefix": ["ft_VerticalDivider", "flet_VerticalDivider"],
-    "body": ["ft.VerticalDivider(width=${1:1})"],
-    "description": ["flet.VerticalDivider 垂直分割线"]
+    "prefix": [
+      "ft_VerticalDivider",
+      "flet_VerticalDivider"
+    ],
+    "body": [
+      "ft.VerticalDivider(width=${1:1})"
+    ],
+    "description": [
+      "flet.VerticalDivider 垂直分割线"
+    ]
   }
 }
