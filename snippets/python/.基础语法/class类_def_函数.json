@@ -78,7 +78,7 @@
     "description": ["if_main:运行入口 | 调试运行"]
   },
   "if_in_main:运行入口 | 调试运行": {
-    "prefix": ["if_mmain", "if_name_in_main="],
+    "prefix": ["if_mmain", "if_name_in_mp_main="],
     "body": [
       "if __name__ in {'__main__', '__mp_main__'}:",
       "    \"\"\"",
