@@ -28,8 +28,8 @@
       "容器允许使用背景颜色和边框来装饰控件, 并使用填充/边距和对齐来定位它"
     ]
   },
-  "flet.Container 容器对象.[垂直布局]模版": {
-    "prefix": ["ft_Container=Column", "flet_Container=Column"],
+  "flet.Container 容器对象.模版": {
+    "prefix": ["ft_Container=", "flet_Container="],
     "body": [
       "ft.Container(  # * 容器",
       "    margin=0,  # * 外边距",
@@ -52,27 +52,16 @@
       ")",
       ""
     ],
-    "description": ["flet.Container 容器对象.[垂直布局]模版"]
+    "description": ["flet.Container 容器对象.模版"]
   },
   "flet.Row 以水平阵列显示其子项的控件": {
     "prefix": ["ft_Row", "flet_Row"],
-    "body": [
-      "ft.Row(  # * 水平布局",
-      "    expand=True,  # * 拉伸(若限制 宽度/高度, 则此属性无效)",
-      "    spacing=0,  # * 元素间距",
-      "    controls=[$0],",
-      ")"
-    ],
+    "body": ["ft.Row(  # * 水平布局", "    controls=[$0],", ")"],
     "description": ["flet.Row 以水平阵列显示其子项的控件"]
   },
   "flet.Column 以垂直阵列显示其子项的控件": {
     "prefix": ["ft_Column", "flet_Column"],
-    "body": [
-      "ft.Column(  # * 垂直布局",
-      "    expand=True,  # * 拉伸(若限制 宽度/高度, 则此属性无效)",
-      "    controls=[$0],",
-      ")"
-    ],
+    "body": ["ft.Column(  # * 垂直布局", "    controls=[$0],", ")"],
     "description": ["flet.Column 以垂直阵列显示其子项的控件"]
   },
   "flet.Alignment 对齐方式": {
@@ -98,6 +87,11 @@
       "top_left = Alignment(-1, -1)",
       "top_right = Alignment(1, -1)"
     ]
+  },
+  "flet.margin.only 仅设置一个方向的外边距": {
+    "prefix": ["ft_margin_only", "flet_margin_only"],
+    "body": ["ft.margin.only(${1:top=15})"],
+    "description": ["flet.margin.only 仅设置一个方向的外边距"]
   },
   "flet.MainAxisAlignment Y轴(vertical_alignment|垂直)对齐": {
     "prefix": ["ft_MainAxisAlignment", "flet_MainAxisAlignment"],
@@ -192,12 +186,12 @@
   },
   "flet.Button 按钮": {
     "prefix": ["ft_Button", "flet_Button"],
-    "body": ["ft.Button(text='${1:按钮}')"],
+    "body": ["ft.Button($0)"],
     "description": ["flet.Button 按钮"]
   },
   "flet.ElevatedButton 凸起按钮": {
     "prefix": ["ft_ElevatedButton", "flet_ElevatedButton"],
-    "body": ["ft.ElevatedButton(text='凸起按钮')"],
+    "body": ["ft.ElevatedButton($0)"],
     "description": [
       "flet.ElevatedButton 凸起按钮",
       "ElevatedButton 有别名 Button , 可以互换使用"
@@ -206,7 +200,7 @@
   "flet.IconButton 图标按钮": {
     "prefix": ["ft_IconButton", "flet_IconButton"],
     "body": [
-      "ft.IconButton(icon=ft.Icons.SETTINGS_OUTLINED, selected_icon=ft.Icons.SETTINGS_ROUNDED, icon_size=32, on_click=lambda e: print(e))"
+      "ft.IconButton(icon=ft.Icons.SETTINGS_OUTLINED, selected_icon=ft.Icons.SETTINGS_ROUNDED, selected=False, icon_size=32, on_click=lambda e: print(e))"
     ],
     "description": ["flet.IconButton 图标按钮"]
   },

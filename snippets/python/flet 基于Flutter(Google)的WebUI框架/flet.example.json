@@ -87,5 +87,40 @@
       ""
     ],
     "description": ["flet.page.theme_mode.button Flet主题按钮.示例"]
+  },
+  "flet.def_toggle_ico_button [多选]按钮切换图标.模版": {
+    "prefix": ["ft_def_toggle_ico_button=", "flet_def_toggle_ico_button="],
+    "body": [
+      "def def_toggle_ico_button(e):",
+      "    \"\"\"",
+      "    按钮切换图标(按钮切换图标, 且不关联其他按钮图标, 即: [多选])",
+      "    可以只更新事件对象控件",
+      "    ft.IconButton 必须至少同时具有 icon(未选中状态图标) 和 selected_icon(选中状态图标) 属性, 否则无法切换图标",
+      "    \"\"\"",
+      "    e.control.selected = not e.control.selected  # * 切换按钮选中状态",
+      "    e.control.update()  # * 更新按钮状态",
+      ""
+    ],
+    "description": ["flet.def_toggle_ico_button [多选]按钮切换图标.模版"]
+  },
+  "flet.def_toggle_ico_buttons [单选]按钮切换图标.模版": {
+    "prefix": ["ft_def_toggle_ico_buttons=", "flet_def_toggle_ico_buttons="],
+    "body": [
+      "def toggle_ico_buttons(e, page, buttons: list[ft.IconButton]):",
+      "    \"\"\"",
+      "    按钮切换图标(按钮切换图标, 且关联其他按钮图标, 即: 互斥[单选])",
+      "    必须更新页面对象",
+      "    ft.IconButton 必须至少同时具有 icon(未选中状态图标) 和 selected_icon(选中状态图标) 属性, 否则无法切换图标",
+      "    :param e: 事件对象",
+      "    :param page: 页面对象",
+      "    :param buttons: 关联的单选按钮列表",
+      "    \"\"\"",
+      "    for i in buttons:  # * 遍历按钮列表",
+      "        i.selected = False  # * 取消全部按钮选中状态",
+      "    e.control.selected = not e.control.selected  # * 切换按钮选中状态",
+      "    page.update()  # * 更新页面状态",
+      ""
+    ],
+    "description": ["flet.def_toggle_ico_buttons [单选]按钮切换图标.模版"]
   }
 }
