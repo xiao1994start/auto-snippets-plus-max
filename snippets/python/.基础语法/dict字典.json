@@ -29,7 +29,7 @@
   },
   "dict.copy 返回dict的副本": {
     "prefix": ["dict_copy"],
-    "body": ".copy()",
+    "body": "copy()",
     "description": ["dict.copy 返回dict的副本"]
   },
   "dict.copy 示例": {
@@ -47,7 +47,7 @@
   },
   "dict.fromkeys 返回具有指定键和值的dict": {
     "prefix": ["dict_fromkeys"],
-    "body": ".fromkeys(${1:key}, ${2:value})",
+    "body": "fromkeys(${1:key}, ${2:value})",
     "description": ["dict.fromkeys 返回具有指定键和值的 dict"]
   },
   "dict.fromkeys 示例1": {
@@ -71,7 +71,7 @@
   },
   "dict.get 返回dict指定键的值": {
     "prefix": ["dict_get"],
-    "body": ".get(${1:key}, None)",
+    "body": "get(${1:key}, None)",
     "description": ["dict.get 返回dict指定键的值"]
   },
   "dict.get 示例1": {
@@ -102,7 +102,7 @@
   },
   "dict.items 返回dict包含每个键值对的元组的list": {
     "prefix": ["dict_items"],
-    "body": ".items()",
+    "body": "items()",
     "description": ["dict.items 返回dict包含每个键值对的元组的list"]
   },
   "dict.items 示例1": {
@@ -134,7 +134,7 @@
   },
   "dict.keys 返回包含dict键的list": {
     "prefix": ["dict_keys"],
-    "body": ".keys()",
+    "body": "keys()",
     "description": ["dict.keys 返回包含dict键的list"]
   },
   "dict.keys 示例1": {
@@ -166,7 +166,7 @@
   },
   "dict.pop 删除dict中具有指定key键的元素": {
     "prefix": ["dict_pop"],
-    "body": ".pop(${1:key})",
+    "body": "pop(${1:key})",
     "description": ["dict.pop 删除dict中具有指定key键的元素"]
   },
   "dict.pop 示例": {
@@ -184,7 +184,7 @@
   },
   "dict.popitem 删除dict中最后插入的键值对": {
     "prefix": ["dict_popitem"],
-    "body": ".popitem()",
+    "body": "popitem()",
     "description": ["dict.popitem 删除dict中最后插入的键值对"]
   },
   "dict.popitem 示例": {
@@ -202,7 +202,7 @@
   },
   "dict.setdefault 返回dict中指定键的值": {
     "prefix": ["dict_setdefault"],
-    "body": ".setdefault(${1:key}, ${2:value})",
+    "body": "setdefault(${1:key}, ${2:value})",
     "description": [
       "dict.setdefault 返回dict中指定键的值. 如果key不存在: 插入key, 并指定value"
     ]
@@ -235,7 +235,7 @@
   },
   "dict.update 使用指定的键值对更新dict": {
     "prefix": ["dict_update"],
-    "body": ".update(${1:dicts})",
+    "body": "update(${1:dicts})",
     "description": ["dict.update 使用指定的键值对更新dict"]
   },
   "dict.update 示例": {
@@ -253,7 +253,7 @@
   },
   "dict.values 返回dict中所有值的列表": {
     "prefix": ["dict_values"],
-    "body": ".values()",
+    "body": "values()",
     "description": ["dict.values 返回dict中所有值的列表"]
   },
   "dict.values 示例1": {
