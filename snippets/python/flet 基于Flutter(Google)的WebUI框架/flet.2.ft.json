@@ -200,7 +200,7 @@
   "flet.IconButton 图标按钮": {
     "prefix": ["ft_IconButton", "flet_IconButton"],
     "body": [
-      "ft.IconButton(icon=ft.Icons.SETTINGS_OUTLINED, selected_icon=ft.Icons.SETTINGS_ROUNDED, selected=False, icon_size=32, on_click=lambda e: print(e))"
+      "ft.IconButton(icon=ft.Icons.SETTINGS_OUTLINED, content=ft.Container(${1:可替代icon属性}), selected_icon=ft.Icons.SETTINGS_ROUNDED, selected=False, icon_size=32, on_click=lambda e: print(e))"
     ],
     "description": ["flet.IconButton 图标按钮"]
   },

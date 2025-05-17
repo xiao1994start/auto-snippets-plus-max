@@ -56,10 +56,10 @@
       "        # 当前系统: 浅色模式",
       "        ico = ft.Icons.LIGHT_MODE",
       "        selected_ico = ft.Icons.DARK_MODE",
-      "    theme_btn = ft.IconButton(icon=ico, selected_icon=selected_ico, on_click=lambda e: toggle_theme(e, page))",
+      "    theme_btn = ft.IconButton(icon=ico, selected_icon=selected_ico, on_click=lambda e: toggle_theme(e))",
       "    return theme_btn",
       "",
-      "def toggle_theme(e, page):",
+      "def toggle_theme(e):",
       "    \"\"\"",
       "    改变主题模式  # ! import darkdetect  # * 引入 darkdetect 检测系统主题",
       "    :param e: 事件对象",
@@ -97,6 +97,7 @@
       "    可以只更新事件对象控件",
       "    ft.IconButton 必须至少同时具有 icon(未选中状态图标) 和 selected_icon(选中状态图标) 属性, 否则无法切换图标",
       "    \"\"\"",
+      "    print(e)",
       "    e.control.selected = not e.control.selected  # * 切换按钮选中状态",
       "    e.control.update()  # * 更新按钮状态",
       ""
@@ -106,7 +107,7 @@
   "flet.def_toggle_ico_buttons [单选]按钮切换图标.模版": {
     "prefix": ["ft_def_toggle_ico_buttons=", "flet_def_toggle_ico_buttons="],
     "body": [
-      "def toggle_ico_buttons(e, page, buttons: list[ft.IconButton]):",
+      "def toggle_ico_buttons(e, buttons: list[ft.IconButton]):",
       "    \"\"\"",
       "    按钮切换图标(按钮切换图标, 且关联其他按钮图标, 即: 互斥[单选])",
       "    必须更新页面对象",
@@ -115,6 +116,7 @@
       "    :param page: 页面对象",
       "    :param buttons: 关联的单选按钮列表",
       "    \"\"\"",
+      "    print(e)",
       "    for i in buttons:  # * 遍历按钮列表",
       "        i.selected = False  # * 取消全部按钮选中状态",
       "    e.control.selected = not e.control.selected  # * 切换按钮选中状态",
