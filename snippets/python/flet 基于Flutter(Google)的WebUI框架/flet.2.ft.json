@@ -28,12 +28,38 @@
       "容器允许使用背景颜色和边框来装饰控件, 并使用填充/边距和对齐来定位它"
     ]
   },
+  "flet.Container 容器对象.[垂直布局]模版": {
+    "prefix": ["ft_Container=Column", "flet_Container=Column"],
+    "body": [
+      "ft.Container(  # * 容器",
+      "    margin=0,  # * 外边距",
+      "    padding=10,  # * 内边距",
+      "    border_radius=0,  # * 边框圆角",
+      "    width=100,  # * 宽度",
+      "    bgcolor=ft.Colors.with_opacity(opacity=0.1, color='#000000'),  # * 背景颜色[调试]",
+      "    alignment=ft.alignment.center,  # * 对齐方式",
+      "    content=ft.Column(  # * [垂直]布局",
+      "        alignment=ft.MainAxisAlignment.SPACE_BETWEEN,  # * [垂直]对齐方式",
+      "        horizontal_alignment=ft.CrossAxisAlignment.CENTER,  # * [水平]对齐方式",
+      "        controls=[  # * [列]控件",
+      "            ft.Column(  # * [垂直]布局",
+      "                horizontal_alignment=ft.CrossAxisAlignment.CENTER,  # * [水平]对齐方式",
+      "                controls=[",
+      "                ],",
+      "            ),",
+      "        ],",
+      "    ),",
+      ")",
+      ""
+    ],
+    "description": ["flet.Container 容器对象.[垂直布局]模版"]
+  },
   "flet.Row 以水平阵列显示其子项的控件": {
     "prefix": ["ft_Row", "flet_Row"],
     "body": [
       "ft.Row(  # * 水平布局",
       "    expand=True,  # * 拉伸(若限制 宽度/高度, 则此属性无效)",
-      "    spacing=20,  # * 元素间距",
+      "    spacing=0,  # * 元素间距",
       "    controls=[$0],",
       ")"
     ],
@@ -176,6 +202,13 @@
       "flet.ElevatedButton 凸起按钮",
       "ElevatedButton 有别名 Button , 可以互换使用"
     ]
+  },
+  "flet.IconButton 图标按钮": {
+    "prefix": ["ft_IconButton", "flet_IconButton"],
+    "body": [
+      "ft.IconButton(icon=ft.Icons.SETTINGS_OUTLINED, selected_icon=ft.Icons.SETTINGS_ROUNDED, icon_size=32, on_click=lambda e: print(e))"
+    ],
+    "description": ["flet.IconButton 图标按钮"]
   },
   "flet.ThemeMode 主题模式": {
     "prefix": ["ft_ThemeMode", "flet_ThemeMode"],
