@@ -204,6 +204,11 @@
     ],
     "description": ["flet.IconButton 图标按钮"]
   },
+  "flet.e.control Flet事件属性": {
+    "prefix": ["ft_e_control", "flet_e_control"],
+    "body": ["e.control.${1|selected,data|}"],
+    "description": ["flet.e.control Flet事件属性"]
+  },
   "flet.ThemeMode 主题模式": {
     "prefix": ["ft_ThemeMode", "flet_ThemeMode"],
     "body": [
