@@ -18,36 +18,36 @@
   },
   "open.read 读取文件内容": {
     "prefix": ["open_read"],
-    "body": [".read(${1:size})"],
+    "body": ["read(${1:size})"],
     "description": [
       "open.read: size 未指定则返回整个文件, 如果文件大小 >2 倍内存则有问题, file.read()读到文件尾时返回\"\"(空字串)"
     ]
   },
   "open.readline 返回一行": {
     "prefix": ["open_readline"],
-    "body": [".readline($0)"],
+    "body": ["readline($0)"],
     "description": ["open.readline 返回一行"]
   },
   "open.readlines 按行读取->list": {
     "prefix": ["open_readlines"],
-    "body": [".readlines(${1:size})"],
+    "body": ["readlines(${1:size})"],
     "description": [
       "open.readlines 返回包含size行的列表, size 未指定则返回全部行"
     ]
   },
   "open.write 写入文件": {
     "prefix": ["open_write"],
-    "body": [".write($0)"],
+    "body": ["write($0)"],
     "description": ["open.write 如果要写入字符串以外的数据,先将他转换为字符串"]
   },
   "open.flush 刷新缓存": {
     "prefix": ["open_flush"],
-    "body": [".flush()"],
+    "body": ["flush()"],
     "description": ["open.flush 刷新缓存"]
   },
   "open.close 关闭文件": {
     "prefix": ["open_close"],
-    "body": [".close()"],
+    "body": ["close()"],
     "description": ["open.close 关闭文件"]
   },
   "open -r 只读模式": {

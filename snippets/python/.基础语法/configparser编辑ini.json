@@ -24,32 +24,32 @@
     "description": ["configparser 模板"]
   },
   "configparser.sections 读取节点": {
-    "prefix": ["configparser_sections", "sections_configparser"],
+    "prefix": ["configparser_sections"],
     "body": ["sections($0)"],
     "description": ["configparser.sections 读取节点"]
   },
   "configparser.item 读取节点下键-值": {
-    "prefix": ["configparser_item", "item_configparser"],
+    "prefix": ["configparser_item"],
     "body": ["item(section${1:section})"],
     "description": ["configparser.item 读取节点下键-值"]
   },
   "configparser.get 读取节点-键->值": {
-    "prefix": ["configparser_get", "get_configparser"],
+    "prefix": ["configparser_get"],
     "body": ["get(section=${1:section}, option=${2:option})"],
     "description": ["configparser.get 读取节点-键->值"]
   },
   "configparser.has_section 判断存在节点": {
-    "prefix": ["configparser_has_section", "has_section_configparser"],
+    "prefix": ["configparser_has_section"],
     "body": ["has_section($0)"],
     "description": ["configparser.has_section 判断存在节点, 返回bool"]
   },
   "configparser.has_option 判断存在节点": {
-    "prefix": ["configparser_has_option", "has_option_configparser"],
+    "prefix": ["configparser_has_option"],
     "body": ["has_option(section=${1:section}, option=${2:option})"],
     "description": ["configparser.has_option 判断存在节点, 返回bool"]
   },
   "configparser.add_section 写入节点数据": {
-    "prefix": ["configparser_add_section", "add_section_configparser"],
+    "prefix": ["configparser_add_section"],
     "body": [
       "add_section(section=${1:section})",
       "# 写入节点数据",
@@ -59,17 +59,17 @@
     "description": ["configparser.sections 写入节点数据"]
   },
   "configparser.remove_section 删除节点": {
-    "prefix": ["configparser_remove_section", "remove_section_configparser"],
+    "prefix": ["configparser_remove_section"],
     "body": ["remove_section(section=${1:'section'})"],
     "description": ["configparser.sections 删除指定节点"]
   },
   "configparser.remove_option 删除指定节点-键": {
-    "prefix": ["configparser_remove_option", "remove_option_configparser"],
+    "prefix": ["configparser_remove_option"],
     "body": ["remove_option(section=${1:'section'}, option=${2:'option'})"],
     "description": ["configparser.remove_option 删除指定节点-键"]
   },
   "configparser.set 修改指定节点键-值": {
-    "prefix": ["configparser_set", "set_configparser"],
+    "prefix": ["configparser_set"],
     "body": [
       "set(section=${1:'section'}, option=${2:'option'}, value=${3:'value'})"
     ],

@@ -7,14 +7,6 @@
     ],
     "description": ["依赖名 依赖描述"]
   },
-  "uv pip.依赖名 依赖描述": {
-    "prefix": ["uv pip 依赖名"],
-    "body": [
-      "pip install -U 依赖名 -i https://mirrors.aliyun.com/pypi/simple/",
-      ""
-    ],
-    "description": ["依赖名 依赖描述"]
-  },
   "uv.依赖名 依赖描述": {
     "prefix": ["uv 依赖名"],
     "body": [

@@ -6,17 +6,17 @@
   },
   "time.time 当前时间戳": {
     "prefix": ["time_time"],
-    "body": ".time()",
+    "body": ["time()"],
     "description": ["当前时间戳"]
   },
   "time.ctime 转换可读时间格式": {
     "prefix": ["time_ctime"],
-    "body": ".ctime(${1:time.time()})$0",
+    "body": ["ctime(${1:time.time()})$0"],
     "description": ["将时间戳转换为可读的时间格式"]
   },
   "time.strftime 格式化当前时间戳": {
     "prefix": ["time_strftime"],
-    "body": ".strftime(${1:'%Y-%m-%d %H:%M:%S', time.localtime(time.time())})",
+    "body": ["strftime(${1:'%Y-%m-%d %H:%M:%S', time.localtime(time.time())})"],
     "description": ["格式化当前时间戳"]
   }
 }

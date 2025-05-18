@@ -5,7 +5,7 @@
     "description": ["datetime的模块, 用于处理日期和时间"]
   },
   "引入 datetime 日期时间类": {
-    "prefix": ["import_datetime_datetime"],
+    "prefix": ["import_datetime=datetime", "from_datetime=datetime"],
     "body": ["from datetime import datetime"],
     "description": ["datetime模块datetime日期时间类, 用于处理日期和时间"]
   },
@@ -16,17 +16,17 @@
   },
   "datetime.now 当前时间": {
     "prefix": ["datetime_now"],
-    "body": [".now()"],
+    "body": ["now()"],
     "description": ["datetime.now 返回当前时间"]
   },
   "datetime.strftime 格式化当前时间": {
     "prefix": ["datetime_strftime"],
-    "body": [".strftime(${1:'%Y年%m月%d日 %H时%M分%S秒'})"],
+    "body": ["strftime(${1:'%Y年%m月%d日 %H时%M分%S秒'})"],
     "description": ["datetime.strftime 返回当前时间的字符串格式"]
   },
   "date.today 格式化当前时间": {
     "prefix": ["datetime_today"],
-    "body": [".today()"],
+    "body": ["today()"],
     "description": ["date.today 返回当前时间的字符串格式"]
   }
 }

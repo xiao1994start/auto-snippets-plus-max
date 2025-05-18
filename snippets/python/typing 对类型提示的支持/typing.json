@@ -1,0 +1,18 @@
+{
+  "引入 typing 对类型提示的支持": {
+    "prefix": ["import_typing"],
+    "body": ["import typing  # * 引入 typing 对类型提示的支持"],
+    "description": ["引入 typing 对类型提示的支持"]
+  },
+  "引入 typing 对类型提示的支持_常用模块": {
+    "prefix": [
+      "import_typing=Any_Optional_Union",
+      "from_typing=Any_Optional_Union"
+    ],
+    "body": [
+      "from typing import Any, Optional, Union  # * 引入 typing 对类型提示的支持_常用模块",
+      ""
+    ],
+    "description": ["引入 typing 对类型提示的支持_常用模块"]
+  }
+}

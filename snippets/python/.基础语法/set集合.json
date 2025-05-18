@@ -11,7 +11,7 @@
   },
   "set.add 添加一个元素": {
     "prefix": ["set_add"],
-    "body": ".add(${1:element})",
+    "body": ["add(${1:element})"],
     "description": ["set.add 向set集合中添加一个元素"]
   },
   "set.add ": {
@@ -25,7 +25,7 @@
   },
   "set.clear 删除所有元素": {
     "prefix": ["set_clear"],
-    "body": ".clear()",
+    "body": ["clear()"],
     "description": ["set.clear 从set集合中删除所有元素"]
   },
   "set.clear ": {
@@ -39,7 +39,7 @@
   },
   "set.copy 副本": {
     "prefix": ["set_copy"],
-    "body": ".copy()",
+    "body": ["copy()"],
     "description": ["set.copy 返回set该集的副本"]
   },
   "set.copy ": {
@@ -53,7 +53,7 @@
   },
   "set.difference -差集": {
     "prefix": ["set_difference"],
-    "body": ".difference(${1:set})",
+    "body": ["difference(${1:set})"],
     "description": [
       "set.difference 返回包含两个或多个集合之间差异的集合\r\n运算符: -"
     ]
@@ -80,7 +80,7 @@
   },
   "set.difference_update": {
     "prefix": ["set_difference_update"],
-    "body": ".difference_update(${1:set})",
+    "body": ["difference_update(${1:set})"],
     "description": [
       "set.difference_update 移除集合中的元素, 该元素在指定的集合也存在"
     ]
@@ -96,8 +96,8 @@
     "description": ["使用 set.difference_update 的示例"]
   },
   "set.discard 删除元素(无提示)": {
-    "prefix": ["set_discard", "set_del"],
-    "body": ".discard(${1:item})",
+    "prefix": ["set_discard", "set_del", "discard_set"],
+    "body": ["discard(${1:item})"],
     "description": ["set.discard 删除指定项目"]
   },
   "set.discard ": {
@@ -111,7 +111,7 @@
   },
   "set.intersection &交集": {
     "prefix": ["set_intersection"],
-    "body": ".intersection(${1:set})",
+    "body": ["intersection(${1:set})"],
     "description": [
       "set.intersection 返回一个集合, 即其他两个集合的交集\r\n运算符: &"
     ]
@@ -139,7 +139,7 @@
   },
   "set.intersection_update 返回集合的交集": {
     "prefix": ["set_intersection_update"],
-    "body": ".intersection_update(${1:set})",
+    "body": ["intersection_update(${1:set})"],
     "description": [
       "set.intersection_update 删除此集合中其他指定集合中不存在的项目"
     ]
@@ -167,7 +167,7 @@
   },
   "set.isdisjoint 判断元素相同": {
     "prefix": ["set_isdisjoint"],
-    "body": ".isdisjoint(${1:set})",
+    "body": ["isdisjoint(${1:set})"],
     "description": [
       "set.isdisjoint 判断两个集合是否包含相同的元素, 如果没有返回 True, 否则返回 False"
     ]
@@ -194,7 +194,7 @@
   },
   "set.issubset 判断参数子集": {
     "prefix": ["set_issubset"],
-    "body": ".issubset(${1:set})",
+    "body": ["issubset(${1:set})"],
     "description": ["set.issubset 判断指定集合是否为该方法参数集合的子集"]
   },
   "set.issubset 1": {
@@ -219,7 +219,7 @@
   },
   "set.issuperset 判断指定集合子集": {
     "prefix": ["set_issuperset"],
-    "body": ".issuperset(${1:set})",
+    "body": ["issuperset(${1:set})"],
     "description": ["set.issuperset 判断该方法的参数集合是否为指定集合的子集"]
   },
   "set.issuperset 1": {
@@ -244,7 +244,7 @@
   },
   "set.pop 移除元素": {
     "prefix": ["set_pop"],
-    "body": ".pop()",
+    "body": ["pop()"],
     "description": ["set.pop 删除指定元素 或 随机移除元素"]
   },
   "set.pop ": {
@@ -258,7 +258,7 @@
   },
   "set.remove 移除指定元素": {
     "prefix": ["set_remove"],
-    "body": ".remove(${1:item})",
+    "body": ["remove(${1:item})"],
     "description": ["set.remove 移除指定元素"]
   },
   "set.remove ": {
@@ -272,7 +272,7 @@
   },
   "set.symmetric_difference ^不重复元素集合": {
     "prefix": ["set_symmetric_difference"],
-    "body": ".symmetric_difference(${1:set})",
+    "body": ["symmetric_difference(${1:set})"],
     "description": [
       "set.symmetric_difference 返回两个集合中不重复的元素集合\r\n运算符: ^"
     ]
@@ -288,8 +288,11 @@
     "description": ["使用 set.symmetric_difference 的示例"]
   },
   "set.symmetric_difference_update 移除重复元素添加不同元素返回": {
-    "prefix": ["set_symmetric_difference_update"],
-    "body": ".symmetric_difference_update(${1:set})",
+    "prefix": [
+      "set_symmetric_difference_update",
+      "symmetric_difference_update_set"
+    ],
+    "body": ["symmetric_difference_update(${1:set})"],
     "description": [
       "set.symmetric_difference_update 移除当前集合中在另外一个指定集合相同的元素, 并将另外一个指定集合中不同的元素插入到当前集合中"
     ]
@@ -306,7 +309,7 @@
   },
   "set.union |并集": {
     "prefix": ["set_union"],
-    "body": ".union(${1:set})",
+    "body": ["union(${1:set})"],
     "description": ["set.union 返回两个集合的并集\r\n运算符: |"]
   },
   "set.union 1": {
@@ -332,7 +335,7 @@
   },
   "set.update 添加元素": {
     "prefix": ["set_update"],
-    "body": ".update(${1:set})",
+    "body": ["update(${1:set})"],
     "description": ["set.update 给集合添加元素"]
   },
   "set.update ": {

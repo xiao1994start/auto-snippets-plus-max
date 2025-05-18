@@ -11,7 +11,7 @@
   },
   "list.append 在list末尾添加一个元素": {
     "prefix": ["list_append"],
-    "body": ".append(${1:item})",
+    "body": ["append(${1:item})"],
     "description": ["list.append 在list末尾添加一个元素"]
   },
   "list.append 示例1": {
@@ -35,7 +35,7 @@
   },
   "list.clear 清空list": {
     "prefix": ["list_clear"],
-    "body": ".clear()",
+    "body": ["clear()"],
     "description": ["list.clear 删除list中的所有元素"]
   },
   "list.clear 示例": {
@@ -49,7 +49,7 @@
   },
   "list.copy 返回list的副本": {
     "prefix": ["list_copy"],
-    "body": ".copy()",
+    "body": ["copy()"],
     "description": ["list.copy 返回list的副本"]
   },
   "list.copy 示例": {
@@ -63,7 +63,7 @@
   },
   "list.count 返回list元素数量": {
     "prefix": ["list_count"],
-    "body": ".count()",
+    "body": ["count()"],
     "description": ["list.count 返回list中具有指定值的元素数量"]
   },
   "list.count 示例1": {
@@ -86,7 +86,7 @@
   },
   "list.extend 末尾添加元素": {
     "prefix": ["list_extend"],
-    "body": ".extend(${1:iterable})",
+    "body": ["extend(${1:iterable})"],
     "description": [
       "list.extend 将list (或任何可迭代对象) 的元素添加到当前列表的末尾"
     ]
@@ -103,7 +103,7 @@
   },
   "list.index 返回具有指定值的索引": {
     "prefix": ["list_index"],
-    "body": ".index(${1:element})",
+    "body": ["index(${1:element})"],
     "description": ["list.index 返回具有指定值的索引(默认返回第一个值的索引)"]
   },
   "list.index 示例1": {
@@ -126,7 +126,7 @@
   },
   "list.insert 指定位置添加元素": {
     "prefix": ["list_insert"],
-    "body": ".insert(index, element)",
+    "body": ["insert(index, element)"],
     "description": ["list.insert 在list中指定位置添加元素"]
   },
   "list.insert 示例": {
@@ -140,7 +140,7 @@
   },
   "list.pop 删除指定位置的元素": {
     "prefix": ["list_pop"],
-    "body": ".pop($0)",
+    "body": ["pop($0)"],
     "description": ["list.pop 删除list中指定位置的元素"]
   },
   "list.pop 示例": {
@@ -154,7 +154,7 @@
   },
   "list.remove 删除具有指定值的项目": {
     "prefix": ["list_remove"],
-    "body": ".remove(${1:value})",
+    "body": ["remove(${1:value})"],
     "description": ["list.remove 删除具有指定值的项目(默认删除第一个)"]
   },
   "list.remove 示例": {
@@ -168,7 +168,7 @@
   },
   "list.reverse 反转list的顺序": {
     "prefix": ["list_reverse"],
-    "body": ".reverse()",
+    "body": ["reverse()"],
     "description": ["list.reverse 反转list的顺序"]
   },
   "list.reverse 示例": {
@@ -182,7 +182,7 @@
   },
   "list.sort 排序": {
     "prefix": ["list_sort"],
-    "body": ".sort()",
+    "body": ["sort()"],
     "description": ["list.sort 对list进行排序"]
   },
   "list.sort 示例1": {
@@ -225,12 +225,14 @@
   },
   "list.comprehensions.[推导式] 单条件列表推导式": {
     "prefix": ["list_comp_if"],
-    "body": "[${1:item} for ${1:item} in ${2:list} if ${3:conditional}]",
+    "body": ["[${1:item} for ${1:item} in ${2:list} if ${3:conditional}]"],
     "description": ["list[单条件]推导式"]
   },
   "list.comprehensions.[推导式] 多条件列表推导式": {
     "prefix": ["list_comp_if_else"],
-    "body": "[${1:item} if ${3:true} else ${4:false} for ${1:item} in ${2:list}]",
+    "body": [
+      "[${1:item} if ${3:true} else ${4:false} for ${1:item} in ${2:list}]"
+    ],
     "description": ["list[多条件]推导式"]
   },
   "list.comp 示例1": {

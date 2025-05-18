@@ -11,7 +11,7 @@
   },
   "str.capitalize 首字母大写": {
     "prefix": ["str_capitalize"],
-    "body": ".capitalize()",
+    "body": ["capitalize()"],
     "description": ["str.capitalize 将str首字母转换为大写"]
   },
   "str.capitalize 示例1": {
@@ -30,7 +30,7 @@
   },
   "str.casefold 所有字符小写": {
     "prefix": ["str_casefold"],
-    "body": ".casefold()",
+    "body": ["casefold()"],
     "description": ["str.casefold 将str所有字符均转换为小写"]
   },
   "str.casefold 示例": {
@@ -44,7 +44,7 @@
   },
   "str.center 居中格式": {
     "prefix": ["str_center"],
-    "body": ".center(${1:length}, ${2:character})",
+    "body": ["center(${1:length}, ${2:character})"],
     "description": ["str.center 返回居中的str"]
   },
   "str.center 示例1": {
@@ -59,7 +59,7 @@
   },
   "str.count 指定值计数": {
     "prefix": ["str_count"],
-    "body": ".count(${1:string})",
+    "body": ["count(${1:string})"],
     "description": ["str.count 返回指定值在str中出现的次数"]
   },
   "str.count 示例1": {
@@ -82,7 +82,7 @@
   },
   "str.encode 编码": {
     "prefix": ["str_encode"],
-    "body": ".encode($0)",
+    "body": ["encode($0)"],
     "description": ["str.encode 返回str的编码版本"]
   },
   "str.encode 示例1": {
@@ -105,7 +105,7 @@
   },
   "str.endswith 判断指定值结尾": {
     "prefix": ["str_endswith"],
-    "body": ".endswith(${1:string})",
+    "body": ["endswith(${1:string})"],
     "description": ["str.endswith 如果str以指定值结尾则返回 true"]
   },
   "str.endswith 示例1": {
@@ -128,7 +128,7 @@
   },
   "str.expandtabs 制表符": {
     "prefix": ["str_expandtabs"],
-    "body": ".expandtabs(${1:number})",
+    "body": ["expandtabs(${1:number})"],
     "description": ["str.expandtabs 设置str的制表符(tabsize=)大小"]
   },
   "str.expandtabs 示例1": {
@@ -150,7 +150,7 @@
   },
   "str.find 搜索指定值": {
     "prefix": ["str_find"],
-    "body": ".find(${1:string})",
+    "body": ["find(${1:string})"],
     "description": ["str.find 在str中搜索指定值并返回找到它的位置"]
   },
   "str.find 示例1": {
@@ -191,7 +191,7 @@
   },
   "str.format 指定值的格式": {
     "prefix": ["str_format"],
-    "body": ".format($0)",
+    "body": ["format($0)"],
     "description": ["str.format: Formats 设置str中指定值的格式"]
   },
   "str.format 示例": {
@@ -210,7 +210,7 @@
   },
   "str.format_map 指定值的格式": {
     "prefix": ["str_format_map"],
-    "body": ".format_map($0)",
+    "body": ["format_map($0)"],
     "description": ["str.format_map: Formats 设置str中指定值的格式"]
   },
   "str.format_map 示例": {
@@ -225,7 +225,7 @@
   },
   "str.index 获取索引": {
     "prefix": ["str_index"],
-    "body": ".index(${1:string})",
+    "body": ["index(${1:string})"],
     "description": ["str.index 在str中搜索指定值并返回找到它的位置"]
   },
   "str.index 示例1": {
@@ -266,7 +266,7 @@
   },
   "str.isalnum 判断字母和数字": {
     "prefix": ["str_isalnum"],
-    "body": ".isalnum()",
+    "body": ["isalnum()"],
     "description": [
       "str.isalnum 如果str中的所有字符都是字母和数字, 则返回 True"
     ]
@@ -283,7 +283,7 @@
   },
   "str.isalpha 判断只由字母组成": {
     "prefix": ["str_isalpha"],
-    "body": ".isalpha()",
+    "body": ["isalpha()"],
     "description": [
       "str.isalpha 如果str中的所有字符都只由字母组成, 则返回 True"
     ]
@@ -295,14 +295,14 @@
   },
   "str.isascii 判断ASCII编码": {
     "prefix": ["str_isascii"],
-    "body": ".isascii()",
+    "body": ["isascii()"],
     "description": [
       "str.isascii 如果为空或所有字符均为 ASCII, 则返回 True (python 3.7 中的新功能)"
     ]
   },
   "str.isdecimal 判断数学运算类型": {
     "prefix": ["str_isdecimal"],
-    "body": ".isdecimal()",
+    "body": ["isdecimal()"],
     "description": [
       "str.isdecimal 如果str中的所有字符都是数学运算类型(十进制+可运算+小数), 则返回 True"
     ]
@@ -328,7 +328,7 @@
   },
   "str.isdigit 判断只由数学数字组成": {
     "prefix": ["str_isdigit"],
-    "body": ".isdigit()",
+    "body": ["isdigit()"],
     "description": [
       "str.isdigit 如果str中的所有字符只由数字组成, 只对0和正数有效, 则返回 True"
     ]
@@ -350,7 +350,7 @@
   },
   "str.isidentifier 判断有效标识符": {
     "prefix": ["str_isidentifier"],
-    "body": ".isidentifier()",
+    "body": ["isidentifier()"],
     "description": ["str.isidentifier 如果str是有效标识符, 则返回 True"]
   },
   "str.isidentifier 示例1": {
@@ -374,7 +374,7 @@
   },
   "str.islower 判断字符(字母)均为小写": {
     "prefix": ["str_islower"],
-    "body": ".islower()",
+    "body": ["islower()"],
     "description": [
       "str.islower 如果str中的所有字符(字母)均为小写, 则返回 True"
     ]
@@ -398,7 +398,7 @@
   },
   "str.isnumeric 判断只由数字组成": {
     "prefix": ["str_isnumeric"],
-    "body": ".isnumeric()",
+    "body": ["isnumeric()"],
     "description": [
       "str.isnumeric 如果str中的所有字符只由数字组成(这种方法是只针对unicode对象), 则返回 True"
     ]
@@ -422,7 +422,7 @@
   },
   "str.isprintable 判断所有字符可打印": {
     "prefix": ["str_isprintable"],
-    "body": ".isprintable()",
+    "body": ["isprintable()"],
     "description": [
       "str.isprintable 如果str中的所有字符都可打印或字符串为空, 则返回 True"
     ]
@@ -443,7 +443,7 @@
   },
   "str.isspace 判断只由空格组成": {
     "prefix": ["str_isspace"],
-    "body": ".isspace()",
+    "body": ["isspace()"],
     "description": ["str.isspace 如果str中的所有字符都是空格, 则返回 True"]
   },
   "str.isspace 示例1": {
@@ -458,7 +458,7 @@
   },
   "str.istitle 判断遵循标题规则(单词首字母大写)": {
     "prefix": ["str_istitle"],
-    "body": ".istitle()",
+    "body": ["istitle()"],
     "description": [
       "str.istitle 如果str遵循标题规则(所有的单词拼写首字母是否为大写, 且其他字母为小写), 则返回 True"
     ]
@@ -488,7 +488,7 @@
   },
   "str.isUpper 判断字符(字母)均为大写": {
     "prefix": ["str_isUpper"],
-    "body": ".isupper()",
+    "body": ["isupper()"],
     "description": ["str.isUpper 如果str中的所有字符均为大写, 则返回 True"]
   },
   "str.isupper 示例1": {
@@ -510,7 +510,7 @@
   },
   "str.join 拼接": {
     "prefix": ["str_join"],
-    "body": ".join(${1:iterable})",
+    "body": ["join(${1:iterable})"],
     "description": ["str.join 将可迭代的元素连接到str的末尾"]
   },
   "str.join 示例1": {
@@ -534,7 +534,7 @@
   },
   "str.ljust left拼接": {
     "prefix": ["str_ljust"],
-    "body": ".ljust(${1:number})",
+    "body": ["ljust(${1:number})"],
     "description": ["str.ljust 返回str的left(左侧)拼接可迭代的元素版本"]
   },
   "str.ljust 示例1": {
@@ -553,7 +553,7 @@
   },
   "str.lower 转换为小写": {
     "prefix": ["str_lower"],
-    "body": ".lower()",
+    "body": ["lower()"],
     "description": ["str.lower 将str转换为小写"]
   },
   "str.lower 示例": {
@@ -563,7 +563,7 @@
   },
   "str.lstrip left去除空白": {
     "prefix": ["str_lstrip"],
-    "body": ".lstrip(${1:' '})",
+    "body": ["lstrip(${1:' '})"],
     "description": [
       "str.lstrip 返回str的left(起始/左侧)去除空白(包括\\n, \\r, \\t)版本"
     ]
@@ -588,7 +588,9 @@
   },
   "str.maketrans 字符映射的转换": {
     "prefix": ["str_maketrans"],
-    "body": ".maketrans(${1:字符串中要替代的字符组成的字符串}, ${2:相应的映射字符的字符串})",
+    "body": [
+      ".maketrans(${1:字符串中要替代的字符组成的字符串}, ${2:相应的映射字符的字符串})"
+    ],
     "description": [
       "str.maketrans 返回要在翻译中使用的翻译表(注: 两个字符串的长度必须相同, 为一一对应的关系)"
     ]
@@ -615,7 +617,7 @@
   },
   "str.partition 拆分->tuple": {
     "prefix": ["str_partition"],
-    "body": ".partition(${1:string})",
+    "body": ["partition(${1:string})"],
     "description": [
       "str.partition 返回一个分割后的str元组, 其中字符串分为三部分(包含分隔符之前的部分、分隔符本身、以及分隔符之后的部分)"
     ]
@@ -640,21 +642,21 @@
   },
   "str.removeprefix 去除除指定的前缀": {
     "prefix": ["str_removeprefix"],
-    "body": ".removeprefix(${1:prefix})",
+    "body": ["removeprefix(${1:prefix})"],
     "description": [
       "str.removeprefix 去除开头指定的前缀, 并返回去除前缀后的新字符串. 例如: str(\"Hello, World!\").removeprefix(\"Hello, \") 返回值: \"World!\" (Python 3.9+)"
     ]
   },
   "str.removesuffix 去除指定的后缀": {
     "prefix": ["str_removesuffix"],
-    "body": ".removesuffix(${1:suffix})",
+    "body": ["removesuffix(${1:suffix})"],
     "description": [
       "str.removesuffix 去除末尾指定的后缀, 并返回删除后的新str. (suffix: 要删除的后缀, 可以是一个字符串或是一个元组, 代表多个后缀) 例如: str(\"Hello World.txt\").removesuffix(\".txt\") 返回值: \"Hello World\""
     ]
   },
   "str.replace 替换": {
     "prefix": ["str_replace"],
-    "body": ".replace('${1:old}', '${2:new}')",
+    "body": ["replace('${1:old}', '${2:new}')"],
     "description": ["str.replace 返回指定值替换为指定值的str"]
   },
   "str.replace 示例1": {
@@ -686,7 +688,7 @@
   },
   "str.rfind 指定值最后位置": {
     "prefix": ["str_rfind"],
-    "body": ".rfind(${1:string})",
+    "body": ["rfind(${1:string})"],
     "description": ["str.rfind 在str中搜索指定值, 返回找到该值的最后位置"]
   },
   "str.rfind 示例1": {
@@ -723,7 +725,7 @@
   },
   "str.rindex 指定值最后位置索引": {
     "prefix": ["str_rindex"],
-    "body": ".rindex(${1:string})",
+    "body": ["rindex(${1:string})"],
     "description": [
       "str.rindex 在str中搜索指定值, 返回找到该值的最后位置的索引"
     ]
@@ -762,14 +764,14 @@
   },
   "str.rjust 右对齐": {
     "prefix": ["str_rjust"],
-    "body": ".rjust(${1:width})",
+    "body": ["rjust(${1:width})"],
     "description": [
       "str.rjust 返回str的右对齐版本(最大width=int, 默认fillchar空格填充=\" \")"
     ]
   },
   "str.rpartition 末尾拆分": {
     "prefix": ["str_rpartition"],
-    "body": ".rpartition(${1:string})",
+    "body": ["rpartition(${1:string})"],
     "description": [
       "str.rpartition 从目标str的末尾也就是右边开始搜索分割符, 返回一个元组, 其中字符串分为三部分: 第一个为分隔符左边的子串, 第二个为分隔符本身, 第三个为分隔符右边的子串"
     ]
@@ -794,7 +796,7 @@
   },
   "str.rsplit 反向分割->list": {
     "prefix": ["str_rsplit"],
-    "body": ".rsplit(${1:separator}, maxsplit=-1)",
+    "body": ["rsplit(${1:separator}, maxsplit=-1)"],
     "description": [
       "str.rsplit 返回str的right(右/末尾)分割版本, 返回一个list (maxsplit=分割次数)"
     ]
@@ -820,7 +822,7 @@
   },
   "str.rstrip right去除空白": {
     "prefix": ["str_rstrip"],
-    "body": ".rstrip(${1:' '})",
+    "body": ["rstrip(${1:' '})"],
     "description": [
       "str.rstrip 返回str的right(末尾/右侧)去除空白(包括\\n, \\r, \\t)版本"
     ]
@@ -836,7 +838,7 @@
   },
   "str.split 分割->list": {
     "prefix": ["str_split"],
-    "body": ".split(${1:separator}, maxsplit=-1)",
+    "body": ["split(${1:separator}, maxsplit=-1)"],
     "description": [
       "str.split 在指定分隔符处分割str, 并返回一个list (maxsplit=分割次数)"
     ]
@@ -876,7 +878,7 @@
   },
   "str.splitlines 按行分割str->list": {
     "prefix": ["str_splitlines"],
-    "body": ".splitlines()",
+    "body": ["splitlines()"],
     "description": [
       "str.splitlines 在指定分隔符(\\n, \\r, \\r\\n)分割str, 并返回一个list"
     ]
@@ -901,7 +903,7 @@
   },
   "str.startswith 判断指定值开头": {
     "prefix": ["str_startswith"],
-    "body": ".startswith(${1:string})",
+    "body": ["startswith(${1:string})"],
     "description": ["str.startswith 如果str以指定值开头, 则返回 true"]
   },
   "str.startswith 示例1": {
@@ -924,12 +926,12 @@
   },
   "str.strip 去除空白": {
     "prefix": ["str_strip"],
-    "body": ".strip(${1:' '})",
+    "body": ["strip(${1:' '})"],
     "description": ["str.strip 返回str的开始位置和结束位置去除空白版本"]
   },
   "str.swapcase 大小写互换": {
     "prefix": ["str_swapcase"],
-    "body": ".swapcase()",
+    "body": ["swapcase()"],
     "description": [
       "str.swapcase 对str的大小写字母进行转换, 即将大写字母转换为小写字母, 小写字母会转换为大写字母"
     ]
@@ -945,7 +947,7 @@
   },
   "str.title 标题化": {
     "prefix": ["str_title"],
-    "body": ".title()",
+    "body": ["title()"],
     "description": ["返回\"标题化\"的str, 每个单词首字母大写, 其余字母小写"]
   },
   "str.title 示例1": {
@@ -965,7 +967,7 @@
   },
   "str.translate 翻译映射": {
     "prefix": ["str_translate"],
-    "body": ".translate(${1:translation})",
+    "body": ["translate(${1:translation})"],
     "description": [
       "str.translate 返回翻译后的str, 翻译表为字典, 或者 字符串映射(maketrans(intab, outtab)), deletechars(默认空)=忽略去除字符串中的字符"
     ]
@@ -984,7 +986,7 @@
   },
   "str.upper 转换大写": {
     "prefix": ["str_upper"],
-    "body": ".upper()",
+    "body": ["upper()"],
     "description": ["str.upper 将str转换为大写"]
   },
   "str.upper 示例": {
@@ -994,7 +996,7 @@
   },
   "str.zfill 返回指定长度的字符串": {
     "prefix": ["str_zfill"],
-    "body": ".zfill(${1:width})",
+    "body": ["zfill(${1:width})"],
     "description": [
       "返回指定长度的字符串, 原字符串右对齐, 前面填充0(width: int=指定填充长度)"
     ]
