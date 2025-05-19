@@ -3,10 +3,5 @@
     "prefix": ["import_pprint"],
     "body": ["from pprint import pp"],
     "description": ["引入 pprint 高级打印"]
-  },
-  "pprint.pp(object) 打印": {
-    "prefix": ["pprint_pp"],
-    "body": ["pp(${1:object})"],
-    "description": ["pprint.pp 打印"]
   }
 }
