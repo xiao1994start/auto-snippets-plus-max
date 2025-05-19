@@ -1,5 +1,5 @@
 {
-  "BAT.template": {
+  "BAT.tmpl": {
     "prefix": ["xxx"],
     "body": [
       "@ECHO OFF",
@@ -13,7 +13,7 @@
       "endlocal",
       ""
     ],
-    "description": ["BAT.template"]
+    "description": ["BAT.tmpl"]
   },
   "ECHO_控制台输出": {
     "prefix": ["prt -ECHO", "pcl -ECHO", "clp -ECHO"],

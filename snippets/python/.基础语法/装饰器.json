@@ -1,5 +1,5 @@
 {
-  "添加 装饰器 template": {
+  "添加 装饰器 tmpl": {
     "prefix": ["create_decorator", "c_decorator"],
     "body": [
       "# * Function: 装饰器说明",
@@ -25,6 +25,6 @@
       "    return warpper",
       ""
     ],
-    "description": ["添加 装饰器 template"]
+    "description": ["添加 装饰器 tmpl"]
   }
 }

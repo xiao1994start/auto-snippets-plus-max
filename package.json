@@ -101,7 +101,7 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/Bat To Exe Converter/bat2exe.template.json"
+        "path": "./snippets/bat/Bat To Exe Converter/bat2exe.tmpl.json"
       },
       {
         "language": "bat",
@@ -185,7 +185,7 @@
       },
       {
         "language": "markdown",
-        "path": "./snippets/markdown/markdown.template.json"
+        "path": "./snippets/markdown/markdown.tmpl.json"
       },
       {
         "language": "markdown",
@@ -389,7 +389,7 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.template.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.tmpl.json"
       },
       {
         "language": "bat",
@@ -433,7 +433,7 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt.template.json"
+        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt.tmpl.json"
       },
       {
         "language": "python",

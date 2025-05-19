@@ -11,7 +11,7 @@
     ],
     "description": ["引入 enum 枚举类.常用模块"]
   },
-  "enum.object 创建枚举类对象.template": {
+  "enum.object 创建枚举类对象.tmpl": {
     "prefix": ["create_class_enum=", "c_class_enum="],
     "body": [
       "class ${1:EnumObject}(Enum):",
@@ -20,6 +20,6 @@
       "    ...",
       ""
     ],
-    "description": ["enum.object 创建枚举类对象.template"]
+    "description": ["enum.object 创建枚举类对象.tmpl"]
   }
 }
