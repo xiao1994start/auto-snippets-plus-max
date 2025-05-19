@@ -107,7 +107,7 @@
   },
   "@property.装饰器 将class对象中的方法转换为属性": {
     "prefix": ["@property"],
-    "body": ["@property  # * 方法->属性"],
+    "body": ["@property  # * 属性方法['方法'>--转换为-->'属性']"],
     "description": [
       "@property.装饰器 将class对象中的方法转换为属性",
       "class Student(object):",
