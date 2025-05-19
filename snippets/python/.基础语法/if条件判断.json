@@ -1,17 +1,17 @@
 {
   "if判断的代码片段": {
     "prefix": ["if="],
-    "body": ["if ${1:condition}:", "    # comment: ${2:}", "    pass"],
+    "body": ["if ${1:condition}:", "    # comment: ${2:}", "    ..."],
     "description": ["if判断的代码片段"]
   },
   "elif判断的代码片段": {
     "prefix": ["elif="],
-    "body": ["elif ${1:}:", "    # comment: ${2:}", "    pass"],
+    "body": ["elif ${1:}:", "    # comment: ${2:}", "    ..."],
     "description": ["elif判断的代码片段"]
   },
   "else判断的代码片段": {
     "prefix": ["else="],
-    "body": ["else:", "    # comment: ${1:}", "    pass"],
+    "body": ["else:", "    # comment: ${1:}", "    ..."],
     "description": ["else判断的代码片段"]
   },
   "if_else判断的代码片段": {
@@ -19,10 +19,10 @@
     "body": [
       "if ${1:}:",
       "    # comment: ${2:}",
-      "    pass",
+      "    ...",
       "else:",
       "    # comment: ${3:}",
-      "    pass"
+      "    ..."
     ],
     "description": ["if_else判断的代码片段"]
   },
@@ -31,13 +31,13 @@
     "body": [
       "if ${1:}:",
       "    # comment:${2:}",
-      "    pass",
+      "    ...",
       "elif ${3:}:",
       "    # comment:${4:}",
-      "    pass",
+      "    ...",
       "else:",
       "    # comment:${5:}",
-      "    pass"
+      "    ..."
     ],
     "description": ["if_elif_else判断的代码片段"]
   }

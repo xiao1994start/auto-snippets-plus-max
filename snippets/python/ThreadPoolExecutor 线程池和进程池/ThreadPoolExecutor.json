@@ -6,7 +6,7 @@
     ],
     "description": ["引入 ThreadPoolExecutor 线程池库"]
   },
-  "with ThreadPoolExecutor 应用模板": {
+  "with ThreadPoolExecutor 应用模板.template": {
     "prefix": ["with_ThreadPoolExecutor="],
     "body": [
       "with ThreadPoolExecutor(max_workers=3) as ${1:executor}:",
@@ -21,6 +21,6 @@
       "    pass",
       ""
     ],
-    "description": ["with ThreadPoolExecutor 应用模板"]
+    "description": ["with ThreadPoolExecutor 应用模板.template"]
   }
 }

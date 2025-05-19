@@ -1,5 +1,5 @@
 {
-  "snippets.js.Function =>模板": {
+  "snippets.js.Function => template": {
     "prefix": ["snippets.js.Function =json.snippets"],
     "body": [
       "\"${1:Object}.${2:Function} ${3:描述}\": {",
@@ -8,6 +8,6 @@
       "  \"description\": [\"${1:Object}.${2:Function} ${3:描述}\"]",
       "},"
     ],
-    "description": "snippets.js.Function =>模板"
+    "description": "snippets.js.Function => template"
   }
 }

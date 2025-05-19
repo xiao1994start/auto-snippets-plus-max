@@ -4,7 +4,7 @@
     "body": ["import logging", "import logging.handlers"],
     "description": ["引入 logging 内置日志库"]
   },
-  "引入 logging 内置日志库 模板": {
+  "引入 logging 内置日志库 template": {
     "prefix": ["import_logging="],
     "body": [
       "import logging",
@@ -218,10 +218,10 @@
       "                return logging.NOTSET",
       ""
     ],
-    "description": "引入 logging 内置日志库 模板"
+    "description": "引入 logging 内置日志库 template"
   },
-  "logging.Logger 模板": {
-    "prefix": ["Logger =logging"],
+  "logging.Logger template": {
+    "prefix": ["Logger_logging="],
     "body": [
       "# * Object: 日志输出",
       "class LOG:",
@@ -428,6 +428,6 @@
       "                return logging.NOTSET",
       ""
     ],
-    "description": "logging.Logger 模板"
+    "description": "logging.Logger template"
   }
 }

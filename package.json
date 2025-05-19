@@ -101,7 +101,7 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/Bat To Exe Converter/bat2exe模板.json"
+        "path": "./snippets/bat/Bat To Exe Converter/bat2exe.template.json"
       },
       {
         "language": "bat",
@@ -185,6 +185,10 @@
       },
       {
         "language": "markdown",
+        "path": "./snippets/markdown/markdown.template.json"
+      },
+      {
+        "language": "markdown",
         "path": "./snippets/markdown/markdown标题语法.json"
       },
       {
@@ -194,10 +198,6 @@
       {
         "language": "markdown",
         "path": "./snippets/markdown/markdown链接语法.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/markdown模板.json"
       },
       {
         "language": "markdown",
@@ -389,7 +389,7 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.example.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.template.json"
       },
       {
         "language": "bat",
@@ -433,11 +433,11 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt控制台IO.json"
+        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt.template.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt模板.json"
+        "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt控制台IO.json"
       },
       {
         "language": "python",

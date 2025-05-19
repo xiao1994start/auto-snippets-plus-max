@@ -5,11 +5,11 @@
       "match (${1:object_arg_kwarg}):",
       "    case ():",
       "        # comment: 注释",
-      "        pass",
+      "        ...",
       "    # * End_case",
       "    case (_):",
       "        # comment: OtherState",
-      "        pass",
+      "        ...",
       "    # * End_case",
       "# * End_match"
     ],
@@ -17,7 +17,7 @@
   },
   "case -switch条件判断开关": {
     "prefix": ["case"],
-    "body": ["case ($0):", "    # comment: 注释", "    pass", "# * End_case"],
+    "body": ["case ($0):", "    # comment: 注释", "    ...", "# * End_case"],
     "description": ["case -switch条件判断开关"]
   }
 }

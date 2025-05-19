@@ -4,7 +4,7 @@
     "body": ["import configparser"],
     "description": ["引入configparser->ini控制模块"]
   },
-  "configparser 模板": {
+  "configparser.template": {
     "prefix": ["configparser_config="],
     "body": [
       "config = configparser.ConfigParser()",
@@ -21,7 +21,7 @@
       "# 写入节点-键-值",
       "# config.set(section, key, value)"
     ],
-    "description": ["configparser 模板"]
+    "description": ["configparser.template"]
   },
   "configparser.sections 读取节点": {
     "prefix": ["configparser_sections"],

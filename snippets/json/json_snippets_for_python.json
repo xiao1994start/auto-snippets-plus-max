@@ -1,5 +1,5 @@
 {
-  "snippets.python.import =>模板": {
+  "snippets.python.import => template": {
     "prefix": ["snippets.python.import =json.snippets"],
     "body": [
       "\"引入 ${1:type} ${2:描述}\": {",
@@ -8,9 +8,9 @@
       "  \"description\": [\"引入 ${1:type} ${2:描述}\"]",
       "},"
     ],
-    "description": ["snippets.python.import =>模板"]
+    "description": ["snippets.python.import => template"]
   },
-  "snippets.python.object =>模板": {
+  "snippets.python.object => template": {
     "prefix": ["snippets.python.object =json.snippets"],
     "body": [
       "\"${1:type}.${2:object} ${3:描述}\": {",
@@ -19,6 +19,6 @@
       "  \"description\": [\"${1:type}.${2:object} ${3:描述}\"]",
       "},"
     ],
-    "description": ["snippets.python.object =>模板"]
+    "description": ["snippets.python.object => template"]
   }
 }

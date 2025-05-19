@@ -3,15 +3,15 @@
     "prefix": ["create_class", "c_class"],
     "body": [
       "class ${1:NewObject}(${2:}):",
-      "    # * class default args(参数) | signal(信号)",
+      "    # * class default args(类变量) | signal(信号)",
+      "    # 调用方法: [className].[argsName] = [value] | self.[argsName] = [value]",
       "    def __init__(self) -> None:",
-      "        # * class input args(参数)",
       "        \"\"\"",
       "        ${3:_summary_}",
       "        \"\"\"",
-      "        pass",
+      "        ...",
       "",
-      "    pass"
+      "    ..."
     ],
     "description": ["创建class对象"]
   },
@@ -21,15 +21,13 @@
     "description": ["class 父类初始化方法初始化继承属性"]
   },
   "class初始化": {
-    "prefix": ["class_init"],
+    "prefix": ["create_class_init", "c_class_init"],
     "body": [
       "def __init__(self) -> None:",
-      "    # * class input args(参数)",
       "    \"\"\"",
-      "    接收参数",
       "    ${2:_summary_}",
       "    \"\"\"",
-      "    pass"
+      "    ..."
     ],
     "description": ["class初始化"]
   },
@@ -45,7 +43,7 @@
       "    \"\"\"",
       "    ${2:_summary_}",
       "    \"\"\"",
-      "    pass"
+      "    ..."
     ],
     "description": ["创建class - def函数"]
   },
@@ -56,7 +54,7 @@
       "    \"\"\"",
       "    ${2:_summary_}",
       "    \"\"\"",
-      "    pass"
+      "    ..."
     ],
     "description": ["创建def函数"]
   },
@@ -73,7 +71,7 @@
       "    运行入口 | 调试运行",
       "    \"\"\"",
       "    $0",
-      "    pass"
+      "    ..."
     ],
     "description": ["if_main:运行入口 | 调试运行"]
   },
@@ -85,7 +83,7 @@
       "    运行入口 | 调试运行 | 多进程[multiprocessing]运行",
       "    \"\"\"",
       "    $0",
-      "    pass"
+      "    ..."
     ],
     "description": ["if_in_main:运行入口 | 调试运行"]
   },
