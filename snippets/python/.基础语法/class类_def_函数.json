@@ -88,11 +88,55 @@
     "description": ["if_in_main:运行入口 | 调试运行"]
   },
   "dir.object 查看对象属性": {
-    "prefix": ["dir", "dir_object"],
+    "prefix": ["dir_", "dir_object"],
     "body": ["dir($0)"],
     "description": [
       "dir.object 查看对象属性",
       "返回当前作用域中的所有变量, 方法和定义的类型"
+    ]
+  },
+  "setattr.object 设置对象属性": {
+    "prefix": ["setattr_", "setattr_object"],
+    "body": ["setattr(${1:object}, ${2:'name'}, ${3:value})"],
+    "description": ["setattr.object 设置对象属性"]
+  },
+  "getattr.object 获取对象属性": {
+    "prefix": ["getattr_", "getattr_object"],
+    "body": ["getattr(${1:object}, ${2:'name'}, ${3|None,0,False|})"],
+    "description": ["getattr.object 获取对象属性"]
+  },
+  "@property.装饰器 将class对象中的方法转换为属性": {
+    "prefix": ["@property"],
+    "body": ["@property  # * 方法->属性"],
+    "description": [
+      "@property.装饰器 将class对象中的方法转换为属性",
+      "class Student(object):",
+      "    @property",
+      "    def birth(self):",
+      "        return self._birth",
+      "    @birth.setter",
+      "    def birth(self, value):",
+      "        self._birth = value",
+      "    @property",
+      "    def age(self):",
+      "        return 2015 - self._birth"
+    ]
+  },
+  "@setter.装饰器 设置class对象中方法的属性": {
+    "prefix": ["@setter"],
+    "body": ["@${1:name}.setter  # * 设置对象属性"],
+    "description": [
+      "@property.装饰器 设置class对象中方法的属性",
+      "class Student(object):",
+      "    @property",
+      "    def birth(self):",
+      "        return self._birth",
+      "    @birth.setter",
+      "    def birth(self, value):",
+      "        self._birth = value",
+      "    @property",
+      "    def age(self):",
+      "        return 2015 - self._birth"
     ]
   }
 }
