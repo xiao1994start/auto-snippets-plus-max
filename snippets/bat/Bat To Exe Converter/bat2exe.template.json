@@ -1,6 +1,6 @@
 {
   "bat_to_exe嵌入式模板": {
-    "prefix": ["bat-to-exe ="],
+    "prefix": ["bat_to_exe="],
     "body": [
       "::[Bat To Exe Converter]",
       "::",

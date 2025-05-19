@@ -2,7 +2,7 @@
   "引入 argparse 命令行参数模块": {
     "prefix": ["import_argparse"],
     "body": [
-      "import argparse  # 命令行参数模块",
+      "import argparse  # * 命令行参数模块",
       "",
       "# todo 创建 ArgumentParser 对象",
       "parser = argparse.ArgumentParser(prog='程序名_可省略', description='描述')",
