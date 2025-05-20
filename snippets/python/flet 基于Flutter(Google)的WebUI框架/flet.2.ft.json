@@ -210,10 +210,15 @@
   },
   "flet.ThemeMode 主题模式": {
     "prefix": ["ft_ThemeMode", "flet_ThemeMode"],
+    "body": ["ft.ThemeMode.${1:DARK}"],
+    "description": ["flet.ThemeMode 主题模式"]
+  },
+  "flet.ThemeMode.SYSTEM 更随系统主题模式": {
+    "prefix": ["ft_ThemeMode_SYSTEM", "flet_ThemeMode_SYSTEM"],
     "body": [
       "ft.ThemeMode.SYSTEM  # SYSTEM[默认]: 系统默认, LIGHT: 浅色, DARK: 深色"
     ],
-    "description": ["flet.ThemeMode 主题模式"]
+    "description": ["flet.ThemeMode.SYSTEM 更随系统主题模式"]
   },
   "flet.Icon 使用Flet自带图标": {
     "prefix": ["ft_Icon", "flet_Icon"],

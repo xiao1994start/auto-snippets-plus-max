@@ -14,6 +14,7 @@
       "    Final,  # * args: Final[type] = 常量",
       "    Optional,  # * 可选参数(args: Optional[Type] = None 即 args: Type | None = None)",
       "    Self,  # * 链式调用时返回函数本身",
+      "    TypeVar,  # * 泛型类型变量(TypeName = TypeVar('TypeName'[, Type_1, Type_2, ...]))",
       "    Union,  # * 联合类型(args: Union[Type_1, Type_2] 即 args: Type_1 | Type_2)",
       "    cast,  # * 伪类型转换[cast(伪类型, 真类型)]",
       ")",
