@@ -130,7 +130,7 @@
       "    min_width=72,  # 最小宽度",
       "    # min_extended_width=256(默认): 最小扩展宽度",
       "    min_extended_width=128,  # 最小扩展宽度[128: 两个汉字宽度]",
-      "    # extended=False(默认): 导航栏扩展状态",
+      "    # extended=None(默认): 导航栏扩展状态",
       "    extended=False,  # 导航栏扩展状态",
       "    # leading: 导航栏第一顺位控件(不参与selected_index)",
       "    # group_alignment=0.0: 导航栏控件对齐方式[-1.0: 左对齐; 0.0: 居中对齐; 1.0: 右对齐]",

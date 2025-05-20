@@ -116,10 +116,7 @@
       "        return self._birth",
       "    @birth.setter",
       "    def birth(self, value):",
-      "        self._birth = value",
-      "    @property",
-      "    def age(self):",
-      "        return 2015 - self._birth"
+      "        self._birth = value"
     ]
   },
   "@setter.装饰器 设置class中方法对象的属性": {
@@ -133,10 +130,7 @@
       "        return self._birth",
       "    @birth.setter",
       "    def birth(self, value):",
-      "        self._birth = value",
-      "    @property",
-      "    def age(self):",
-      "        return 2015 - self._birth"
+      "        self._birth = value"
     ]
   }
 }
