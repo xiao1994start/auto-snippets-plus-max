@@ -122,11 +122,11 @@
       "        return 2015 - self._birth"
     ]
   },
-  "@setter.装饰器 设置class对象中方法的属性": {
+  "@setter.装饰器 设置class中方法对象的属性": {
     "prefix": ["@setter"],
-    "body": ["@${1:name}.setter  # * 设置对象属性"],
+    "body": ["@${1:name}.setter  # * 设置方法对象属性"],
     "description": [
-      "@property.装饰器 设置class对象中方法的属性",
+      "@property.装饰器 设置class中方法对象的属性",
       "class Student(object):",
       "    @property",
       "    def birth(self):",
