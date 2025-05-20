@@ -1,6 +1,6 @@
 {
-  "flet.main(page: ft.Page) 创建主界面框架函数.示例": {
-    "prefix": ["ft_def_main_page=", "flet_def_main_page="],
+  "flet.main(page: ft.Page) 创建主界面框架函数.tmpl": {
+    "prefix": ["ft_main_page=", "flet_main_page="],
     "body": [
       "def main(page: ft.Page):",
       "    # * 页面标题",
@@ -36,93 +36,40 @@
       "    page.window.min_width = 1280",
       "    page.window.min_height = 720",
       "",
+      "    page.add()",
       ""
     ],
-    "description": ["flet.main(page: ft.Page) 创建主界面框架函数.示例"]
+    "description": ["flet.main(page: ft.Page) 创建主界面框架函数.tmpl"]
   },
-  "flet.page.theme_mode.button Flet主题按钮.示例": {
-    "prefix": ["ft_def_theme_mod_button=", "flet_def_theme_mod_button="],
+  "flet.class(Container) 创建 flet 类 Container 容器对象": {
+    "prefix": ["ft_class_container=", "flet_class_container="],
     "body": [
-      "def theme_button():",
-      "    \"\"\"",
-      "    通过 darkdetect 检测系统主题,设置主题切换按钮  # ! import darkdetect  # * 引入 darkdetect 检测系统主题",
-      "    \"\"\"",
-      "    is_dark = darkdetect.isDark()",
-      "    if is_dark:",
-      "        # 当前系统: 暗黑模式",
-      "        ico = ft.Icons.DARK_MODE",
-      "        selected_ico = ft.Icons.LIGHT_MODE",
-      "    else:",
-      "        # 当前系统: 浅色模式",
-      "        ico = ft.Icons.LIGHT_MODE",
-      "        selected_ico = ft.Icons.DARK_MODE",
-      "    theme_btn = ft.IconButton(icon=ico, selected_icon=selected_ico, on_click=lambda e: toggle_theme(e))",
-      "    return theme_btn",
+      "class ${1:FletObject}(ft.Container):",
+      "    # * class default args(类变量) | signal(信号)",
+      "    def __init__(self,page: ft.Page) -> None:",
+      "        # * class input args(参数)",
+      "        \"\"\"",
+      "        创建 flet 类 Container 容器对象",
+      "        \"\"\"",
+      "        super().__init__(expand=True)  # * 继承父类 ft.Control 的属性 [expand=True: 拉伸]",
       "",
-      "def toggle_theme(e):",
-      "    \"\"\"",
-      "    改变主题模式  # ! import darkdetect  # * 引入 darkdetect 检测系统主题",
-      "    :param e: 事件对象",
-      "    :param page: 页面对象",
-      "    eg.主题切换按钮:  # * [使用 ft.IconButton 中的 selected_icon 属性切换图标]",
-      "        ft.IconButton(icon=ico, selected_icon=selected_ico, on_click=toggle_theme)",
-      "    \"\"\"",
-      "    if page.theme_mode == ft.ThemeMode.DARK:",
-      "        page.theme_mode = ft.ThemeMode.LIGHT",
-      "        e.control.selected = not e.control.selected  # * 切换按钮选中状态",
-      "    elif page.theme_mode == ft.ThemeMode.LIGHT:",
-      "        page.theme_mode = ft.ThemeMode.DARK",
-      "        e.control.selected = not e.control.selected  # * 切换按钮选中状态",
-      "    else:",
-      "        # * page.theme_mode = ThemeMode.SYSTEM 跟随系统主题模式",
-      "        is_dark = darkdetect.isDark()",
-      "        if is_dark:",
-      "            page.theme_mode = ft.ThemeMode.LIGHT",
-      "            e.control.selected = not e.control.selected  # * 切换按钮选中状态",
-      "        else:",
-      "            page.theme_mode = ft.ThemeMode.DARK",
-      "            e.control.selected = not e.control.selected  # * 切换按钮选中状态",
-      "    # e.control.update()  # * 更新按钮状态[可使用最高级对象  page.update() 更新页面替代]",
-      "    page.update()",
+      "        # * 定义页面对象(self.page: ft.Page 使用类型约束规避 None)",
+      "        self.page: ft.Page = page",
       ""
     ],
-    "description": ["flet.page.theme_mode.button Flet主题按钮.示例"]
+    "description": ["flet.class(Container) 创建 flet 类 Container 容器对象"]
   },
-  "flet.def_toggle_ico_button [多选]按钮切换图标.模版": {
-    "prefix": ["ft_def_toggle_ico_button=", "flet_def_toggle_ico_button="],
+  "flet.class.def.ControlEvent Flet自定义对象控件事件.tmpl": {
+    "prefix": ["ft_class_def_control_event=", "flet_class_def_control_event="],
     "body": [
-      "def def_toggle_ico_button(e):",
+      "def ${1:flet_event}(self, e: ft.ControlEvent):",
       "    \"\"\"",
-      "    按钮切换图标(按钮切换图标, 且不关联其他按钮图标, 即: [多选])",
-      "    可以只更新事件对象控件",
-      "    ft.IconButton 必须至少同时具有 icon(未选中状态图标) 和 selected_icon(选中状态图标) 属性, 否则无法切换图标",
+      "    ${2:Callback function for the event}",
       "    \"\"\"",
-      "    print(e)",
-      "    e.control.selected = not e.control.selected  # * 切换按钮选中状态",
-      "    e.control.update()  # * 更新按钮状态",
+      "    ...",
+      "    self.page.update()",
       ""
     ],
-    "description": ["flet.def_toggle_ico_button [多选]按钮切换图标.模版"]
-  },
-  "flet.def_toggle_ico_buttons [单选]按钮切换图标.模版": {
-    "prefix": ["ft_def_toggle_ico_buttons=", "flet_def_toggle_ico_buttons="],
-    "body": [
-      "def toggle_ico_buttons(e, buttons: list[ft.IconButton]):",
-      "    \"\"\"",
-      "    按钮切换图标(按钮切换图标, 且关联其他按钮图标, 即: 互斥[单选])",
-      "    必须更新页面对象",
-      "    ft.IconButton 必须至少同时具有 icon(未选中状态图标) 和 selected_icon(选中状态图标) 属性, 否则无法切换图标",
-      "    :param e: 事件对象",
-      "    :param page: 页面对象",
-      "    :param buttons: 关联的单选按钮列表",
-      "    \"\"\"",
-      "    print(e)",
-      "    for i in buttons:  # * 遍历按钮列表",
-      "        i.selected = False  # * 取消全部按钮选中状态",
-      "    e.control.selected = not e.control.selected  # * 切换按钮选中状态",
-      "    page.update()  # * 更新页面状态",
-      ""
-    ],
-    "description": ["flet.def_toggle_ico_buttons [单选]按钮切换图标.模版"]
+    "description": ["flet.class.def.ControlEvent Flet自定义对象控件事件.tmpl"]
   }
 }
