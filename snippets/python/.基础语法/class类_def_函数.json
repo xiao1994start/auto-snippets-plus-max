@@ -106,7 +106,7 @@
     "description": ["getattr.object 获取对象属性"]
   },
   "@property.装饰器 将class对象中的方法转换为属性": {
-    "prefix": ["@property"],
+    "prefix": ["@property", "create_class_property", "c_class_property"],
     "body": ["@property  # * 属性方法['方法'>--转换为-->'属性']"],
     "description": [
       "@property.装饰器 将class对象中的方法转换为属性",
@@ -123,7 +123,7 @@
     ]
   },
   "@setter.装饰器 设置class中方法对象的属性": {
-    "prefix": ["@setter"],
+    "prefix": ["@setter", "create_class_setter", "c_class_setter"],
     "body": ["@${1:name}.setter  # * 设置方法对象属性"],
     "description": [
       "@property.装饰器 设置class中方法对象的属性",
