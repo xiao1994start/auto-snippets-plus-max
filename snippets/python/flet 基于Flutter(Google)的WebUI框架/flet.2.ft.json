@@ -10,6 +10,11 @@
     ],
     "description": ["flet.app 运行 Flet 应用"]
   },
+  "flet.ControlEvent Flet控件对象事件": {
+    "prefix": [":ft_ControlEvent", ":flet_ControlEvent"],
+    "body": [": ft.ControlEvent"],
+    "description": ["flet.ControlEvent Flet控件对象事件"]
+  },
   "flet.Control 父级控件对象": {
     "prefix": ["ft_Control", "flet_Control"],
     "body": ["ft.Control"],
