@@ -4,7 +4,7 @@
     "body": [
       "def main(page: ft.Page):",
       "    # * 页面标题",
-      "    page.title = 'Flet Counter Example'",
+      "    page.title = '🤖Flet Counter Example'",
       "",
       "    # * 字体",
       "    page.fonts = {'字体': str('字体路径')}",

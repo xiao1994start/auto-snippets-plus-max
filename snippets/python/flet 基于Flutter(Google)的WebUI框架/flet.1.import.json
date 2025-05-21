@@ -15,7 +15,7 @@
       "",
       "def main(page: ft.Page):",
       "    # * 页面标题",
-      "    page.title = 'Flet Counter Example'",
+      "    page.title = '🤖Flet Counter Example'",
       "",
       "    # * 字体",
       "    page.fonts = {'字体': str('字体路径')}",
@@ -57,7 +57,8 @@
       "    运行入口 | 调试运行",
       "    \"\"\"",
       "    ft.app(",
-      "        target=main,",
+      "        target=main,  # * 运行目标[包含 page.add 的函数或类名]",
+      "        use_color_emoji=True,  # * 是否使用颜色表情",
       "        # view=ft.WEB_BROWSER,  # *运行模式: (默认:独立窗口, WEB_BROWSER:浏览器)",
       "    )",
       ""
