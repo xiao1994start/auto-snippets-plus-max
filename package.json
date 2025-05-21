@@ -360,6 +360,10 @@
         "path": "./snippets/python/DrissionPage 自动化网络请求模块/DrissionPage.json"
       },
       {
+        "language": "python",
+        "path": "./snippets/python/enum 枚举类/enum.json"
+      },
+      {
         "language": "bat",
         "path": "./snippets/python/FastAPI/FastAPI.bat.json"
       },

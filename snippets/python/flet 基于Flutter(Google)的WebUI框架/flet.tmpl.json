@@ -44,7 +44,7 @@
   "flet.class(Container) 创建 flet 类 Container 容器对象": {
     "prefix": ["ft_class_container=", "flet_class_container="],
     "body": [
-      "class ${1:FletObject}(ft.Container):",
+      "class ${1:FletObject}(ft.Control):",
       "    # * class default args(类变量) | signal(信号)",
       "    def __init__(self,page: ft.Page) -> None:",
       "        # * class input args(参数)",
