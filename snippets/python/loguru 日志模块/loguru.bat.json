@@ -10,7 +10,7 @@
   "uv.loguru 日志库": {
     "prefix": ["uv loguru"],
     "body": [
-      "uv add \"loguru\" --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"loguru\" --upgrade --index https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["loguru 日志库"]

@@ -33,12 +33,12 @@
     "body": ["uv run ${1:main.py}", ""],
     "description": ["uv 运行 py 脚本"]
   },
-  "uv 安装依赖": {
-    "prefix": ["uv add"],
+  "uv 安装依赖|允许包升级": {
+    "prefix": ["uv add__upgrade"],
     "body": [
-      "uv add \"${1:包名}\" --index https://mirrors.aliyun.com/pypi/simple/"
+      "uv add \"${1:包名}\" --upgrade --index https://mirrors.aliyun.com/pypi/simple/"
     ],
-    "description": ["uv 安装依赖"]
+    "description": ["uv 安装依赖|允许包升级"]
   },
   "uv 卸载依赖": {
     "prefix": ["uv remove"],

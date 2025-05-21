@@ -14,7 +14,7 @@
   "uv.pyautogui 自动化计算机行为库": {
     "prefix": ["uv pyautogui"],
     "body": [
-      "uv add \"setuptools\" \"pyscreeze\" \"Pillow\" \"pyautogui\" --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"setuptools\" \"pyscreeze\" \"Pillow\" \"pyautogui\" --upgrade --index https://mirrors.aliyun.com/pypi/simple/",
       "@REM 包管理 - pyscreeze(图片处理_截图等功能必备驱动库) - 主库",
       ""
     ],

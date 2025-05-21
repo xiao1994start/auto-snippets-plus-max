@@ -10,7 +10,7 @@
   "uv.Pillow 图像处理库": {
     "prefix": ["uv Pillow"],
     "body": [
-      "uv add \"Pillow\" --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"Pillow\" --upgrade --index https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["Pillow 图像处理库"]

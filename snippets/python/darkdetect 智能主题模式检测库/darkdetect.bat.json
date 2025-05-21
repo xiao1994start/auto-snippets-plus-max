@@ -10,7 +10,7 @@
   "uv.darkdetect 智能主题模式检测库": {
     "prefix": ["uv darkdetect"],
     "body": [
-      "uv add \"darkdetect\" --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"darkdetect\" --upgrade --index https://mirrors.aliyun.com/pypi/simple/",
       ""
     ],
     "description": ["darkdetect 智能主题模式检测库"]

@@ -13,7 +13,7 @@
   "uv.DrissionPage 自动化网络请求库": {
     "prefix": ["uv DrissionPage"],
     "body": [
-      "uv add \"DrissionPage\" --index https://mirrors.aliyun.com/pypi/simple/",
+      "uv add \"DrissionPage\" --upgrade --index https://mirrors.aliyun.com/pypi/simple/",
       "@REM DownloadTheDriver -> https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/#download-the-driver",
       "@REM chromedriver -> https://getwebdriver.com/chromedriver",
       "@REM edgedriver -> https://developer.microsoft.com/zh-cn/microsoft-edge/tools/webdriver/?form=MA13LH#downloads",
