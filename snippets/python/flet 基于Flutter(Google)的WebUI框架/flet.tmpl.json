@@ -36,6 +36,7 @@
       "    page.window.min_width = 1280",
       "    page.window.min_height = 720",
       "",
+      "    # * 构建 桌面应用/页面",
       "    page.add($0)",
       ""
     ],

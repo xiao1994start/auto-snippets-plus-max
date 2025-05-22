@@ -54,6 +54,7 @@
       "",
       "    text = ft.Text(value='Hello, world! 你好, 世界! 🌍')",
       "",
+      "    # * 构建 桌面应用/页面",
       "    page.add(ft.Row(controls=[text]))",
       "",
       "",
@@ -63,7 +64,7 @@
       "    \"\"\"",
       "    ft.app(",
       "        target=main,  # * 运行目标[包含 page.add 的函数或类名]",
-      "        use_color_emoji=True,  # * 是否使用颜色表情",
+      "        use_color_emoji=True,  # * emoji表情是否使用颜色",
       "        # view=ft.WEB_BROWSER,  # *运行模式: (默认:独立窗口, WEB_BROWSER:浏览器)",
       "    )",
       ""

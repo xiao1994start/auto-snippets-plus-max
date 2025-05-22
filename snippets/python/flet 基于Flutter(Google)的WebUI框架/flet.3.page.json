@@ -79,16 +79,5 @@
       ""
     ],
     "description": ["flet.Page.vertical_alignment 页面子控件对齐方式"]
-  },
-  "创建flet def函数": {
-    "prefix": ["ft_def", "flet_def"],
-    "body": [
-      "def ${1:name}(e):",
-      "    \"\"\"",
-      "    ${2:_summary_}",
-      "    \"\"\"",
-      "    pass"
-    ],
-    "description": ["创建flet def函数"]
   }
 }
