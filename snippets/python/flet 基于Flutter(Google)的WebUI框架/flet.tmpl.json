@@ -41,28 +41,28 @@
     ],
     "description": ["flet.main(page: ft.Page) 创建主界面框架函数.tmpl"]
   },
-  "flet.class(Control) 创建 flet 类 Control 控件对象": {
+  "flet.class(Container) 创建 flet 类 Container 容器控件对象": {
     "prefix": [
-      "create_ft_class_Control=",
-      "create_flet_class_Control=",
-      "c_ft_class_Control=",
-      "c_flet_class_Control="
+      "create_ft_class_Container=",
+      "create_flet_class_Container=",
+      "c_ft_class_Container=",
+      "c_flet_class_Container="
     ],
     "body": [
-      "class ${1:FletObject}(ft.Control):",
+      "class ${1:FletObject}(ft.Container):",
       "    # * class default args(类变量) | signal(信号)",
       "    def __init__(self,page: ft.Page) -> None:",
       "        # * class input args(参数)",
       "        \"\"\"",
-      "        创建 flet 类 Control 控件对象",
+      "        创建 flet 类 Container 容器控件对象",
       "        \"\"\"",
-      "        super().__init__(expand=True)  # * 继承父类 ft.Control 的属性 [expand=True: 拉伸]",
+      "        super().__init__(expand=True)  # * 继承父类 ft.Container 容器控件对象属性 [expand=True: 拉伸]",
       "",
       "        # * 定义页面对象(self.page: ft.Page 使用类型约束规避 None)",
       "        self.page: ft.Page = page",
       ""
     ],
-    "description": ["flet.class(Control) 创建 flet 类 Control 控件对象"]
+    "description": ["flet.class(Container) 创建 flet 类 Container 容器控件对象"]
   },
   "flet.class.def.ControlEvent Flet自定义对象控件事件.tmpl": {
     "prefix": ["ft_class_def_control_event=", "flet_class_def_control_event="],
