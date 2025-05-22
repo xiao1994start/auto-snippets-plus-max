@@ -57,7 +57,6 @@
       "        创建 flet 类 Container 容器控件对象",
       "        \"\"\"",
       "        super().__init__(expand=True)  # * 继承父类 ft.Container 容器控件对象属性 [expand=True: 拉伸]",
-      "",
       "        # * 定义页面对象(self.page: ft.Page 使用类型约束规避 None)",
       "        self.page: ft.Page = page",
       ""
