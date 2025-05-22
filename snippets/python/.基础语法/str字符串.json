@@ -17,15 +17,15 @@
   "str.capitalize 示例1": {
     "prefix": ["str_capitalize=1"],
     "body": [
-      "txt = hello, and welcome to my world.\n",
-      "x = txt.capitalize()\n",
+      "txt = hello, and welcome to my world.",
+      "x = txt.capitalize()",
       "print(x)"
     ],
     "description": ["使用 str.capitalize 的示例1"]
   },
   "str.capitalize 示例2": {
     "prefix": ["str_capitalize=2"],
-    "body": ["txt = '36 is my age.'\n", "x = txt.capitalize()\n", "print(x)"],
+    "body": ["txt = '36 is my age.'", "x = txt.capitalize()", "print(x)"],
     "description": ["使用 str.capitalize 的示例2"]
   },
   "str.casefold 所有字符小写": {
@@ -36,8 +36,8 @@
   "str.casefold 示例": {
     "prefix": ["str_casefold="],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
-      "x = txt.casefold()\n",
+      "txt = 'Hello, And Welcome To My World!'",
+      "x = txt.casefold()",
       "print(x)"
     ],
     "description": ["使用 str.casefold 的示例"]
@@ -49,12 +49,12 @@
   },
   "str.center 示例1": {
     "prefix": ["str_center=1"],
-    "body": ["txt = 'banana'\n", "x = txt.center(20)\n", "print(x)"],
+    "body": ["txt = 'banana'", "x = txt.center(20)", "print(x)"],
     "description": ["使用 str.center 的示例1"]
   },
   "str.center 示例2": {
     "prefix": ["str_center=2"],
-    "body": ["txt = 'banana'\n", "x = txt.center(20,'O')\n", "print(x)"],
+    "body": ["txt = 'banana'", "x = txt.center(20,'O')", "print(x)"],
     "description": ["使用 str.center 的示例2"]
   },
   "str.count 指定值计数": {
@@ -65,8 +65,8 @@
   "str.count 示例1": {
     "prefix": ["str_count=1"],
     "body": [
-      "txt = 'I love apples, apple are my favorite fruit'\n",
-      "x = txt.count('apple')\n",
+      "txt = 'I love apples, apple are my favorite fruit'",
+      "x = txt.count('apple')",
       "print(x)"
     ],
     "description": ["使用 str.count 的示例1"]
@@ -74,8 +74,8 @@
   "str.count 示例2": {
     "prefix": ["str_count=2"],
     "body": [
-      "txt = 'I love apples, apple are my favorite fruit'\n",
-      "x = txt.count('apple', 10, 24)\n",
+      "txt = 'I love apples, apple are my favorite fruit'",
+      "x = txt.count('apple', 10, 24)",
       "print(x)"
     ],
     "description": ["使用 str.count 的示例2"]
@@ -87,13 +87,13 @@
   },
   "str.encode 示例1": {
     "prefix": ["str_encode=1"],
-    "body": ["txt = 'My name is MEØW'\n", "x = txt.encode()\n", "print()"],
+    "body": ["txt = 'My name is MEØW'", "x = txt.encode()", "print()"],
     "description": ["使用 str.encode 的示例1"]
   },
   "str.encode 示例2": {
     "prefix": ["str_encode=2"],
     "body": [
-      "txt = 'My name is MEØW'\n",
+      "txt = 'My name is MEØW'",
       "print(txt.encode(encoding='ascii',errors='backslashreplace')",
       "print(txt.encode(encoding='ascii',errors='ignore')",
       "print(txt.encode(encoding='ascii',errors='namereplace')",
@@ -111,8 +111,8 @@
   "str.endswith 示例1": {
     "prefix": ["str_endswith=1"],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
-      "x = txt.endswith('.')\n",
+      "txt = 'Hello, And Welcome To My World!'",
+      "x = txt.endswith('.')",
       "print(x)"
     ],
     "description": ["使用 str.endswith 的示例1"]
@@ -120,8 +120,8 @@
   "str.endswith 示例2": {
     "prefix": ["str_endswith=2"],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
-      "x = txt.endswith('my world.', 5, 11)\n",
+      "txt = 'Hello, And Welcome To My World!'",
+      "x = txt.endswith('my world.', 5, 11)",
       "print(x)"
     ],
     "description": ["使用 str.endswith 的示例2"]
@@ -133,13 +133,13 @@
   },
   "str.expandtabs 示例1": {
     "prefix": ["str_expandtabs=1"],
-    "body": ["txt = 'H\te\tl\tl\to'\n", "x = txt.expandtabs(2)\n", "print(x)"],
+    "body": ["txt = 'H\te\tl\tl\to'", "x = txt.expandtabs(2)", "print(x)"],
     "description": ["使用 str.expandtabs 的示例1"]
   },
   "str.expandtabs 示例2": {
     "prefix": ["str_expandtabs=2"],
     "body": [
-      "txt = 'H\te\tl\tl\to'\n",
+      "txt = 'H\te\tl\tl\to'",
       "print(txt)",
       "print(txt.expandtabs())",
       "print(txt.expandtabs(2))",
@@ -156,8 +156,8 @@
   "str.find 示例1": {
     "prefix": ["str_find=1"],
     "body": [
-      "txt = 'Hello, welcome to my world.'\n",
-      "x = txt.find('welcome')\n",
+      "txt = 'Hello, welcome to my world.'",
+      "x = txt.find('welcome')",
       "print(x)"
     ],
     "description": ["使用 str.find 的示例1"]
@@ -165,8 +165,8 @@
   "str.find 示例2": {
     "prefix": ["str_find=2"],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
-      "x = txt.find('e')\n",
+      "txt = 'Hello, And Welcome To My World!'",
+      "x = txt.find('e')",
       "print(x)"
     ],
     "description": ["使用 str.find 的示例2"]
@@ -174,8 +174,8 @@
   "str.find 示例3": {
     "prefix": ["str_find=3"],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
-      "x = txt.find('e', 5, 10)\n",
+      "txt = 'Hello, And Welcome To My World!'",
+      "x = txt.find('e', 5, 10)",
       "print(x)"
     ],
     "description": ["使用 str.find 的示例3"]
@@ -183,7 +183,7 @@
   "str.find 示例4": {
     "prefix": ["str_find=4"],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
+      "txt = 'Hello, And Welcome To My World!'",
       "print(txt.find('q'))",
       "print(txt.index('q'))"
     ],
@@ -198,11 +198,11 @@
     "prefix": ["str_format="],
     "body": [
       "# default arguments",
-      "print('Hello {}, your balance is {}.'.format('Adam', 230.2346))\n",
+      "print('Hello {}, your balance is {}.'.format('Adam', 230.2346))",
       "# positional arguments",
-      "print('Hello {0}, your balance is {1}.'.format('Adam', 230.2346))\n",
+      "print('Hello {0}, your balance is {1}.'.format('Adam', 230.2346))",
       "# keyword arguments",
-      "print('Hello {name}, your balance is {blc}.'.format(name='Adam', blc=230.2346))\n",
+      "print('Hello {name}, your balance is {blc}.'.format(name='Adam', blc=230.2346))",
       "# mixed arguments",
       "print('Hello {0}, your balance is {blc}.'.format('Adam', blc=230.2346))"
     ],
@@ -217,7 +217,7 @@
     "prefix": ["str_format_map="],
     "body": [
       "point = {'x':4,'y':-5}",
-      "print('{x} {y}'.format_map(point))\n",
+      "print('{x} {y}'.format_map(point))",
       "point = {'x':4,'y':-5, 'z': 0}",
       "print('{x} {y} {z}'.format_map(point))"
     ],
@@ -231,8 +231,8 @@
   "str.index 示例1": {
     "prefix": ["str_index=1"],
     "body": [
-      "txt = 'Hello, welcome to my world.'\n",
-      "x = txt.index('welcome')\n",
+      "txt = 'Hello, welcome to my world.'",
+      "x = txt.index('welcome')",
       "print(x)"
     ],
     "description": ["使用 str.index 的示例1"]
@@ -240,8 +240,8 @@
   "str.index 示例2": {
     "prefix": ["str_index=2"],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
-      "x = txt.index('e')\n",
+      "txt = 'Hello, And Welcome To My World!'",
+      "x = txt.index('e')",
       "print(x)"
     ],
     "description": ["使用 str.index 的示例2"]
@@ -249,8 +249,8 @@
   "str.index 示例3": {
     "prefix": ["str_index=3"],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
-      "x = txt.index('e', 5, 10)\n",
+      "txt = 'Hello, And Welcome To My World!'",
+      "x = txt.index('e', 5, 10)",
       "print(x)"
     ],
     "description": ["使用 str.index 的示例3"]
@@ -258,7 +258,7 @@
   "str.index 示例4": {
     "prefix": ["str_index=4"],
     "body": [
-      "txt = 'Hello, And Welcome To My World!'\n",
+      "txt = 'Hello, And Welcome To My World!'",
       "print(txt.find('q'))",
       "print(txt.index('q'))"
     ],
@@ -976,9 +976,9 @@
     "prefix": ["str_translate="],
     "body": [
       "# translation table - a dictionary",
-      "translation = {97: None, 98: None, 99: 105}\n",
+      "translation = {97: None, 98: None, 99: 105}",
       "string = 'abcdef'",
-      "print('Original string:', string)\n",
+      "print('Original string:', string)",
       "# translate string",
       "print('Translated string:', str.translate(translation))"
     ],

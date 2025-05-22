@@ -11,9 +11,9 @@
     ],
     "description": [
       "sys.argv 一个列表, 其中包含了被传递给 Python 脚本的命令行参数",
-      "\r\nargv[0] 为脚本的名称(是否是完整的路径名取决于操作系统)",
-      "\r\n如果是通过 Python 解释器的命令行参数 -c 来执行的,  argv[0] 会被设置成字符串 '-c' ",
-      "\r\n如果没有脚本名被传递给 Python 解释器,  argv[0] 为空字符串"
+      "\nargv[0] 为脚本的名称(是否是完整的路径名取决于操作系统)",
+      "\n如果是通过 Python 解释器的命令行参数 -c 来执行的,  argv[0] 会被设置成字符串 '-c' ",
+      "\n如果没有脚本名被传递给 Python 解释器,  argv[0] 为空字符串"
     ]
   },
   "sys.path 解释器搜索依赖的路径列表": {
@@ -143,8 +143,8 @@
     "body": ["sys.platform"],
     "description": [
       "sys.platform 系统平台标识符",
-      "\r\n本字符串是一个平台标识符, 举例而言, 该标识符可用于将特定平台的组件追加到 sys.path 中",
-      "\r\n对于 Unix 系统(除 Linux 和 AIX 外), 该字符串是 Python 构建时的 uname -s 返回的小写操作系统名称, 并附加了 uname -r 返回的系统版本的第一部分, 如 'sunos5' 或 'freebsd8'"
+      "\n本字符串是一个平台标识符, 举例而言, 该标识符可用于将特定平台的组件追加到 sys.path 中",
+      "\n对于 Unix 系统(除 Linux 和 AIX 外), 该字符串是 Python 构建时的 uname -s 返回的小写操作系统名称, 并附加了 uname -r 返回的系统版本的第一部分, 如 'sunos5' 或 'freebsd8'"
     ]
   },
   "sys.exit 退出": {

@@ -8,13 +8,14 @@
     "prefix": ["re_findall"],
     "body": ["re.findall(r'${1:正则条件}', ${2:匹配对象})"],
     "description": [
-      "re.findall 查找匹配字符串\r\n在字符串中找到正则表达式所匹配的所有子串, 并返回一个列表, 如果有多个匹配模式, 则返回元组列表, 如果没有找到匹配的, 则返回空列表"
+      "re.findall 查找匹配字符串",
+      "\n在字符串中找到正则表达式所匹配的所有子串, 并返回一个列表, 如果有多个匹配模式, 则返回元组列表, 如果没有找到匹配的, 则返回空列表"
     ]
   },
   "re.finditer 查找匹配字符串->迭代器": {
     "prefix": ["re_finditer"],
     "body": ["re.finditer()"],
-    "description": ["re.finditer 查找匹配字符串\r\n返回迭代器"]
+    "description": ["re.finditer 查找匹配字符串", "\n返回迭代器"]
   },
   "re.match 起始位置匹配": {
     "prefix": ["re_match"],

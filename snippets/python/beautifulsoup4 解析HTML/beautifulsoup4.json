@@ -16,21 +16,21 @@
     "body": [".select('$0')"],
     "description": [
       "bs4.select 选择器(Selector)来定位和提取 HTML 页面中的元素",
-      "\r\n用法: ",
-      "\r\n通过标签名定位: .select('tag')",
-      "\r\n通过类名定位: .select('.class_value')",
-      "\r\n通过id定位: .select('#id_value')",
-      "\r\n通过属性定位: .select('[attribute]')",
-      "\r\n通过属性值定位: .select('[attribute=\"value\"]')",
-      "\r\n通过CSS选择器定位: .select('css选择器')",
-      "\r\n通过组合定位: .select('tag1 tag3 ...')",
-      "\r\n通过组合定位: .select('tag1_1,tag1_2,...')",
-      "\r\n通过组合定位: .select('tag1 > tag2 > tag3...')",
-      "\r\n通过组合定位: .select('tag.class_value')",
-      "\r\n通过组合定位: .select('tag[attribute]')",
-      "\r\n通过组合定位: .select('tag[attribute=\"value\"]')",
-      "\r\n通过组合定位: .select('tag[attribute=\"value\"].class_value')",
-      "\r\n通过组合定位: .select('tag[attribute=\"value\"].class_value[attribute=\"value\"]')"
+      "\n用法: ",
+      "\n通过标签名定位: .select('tag')",
+      "\n通过类名定位: .select('.class_value')",
+      "\n通过id定位: .select('#id_value')",
+      "\n通过属性定位: .select('[attribute]')",
+      "\n通过属性值定位: .select('[attribute=\"value\"]')",
+      "\n通过CSS选择器定位: .select('css选择器')",
+      "\n通过组合定位: .select('tag1 tag3 ...')",
+      "\n通过组合定位: .select('tag1_1,tag1_2,...')",
+      "\n通过组合定位: .select('tag1 > tag2 > tag3...')",
+      "\n通过组合定位: .select('tag.class_value')",
+      "\n通过组合定位: .select('tag[attribute]')",
+      "\n通过组合定位: .select('tag[attribute=\"value\"]')",
+      "\n通过组合定位: .select('tag[attribute=\"value\"].class_value')",
+      "\n通过组合定位: .select('tag[attribute=\"value\"].class_value[attribute=\"value\"]')"
     ]
   },
   "bs4.find 第一个匹配的标签": {
@@ -44,7 +44,9 @@
       ")"
     ],
     "description": [
-      "bs4.find 第一个匹配的标签.\r\n根据参数来找出对应的标签, 但只返回第一个符合条件的结果\r\n如果需要匹配class,需要使用class_"
+      "bs4.find 第一个匹配的标签",
+      "\n根据参数来找出对应的标签, 但只返回第一个符合条件的结果",
+      "\n如果需要匹配class,需要使用class_"
     ]
   },
   "bs4.find_all 全局搜索标签": {
@@ -58,14 +60,17 @@
       ")"
     ],
     "description": [
-      "bs4.find_all 全局搜索标签.\r\n根据参数来找出对应的标签, 但只返回所有符合条件的结果\r\n如果需要匹配class,需要使用class_"
+      "bs4.find_all 全局搜索标签",
+      "\n根据参数来找出对应的标签, 但只返回所有符合条件的结果",
+      "\n如果需要匹配class,需要使用class_"
     ]
   },
   "bs4.get_text 标签内容": {
     "prefix": ["bs4_get_text"],
     "body": [".get_text()"],
     "description": [
-      "bs4.get_text 返回Tag标签中的文本内容.\r\n不包括子标签中的文本内容"
+      "bs4.get_text 返回Tag标签中的文本内容",
+      "\n不包括子标签中的文本内容"
     ]
   },
   "bs4.prettify 打印格式美化": {

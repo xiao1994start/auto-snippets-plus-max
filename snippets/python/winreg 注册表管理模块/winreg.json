@@ -35,7 +35,9 @@
       ")"
     ],
     "description": [
-      "winreg.DeleteKey 删除指定的键\n该方法不能删除带有子项的键\n如果方法成功, 则整个键, 包括其所有值项都会被移除. 如果方法失败, 则引发一个 OSError 异常"
+      "winreg.DeleteKey 删除指定的键",
+      "\n该方法不能删除带有子项的键",
+      "\n如果方法成功, 则整个键, 包括其所有值项都会被移除. 如果方法失败, 则引发一个 OSError 异常"
     ]
   },
   "winreg.DeleteKeyEx 删除指定的键": {
@@ -49,7 +51,9 @@
       ")"
     ],
     "description": [
-      "winreg.DeleteKeyEx 删除指定的键\n该方法不能删除带有子项的键\n如果方法成功, 则整个键, 包括其所有值项都会被移除. 如果方法失败, 则引发一个 OSError 异常"
+      "winreg.DeleteKeyEx 删除指定的键",
+      "\n该方法不能删除带有子项的键",
+      "\n如果方法成功, 则整个键, 包括其所有值项都会被移除. 如果方法失败, 则引发一个 OSError 异常"
     ]
   },
   "winreg.DeleteValue 从某个注册键中删除一个命名值项": {
@@ -97,7 +101,11 @@
       ")"
     ],
     "description": [
-      "winreg.QueryValue 读取某键的未命名值, 形式为字符串\n注册表中的值包含名称 类型 数据\n本方法将读取注册表键值的第一个名称为 NULL 的数据\n可是底层的 API 调用不会返回类型\n所以只要有可能就一定要使用 QueryValueEx()"
+      "winreg.QueryValue 读取某键的未命名值, 形式为字符串",
+      "\n注册表中的值包含名称 类型 数据",
+      "\n本方法将读取注册表键值的第一个名称为 NULL 的数据",
+      "\n可是底层的 API 调用不会返回类型",
+      "\n所以只要有可能就一定要使用 QueryValueEx()"
     ]
   },
   "winreg.QueryValueEx 读取已打开注册表键指定值名称的类型和数据": {

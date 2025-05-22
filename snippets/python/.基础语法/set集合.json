@@ -55,7 +55,8 @@
     "prefix": ["set_difference"],
     "body": ["difference(${1:set})"],
     "description": [
-      "set.difference 返回包含两个或多个集合之间差异的集合\r\n运算符: -"
+      "set.difference 返回包含两个或多个集合之间差异的集合",
+      "\n运算符: -"
     ]
   },
   "set.difference 1": {
@@ -113,7 +114,8 @@
     "prefix": ["set_intersection"],
     "body": ["intersection(${1:set})"],
     "description": [
-      "set.intersection 返回一个集合, 即其他两个集合的交集\r\n运算符: &"
+      "set.intersection 返回一个集合, 即其他两个集合的交集",
+      "\n运算符: &"
     ]
   },
   "set.intersection 1": {
@@ -274,7 +276,8 @@
     "prefix": ["set_symmetric_difference"],
     "body": ["symmetric_difference(${1:set})"],
     "description": [
-      "set.symmetric_difference 返回两个集合中不重复的元素集合\r\n运算符: ^"
+      "set.symmetric_difference 返回两个集合中不重复的元素集合",
+      "\n运算符: ^"
     ]
   },
   "set.symmetric_difference ": {
@@ -310,7 +313,7 @@
   "set.union |并集": {
     "prefix": ["set_union"],
     "body": ["union(${1:set})"],
-    "description": ["set.union 返回两个集合的并集\r\n运算符: |"]
+    "description": ["set.union 返回两个集合的并集", "\n运算符: |"]
   },
   "set.union 1": {
     "prefix": ["set_union=1"],

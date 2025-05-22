@@ -63,7 +63,8 @@
     "prefix": ["random="],
     "body": [
       "sides = ['heads', 'tails']  # list of string options",
-      "outcomes = [0, 0]           # list of tallies heads/tails\n",
+      "outcomes = [0, 0]           # list of tallies heads/tails",
+      "",
       "for i in range(10000):",
       "\ttoss = random.choice(sides)",
       "\tif toss == \"heads\":",
