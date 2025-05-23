@@ -118,7 +118,7 @@
   },
   "flet.Stack 堆叠容器": {
     "prefix": ["ft_Stack", "flet_Stack"],
-    "body": ["ft.Stack([$0])"],
+    "body": ["ft.Stack(", "    controls=[],", ")"],
     "description": ["flet.Stack 堆叠容器", "用于将多个子容器堆叠在一起"]
   },
   "flet.NavigationRail 创建 NavigationRail 常驻导航栏": {
