@@ -3,7 +3,8 @@
     "prefix": ["ft_app", "flet_app"],
     "body": [
       "ft.app(",
-      "    target=main,",
+      "    target=${1:main},  # * 运行目标[包含 page.add 的函数或类名],",
+      "    use_color_emoji=True,  # * emoji表情是否使用颜色,",
       "    # view=ft.WEB_BROWSER,  # *运行模式: (默认:独立窗口, WEB_BROWSER:浏览器)",
       ")",
       ""

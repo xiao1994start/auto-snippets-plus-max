@@ -44,46 +44,16 @@
     ],
     "description": "设置当前批处理环境变量"
   },
-  "DesktopDir 系统桌面路径": {
-    "prefix": ["DesktopDir", "dt"],
+  "当前用户桌面路径": {
+    "prefix": ["User_Desktop_Dir", "desktop_dir"],
     "body": [
-      "@REM ECHO 获取系统桌面路径",
-      "set \"regSF=REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\" /v Desktop\"",
-      "!regSF! > NUL 2>&1",
-      "if %errorlevel%==0 (",
-      "    ECHO 获取当前桌面路径",
-      "    for /F \"tokens=1,2 delims=:\" %%i in ('\"!regSF!\"') do (",
-      "        set \"root=%%i\"",
-      "        set \"dir=%%j\"",
-      "    )",
-      "    set \"dt=!root:~-1!:!dir!\"",
-      ") else (",
-      "    ECHO 无法获取桌面路径, 请使用管理员权限运行脚本",
+      "for /F \"tokens=2*\" %%a in ('reg query \"HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Folders\" /v Desktop') do (",
+      "    set \"desktop_dir=%%b\"",
       ")",
-      "ECHO !dt!",
+      "ECHO 当前用户桌面路径:%desktop_dir%",
+      "",
       "$0"
     ],
-    "description": ["DesktopDir 系统桌面路径"]
-  },
-  "UserDesktopDir 当前用户桌面路径": {
-    "prefix": ["UserDesktopDir", "udt"],
-    "body": [
-      "@REM ECHO 获取当前用户桌面路径",
-      "set \"regUSF=REG query \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" /v Desktop\"",
-      "!regUSF! > NUL 2>&1",
-      "if %errorlevel%==0 (",
-      "    ECHO 获取当前桌面路径",
-      "    for /F \"tokens=1,2 delims=:\" %%i in ('\"!regUSF!\"') do (",
-      "        set \"root=%%i\"",
-      "        set \"dir=%%j\"",
-      "    )",
-      "    set \"udt=!root:~-1!:!dir!\"",
-      ") else (",
-      "    ECHO 无法获取桌面路径, 请使用管理员权限运行脚本",
-      ")",
-      "ECHO !udt!",
-      "$0"
-    ],
-    "description": ["UserDesktopDir 当前用户桌面路径"]
+    "description": ["当前用户桌面路径"]
   }
 }
