@@ -32,8 +32,11 @@
     ],
     "description": ["flet.class.def.ControlEvent Flet自定义对象控件事件.tmpl"]
   },
-  "flet.class.MainApp from NavigationRail 创建Flet界面.tmpl": {
-    "prefix": ["ft_class_NavigationRail=", "flet_class_NavigationRail="],
+  "flet.class.MainApp SideBar from NavigationRail 创建Flet界面.tmpl": {
+    "prefix": [
+      "ft_class_SideBar_NavigationRail=",
+      "flet_class_SideBar_NavigationRail="
+    ],
     "body": [
       "from pathlib import Path",
       "from typing import Callable",
@@ -483,8 +486,8 @@
     ],
     "description": ["flet.class.MainApp from NavigationRail 创建Flet界面.tmpl"]
   },
-  "flet.class.MainApp SideBar 创建Flet侧边栏导航界面.tmpl": {
-    "prefix": ["ft_class_SideBar=", "flet_class_SideBar="],
+  "flet.class.MainApp SideBar from Button 创建Flet侧边栏导航界面.tmpl": {
+    "prefix": ["ft_class_SideBar_Button=", "flet_class_SideBar_Button="],
     "body": [
       "from pathlib import Path",
       "from typing import Callable",
@@ -731,7 +734,7 @@
       "",
       "        # * --- 设置默认选中项(模拟点击事件) ---",
       "        class MockEvent:",
-      "            def __init__(self, control):",
+      "            def __init__(self, control: ft.ElevatedButton):",
       "                self.control = control",
       "                self.data = control.data  # 确保 data 属性也存在",
       "",

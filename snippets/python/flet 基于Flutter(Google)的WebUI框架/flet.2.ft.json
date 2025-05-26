@@ -194,10 +194,10 @@
       "文本字段允许用户使用硬件键盘或屏幕键盘输入文本"
     ]
   },
-  "flet.Button 按钮": {
+  "flet.Button 按钮(同:ElevatedButton)": {
     "prefix": ["ft_Button", "flet_Button"],
     "body": ["ft.Button($0)"],
-    "description": ["flet.Button 按钮"]
+    "description": ["flet.Button 按钮(同:ElevatedButton)"]
   },
   "flet.ElevatedButton 凸起按钮": {
     "prefix": ["ft_ElevatedButton", "flet_ElevatedButton"],
