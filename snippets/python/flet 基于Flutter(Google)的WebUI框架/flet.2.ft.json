@@ -183,7 +183,7 @@
   },
   "flet.Text 文本显示控件": {
     "prefix": ["ft_Text", "flet_Text"],
-    "body": ["ft.Text(value='${1:Hello, world!}')"],
+    "body": ["ft.Text(value=${1:'Hello, world!'})"],
     "description": ["flet.Text 文本显示控件"]
   },
   "flet.TextField 文本输入控件": {
@@ -270,5 +270,10 @@
     "prefix": ["ft_VerticalDivider", "flet_VerticalDivider"],
     "body": ["ft.VerticalDivider(width=${1:1})"],
     "description": ["flet.VerticalDivider 垂直分割线"]
+  },
+  "flet.ButtonStyle 按钮样式": {
+    "prefix": ["ft_ButtonStyle", "flet_ButtonStyle"],
+    "body": ["ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=8))"],
+    "description": ["flet.ButtonStyle 按钮样式"]
   }
 }

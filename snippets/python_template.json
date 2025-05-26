@@ -2,11 +2,11 @@
   "引入 type 库描述": {
     "prefix": ["import_type"],
     "body": ["import type"],
-    "description": ["引入 type 库描述"]
+    "description": ["库描述"]
   },
   "type.object 描述": {
     "prefix": ["type_object", "object_type"],
     "body": ["type.object"],
-    "description": ["type.object 描述"]
+    "description": ["描述"]
   }
 }

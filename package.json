@@ -177,10 +177,6 @@
       },
       {
         "language": "json",
-        "path": "./snippets/json/json_snippets_for_js.json"
-      },
-      {
-        "language": "json",
         "path": "./snippets/json/json_snippets_for_python.json"
       },
       {
