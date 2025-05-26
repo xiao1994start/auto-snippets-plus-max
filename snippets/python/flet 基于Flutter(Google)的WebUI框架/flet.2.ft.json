@@ -273,7 +273,7 @@
   },
   "flet.ButtonStyle 按钮样式": {
     "prefix": ["ft_ButtonStyle", "flet_ButtonStyle"],
-    "body": ["ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=8))"],
+    "body": ["ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=4))"],
     "description": ["flet.ButtonStyle 按钮样式"]
   }
 }
