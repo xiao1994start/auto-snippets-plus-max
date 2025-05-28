@@ -271,9 +271,26 @@
     "body": ["ft.VerticalDivider(width=${1:1})"],
     "description": ["flet.VerticalDivider 垂直分割线"]
   },
-  "flet.ButtonStyle 按钮样式": {
+  "flet.FontWeight 字体粗细属性": {
+    "prefix": ["ft_FontWeight", "flet_FontWeight"],
+    "body": ["ft.FontWeight.${1:NORMAL}"],
+    "description": ["flet.FontWeight 字体粗细属性"]
+  },
+  "flet.ButtonStyle 按钮[style]样式属性": {
     "prefix": ["ft_ButtonStyle", "flet_ButtonStyle"],
     "body": ["ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=4))"],
-    "description": ["flet.ButtonStyle 按钮样式"]
+    "description": ["flet.ButtonStyle 按钮[style]样式属性"]
+  },
+  "flet.BorderSide 边框[style.side属性]样式": {
+    "prefix": ["ft_BorderSide", "flet_BorderSide"],
+    "body": [
+      "ft.BorderSide(${1:width=2, color=ft.Colors.LIGHT_GREEN_ACCENT_700})"
+    ],
+    "description": ["flet.BorderSide 边框[side属性]样式"]
+  },
+  "flet.TextStyle 文字[style.text_style]样式属性": {
+    "prefix": ["ft_TextStyle", "flet_TextStyle"],
+    "body": ["ft.TextStyle($0)"],
+    "description": ["flet.TextStyle 文字[style.text_style]样式属性"]
   }
 }
