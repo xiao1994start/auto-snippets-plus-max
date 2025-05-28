@@ -3,7 +3,7 @@
     "prefix": ["language -json.snippets"],
     "body": [
       "{",
-      "  \"language\": \"${1|python,bat,vue,scss,typescript,markdown,html,vue-html,javascript,json,snippets|}\",",
+      "  \"language\": \"${1|python,bat,vue,scss,typescript,html,vue-html,javascript,json,snippets|}\",",
       "  \"path\": \"./$0\"",
       "},"
     ],
@@ -50,16 +50,6 @@
       "},"
     ],
     "description": ["示例"]
-  },
-  "snippets.Tab": {
-    "prefix": [".t -Tab"],
-    "body": ["\\t"],
-    "description": ["Tab"]
-  },
-  "snippets.换行": {
-    "prefix": [".rn -Return_Newline"],
-    "body": ["\\r\\n"],
-    "description": ["换行"]
   },
   "snippets.插入": {
     "prefix": [".insert -snippets"],

@@ -1,7 +1,7 @@
 {
   "name": "auto-snippets-plus-max",
   "displayName": "Auto Snippets Plus Max",
-  "description": "整理代码片段包括 BAT, Python, JSON, SCSS, TypeScript, JavaScript, Vue, Vue HTML, HTML... 整理代码片段",
+  "description": "整理代码片段包括 BAT, Python, JSON, SCSS, TypeScript, Vue, Vue HTML, HTML... 整理代码片段",
   "version": "0.0.9",
   "publisher": "AvA",
   "icon": "./icon.png",
@@ -156,60 +156,12 @@
         "path": "./snippets/bat/vscode/vscodePlugin插件创建.json"
       },
       {
-        "language": "javascript",
-        "path": "./snippets/javascript/.基础语法/.basic.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/javascript/.基础语法/console控制台.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/javascript/.基础语法/document文档节点.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/javascript/.基础语法/HTML_DOM对象方法.json"
-      },
-      {
         "language": "json",
         "path": "./snippets/json/json_snippets_for_all.json"
       },
       {
         "language": "json",
         "path": "./snippets/json/json_snippets_for_python.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/markdown.tmpl.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/markdown标题语法.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/markdown分隔线语法.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/markdown链接语法.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/markdown强调语法.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/README/FastAPI/FastAPI.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/README/VSCode/VSCode.json"
-      },
-      {
-        "language": "markdown",
-        "path": "./snippets/markdown/README/vue/vue.json"
       },
       {
         "language": "python",
