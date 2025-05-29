@@ -34,8 +34,8 @@
   },
   "flet.class.MainApp SideBar from NavigationRail 创建Flet界面.tmpl": {
     "prefix": [
-      "ft_class_SideBar_NavigationRail=",
-      "flet_class_SideBar_NavigationRail="
+      "ft_class_for_SideBar_NavigationRail=",
+      "flet_class_for_SideBar_NavigationRail="
     ],
     "body": [
       "from pathlib import Path",
@@ -491,7 +491,10 @@
     "description": ["flet.class.MainApp from NavigationRail 创建Flet界面.tmpl"]
   },
   "flet.class.MainApp SideBar from Button 创建Flet侧边栏导航界面.tmpl": {
-    "prefix": ["ft_class_SideBar_Button=", "flet_class_SideBar_Button="],
+    "prefix": [
+      "ft_class_for_SideBar_Button=",
+      "flet_class_for_SideBar_Button="
+    ],
     "body": [
       "from pathlib import Path",
       "",
@@ -869,7 +872,7 @@
       "            alignment=ft.alignment.center,  # 弹窗对齐方式",
       "            actions=[],  # 弹窗底部容器",
       "            actions_alignment=ft.MainAxisAlignment.END,  # 弹窗底部容器水平布局",
-      "            on_dismiss=lambda e: print(f'弹窗关闭:{e}'),  # 关闭对话框时触发事件",
+      "            on_dismiss=lambda e: print(f'弹窗关闭事件:{e}'),  # 关闭对话框时触发事件",
       "        )",
       "        self.page.open(dlg)",
       "        # * 模拟处理耗时...",
