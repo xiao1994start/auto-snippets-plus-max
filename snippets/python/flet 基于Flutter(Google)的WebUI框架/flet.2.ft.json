@@ -292,5 +292,31 @@
     "prefix": ["ft_TextStyle", "flet_TextStyle"],
     "body": ["ft.TextStyle($0)"],
     "description": ["flet.TextStyle 文字[style.text_style]样式属性"]
+  },
+  "flet.ProgressRing 环形循环旋转进度指示器": {
+    "prefix": ["ft_ProgressRing", "flet_ProgressRing"],
+    "body": ["ft.ProgressRing()"],
+    "description": ["flet.ProgressRing 环形循环旋转进度指示器"]
+  },
+  "flet.AlertDialog 警报(弹窗)对话框": {
+    "prefix": ["ft_AlertDialog=", "flet_AlertDialog="],
+    "body": [
+      "ft.AlertDialog(",
+      "    modal=True,  # 是否可以通过单击外部区域关闭弹窗[默认:False 可通过单击外部的区域关闭对话框](modal 属性无法改变)",
+      "    title=ft.Text(value='☣️', size=64),  # 弹窗标题",
+      "    content=ft.Row(  # * 弹窗内容",
+      "        controls=[",
+      "            ft.ProgressRing(),  # 环形循环旋转进度指示器",
+      "            ft.Text(value='正在处理……', size=32),",
+      "        ],",
+      "    ),",
+      "    alignment=ft.alignment.center,  # 弹窗对齐方式",
+      "    actions=[],  # 弹窗底部容器",
+      "    actions_alignment=ft.MainAxisAlignment.END,  # 弹窗底部容器水平布局",
+      "    on_dismiss=lambda e: print(f'弹窗关闭:{e}'),  # 关闭对话框时触发事件",
+      ")",
+      ""
+    ],
+    "description": ["flet.AlertDialog 警报(弹窗)对话框"]
   }
 }

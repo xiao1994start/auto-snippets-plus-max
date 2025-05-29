@@ -51,7 +51,7 @@
       "else:",
       "    print(\"try 正常执行后执行...\")",
       "    pass",
-      "finally:",
+      "finally:  # 仅支持: raise 语句",
       "    print(\"无论是否异常,强制执行...\")",
       "    pass"
     ],

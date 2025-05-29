@@ -79,5 +79,15 @@
       ""
     ],
     "description": ["flet.Page.vertical_alignment 页面子控件对齐方式"]
+  },
+  "flet.Page.open(control) 打开控件": {
+    "prefix": ["ft_Page_open", "flet_Page_open"],
+    "body": ["page.open(${1:control})"],
+    "description": ["flet.Page.open(control) 打开控件"]
+  },
+  "flet.Page.close(control) 关闭控件": {
+    "prefix": ["ft_Page_close", "flet_Page_close"],
+    "body": ["page.close(${1:control})"],
+    "description": ["flet.Page.close(control) 关闭控件"]
   }
 }
