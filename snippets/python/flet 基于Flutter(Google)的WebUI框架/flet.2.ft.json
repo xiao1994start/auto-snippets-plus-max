@@ -302,7 +302,7 @@
     "description": ["flet.ProgressRing 环形循环旋转进度指示器"]
   },
   "flet.AlertDialog 警报(弹窗)对话框": {
-    "prefix": ["ft_AlertDialog=", "flet_AlertDialog="],
+    "prefix": ["ft_AlertDialog", "flet_AlertDialog"],
     "body": [
       "ft.AlertDialog(",
       "    modal=True,  # 是否可以通过单击外部区域关闭弹窗[默认:False 可通过单击外部的区域关闭对话框](modal 属性无法改变)",
