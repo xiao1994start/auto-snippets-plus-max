@@ -268,16 +268,28 @@
         "path": "./snippets/python/.基础语法/type数据类型.json"
       },
       {
+        "language": "python",
+        "path": "./snippets/python/多线程相关/asyncio 协程与异步IO/asyncio.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/多线程相关/multiprocessing 多进程/multiprocessing.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/多线程相关/threading 多线程基础/threading.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/多线程相关/ThreadPoolExecutor 线程池和进程池/ThreadPoolExecutor.json"
+      },
+      {
         "language": "bat",
         "path": "./snippets/python/其他pip依赖/python.pip.json"
       },
       {
         "language": "python",
         "path": "./snippets/python/argparse 命令行参数模块/argparse.json"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/asyncio 异步IO协程实现高效并发 - IO密集/asyncio.json"
       },
       {
         "language": "bat",
@@ -394,10 +406,6 @@
       {
         "language": "python",
         "path": "./snippets/python/msvcrt 终端交互库Windows/msvcrt控制台IO.json"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/multiprocessing 多线程库 - CPU 密集型任务/multiprocessing.json"
       },
       {
         "language": "bat",
@@ -562,14 +570,6 @@
       {
         "language": "python",
         "path": "./snippets/python/sys 系统相关的形参和函数/sys.json"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/threading 线程库 - IO 密集型任务/threading.json"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/ThreadPoolExecutor 线程池和进程池/ThreadPoolExecutor.json"
       },
       {
         "language": "bat",
