@@ -19,7 +19,7 @@
   "asyncio 协程异步IO函数": {
     "prefix": ["asyncio_ascio"],
     "body": ["asyncio.$0"],
-    "description": ["asyncio.run 运行异步程序"]
+    "description": ["asyncio 协程异步IO函数"]
   },
   "asyncio.run 运行异步程序": {
     "prefix": ["asyncio_run"],
