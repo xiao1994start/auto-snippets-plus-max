@@ -896,6 +896,8 @@
       "    )",
       ""
     ],
-    "description": ["描述"]
+    "description": [
+      "flet.class.MainApp SideBar from Button 创建Flet侧边栏导航界面.tmpl"
+    ]
   }
 }
