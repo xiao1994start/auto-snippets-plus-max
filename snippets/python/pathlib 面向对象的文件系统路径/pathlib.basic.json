@@ -364,5 +364,10 @@
       "    如果路径是绝对路径, 则不会与 pathsegments 组合",
       "    或者, Path('c:').joinpath('/Program Files') 等于 'c:/Program Files'"
     ]
+  },
+  "Path.as_posix 路径分隔符 Unix 样式[\"/\"]": {
+    "prefix": ["Path_as_posix", "as_posix_Path"],
+    "body": ["as_posix()"],
+    "description": ["Path.as_posix 路径分隔符 Unix 样式[\"/\"]"]
   }
 }
