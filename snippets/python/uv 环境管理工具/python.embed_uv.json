@@ -135,7 +135,6 @@
       "ECHO.>\"%~dp0docs\\.文档.txt\"",
       "if not exist \"%~dp0src\" ( md \"%~dp0src\" )",
       "ECHO.>\"%~dp0src\\.核心代码.txt\"",
-      "ECHO import sys>\"%~dp0src\\__init__.py\" && ECHO from pathlib import Path>>\"%~dp0src\\__init__.py\" && ECHO [sys.path.append(str(i)) for i in [Path(__file__).parent.resolve(), Path(__file__).parent.parent.resolve()] if str(i) not in sys.path and i]>>\"%~dp0src\\__init__.py\"",
       "if not exist \"%~dp0src\\assets\" ( md \"%~dp0src\\assets\" )",
       "ECHO.>\"%~dp0src\\assets\\.静态资源文件.txt\"",
       "if not exist \"%~dp0data\" ( md \"%~dp0data\" )",

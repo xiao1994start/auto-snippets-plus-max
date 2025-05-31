@@ -38,7 +38,11 @@
   "sys.path.append_list 添加当前文件所在目录到python环境依赖路径": {
     "prefix": ["sys_path_append_list"],
     "body": [
-      "[sys.path.append(str(i)) for i in [Path(__file__).parent.resolve()] if str(i) not in sys.path]",
+      "[",
+      "    sys.path.append(str(i))",
+      "    for i in [Path(__file__).parent.resolve(), Path(__file__).parent.parent.resolve()]",
+      "    if i and i not in [Path(s) for s in sys.path]",
+      "]",
       ""
     ],
     "description": [
@@ -46,18 +50,15 @@
     ]
   },
   "sys.path.__init__.py添加当前文件所在目录到python环境依赖路径 init模版": {
-    "prefix": ["sys_path_init="],
+    "prefix": ["sys_path_append_init="],
     "body": [
       "import sys",
       "from pathlib import Path",
       "",
       "[",
       "    sys.path.append(str(i))",
-      "    for i in [",
-      "        Path(__file__).parent.resolve(),",
-      "        # Path(__file__).parent.parent.resolve(),",
-      "    ]",
-      "    if str(i) not in sys.path and i",
+      "    for i in [Path(__file__).parent.resolve(), Path(__file__).parent.parent.resolve()]",
+      "    if i and i not in [Path(s) for s in sys.path]",
       "]",
       ""
     ],
