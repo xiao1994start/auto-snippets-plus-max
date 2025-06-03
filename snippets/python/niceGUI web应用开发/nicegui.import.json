@@ -1,6 +1,6 @@
 {
   "引入 nicegui web应用开发框架": {
-    "prefix": ["import_nicegui_ui"],
+    "prefix": ["import_nicegui_ui", "ipt_nicegui_ui"],
     "body": [
       "from pathlib import Path",
       "",

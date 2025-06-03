@@ -1,6 +1,6 @@
 {
   "引入 PySide6 图形界面库": {
-    "prefix": ["import_PySide6"],
+    "prefix": ["import_PySide6", "ipt_PySide6"],
     "body": [
       "import sys",
       "from pathlib import Path",
@@ -44,7 +44,7 @@
     "description": ["引入 PySide6 图形界面库"]
   },
   "引入 PySide6 图形界面库.tmpl": {
-    "prefix": ["import_PySide6="],
+    "prefix": ["import_PySide6=", "ipt_PySide6="],
     "body": [
       "import sys",
       "from pathlib import Path",

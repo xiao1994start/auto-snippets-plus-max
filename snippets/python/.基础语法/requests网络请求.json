@@ -1,6 +1,6 @@
 {
   "引入 requests 网络请求模块": {
-    "prefix": ["import_requests"],
+    "prefix": ["import_requests", "ipt_requests"],
     "body": ["import requests"],
     "description": ["引入requests网络请求模块"]
   },
