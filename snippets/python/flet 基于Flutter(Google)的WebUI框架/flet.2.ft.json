@@ -256,7 +256,9 @@
   },
   "flet.Colors 颜色": {
     "prefix": ["ft_Colors", "flet_Colors"],
-    "body": ["ft.Colors.${1:BLUE}"],
+    "body": [
+      "ft.Colors.${1|BLUE_ACCENT_400,LIGHT_GREEN_ACCENT_400,GREEN_ACCENT_400,LIGHT_GREEN_ACCENT_400|}"
+    ],
     "description": ["flet.Colors 颜色"]
   },
   "flet.Colors.with_opacity 自定义颜色": {
