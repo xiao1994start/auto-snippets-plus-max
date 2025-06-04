@@ -324,7 +324,7 @@
     ],
     "description": ["flet.AlertDialog 警报(弹窗)对话框"]
   },
-  "flet.AlertDialog for class def 描述": {
+  "flet.AlertDialog for class def 创建AlertDialog耗时事件处理.tmpl": {
     "prefix": [
       "ft_class_def_for_AlertDialog=",
       "flet_class_def_for_AlertDialog="
@@ -363,6 +363,29 @@
       "    e_control.update()  # 更新按钮",
       ""
     ],
-    "description": ["描述"]
+    "description": [
+      "flet.AlertDialog for class def 创建AlertDialog耗时事件处理.tmpl"
+    ]
+  },
+  "flet.Dropdown 下拉列表": {
+    "prefix": ["ft_Dropdown", "flet_Dropdown"],
+    "body": [
+      "ft.Dropdown(",
+      "    label='标题',  # * 标题",
+      "    options=[  # * 下拉框选项",
+      "        ft.DropdownOption(key='key_name', text='不设置text会直接显示key'),",
+      "    ],",
+      "    value='key_name',  # * 默认选中项",
+      "    editable=False,  # * 禁用输入",
+      "    enable_filter=False,  # * 禁用筛选(关联editable输入开关)",
+      "    enable_search=False,  # * 禁用搜索(关联editable输入开关)",
+      "    border_color=ft.Colors.BLUE_ACCENT_400,  # * 默认状态下边框颜色",
+      "    focused_border_color=ft.Colors.LIGHT_BLUE_ACCENT_400,  # * 焦点(输入)状态下边框颜色",
+      "    width=320,",
+      "    on_change=lambda e: print(e),  # * e: ft.ControlEvent",
+      ")",
+      ""
+    ],
+    "description": ["flet.Dropdown 下拉列表"]
   }
 }
