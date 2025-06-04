@@ -1,0 +1,7 @@
+{
+  "引入 OpenAI Python API 库": {
+    "prefix": ["import_openai", "ipt_openai_OpenAI"],
+    "body": ["from openai import OpenAI  # OpenAI Python API 库"],
+    "description": ["引入 OpenAI Python API 库"]
+  }
+}

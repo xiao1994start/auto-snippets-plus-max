@@ -376,14 +376,6 @@
         "path": "./snippets/python/json 数据处理/json.json"
       },
       {
-        "language": "bat",
-        "path": "./snippets/python/lmstudio-python Python SDK/lmstudio.bat.json"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/lmstudio-python Python SDK/lmstudio.json"
-      },
-      {
         "language": "python",
         "path": "./snippets/python/logging 日志管理/logging.json"
       },
@@ -430,6 +422,14 @@
       {
         "language": "python",
         "path": "./snippets/python/NumPy/numpy.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/python/OpenAI/OpenAI.bat.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/OpenAI/OpenAI.json"
       },
       {
         "language": "bat",

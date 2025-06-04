@@ -163,7 +163,7 @@
       "@REM if exist \"%~dp0.venv\" ( rd /S /Q \"%~dp0.venv\" && del /F /Q \"%~dp0.python-version\" && del /F /Q \"%~dp0pyproject.toml\" && del /F /Q \"%~dp0uv.lock\" )",
       "if not exist \"%~dp0.venv\" (",
       "    ECHO 初始化 uv 项目... [默认当前文件夹]",
-      "    uv init",
+      "    uv init .",
       "    ECHO 创建 uv 虚拟环境...",
       "    uv venv",
       ")",
