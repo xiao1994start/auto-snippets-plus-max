@@ -1,6 +1,6 @@
 {
   "引入 tkinter 内置TkGUI界面框架": {
-    "prefix": ["import_tkinter", "ipt_tkinter_as_tk"],
+    "prefix": ["import_tkinter", "im_tkinter_as_tk"],
     "body": ["import tkinter as tk", "from tkinter import Tk, filedialog"],
     "description": ["引入 tkinter 内置TkGUI界面框架"]
   },

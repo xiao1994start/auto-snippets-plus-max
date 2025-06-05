@@ -1,6 +1,6 @@
 {
   "引入 win32.win32api API系统通信模块": {
-    "prefix": ["import_win32_win32api", "ipt_win32_win32api"],
+    "prefix": ["import_win32_win32api", "im_win32_win32api"],
     "body": ["from win32 import win32api"],
     "description": ["引入 win32.win32api API系统通信模块"]
   }

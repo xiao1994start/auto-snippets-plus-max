@@ -1,11 +1,11 @@
 {
   "引入 logging 内置日志库": {
-    "prefix": ["import_logging", "ipt_logging"],
+    "prefix": ["import_logging", "im_logging"],
     "body": ["import logging", "import logging.handlers"],
     "description": ["引入 logging 内置日志库"]
   },
   "引入 logging 内置日志库.tmpl": {
-    "prefix": ["import_logging=", "ipt_logging="],
+    "prefix": ["import_logging=", "im_logging="],
     "body": [
       "import logging",
       "import logging.handlers",

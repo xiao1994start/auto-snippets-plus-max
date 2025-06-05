@@ -1,6 +1,6 @@
 {
   "引入 webview 创建Webview窗口": {
-    "prefix": ["import_webview", "ipt_webview"],
+    "prefix": ["import_webview", "im_webview"],
     "body": ["import webview  # 引入 pywebview 创建Webview窗口"],
     "description": ["引入 pywebview 创建Webview窗口"]
   },

@@ -1,6 +1,6 @@
 {
   "引入 flet WebUI框架": {
-    "prefix": ["import_flet", "ipt_flet_as_ft"],
+    "prefix": ["import_flet", "im_flet_as_ft"],
     "body": [
       "import flet as ft  # * 引入 flet WebUI框架",
       "from flet import *  # * 引入 flet 框架所有子控件",
@@ -9,7 +9,7 @@
     "description": ["引入 flet WebUI框架"]
   },
   "引入 flet WebUI框架 及 控件组件": {
-    "prefix": ["import_flet_class_def=", "ipt_flet_class_def="],
+    "prefix": ["import_flet_class_def=", "im_flet_class_def="],
     "body": [
       "from pathlib import Path",
       "from typing import Callable",

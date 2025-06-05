@@ -1,6 +1,6 @@
 {
   "引入 reflex 全栈WebApp框架": {
-    "prefix": ["import_reflex", "ipt_reflex"],
+    "prefix": ["import_reflex", "im_reflex"],
     "body": ["import reflex as rx"],
     "description": ["引入 reflex 全栈WebApp框架"]
   }

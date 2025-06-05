@@ -68,16 +68,6 @@
     ],
     "description": ["flet.Container 容器对象.模版"]
   },
-  "flet.Row 以水平阵列显示其子项的控件": {
-    "prefix": ["ft_Row", "flet_Row"],
-    "body": ["ft.Row(  # * [水平]布局", "    controls=[$0],", ")"],
-    "description": ["flet.Row 以水平阵列显示其子项的控件"]
-  },
-  "flet.Column 以垂直阵列显示其子项的控件": {
-    "prefix": ["ft_Column", "flet_Column"],
-    "body": ["ft.Column(  # * [垂直]布局", "    controls=[$0],", ")"],
-    "description": ["flet.Column 以垂直阵列显示其子项的控件"]
-  },
   "flet.Alignment 对齐方式": {
     "prefix": ["ft_Alignment", "flet_Alignment"],
     "body": ["ft.Alignment(0, 0)"],
@@ -85,6 +75,41 @@
       "flet.Alignment 对齐方式",
       "[ft.Alignment: 居中:(0,0); 左上:(-1, -1); 右下:(1, 1)]"
     ]
+  },
+  "flet.Row 水平布局显示其子项的控件": {
+    "prefix": ["ft_Row", "flet_Row"],
+    "body": ["ft.Row(", "    controls=[$0],", ")"],
+    "description": ["flet.Row 水平布局显示其子项的控件"]
+  },
+  "flet.Row_alignment Row布局[水平]对齐方式": {
+    "prefix": ["ft_Row_aligment", "flet_Row_aligment"],
+    "body": [
+      "alignment=ft.MainAxisAlignment.${1|START,CENTER,END,SPACE_BETWEEN,SPACE_AROUND,SPACE_EVENLY|}"
+    ],
+    "description": [
+      "flet.Row_alignment Row布局[水平]对齐方式",
+      "对齐方式:",
+      "START[默认]: 顶部, CENTER: 居中, END: 底部, SPACE_BETWEEN: 首尾两端对齐, SPACE_AROUND: 相等间隔不重叠对齐, SPACE_EVENLY: 相等间隔重叠对齐"
+    ]
+  },
+  "flet.Row_vertical_alignment Row布局[垂直]对齐方式": {
+    "prefix": ["ft_Row_vertical_alignment", "flet_Row_vertical_alignment"],
+    "body": ["vertical_alignment=ft.CrossAxisAlignment.${1|START,CENTER,END|}"],
+    "description": [
+      "flet.Row_vertical_alignment Row布局[垂直]对齐方式",
+      "对齐方式:",
+      "START[默认]: 顶部, CENTER: 居中, END: 底部"
+    ]
+  },
+  "flet.Row_wrap 换行": {
+    "prefix": ["flet_Row_wrap", "Row_wrap_flet"],
+    "body": ["wrap=True,  # * 换行"],
+    "description": ["flet.Row_wrap 换行"]
+  },
+  "flet.Column 垂直布局显示其子项的控件": {
+    "prefix": ["ft_Column", "flet_Column"],
+    "body": ["ft.Column(", "    controls=[$0],", ")"],
+    "description": ["flet.Column 垂直布局显示其子项的控件"]
   },
   "flet.alignment 对齐方式": {
     "prefix": ["ft_alignment", "flet_alignment"],
@@ -113,7 +138,7 @@
     "description": [
       "flet.MainAxisAlignment Y轴(vertical_alignment|垂直)对齐",
       "对齐方式:",
-      "START[默认]: 顶部, CENTER: 居中, END: 底部, SPACE_BETWEEN: 上下两端对齐, SPACE_AROUND: 上下两端对齐, SPACE_EVENLY: 上下两端对齐"
+      "START[默认]: 顶部, CENTER: 居中, END: 底部, SPACE_BETWEEN: 首尾两端对齐, SPACE_AROUND: 相等间隔对齐, SPACE_EVENLY: 等间隔对齐"
     ]
   },
   "flet.CrossAxisAlignment X轴(horizontal_alignment|水平)对齐": {

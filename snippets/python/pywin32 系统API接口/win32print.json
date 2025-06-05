@@ -1,6 +1,6 @@
 {
   "引入 win32.win32print 打印机API模块": {
-    "prefix": ["import_win32_win32print", "ipt_win32_win32print"],
+    "prefix": ["import_win32_win32print", "im_win32_win32print"],
     "body": ["from win32 import win32print"],
     "description": ["引入 win32.win32print 打印机API模块"]
   },

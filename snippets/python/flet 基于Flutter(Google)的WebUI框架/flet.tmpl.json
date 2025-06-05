@@ -709,7 +709,7 @@
       "        self.sider.setting_btn.on_click = lambda e: self.change_view(e)",
       "",
       "        # * 声明 self.current_selected 变量: 用于追踪当前已经被选中的按钮, 同时设置初始值",
-      "        self.current_selected: ft.ElevatedButton = self.sider.buttons[2]",
+      "        self.current_selected: ft.ElevatedButton = self.sider.buttons[0]",
       "",
       "        # * 配置内容视图字典",
       "        self.views = {",

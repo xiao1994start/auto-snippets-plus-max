@@ -1,6 +1,6 @@
 {
   "引入 multiprocessing 多进程依赖": {
-    "prefix": ["import_multiprocessing", "ipt_multiprocessing_as_mp"],
+    "prefix": ["import_multiprocessing", "im_multiprocessing_as_mp"],
     "body": [
       "# import multiprocessing as mp  # * 多进程依赖",
       "from multiprocessing import Pool, Process, Queue  # 进程池, 进程, 队列"

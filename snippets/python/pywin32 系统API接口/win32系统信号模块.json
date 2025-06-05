@@ -1,6 +1,6 @@
 {
   "引入 win32 windows系统API操作模块": {
-    "prefix": ["import_win32", "ipt_win32"],
+    "prefix": ["import_win32", "im_win32"],
     "body": ["import win32"],
     "description": ["引入 win32 windows系统API操作模块"]
   }
