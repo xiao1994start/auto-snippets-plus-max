@@ -1,6 +1,6 @@
 {
   "Django自定义port端口地址": {
-    "prefix": ["Django.defaultPort"],
+    "prefix": ["Django_defaultPort"],
     "body": [
       "from django.core.management.commands.runserver import Command",
       "if __name__ == '__main__':",

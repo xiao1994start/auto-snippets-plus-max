@@ -422,5 +422,12 @@
       ""
     ],
     "description": ["flet.Dropdown 下拉列表"]
+  },
+  "flet.DropdownOption 下拉框选项": {
+    "prefix": ["ft_object", "flet_object"],
+    "body": [
+      "ft.DropdownOption(key='key_name', text='不设置text会直接显示key'),"
+    ],
+    "description": ["flet.DropdownOption 下拉框选项"]
   }
 }
