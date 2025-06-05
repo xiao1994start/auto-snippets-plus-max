@@ -429,5 +429,23 @@
       "ft.DropdownOption(key='key_name', text='不设置text会直接显示key'),"
     ],
     "description": ["flet.DropdownOption 下拉框选项"]
+  },
+  "flet.DropdownM2 下拉列表M2样式": {
+    "prefix": ["ft_DropdownM2", "flet_DropdownM2"],
+    "body": [
+      "ft.DropdownM2(",
+      "    label='服务器',  # * 标题",
+      "    options=[  # * 下拉框选项",
+      "        ft.dropdownm2.Option(key='key_name', text='不设置text会直接显示key'),",
+      "    ],",
+      "    value='key_name',  # * 默认选中项",
+      "    border_color=ft.Colors.BLUE_ACCENT_400,  # * 默认状态下边框颜色",
+      "    focused_border_color=ft.Colors.LIGHT_BLUE_ACCENT_400,  # * 焦点(输入)状态下边框颜色",
+      "    width=320,",
+      "    on_change=lambda e: self.get_api(e),  # * e: ft.ControlEvent",
+      ")",
+      ""
+    ],
+    "description": ["flet.DropdownM2 下拉列表M2样式"]
   }
 }
