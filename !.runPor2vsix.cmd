@@ -34,6 +34,7 @@ for %%i in (*.vsix) do (
     echo %%i
     call code --install-extension %%i
     @REM move /Y "%%i" "..\%%i"
+    del /F /Q "..\%%i"
     copy /V /Y "%%i" "..\%%i"
 )
 ECHO 插件封装脚本执行完毕
