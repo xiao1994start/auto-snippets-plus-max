@@ -15,6 +15,8 @@
       "        super().__init__(expand=True)  # * 继承父类ft.Container容器对象属性[expand=True:拉伸/width:指定宽度/height:指定高度]",
       "        self.page: ft.Page = page  # * 定义页面对象(self.page: ft.Page 使用类型约束规避 None)",
       "",
+      "        # * 在 __init__ 中实例化创建需要被调用的控件, 以便后续引用",
+      "",
       ""
     ],
     "description": ["flet.class(Container) 创建 flet 类 Container 容器对象"]
