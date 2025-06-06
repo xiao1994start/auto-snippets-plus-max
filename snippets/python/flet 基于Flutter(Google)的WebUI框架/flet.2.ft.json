@@ -31,12 +31,7 @@
   },
   "flet.Container 容器对象": {
     "prefix": ["ft_Container", "flet_Container"],
-    "body": [
-      "ft.Container(  # * 容器对象",
-      "    content=$0,",
-      "    expand=True,",
-      ")"
-    ],
+    "body": ["ft.Container(", "    content=$0,", "    expand=True,", ")"],
     "description": [
       "flet.Container 容器对象",
       "容器允许使用背景颜色和边框来装饰控件, 并使用填充/边距和对齐来定位它"
