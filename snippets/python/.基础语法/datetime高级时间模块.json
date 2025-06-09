@@ -19,10 +19,15 @@
     "body": ["now()"],
     "description": ["datetime.now 返回当前时间"]
   },
-  "datetime.strftime 格式化当前时间": {
+  "datetime.strftime 格式化时间": {
     "prefix": ["datetime_strftime"],
     "body": ["strftime(${1:'%Y年%m月%d日 %H时%M分%S秒'})"],
     "description": ["datetime.strftime 返回当前时间的字符串格式"]
+  },
+  "datetime.now.strftime 格式化当前时间": {
+    "prefix": ["datetime_now_strftime"],
+    "body": ["datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')"],
+    "description": ["datetime.now.strftime 格式化当前时间"]
   },
   "date.today 格式化当前时间": {
     "prefix": ["datetime_today"],

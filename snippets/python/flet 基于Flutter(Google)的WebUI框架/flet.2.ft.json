@@ -218,8 +218,16 @@
   },
   "flet.Text 文本显示控件": {
     "prefix": ["ft_Text", "flet_Text"],
-    "body": ["ft.Text(value=${1:'Hello, world!'})"],
+    "body": ["ft.Text(value=$0)"],
     "description": ["flet.Text 文本显示控件"]
+  },
+  "flet.TextSpan ft.Text文本控件[spans]子控件": {
+    "prefix": ["ft_TextSpan", "flet_TextSpan"],
+    "body": ["ft.TextSpan(text=$0)"],
+    "description": [
+      "flet.TextSpan ft.Text文本控件[spans]子控件",
+      "\n\t富文本显示控件,适用于精细化控制文本显示样式"
+    ]
   },
   "flet.TextField 文本输入控件": {
     "prefix": ["ft_TextField", "flet_TextField"],
