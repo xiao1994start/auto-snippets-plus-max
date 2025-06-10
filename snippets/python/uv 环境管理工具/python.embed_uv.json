@@ -154,7 +154,7 @@
       "if not exist \"%~dp0base_data.py\" (",
       "    ECHO 创建 base_data.py 文件",
       "    ECHO from pathlib import Path> \"%~dp0base_data.py\"",
-      "    ECHO BASE_DIR = Path(__file__).parent.resolve()>> \"%~dp0base_data.py\"",
+      "    ECHO BASE_DIR = Path(__file__^).parent.resolve(^)>> \"%~dp0base_data.py\"",
       ")",
       "",
       "ECHO 环境 pip 执行",
