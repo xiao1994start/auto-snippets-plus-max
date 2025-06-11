@@ -3,19 +3,5 @@
     "prefix": ["pt_print", "prt_print", "pcl_print", "clp_print"],
     "body": "print($0)",
     "description": ["print语句的代码片段."]
-  },
-  "print(class_def_INFO)": {
-    "prefix": ["ptI_print", "print_INFO"],
-    "body": [
-      "print(f'\\033[1;32m{__file__}\\033[0;34m[{__class__.__name__}]\\033[0m >> ${1:INFO}')"
-    ],
-    "description": ["print(class_def_INFO)"]
-  },
-  "print(class_def_ERROR)": {
-    "prefix": ["ptE_print", "print_ERROR"],
-    "body": [
-      "print(f'\\033[1;31m{__file__}\\033[0;34m[{__class__.__name__}]\\033[0m >> ${1:ERROR}')"
-    ],
-    "description": ["print(class_def_ERROR)"]
   }
 }

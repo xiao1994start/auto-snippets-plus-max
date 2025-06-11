@@ -533,6 +533,14 @@
       },
       {
         "language": "bat",
+        "path": "./snippets/python/rich 终端文本样式库/rich.bat.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/rich 终端文本样式库/rich.json"
+      },
+      {
+        "language": "bat",
         "path": "./snippets/python/selenium 自动化web测试/selenium.bat.json"
       },
       {

@@ -41,7 +41,7 @@
     ],
     "description": "引入 logging 内置日志库.tmpl"
   },
-  "logging.basicConfig 日志配置": {
+  "logging.basicConfig 日志模块基础配置": {
     "prefix": ["logging_basicConfig"],
     "body": [
       "logging.basicConfig(",
@@ -50,6 +50,31 @@
       ")",
       ""
     ],
-    "description": ["描述"]
+    "description": ["logging.basicConfig 日志模块基础配置"]
+  },
+  "logging.debug(...)": {
+    "prefix": ["logging_debug", "debug_logging"],
+    "body": ["logging.debug($0)"],
+    "description": ["logging.debug(...)"]
+  },
+  "logging.info(...)": {
+    "prefix": ["logging_info", "info_logging"],
+    "body": ["logging.info($0)"],
+    "description": ["logging.info(...)"]
+  },
+  "logging.warning(...)": {
+    "prefix": ["logging_warning", "warning_logging"],
+    "body": ["logging.warning($0)"],
+    "description": ["logging.warning(...)"]
+  },
+  "logging.error(...)": {
+    "prefix": ["logging_error", "error_logging"],
+    "body": ["logging.error($0)"],
+    "description": ["logging.error(...)"]
+  },
+  "logging.critical(...)": {
+    "prefix": ["logging_critical", "critical_logging"],
+    "body": ["logging.critical($0)"],
+    "description": ["logging.critical(...)"]
   }
 }

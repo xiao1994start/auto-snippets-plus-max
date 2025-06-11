@@ -179,6 +179,8 @@
       "",
       "ECHO 安装 setuptools 打包分发工具... @REM ! 建议安装",
       "uv add \"setuptools\"  --upgrade --index https://mirrors.aliyun.com/pypi/simple/",
+      "ECHO 安装 rich 终端文本样式库... @REM ! 建议安装",
+      "uv add \"rich\"  --upgrade --index https://mirrors.aliyun.com/pypi/simple/",
       "@REM 安装依赖库...使用虚拟环境开发时, 直接使用 requirements.txt 安装依赖库",
       "@REM ECHO 安装虚拟环境 requirements.txt...",
       "@REM uv pip install -r \"%~dp0requirements.txt\" -i https://mirrors.aliyun.com/pypi/simple/",
