@@ -506,7 +506,7 @@
       "from rich.logging import RichHandler  # * 引入 rich 模块 logging 日志记录处理程序",
       "",
       "logging.basicConfig(",
-      "    # level=logging.CRITICAL,  # * 日志级别[NOTSET: 最低级别, DEBUG: 调试, INFO: 正常运行, WARNING: 警告,ERROR: 错误, CRITICAL: 严重错误]",
+      "    # level=logging.CRITICAL,  # * 日志级别[NOTSET: 最低级别, DEBUG: 调试, INFO: 正常运行, WARNING: 警告, ERROR: 错误, CRITICAL: 严重错误]",
       "    format='%(message)s',",
       "    datefmt='[%X]',",
       "    handlers=[RichHandler(rich_tracebacks=True)],",
