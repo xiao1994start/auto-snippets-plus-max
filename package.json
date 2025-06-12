@@ -345,31 +345,31 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.Buttons.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.按钮_Buttons.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.Dialogs.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.布局_Layout.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.Information Displays.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.导航_Navigation.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.Input and Selections.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.对话框_Dialogs.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.Layout.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.输入选择_Input and Selections.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.Navigation.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Controls.信息显示_Information Displays.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.ft.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.ft.基础参数.json"
       },
       {
         "language": "python",
@@ -377,7 +377,11 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.page.json"
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.page.页面设置.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/flet 基于Flutter(Google)的WebUI框架/flet.Reference.引用参考.json"
       },
       {
         "language": "python",

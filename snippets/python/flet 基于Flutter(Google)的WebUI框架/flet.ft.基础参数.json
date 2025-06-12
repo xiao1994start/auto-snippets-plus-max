@@ -57,9 +57,14 @@
       "top_right = Alignment(1, -1)"
     ]
   },
+  "flet.Margin 外边距": {
+    "prefix": ["ft_Margin", "flet_Margin"],
+    "body": ["margin=ft.Margin(left=0, top=0, right=0, bottom=0)"],
+    "description": ["flet.margin.only 仅设置一个方向的外边距"]
+  },
   "flet.margin.only 仅设置一个方向的外边距": {
     "prefix": ["ft_margin_only", "flet_margin_only"],
-    "body": ["ft.margin.only(${1:top=15})"],
+    "body": ["margin=ft.margin.only(${1:top=10})"],
     "description": ["flet.margin.only 仅设置一个方向的外边距"]
   },
   "flet.MainAxisAlignment Y轴(vertical_alignment|垂直)对齐": {

@@ -78,6 +78,24 @@
     "body": ["ft.Stack(", "    controls=[],", ")"],
     "description": ["flet.Stack 堆叠容器", "用于将多个子容器堆叠在一起"]
   },
+  "flet.Tabs 顶部标签导航栏": {
+    "prefix": ["ft_Tabs", "flet_Tabs"],
+    "body": [
+      "ft.Tabs(",
+      "    selected_index=0,",
+      "    tabs=[",
+      "        ft.Tab(",
+      "            text='Console',  # * 标签标题",
+      "            content=self.console,  # * 内容",
+      "        )",
+      "    ],",
+      "    expand=True,",
+      "    divider_color=ft.Colors.BLUE_ACCENT_400,  # * 分割线颜色",
+      "    indicator_color=ft.Colors.LIGHT_BLUE_ACCENT_400,  # * 标签指示器颜色",
+      ")"
+    ],
+    "description": ["flet.Tabs 顶部标签导航栏"]
+  },
   "flet.VerticalDivider 垂直分割线": {
     "prefix": ["ft_VerticalDivider", "flet_VerticalDivider"],
     "body": ["ft.VerticalDivider(width=${1:1})"],
