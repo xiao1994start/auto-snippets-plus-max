@@ -1,0 +1,22 @@
+{
+  "flet.Colors 颜色": {
+    "prefix": ["ft_Colors", "flet_Colors"],
+    "body": [
+      "ft.Colors.${1|BLUE_ACCENT_400,LIGHT_BLUE_ACCENT_400,GREEN_ACCENT_400,LIGHT_GREEN_ACCENT_400|}"
+    ],
+    "description": ["flet.Colors 颜色"]
+  },
+  "flet.Colors.with_opacity 自定义颜色": {
+    "prefix": ["ft_Colors_with_opacity", "flet_Colors_with_opacity"],
+    "body": ["ft.Colors.with_opacity(opacity=0, color='#000000')"],
+    "description": ["flet.Colors.with_opacity 自定义颜色"]
+  },
+  "flet.Icons 使用Flet自带图标": {
+    "prefix": ["ft_Icons", "flet_Icons"],
+    "body": ["ft.Icons.${1:HOUSE}"],
+    "description": [
+      "flet.Icons 使用Flet自带图标",
+      "https://gallery.flet.dev/icons-browser/"
+    ]
+  }
+}

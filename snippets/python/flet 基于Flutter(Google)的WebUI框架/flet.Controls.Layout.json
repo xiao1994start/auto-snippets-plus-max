@@ -1,0 +1,86 @@
+{
+  "flet.Column 垂直布局显示其子项的控件": {
+    "prefix": ["ft_Column", "flet_Column"],
+    "body": ["ft.Column(", "    controls=[$0],", ")"],
+    "description": ["flet.Column 垂直布局显示其子项的控件"]
+  },
+  "flet.Container 容器对象": {
+    "prefix": ["ft_Container", "flet_Container"],
+    "body": ["ft.Container(", "    content=$0,", "    expand=True,", ")"],
+    "description": [
+      "flet.Container 容器对象",
+      "容器允许使用背景颜色和边框来装饰控件, 并使用填充/边距和对齐来定位它"
+    ]
+  },
+  "flet.Container 容器对象.模版": {
+    "prefix": ["ft_Container=", "flet_Container="],
+    "body": [
+      "ft.Container(  # * 容器",
+      "    margin=0,  # * 外边距",
+      "    padding=10,  # * 内边距",
+      "    border_radius=0,  # * 边框圆角",
+      "    width=100,  # * 宽度",
+      "    bgcolor=ft.Colors.with_opacity(opacity=0.1, color='#000000'),  # * 背景颜色[调试]",
+      "    alignment=ft.alignment.center,  # * 对齐方式",
+      "    content=ft.Column(  # * [垂直]布局",
+      "        alignment=ft.MainAxisAlignment.SPACE_BETWEEN,  # * [垂直]对齐方式",
+      "        horizontal_alignment=ft.CrossAxisAlignment.CENTER,  # * [水平]对齐方式",
+      "        controls=[  # * [列]控件",
+      "            ft.Column(  # * [垂直]布局",
+      "                horizontal_alignment=ft.CrossAxisAlignment.CENTER,  # * [水平]对齐方式",
+      "                controls=[",
+      "                ],",
+      "            ),",
+      "        ],",
+      "    ),",
+      ")",
+      ""
+    ],
+    "description": ["flet.Container 容器对象.模版"]
+  },
+  "flet.Divider 水平分割线": {
+    "prefix": ["ft_Divider", "flet_Divider"],
+    "body": ["ft.Divider(height=${1:1})"],
+    "description": ["flet.Divider 水平分割线"]
+  },
+  "flet.Row 水平布局显示其子项的控件": {
+    "prefix": ["ft_Row", "flet_Row"],
+    "body": ["ft.Row(", "    controls=[$0],", ")"],
+    "description": ["flet.Row 水平布局显示其子项的控件"]
+  },
+  "flet.Row_alignment Row布局[水平]对齐方式": {
+    "prefix": ["ft_Row_aligment", "flet_Row_aligment"],
+    "body": [
+      "alignment=ft.MainAxisAlignment.${1|START,CENTER,END,SPACE_BETWEEN,SPACE_AROUND,SPACE_EVENLY|}"
+    ],
+    "description": [
+      "flet.Row_alignment Row布局[水平]对齐方式",
+      "对齐方式:",
+      "START[默认]: 顶部, CENTER: 居中, END: 底部, SPACE_BETWEEN: 首尾两端对齐, SPACE_AROUND: 相等间隔不重叠对齐, SPACE_EVENLY: 相等间隔重叠对齐"
+    ]
+  },
+  "flet.Row_vertical_alignment Row布局[垂直]对齐方式": {
+    "prefix": ["ft_Row_vertical_alignment", "flet_Row_vertical_alignment"],
+    "body": ["vertical_alignment=ft.CrossAxisAlignment.${1|START,CENTER,END|}"],
+    "description": [
+      "flet.Row_vertical_alignment Row布局[垂直]对齐方式",
+      "对齐方式:",
+      "START[默认]: 顶部, CENTER: 居中, END: 底部"
+    ]
+  },
+  "flet.Row_wrap 换行": {
+    "prefix": ["flet_Row_wrap", "Row_wrap_flet"],
+    "body": ["wrap=True,  # * 换行"],
+    "description": ["flet.Row_wrap 换行"]
+  },
+  "flet.Stack 堆叠容器": {
+    "prefix": ["ft_Stack", "flet_Stack"],
+    "body": ["ft.Stack(", "    controls=[],", ")"],
+    "description": ["flet.Stack 堆叠容器", "用于将多个子容器堆叠在一起"]
+  },
+  "flet.VerticalDivider 垂直分割线": {
+    "prefix": ["ft_VerticalDivider", "flet_VerticalDivider"],
+    "body": ["ft.VerticalDivider(width=${1:1})"],
+    "description": ["flet.VerticalDivider 垂直分割线"]
+  }
+}

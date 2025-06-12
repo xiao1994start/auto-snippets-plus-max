@@ -1,0 +1,123 @@
+{
+  "flet.app 运行 Flet 应用": {
+    "prefix": ["ft_app", "flet_app"],
+    "body": [
+      "ft.app(",
+      "    target=${1:main},  # * 运行目标[包含 page.add 的函数或类名],",
+      "    use_color_emoji=True,  # * emoji表情是否使用颜色,",
+      "    # view=ft.WEB_BROWSER,  # *运行模式: (默认:独立窗口, WEB_BROWSER:浏览器)",
+      ")",
+      ""
+    ],
+    "description": ["flet.app 运行 Flet 应用"]
+  },
+  "flet.ControlEvent Flet控件对象事件": {
+    "prefix": [":ft_ControlEvent", ":flet_ControlEvent"],
+    "body": [": ft.ControlEvent"],
+    "description": ["flet.ControlEvent Flet控件对象事件"]
+  },
+  "flet.Control 父级控件对象": {
+    "prefix": ["ft_Control", "flet_Control"],
+    "body": ["ft.Control"],
+    "description": ["flet.Control 父级控件对象"]
+  },
+  "flet.Alignment 对齐方式": {
+    "prefix": ["ft_Alignment", "flet_Alignment"],
+    "body": ["ft.Alignment(0, 0)"],
+    "description": [
+      "flet.Alignment 对齐方式",
+      "[ft.Alignment: 居中:(0,0); 左上:(-1, -1); 右下:(1, 1)]"
+    ]
+  },
+  "flet.ScrollMode 滚动模式": {
+    "prefix": ["flet_ScrollMode", "ft_ScrollMode"],
+    "body": ["scroll=ft.ScrollMode.${1|AUTO,ALWAYS,HIDDEN,ADAPTIVE,None|},"],
+    "description": [
+      "flet.ScrollMode 滚动模式",
+      "\n\tAUTO:启用滚动, 并且仅在发生滚动时显示滚动条",
+      "\n\tALWAYS:启用滚动, 并且始终显示滚动条",
+      "\n\tHIDDEN:启用滚动, 但滚动条始终处于隐藏状态",
+      "\n\tADAPTIVE:启用滚动, 并且当将应用程序作为 Web 或桌面运行时, 始终显示滚动条",
+      "\n\tNone:该列是不可滚动的, 其内容可能会溢出"
+    ]
+  },
+  "flet.alignment 对齐方式": {
+    "prefix": ["ft_alignment", "flet_alignment"],
+    "body": ["ft.alignment.${1:center}"],
+    "description": [
+      "flet.alignment 对齐方式",
+      "bottom_center = Alignment(0, 1)",
+      "bottom_left = Alignment(-1, 1)",
+      "bottom_right = Alignment(1, 1)",
+      "center = Alignment(0, 0)",
+      "center_left = Alignment(-1, 0)",
+      "center_right = Alignment(1, 0)",
+      "top_center = Alignment(0, -1)",
+      "top_left = Alignment(-1, -1)",
+      "top_right = Alignment(1, -1)"
+    ]
+  },
+  "flet.margin.only 仅设置一个方向的外边距": {
+    "prefix": ["ft_margin_only", "flet_margin_only"],
+    "body": ["ft.margin.only(${1:top=15})"],
+    "description": ["flet.margin.only 仅设置一个方向的外边距"]
+  },
+  "flet.MainAxisAlignment Y轴(vertical_alignment|垂直)对齐": {
+    "prefix": ["ft_MainAxisAlignment", "flet_MainAxisAlignment"],
+    "body": ["ft.MainAxisAlignment.${1:CENTER}"],
+    "description": [
+      "flet.MainAxisAlignment Y轴(vertical_alignment|垂直)对齐",
+      "对齐方式:",
+      "START[默认]: 顶部, CENTER: 居中, END: 底部, SPACE_BETWEEN: 首尾两端对齐, SPACE_AROUND: 相等间隔对齐, SPACE_EVENLY: 等间隔对齐"
+    ]
+  },
+  "flet.CrossAxisAlignment X轴(horizontal_alignment|水平)对齐": {
+    "prefix": ["ft_CrossAxisAlignment", "flet_CrossAxisAlignment"],
+    "body": ["ft.CrossAxisAlignment.${1:CENTER}"],
+    "description": [
+      "flet.CrossAxisAlignment X轴(horizontal_alignment|水平)对齐",
+      "对齐方式:",
+      "START[默认]: 左侧, CENTER: 居中, END: 右侧, STRETCH: 拉伸, BASELINE: 基线对齐"
+    ]
+  },
+
+  "flet.Offset 控件的相对偏移": {
+    "prefix": ["ft_Offset", "flet_Offset"],
+    "body": ["ft.Offset(0, 0)"],
+    "description": ["flet.Offset 控件的相对偏移"]
+  },
+  "flet.e.control Flet事件属性": {
+    "prefix": ["ft_e_control=", "flet_e_control="],
+    "body": ["e.control.${1|selected,data|}"],
+    "description": ["flet.e.control Flet事件属性"]
+  },
+  "flet.ThemeMode 主题模式": {
+    "prefix": ["ft_ThemeMode", "flet_ThemeMode"],
+    "body": ["ft.ThemeMode.${1:DARK}"],
+    "description": ["flet.ThemeMode 主题模式"]
+  },
+  "flet.ThemeMode.SYSTEM 更随系统主题模式": {
+    "prefix": ["ft_ThemeMode_SYSTEM", "flet_ThemeMode_SYSTEM"],
+    "body": [
+      "ft.ThemeMode.SYSTEM  # SYSTEM[默认]: 系统默认, LIGHT: 浅色, DARK: 深色"
+    ],
+    "description": ["flet.ThemeMode.SYSTEM 更随系统主题模式"]
+  },
+  "flet.FontWeight 字体粗细属性": {
+    "prefix": ["ft_FontWeight", "flet_FontWeight"],
+    "body": ["ft.FontWeight.${1:NORMAL}"],
+    "description": ["flet.FontWeight 字体粗细属性"]
+  },
+  "flet.BorderSide 边框[style.side属性]样式": {
+    "prefix": ["ft_BorderSide", "flet_BorderSide"],
+    "body": [
+      "ft.BorderSide(${1:width=2, color=ft.Colors.LIGHT_GREEN_ACCENT_700})"
+    ],
+    "description": ["flet.BorderSide 边框[side属性]样式"]
+  },
+  "flet.TextStyle 文字[style.text_style]样式属性": {
+    "prefix": ["ft_TextStyle", "flet_TextStyle"],
+    "body": ["ft.TextStyle($0)"],
+    "description": ["flet.TextStyle 文字[style.text_style]样式属性"]
+  }
+}
