@@ -82,5 +82,10 @@
     "prefix": ["ft_margin_only", "flet_margin_only"],
     "body": ["margin=ft.margin.only(${1:top=10})"],
     "description": ["flet.margin.only 仅设置一个方向的外边距"]
+  },
+  "flet.ScrollMode 控件滚动模式": {
+    "prefix": ["ft_ScrollMode", "flet_ScrollMode"],
+    "body": ["scroll=ft.ScrollMode.AUTO"],
+    "description": ["flet.ScrollMode 控件滚动模式"]
   }
 }

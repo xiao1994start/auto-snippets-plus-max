@@ -63,7 +63,15 @@
   },
   "flet.Switch 开关": {
     "prefix": ["ft_Switch", "flet_Switch"],
-    "body": [],
+    "body": [
+      "ft.Switch(",
+      "    label='标签',",
+      "    label_position=ft.LabelPosition.RIGHT,  # * 标签位置",
+      "    value=False,",
+      "    on_change=lambda e: print(e),",
+      ")",
+      ""
+    ],
     "description": ["flet.Switch 开关"]
   },
   "flet.TextField 文本输入控件": {
