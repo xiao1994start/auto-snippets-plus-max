@@ -21,5 +21,10 @@
       ""
     ],
     "description": ["引入 typing 对类型提示的支持_常用模块"]
+  },
+  "引入 typing.Literal 枚举类型": {
+    "prefix": ["import_typing_Literal", "im_typing_Literal"],
+    "body": ["from typing import Literal  # * 枚举类型", ""],
+    "description": ["引入 typing.Literal 枚举类型"]
   }
 }
