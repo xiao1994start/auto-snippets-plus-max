@@ -45,6 +45,22 @@
     ],
     "description": ["flet.DropdownM2 下拉列表M2样式"]
   },
+  "flet.Slider 滑块": {
+    "prefix": ["ft_Slider", "flet_Slider"],
+    "body": [
+      "ft.Slider(",
+      "    value=0.7,  # * 默认值",
+      "    label='{value}',  # * 显示标签[ 格式为 {value} ]",
+      "    min=0.0,",
+      "    max=1.0,",
+      "    divisions=100,  # * 刻度: divisions = (max-min)/刻度",
+      "    round=2,  # * 保留小数位数",
+      "    on_change_end=lambda e: print(e, e.control.value),  # * 值改变结束(on_change 实时刷新)",
+      ")",
+      ""
+    ],
+    "description": ["flet.Slider 滑块"]
+  },
   "flet.TextField 文本输入控件": {
     "prefix": ["ft_TextField", "flet_TextField"],
     "body": [

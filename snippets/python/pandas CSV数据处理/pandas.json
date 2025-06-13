@@ -32,7 +32,7 @@
   },
   "pandas.drop 删除指定列": {
     "prefix": ["pd_drop", "pandas_drop"],
-    "body": [".drop(labels=[labelsList], axis=1, inplace=True)"],
+    "body": ["drop(labels=[labelsList], axis=1, inplace=True)"],
     "description": [
       "pandas.values 删除指定列",
       "** labels: 列索引列表",
@@ -54,22 +54,22 @@
   },
   "pandas.values 值": {
     "prefix": ["pd_values", "pandas_values"],
-    "body": [".values"],
+    "body": ["values"],
     "description": ["pandas.values 值"]
   },
   "pandas.isnull NaN空值->True": {
     "prefix": ["pd_isnull", "pandas_isnull"],
-    "body": [".isnull()"],
+    "body": ["isnull()"],
     "description": ["pandas.isnull NaN空值->True"]
   },
   "pandas.notnull NaN空值->False": {
     "prefix": ["pd_notnull", "pandas_notnull"],
-    "body": [".notnull()"],
+    "body": ["notnull()"],
     "description": ["pandas.notnull NaN空值->False"]
   },
   "pandas.loc 索引取值": {
     "prefix": ["pd_loc", "pandas_loc"],
-    "body": [".loc[$0]"],
+    "body": ["loc[$0]"],
     "description": [
       "pandas.loc 索引取值",
       "Series: .loc[index]",
