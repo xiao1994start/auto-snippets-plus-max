@@ -53,13 +53,18 @@
       "    label='{value}',  # * 显示标签[ 格式为 {value} ]",
       "    min=0.0,",
       "    max=1.0,",
-      "    divisions=100,  # * 刻度: divisions = (max-min)/刻度",
+      "    divisions=100,  # * 刻度: divisions = (max-min)/预期刻度值",
       "    round=2,  # * 保留小数位数",
       "    on_change_end=lambda e: print(e, e.control.value),  # * 值改变结束(on_change 实时刷新)",
       ")",
       ""
     ],
     "description": ["flet.Slider 滑块"]
+  },
+  "flet.Switch 开关": {
+    "prefix": ["ft_Switch", "flet_Switch"],
+    "body": [],
+    "description": ["flet.Switch 开关"]
   },
   "flet.TextField 文本输入控件": {
     "prefix": ["ft_TextField", "flet_TextField"],

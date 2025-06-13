@@ -12,7 +12,18 @@
       "容器允许使用背景颜色和边框来装饰控件, 并使用填充/边距和对齐来定位它"
     ]
   },
-  "flet.Container 容器对象.模版": {
+  "flet.Container 容器对象 带边框": {
+    "prefix": ["ft_Container_border", "flet_Container_border"],
+    "body": [
+      "ft.Container(",
+      "    border=ft.border.all(1, ft.Colors.BLUE_ACCENT_400),  # * 边框样式",
+      "    border_radius=ft.border_radius.all(3),  # * 圆角",
+      ")",
+      ""
+    ],
+    "description": ["flet.Container 容器对象 带边框"]
+  },
+  "flet.Container 容器对象 模版": {
     "prefix": ["ft_Container=", "flet_Container="],
     "body": [
       "ft.Container(  # * 容器",
@@ -36,7 +47,7 @@
       ")",
       ""
     ],
-    "description": ["flet.Container 容器对象.模版"]
+    "description": ["flet.Container 容器对象 模版"]
   },
   "flet.Divider 水平分割线": {
     "prefix": ["ft_Divider", "flet_Divider"],
@@ -63,44 +74,28 @@
     ],
     "description": ["flet.ExpansionPanelList 扩展面板列表"]
   },
-  "flet.ExpansionPanelList 扩展面板列表 (带边框)": {
-    "prefix": [
-      "ft_ExpansionPanelList_border",
-      "flet_ExpansionPanelList_border"
-    ],
-    "body": [
-      "ft.Container(",
-      "    content=ft.ExpansionPanelList(",
-      "        controls=[",
-      "            ft.ExpansionPanel(",
-      "                # * 标题栏",
-      "                header=ft.ListTile(",
-      "                    title=ft.Text(value='标题'),  # * 标题",
-      "                    # subtitle=ft.Text(value='子标题'),  # * 子标题(不需要就注释, 否则会显示空行)",
-      "                ),",
-      "                # * 内容栏",
-      "                content=ft.Row(controls=[]),",
-      "            ),",
-      "        ]",
-      "    ),",
-      "    border=ft.border.all(1, ft.Colors.BLUE_ACCENT_400),  # * 边框样式",
-      "    border_radius=ft.border_radius.all(3),  # * 圆角",
-      "    margin=Margin(left=-5, top=5, right=5, bottom=-5),  # * 外边距",
-      ")",
-      ""
-    ],
-    "description": ["flet.ExpansionPanelList 扩展面板列表 (带边框)"]
-  },
   "flet.ListTile 列表项": {
     "prefix": ["ft_ListTile", "flet_ListTile"],
     "body": [
       "ft.ListTile(",
       "    title=ft.Text(value='标题'),  # * 标题",
-      "    # subtitle=ft.Text(value='子标题'),  # * 子标题(不需要就注释, 否则会显示空行)",
+      "    # subtitle=ft.Text(value='子标题'),  # * 子标题, 不需要就注释, 否则会显示空行",
       ")",
       ""
     ],
     "description": ["flet.ListTile 列表项"]
+  },
+  "flet.ListView 可滚动列表": {
+    "prefix": ["ft_ListTile", "flet_ListTile"],
+    "body": [
+      "ft.ListView(",
+      "    controls=[],",
+      "    expand=True,  # * 填充剩余空间",
+      "    auto_scroll=True,  # * 自动滚动",
+      ")",
+      ""
+    ],
+    "description": ["flet.ListView 可滚动列表"]
   },
   "flet.Row 水平布局显示其子项的控件": {
     "prefix": ["ft_Row", "flet_Row"],
