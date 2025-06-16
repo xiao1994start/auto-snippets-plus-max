@@ -83,9 +83,16 @@
     "body": ["margin=ft.margin.only(${1:top=10})"],
     "description": ["flet.margin.only 仅设置一个方向的外边距"]
   },
-  "flet.ScrollMode 控件滚动模式": {
-    "prefix": ["ft_ScrollMode", "flet_ScrollMode"],
-    "body": ["scroll=ft.ScrollMode.AUTO"],
-    "description": ["flet.ScrollMode 控件滚动模式"]
+  "flet.ScrollMode 滚动模式": {
+    "prefix": ["flet_ScrollMode", "ft_ScrollMode"],
+    "body": ["scroll=ft.ScrollMode.${1|AUTO,ALWAYS,HIDDEN,ADAPTIVE,None|},"],
+    "description": [
+      "flet.ScrollMode 滚动模式",
+      "\n\tAUTO:启用滚动, 并且仅在发生滚动时显示滚动条",
+      "\n\tALWAYS:启用滚动, 并且始终显示滚动条",
+      "\n\tHIDDEN:启用滚动, 但滚动条始终处于隐藏状态",
+      "\n\tADAPTIVE:启用滚动, 并且当将应用程序作为 Web 或桌面运行时, 始终显示滚动条",
+      "\n\tNone:该列是不可滚动的, 其内容可能会溢出"
+    ]
   }
 }
