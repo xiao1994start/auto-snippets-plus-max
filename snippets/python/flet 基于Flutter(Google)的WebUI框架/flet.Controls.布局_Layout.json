@@ -90,7 +90,7 @@
     "description": ["flet.ListTile 列表项"]
   },
   "flet.ListView 可滚动列表": {
-    "prefix": ["ft_ListTile", "flet_ListTile"],
+    "prefix": ["ft_ListView", "flet_ListView"],
     "body": [
       "ft.ListView(",
       "    controls=[],",

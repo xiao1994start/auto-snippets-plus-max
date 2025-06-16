@@ -40,7 +40,7 @@
       "ECHO       \"autoReload\": { \"enable\": true },>> \"%~dp0.vscode\\launch.json\"",
       "ECHO       \"cwd\": \"\\${workspaceFolder}\",>> \"%~dp0.vscode\\launch.json\"",
       "ECHO       \"env\": {>> \"%~dp0.vscode\\launch.json\"",
-      "ECHO         \"PATH\": \"\\${workspaceFolder}/python;\\${workspaceFolder}/python/Scripts;\\${env:PATH}\">> \"%~dp0.vscode\\launch.json\"",
+      "ECHO         \"PATH\": \"\\${workspaceFolder}/python;\\${workspaceFolder}/python/Scripts;\\${env:PATH}\",>> \"%~dp0.vscode\\launch.json\"",
       "ECHO         \"PYTHONPATH\": \"\\${workspaceFolder}\">> \"%~dp0.vscode\\launch.json\"",
       "ECHO       },>> \"%~dp0.vscode\\launch.json\"",
       "ECHO       \"envFile\": \"\\${workspaceFolder}/.venv\">> \"%~dp0.vscode\\launch.json\"",
