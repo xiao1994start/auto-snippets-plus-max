@@ -69,7 +69,7 @@
       "                # subtitle=ft.Text(value='子标题'),  # * 子标题(不需要就注释, 否则会显示空行)",
       "            ),",
       "            # * 内容栏",
-      "            content=ft.Row(controls=[]),",
+      "            content=ft.Column(controls=[]),",
       "        ),",
       "    ]",
       ")",
