@@ -65,6 +65,13 @@
     "body": ["ft.Colors.with_opacity(opacity=0, color='#000000')"],
     "description": ["flet.Colors.with_opacity 自定义颜色"]
   },
+  "flet.KeyboardType 文本编辑类型": {
+    "prefix": ["ft_KeyboardType", "flet_KeyboardType"],
+    "body": [
+      "keyboard_type=ft.KeyboardType.${1|MULTILINE,TEXT,NUMBER,PHONE,DATETIME,EMAIL,URL,VISIBLE_PASSWORD,NAME,STREET_ADDRESS,NONE|}"
+    ],
+    "description": ["flet.KeyboardType 文本编辑类型"]
+  },
   "flet.Icons 使用Flet自带图标": {
     "prefix": ["ft_Icons", "flet_Icons"],
     "body": ["ft.Icons.${1:HOUSE}"],

@@ -83,8 +83,7 @@
       "    # border_color=ft.Colors.BLUE_ACCENT_400,  # * 默认状态下边框颜色",
       "    # focused_border_color=ft.Colors.LIGHT_BLUE_ACCENT_400,  # * 焦点(输入)状态下边框颜色",
       "    # * 执行函数[on_blur:失去焦点时触发; on_change:发生更改时触发; on_focus:获得焦点时触发; on_submit:ENTER(回车)键时触发]",
-      "    # max_lines=10,  # * 最大行数, 默认值1:文本不会换行而是水平滚动",
-      "    multiline=True,  # * 如果 TextField 可以包含多行文本, 则为 True",
+      "    multiline=True,  # * 如果 TextField 可以包含多行文本, 则为 True. 使用 multiline 时, max_lines 设置无效",
       "    keyboard_type=ft.KeyboardType.MULTILINE,  # * 富文本(带格式支持)编辑器",
       ")",
       ""

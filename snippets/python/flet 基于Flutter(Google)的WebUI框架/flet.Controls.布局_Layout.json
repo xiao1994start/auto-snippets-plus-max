@@ -19,13 +19,14 @@
       "    # content=$0,",
       "    border=ft.border.all(1, ft.Colors.BLUE_ACCENT_400),  # * 边框样式",
       "    border_radius=ft.border_radius.all(3),  # * 圆角",
+      "    margin=Margin(left=5, top=5, right=5, bottom=5),  # * 外边距",
       ")",
       ""
     ],
     "description": ["flet.Container 容器对象 带边框"]
   },
-  "flet.Container 容器对象 模版": {
-    "prefix": ["ft_Container=", "flet_Container="],
+  "flet.Container 容器对象 Column 列容器": {
+    "prefix": ["ft_Container_Column=", "flet_Container_Column="],
     "body": [
       "ft.Container(  # * 容器",
       "    content=ft.Column(  # * [垂直]布局",
@@ -50,7 +51,7 @@
       ")",
       ""
     ],
-    "description": ["flet.Container 容器对象 模版"]
+    "description": ["flet.Container 容器对象 Column 列容器"]
   },
   "flet.Divider 水平分割线": {
     "prefix": ["ft_Divider", "flet_Divider"],
