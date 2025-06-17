@@ -9,18 +9,20 @@
   },
   "flet.alignment 对齐方式 (快速设置)": {
     "prefix": ["ft_alignment", "flet_alignment"],
-    "body": ["ft.alignment.${1:center}"],
+    "body": [
+      "ft.alignment.${1|top_center,center,bottom_center,top_left,center_left,bottom_left,top_right,center_right,bottom_right|}"
+    ],
     "description": [
       "flet.alignment 对齐方式",
-      "bottom_center = Alignment(0, 1)",
-      "bottom_left = Alignment(-1, 1)",
-      "bottom_right = Alignment(1, 1)",
-      "center = Alignment(0, 0)",
-      "center_left = Alignment(-1, 0)",
-      "center_right = Alignment(1, 0)",
       "top_center = Alignment(0, -1)",
+      "center = Alignment(0, 0)",
+      "bottom_center = Alignment(0, 1)",
       "top_left = Alignment(-1, -1)",
-      "top_right = Alignment(1, -1)"
+      "center_left = Alignment(-1, 0)",
+      "bottom_left = Alignment(-1, 1)",
+      "top_right = Alignment(1, -1)",
+      "center_right = Alignment(1, 0)",
+      "bottom_right = Alignment(1, 1)"
     ]
   },
   "flet.ButtonStyle.RoundedRectangleBorder 按钮[style]样式属性": {

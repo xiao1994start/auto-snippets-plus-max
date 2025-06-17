@@ -74,5 +74,21 @@
     "prefix": ["ft_TextStyle", "flet_TextStyle"],
     "body": ["ft.TextStyle($0)"],
     "description": ["flet.TextStyle 文字[style.text_style]样式属性"]
+  },
+  "flet.width 动态宽度属性": {
+    "prefix": [
+      "ft_width_auto",
+      "flet_width_auto",
+      "ft_width_dynamic",
+      "flet_width_dynamic"
+    ],
+    "body": [
+      "width=len('text') * 14 + 26 + 16,  # * 文字长度 * 14:文字默认尺寸 + 26:图标及其他控件尺寸 + 16:预留Padding空间"
+    ],
+    "description": [
+      "flet.width 动态宽度属性",
+      "\n\t对控件进行封装会更方便, 减少重复代码",
+      "\n\t使用时,需设置父级控件属性: wrap=True"
+    ]
   }
 }

@@ -23,19 +23,6 @@
     ],
     "description": ["flet.class(Container) 创建 flet 类 Container 容器对象"]
   },
-  "flet.class.def.ControlEvent Flet自定义对象控件事件.tmpl": {
-    "prefix": ["ft_class_def_control_event=", "flet_class_def_control_event="],
-    "body": [
-      "def ${1:flet_event}(self, e: ft.ControlEvent):",
-      "    \"\"\"",
-      "    ${2:Callback function for the event}",
-      "    \"\"\"",
-      "    ...",
-      "    self.page.update()",
-      ""
-    ],
-    "description": ["flet.class.def.ControlEvent Flet自定义对象控件事件.tmpl"]
-  },
   "flet.class.MainApp Sider from NavigationRail 创建Flet界面.tmpl": {
     "prefix": [
       "ft_class_for_Sider_NavigationRail=",
