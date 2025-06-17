@@ -7,7 +7,7 @@
   "flet.Image 图像": {
     "prefix": ["ft_Image", "flet_Image"],
     "body": [
-      "ft.Image(src='最好使用Path获取完整路径', width=32, height=32, border_radius=16)"
+      "ft.Image(src='Path对象需要转换为字符串', width=32, height=32, border_radius=16)"
     ],
     "description": ["flet.Image 图像"]
   },

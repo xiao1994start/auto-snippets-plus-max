@@ -23,6 +23,14 @@
       "top_right = Alignment(1, -1)"
     ]
   },
+  "flet.ButtonStyle.RoundedRectangleBorder 按钮[style]样式属性": {
+    "prefix": [
+      "ft_ButtonStyle_RoundedRectangleBorder",
+      "flet_ButtonStyle_RoundedRectangleBorder"
+    ],
+    "body": ["style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=4))"],
+    "description": ["flet.ButtonStyle 按钮[style]样式属性"]
+  },
   "flet.MainAxisAlignment Y轴(vertical_alignment|垂直)对齐": {
     "prefix": ["ft_MainAxisAlignment", "flet_MainAxisAlignment"],
     "body": ["ft.MainAxisAlignment.${1:CENTER}"],
@@ -89,6 +97,11 @@
     "prefix": ["ft_margin_only", "flet_margin_only"],
     "body": ["margin=ft.margin.only(${1:top=10})"],
     "description": ["flet.margin.only 仅设置一个方向的外边距"]
+  },
+  "flet.Padding 内边距": {
+    "prefix": ["ft_Padding", "flet_Padding"],
+    "body": ["padding=ft.Padding(left=5, top=5, right=5, bottom=5)"],
+    "description": ["描述"]
   },
   "flet.ScrollMode 滚动模式": {
     "prefix": ["flet_ScrollMode", "ft_ScrollMode"],
