@@ -78,7 +78,8 @@
     "prefix": ["ft_TextField", "flet_TextField"],
     "body": [
       "ft.TextField(",
-      "    label='标题',  # * 标题",
+      "    label='标签',  # * 标签",
+      "    hint_text='自动隐藏提示文本',  # * 自动隐藏提示文本",
       "    value='默认值',  # * 默认值",
       "    # border_color=ft.Colors.BLUE_ACCENT_400,  # * 默认状态下边框颜色",
       "    # focused_border_color=ft.Colors.LIGHT_BLUE_ACCENT_400,  # * 焦点(输入)状态下边框颜色",

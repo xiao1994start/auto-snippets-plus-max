@@ -9,10 +9,12 @@
     "body": ["next($0)"],
     "description": ["next 返回迭代器的下一个项目"]
   },
-  "next.iterable = 匹配 list[dict[str] 对象": {
+  "next.list[dict[str] 匹配 list[dict[str]] 列表嵌套字典对象中指定键的值 -> dict": {
     "prefix": ["next_list_dict_str="],
     "body": ["next(item for item in data_list if item['key'] == 'value')"],
-    "description": ["next.iterable = 匹配 list[dict[str] 对象"]
+    "description": [
+      "next.list[dict[str] 匹配 list[dict[str]] 列表嵌套字典对象中指定键的值 -> dict"
+    ]
   },
   "iter 生成迭代器": {
     "prefix": ["iter_iterable"],

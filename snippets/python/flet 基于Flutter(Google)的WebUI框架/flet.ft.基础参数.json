@@ -83,7 +83,7 @@
       "flet_width_dynamic"
     ],
     "body": [
-      "width=len('text') * 14 + 26 + 16,  # * 文字长度 * 14:文字默认尺寸 + 26:图标及其他控件尺寸 + 16:预留Padding空间"
+      "width=len('text') * 14 + 26 + 12,  # * 文字长度 * 14:文字默认尺寸 + 26:图标及其他控件尺寸 + 12:预留Padding空间"
     ],
     "description": [
       "flet.width 动态宽度属性",
