@@ -1,0 +1,17 @@
+{
+  "zip 打包可迭代对象 -> tuple": {
+    "prefix": ["zip_iterable"],
+    "body": ["zip($0)"],
+    "description": ["zip 打包可迭代对象 -> tuple"]
+  },
+  "next 返回迭代器的下一个项目": {
+    "prefix": ["next_iterable"],
+    "body": ["next($0)"],
+    "description": ["next 返回迭代器的下一个项目"]
+  },
+  "iter 生成迭代器": {
+    "prefix": ["iter_iterable"],
+    "body": ["iter($0)"],
+    "description": ["iter 生成迭代器"]
+  }
+}
