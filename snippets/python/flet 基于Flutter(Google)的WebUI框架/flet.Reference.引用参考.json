@@ -66,7 +66,7 @@
   "flet.Colors 颜色": {
     "prefix": ["ft_Colors", "flet_Colors"],
     "body": [
-      "ft.Colors.${1|BLUE_ACCENT_400,LIGHT_BLUE_ACCENT_400,GREEN_ACCENT_400,LIGHT_GREEN_ACCENT_400|}"
+      "ft.Colors.${1|BLUE_ACCENT_400,LIGHT_BLUE_ACCENT_400,GREEN_ACCENT_400,LIGHT_GREEN_ACCENT_400,PINK_ACCENT_400,PURPLE_ACCENT_400,RED_ACCENT_400|}"
     ],
     "description": ["flet.Colors 颜色"]
   },
@@ -92,7 +92,7 @@
   },
   "flet.Margin 外边距": {
     "prefix": ["ft_Margin", "flet_Margin"],
-    "body": ["margin=ft.Margin(left=0, top=0, right=0, bottom=0)"],
+    "body": ["margin=ft.Margin(left=10, top=10, right=10, bottom=10)"],
     "description": ["flet.margin.only 仅设置一个方向的外边距"]
   },
   "flet.margin.only 仅设置一个方向的外边距": {

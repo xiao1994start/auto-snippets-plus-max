@@ -224,7 +224,6 @@
       "skip-magic-trailing-comma = false",
       "line-ending = \"auto\"",
       "docstring-code-line-length = \"dynamic\"",
-      "goto eof",
       ""
     ],
     "description": ["python-embed 嵌入式环境激活"]

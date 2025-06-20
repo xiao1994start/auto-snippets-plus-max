@@ -1,7 +1,12 @@
 {
+  "跳转到标签": {
+    "prefix": ["goto_"],
+    "body": ["goto :$0"],
+    "description": ["跳转到标签"]
+  },
   "脚本跳转到文件的结束处": {
-    "prefix": ["goto_eof"],
-    "body": ["goto eof"],
+    "prefix": ["goto_end"],
+    "body": ["goto :end"],
     "description": ["脚本跳转到文件的结束处"]
   },
   "批量拖入文件处理": {
