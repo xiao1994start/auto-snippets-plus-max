@@ -1,7 +1,0 @@
-{
-  "引入 lmstudio-python API Python SDK 库": {
-    "prefix": ["import_openai", "im_openai_OpenAI"],
-    "body": ["import lmstudio as lms  # * lmstudio-python API交互依赖"],
-    "description": ["引入 lmstudio-python API Python SDK 库"]
-  }
-}
