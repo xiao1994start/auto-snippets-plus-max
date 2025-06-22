@@ -86,6 +86,7 @@
       "    multiline=True,  # * 如果 TextField 可以包含多行文本, 则为 True. 使用 multiline 时, max_lines 设置无效",
       "    keyboard_type=ft.KeyboardType.MULTILINE,  # * 富文本(带格式支持)编辑器",
       "    # * 执行函数[on_blur:失去焦点时触发; on_change:发生更改时触发; on_focus:获得焦点时触发; on_submit:ENTER(回车)键时触发]",
+      "    # shift_enter=True,  # * ENTER(回车)键时触发 on_submit 事件; 默认为 False",
       ")",
       ""
     ],
