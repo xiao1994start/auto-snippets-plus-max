@@ -1,0 +1,18 @@
+{
+  "pip.lmstudio-python API 大语言模型交互依赖": {
+    "prefix": ["pip lmstudio"],
+    "body": [
+      "pip install -U lmstudio -i https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["pip.lmstudio-python API 大语言模型交互依赖"]
+  },
+  "uv.lmstudio-python API 大语言模型交互依赖": {
+    "prefix": ["uv lmstudio"],
+    "body": [
+      "uv add \"lmstudio\" --upgrade --index https://mirrors.aliyun.com/pypi/simple/",
+      ""
+    ],
+    "description": ["uv.lmstudio-python API 大语言模型交互依赖"]
+  }
+}
