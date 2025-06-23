@@ -1,7 +1,12 @@
 {
   "引入 OpenAI Python API 库": {
     "prefix": ["import_openai", "im_openai_OpenAI"],
-    "body": ["from openai import OpenAI  # * OpenAI Python API 库"],
+    "body": [
+      "from openai import OpenAI, Stream  # * OpenAI Python API 库 | Stream 流式返回类",
+      "from openai.types.chat.chat_completion import ChatCompletion  # * ChatCompletion 聊天模型类型",
+      "from openai.types.chat.chat_completion_chunk import ChatCompletionChunk  # * ChatCompletionChunk 流式返回类型",
+      ""
+    ],
     "description": ["引入 OpenAI Python API 库"]
   }
 }

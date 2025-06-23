@@ -375,9 +375,9 @@
     "body": ["relative_to(BASE_DIR)"],
     "description": [
       "Path.relative_to 获取相对路径",
-      "\n\tPurePath.relative_to(other, walk_up=False)",
-      "\n\tother: 路径对象或字符串",
-      "\n\twalk_up: 默认为 False, 如果为 True 则向上(other的父级目录)寻找"
+      "\n\t-PurePath.relative_to(other, walk_up=False)",
+      "\n\t-other: 路径对象或字符串",
+      "\n\t-walk_up: 默认为 False, 如果为 True 则向上(other的父级目录)寻找"
     ]
   }
 }

@@ -32,7 +32,7 @@
     "body": ["ft.TextSpan(text=$0)"],
     "description": [
       "flet.TextSpan ft.Text文本控件[spans]子控件",
-      "\n\t富文本显示控件,适用于精细化控制文本显示样式"
+      "\n\t-富文本显示控件,适用于精细化控制文本显示样式"
     ]
   },
   "flet.ProgressRing 环形循环旋转进度指示器": {

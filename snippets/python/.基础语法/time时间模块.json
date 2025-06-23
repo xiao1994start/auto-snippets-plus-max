@@ -4,10 +4,10 @@
     "body": ["import time"],
     "description": ["time的模块, 输出常规格式时间"]
   },
-  "time.time 当前时间戳": {
+  "time.time 基础秒表当前时间戳": {
     "prefix": ["time_time"],
     "body": ["time()"],
-    "description": ["当前时间戳"]
+    "description": ["time.time 基础秒表当前时间戳"]
   },
   "time.ctime 转换可读时间格式": {
     "prefix": ["time_ctime", "ctime_time"],
@@ -19,9 +19,9 @@
     "body": ["strftime(${1:'%Y-%m-%d %H:%M:%S', time.localtime(time.time())})"],
     "description": ["格式化当前时间戳"]
   },
-  "time.perf_counter 获取当前时间": {
+  "time.perf_counter 高精时钟": {
     "prefix": ["time_perf_counter", "perf_counter_time"],
     "body": ["perf_counter()"],
-    "description": ["time.perf_counter 获取当前时间"]
+    "description": ["time.perf_counter 高精时钟"]
   }
 }
