@@ -556,6 +556,10 @@
         "path": "./snippets/python/re 正则表达式/re.json"
       },
       {
+        "language": "python",
+        "path": "./snippets/python/re 正则表达式/re.常用输入类型正则表达式示例.json"
+      },
+      {
         "language": "bat",
         "path": "./snippets/python/Reflex 全栈WebApp框架/reflex.bat.json"
       },

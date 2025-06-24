@@ -103,7 +103,7 @@
   "flet.Padding 内边距": {
     "prefix": ["ft_Padding", "flet_Padding"],
     "body": ["padding=ft.Padding(left=5, top=5, right=5, bottom=5)"],
-    "description": ["描述"]
+    "description": ["flet.Padding 内边距"]
   },
   "flet.ScrollMode 滚动模式": {
     "prefix": ["flet_ScrollMode", "ft_ScrollMode"],
@@ -116,5 +116,15 @@
       "\n\t-ADAPTIVE:启用滚动, 并且当将应用程序作为 Web 或桌面运行时, 始终显示滚动条",
       "\n\t-None:该列是不可滚动的, 其内容可能会溢出"
     ]
+  },
+  "flet.TextOnlyInputFilter 输入控件仅允许文本": {
+    "prefix": ["flet_TextOnlyInputFilter", "flet_TextOnlyInputFilter"],
+    "body": ["input_filter=ft.TextOnlyInputFilter()"],
+    "description": ["flet.TextOnlyInputFilter 输入控件仅允许文本"]
+  },
+  "flet.NumbersOnlyInputFilter 输入控件只允许数字": {
+    "prefix": ["ft_NumbersOnlyInputFilter", "flet_NumbersOnlyInputFilter"],
+    "body": ["input_filter=ft.NumbersOnlyInputFilter()"],
+    "description": ["flet.NumbersOnlyInputFilter 输入控件只允许数字"]
   }
 }
