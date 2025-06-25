@@ -50,12 +50,14 @@
     "body": [
       "ft.Slider(",
       "    value=70,  # * 默认值",
-      "    label='{value}%',  # * 显示标签[ 格式为 {value} ]",
+      "    # label='{value}',  # * 显示标签[格式为: {value}; 需要显示小数值时, 不要定义 label 属性, 使用 on_change_start 和 on_change 调用单独的函数定义]",
       "    min=0,",
       "    max=100,",
-      "    divisions=100,  # * 刻度(浮点数会出现精确度不够的情况): divisions = (max-min)/预期刻度值 = int((max - min) / 刻度值)",
-      "    round=2,  # * 保留小数位数",
-      "    on_change_end=lambda e: print(e, e.control.value),  # * 值改变结束(on_change 实时刷新)",
+      "    divisions=100,  # * 刻度(浮点数会出现精确度不够的情况): divisions = int((max - min) / 预期刻度值)[!注意: 滑块最佳的宽度不得低于 divisions 的 1.2 倍]",
+      "    # round=0,  # * 保留小数位数(不设置时, 会根据实际情况保留小数位数)",
+      "    # on_change_start=lambda e: print(e, e.control.value),  # * 值改变开始(常用于处理 label 需要显示小数的情况)",
+      "    # on_change=lambda e: print(e, e.control.value),  # * 值改变过程中(常用于处理 label 需要显示小数的情况)",
+      "    on_change_end=lambda e: print(e, e.control.value),  # * 值改变结束(常用于确认数值后的 IO 操作等)",
       ")",
       ""
     ],

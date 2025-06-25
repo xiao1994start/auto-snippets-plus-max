@@ -36,7 +36,7 @@
       "ECHO       \"program\": \"\\${workspaceFolder}/main.py\", // * Run Debug File>> \"%~dp0.vscode\\launch.json\"",
       "ECHO       \"python\": \"\\${command:python.interpreterPath}\", // * Default settings.json -^> python.defaultInterpreterPath>> \"%~dp0.vscode\\launch.json\"",
       "ECHO       \"console\": \"integratedTerminal\",>> \"%~dp0.vscode\\launch.json\"",
-      "ECHO       \"justMyCode\": false,>> \"%~dp0.vscode\\launch.json\"",
+      "ECHO       \"justMyCode\": true,>> \"%~dp0.vscode\\launch.json\"",
       "ECHO       \"autoReload\": { \"enable\": true },>> \"%~dp0.vscode\\launch.json\"",
       "ECHO       \"cwd\": \"\\${workspaceFolder}\",>> \"%~dp0.vscode\\launch.json\"",
       "ECHO       \"env\": {>> \"%~dp0.vscode\\launch.json\"",
