@@ -84,8 +84,8 @@
       "ft.ListTile(",
       "    title=ft.Text(value='标题'),  # * 标题",
       "    # subtitle=ft.Text(value='子标题'),  # * 子标题, 不需要就注释, 否则会显示空行",
-      "    # leading=之前控件",
-      "    # trailing=之后控件",
+      "    # leading=控件之前,  # 控件之前",
+      "    # trailing=控件之后,  # 控件之后",
       ")",
       ""
     ],

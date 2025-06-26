@@ -90,6 +90,17 @@
       "https://gallery.flet.dev/icons-browser/"
     ]
   },
+  "felt.InputFilter 输入过滤器": {
+    "prefix": ["felt_InputFilter", "InputFilter_felt"],
+    "body": [
+      "input_filter=ft.InputFilter(",
+      "    allow=True,  # 允许还是拒绝/阻止匹配的模式, 默认为 True",
+      "    regex_string=${1|r'^-?\\d*\\.?\\d*$',r'^-?\\d+$'|},# * 筛选器的正则表达式模式, 使用原始字符串(在字符串前面加上 r)作为模式,例如:r'pattern'",
+      "    replacement_string='',  # 替换 banned/denied 模式的字符串, 默认为空字符串",
+      ")"
+    ],
+    "description": ["felt.InputFilter 输入过滤器"]
+  },
   "flet.Margin 外边距": {
     "prefix": ["ft_Margin", "flet_Margin"],
     "body": ["margin=ft.Margin(left=10, top=10, right=10, bottom=10)"],
