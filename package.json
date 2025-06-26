@@ -197,6 +197,10 @@
       },
       {
         "language": "python",
+        "path": "./snippets/python/.基础语法/eval字符串运算.json"
+      },
+      {
+        "language": "python",
         "path": "./snippets/python/.基础语法/eval字符串转换执行函数.json"
       },
       {
