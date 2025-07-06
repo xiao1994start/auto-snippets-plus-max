@@ -6,6 +6,6 @@
       "call path_7za_exe x path_file_zip -o\\OutPath -y",
       ""
     ],
-    "description": ["对象.方法 描述"]
+    "description": ["7z 解压文件"]
   }
 }
