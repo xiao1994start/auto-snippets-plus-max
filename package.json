@@ -41,6 +41,10 @@
       },
       {
         "language": "bat",
+        "path": "./snippets/bat/.基础语法/attrib文件属性.json"
+      },
+      {
+        "language": "bat",
         "path": "./snippets/bat/.基础语法/certutil系统证书.json"
       },
       {
@@ -90,6 +94,10 @@
       {
         "language": "bat",
         "path": "./snippets/bat/.基础语法/shutdown系统命令.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/bat/.基础语法/type显示文本文件内容.json"
       },
       {
         "language": "bat",
