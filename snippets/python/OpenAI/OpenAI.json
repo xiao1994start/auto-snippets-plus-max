@@ -10,7 +10,7 @@
     "description": ["引入 OpenAI Python API 库"]
   },
   "OpenAI Python 同步|异步 类封装": {
-    "prefix": ["import_openai_=all", "im_openai_=all"],
+    "prefix": ["import_openai_=ai", "im_openai_=ai"],
     "body": [
       "import asyncio  # * 异步IO实现更高的并发性",
       "import threading  # * 多线程实现高的并发性",
@@ -20,7 +20,7 @@
       "from openai.types.chat.chat_completion_chunk import ChatCompletionChunk  # * ChatCompletionChunk 流式返回类型",
       "",
       "",
-      "class GPT:",
+      "class AI:",
       "    # * class default args(类变量) | signal(信号)",
       "    # 调用方法: [className].[argsName] = [value] | self.[argsName] = [value]",
       "    def __init__(",
@@ -162,7 +162,7 @@
       "        ...",
       "",
       "",
-      "class AsyncGPT:",
+      "class AsyncAI:",
       "    def __init__(",
       "        self,",
       "        base_url: str = 'http://127.0.0.1:1234',",
@@ -307,11 +307,11 @@
       "    运行入口 | 调试运行",
       "    \"\"\"",
       "    # ! threadng 多线程",
-      "    gpt = GPT('http://127.0.0.1:8080', stream=True)",
-      "    gpt.start_thread('你好？', 'deepseek/deepseek-r1-0528-qwen3-8b')",
+      "    ai = AI('http://127.0.0.1:8080', stream=True)",
+      "    ai.start_thread('你好？', 'deepseek/deepseek-r1-0528-qwen3-8b')",
       "",
       "    # ! asyncio 异步",
-      "    async_task = AsyncGPT('http://127.0.0.1:8080', stream=True)",
+      "    async_task = AsyncAI('http://127.0.0.1:8080', stream=True)",
       "    async_task.start('你好？', 'deepseek/deepseek-r1-0528-qwen3-8b')",
       ""
     ],
