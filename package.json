@@ -29,75 +29,75 @@
     "snippets": [
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/.basic.json"
+        "path": "./snippets/bat/# 基础语法/# 基础命令.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/管理员权限获取.json"
+        "path": "./snippets/bat/# 基础语法/管理员权限获取.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/文件操作.json"
+        "path": "./snippets/bat/# 基础语法/文件操作.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/attrib文件属性.json"
+        "path": "./snippets/bat/# 基础语法/attrib文件属性.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/certutil系统证书.json"
+        "path": "./snippets/bat/# 基础语法/certutil系统证书.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/choice选择器.json"
+        "path": "./snippets/bat/# 基础语法/choice选择器.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/encoding编码语言页.json"
+        "path": "./snippets/bat/# 基础语法/encoding编码语言页.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/env环境变量.json"
+        "path": "./snippets/bat/# 基础语法/env环境变量.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/exit退出.json"
+        "path": "./snippets/bat/# 基础语法/exit退出.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/for循环语句.json"
+        "path": "./snippets/bat/# 基础语法/for循环语句.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/goto语句.json"
+        "path": "./snippets/bat/# 基础语法/goto语句.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/if条件语句.json"
+        "path": "./snippets/bat/# 基础语法/if条件语句.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/kill进程关闭.json"
+        "path": "./snippets/bat/# 基础语法/kill进程关闭.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/reg注册表.json"
+        "path": "./snippets/bat/# 基础语法/reg注册表.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/Script.json"
+        "path": "./snippets/bat/# 基础语法/Script.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/set变量.json"
+        "path": "./snippets/bat/# 基础语法/set变量.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/shutdown系统命令.json"
+        "path": "./snippets/bat/# 基础语法/shutdown系统命令.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/.基础语法/type显示文本文件内容.json"
+        "path": "./snippets/bat/# 基础语法/type显示文本文件内容.json"
       },
       {
         "language": "bat",
@@ -121,11 +121,11 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/github/.basic.json"
+        "path": "./snippets/bat/github/git.初始化.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/github/git.初始化.json"
+        "path": "./snippets/bat/github/git.基础命令.json"
       },
       {
         "language": "bat",
@@ -141,15 +141,15 @@
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/nodejs/node.basic.json"
+        "path": "./snippets/bat/nodejs/node.基础命令.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/nodejs/npm.包.vscode.json"
+        "path": "./snippets/bat/nodejs/npm.包管理.vscode.json"
       },
       {
         "language": "bat",
-        "path": "./snippets/bat/nodejs/npm.basic.json"
+        "path": "./snippets/bat/nodejs/npm.基础命令.json"
       },
       {
         "language": "bat",
@@ -173,119 +173,119 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/_注释.json"
+        "path": "./snippets/python/# 基础语法/_注释.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/编码格式.json"
+        "path": "./snippets/python/# 基础语法/编码格式.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/attr动态属性操作.json"
+        "path": "./snippets/python/# 基础语法/attr动态属性操作.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/class类_def_函数.json"
+        "path": "./snippets/python/# 基础语法/class类_def_函数.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/configparser编辑ini.json"
+        "path": "./snippets/python/# 基础语法/configparser编辑ini.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/datetime高级时间模块.json"
+        "path": "./snippets/python/# 基础语法/datetime高级时间模块.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/dict字典.json"
+        "path": "./snippets/python/# 基础语法/dict字典.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/dict字典多态性应用.json"
+        "path": "./snippets/python/# 基础语法/dict字典多态性应用.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/enumerate枚举函数.json"
+        "path": "./snippets/python/# 基础语法/enumerate枚举函数.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/eval字符串运算.json"
+        "path": "./snippets/python/# 基础语法/eval字符串运算.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/eval字符串转换执行函数.json"
+        "path": "./snippets/python/# 基础语法/eval字符串转换执行函数.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/for_while循环语句.json"
+        "path": "./snippets/python/# 基础语法/for_while循环语句.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/functools函数工具.json"
+        "path": "./snippets/python/# 基础语法/functools函数工具.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/if条件判断.json"
+        "path": "./snippets/python/# 基础语法/if条件判断.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/import导包.json"
+        "path": "./snippets/python/# 基础语法/import导包.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/list列表.json"
+        "path": "./snippets/python/# 基础语法/list列表.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/match_case条件判断.json"
+        "path": "./snippets/python/# 基础语法/match_case条件判断.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/open文件操作.json"
+        "path": "./snippets/python/# 基础语法/open文件操作.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/pass结构语句.json"
+        "path": "./snippets/python/# 基础语法/pass结构语句.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/pprint高级打印.json"
+        "path": "./snippets/python/# 基础语法/pprint高级打印.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/print打印.json"
+        "path": "./snippets/python/# 基础语法/print打印.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/requests网络请求.json"
+        "path": "./snippets/python/# 基础语法/requests网络请求.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/set集合.json"
+        "path": "./snippets/python/# 基础语法/set集合.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/str字符串.json"
+        "path": "./snippets/python/# 基础语法/str字符串.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/time时间模块.json"
+        "path": "./snippets/python/# 基础语法/time时间模块.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/try异常处理.json"
+        "path": "./snippets/python/# 基础语法/try异常处理.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/tuple元组.json"
+        "path": "./snippets/python/# 基础语法/tuple元组.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/zip_next_iter迭代对象.json"
+        "path": "./snippets/python/# 基础语法/zip_next_iter迭代对象.json"
       },
       {
         "language": "python",
-        "path": "./snippets/python/.基础语法/type数据类型.json"
+        "path": "./snippets/python/# 基础语法/type数据类型.json"
       },
       {
         "language": "python",
@@ -501,7 +501,7 @@
       },
       {
         "language": "python",
-        "path": "./snippets/python/pathlib 面向对象的文件系统路径/pathlib.basic.json"
+        "path": "./snippets/python/pathlib 面向对象的文件系统路径/pathlib.基础语法.json"
       },
       {
         "language": "python",
