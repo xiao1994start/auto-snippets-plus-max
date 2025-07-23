@@ -145,7 +145,15 @@
       },
       {
         "language": "bat",
+        "path": "./snippets/bat/nodejs/npm.包管理.json"
+      },
+      {
+        "language": "bat",
         "path": "./snippets/bat/nodejs/npm.包管理.vscode.json"
+      },
+      {
+        "language": "bat",
+        "path": "./snippets/bat/nodejs/npm.包管理.wps.json"
       },
       {
         "language": "bat",

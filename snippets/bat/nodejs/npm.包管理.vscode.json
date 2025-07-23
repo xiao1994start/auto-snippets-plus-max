@@ -1,35 +1,21 @@
 {
-  "npm 帮助说明": {
-    "prefix": ["npm =npm.help"],
-    "body": [
-      "@REM npm 说明",
-      "@REM 临时代理 --registry https://registry.npmmirror.com/",
-      "@REM 配置参数:{",
-      "@REM \t-G 全局安装",
-      "@REM \t-S 局部安装的插件写入package.json文件中的dependencie(默认)",
-      "@REM \t-D 局部安装的插件写入package.json文件中的devDependencie",
-      "@REM \t-O 局部安装的插件写入package.json文件中的optionalDependencie",
-      "@REM }"
-    ],
-    "description": ["npm帮助说明"]
-  },
-  "npm安装vscode插件开发环境": {
-    "prefix": ["npm_Install_Vscode -npm.i.vscode"],
+  "npm安装 vscode 插件开发环境": {
+    "prefix": ["call_npm_install_vscode -npm.i.vscode"],
     "body": [
       "ECHO 正在安装 @vscode/vsce",
       "call npm install -g @vscode/vsce --registry https://registry.npmmirror.com/",
       "ECHO 已安装 @vscode/vsce",
       ""
     ],
-    "description": ["npm安装vscode插件开发环境"]
+    "description": ["npm安装 vscode 插件开发环境"]
   },
-  "vsce 打包VScode插件": {
-    "prefix": ["call_Vsce_Package"],
+  "vsce 打包 vscode 插件": {
+    "prefix": ["call_vsce_package"],
     "body": ["CD /D ${1:打包插件位置}", "call vsce package", ""],
-    "description": ["vsce 打包VScode插件"]
+    "description": ["vsce 打包 vscode 插件"]
   },
   "code 安装vsix插件包": {
-    "prefix": ["call_Code_Install_Extension", "call_Code_Vsix"],
+    "prefix": ["call_code_install_extension -code", "call_code_vsix -code"],
     "body": ["call code --install-extension ${1:vsix插件包位置}"],
     "description": ["code 安装vsix插件包"]
   }
