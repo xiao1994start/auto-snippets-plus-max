@@ -18,8 +18,18 @@
     "description": ["自定义npm仓库位置"]
   },
   "npm 自定义缓存位置": {
-    "prefix": ["npm_config_cache node.js.npm"],
+    "prefix": ["npm_config_cache -node.js.npm"],
     "body": ["npm config set cache ${1:缓存位置}"],
     "description": ["自定义npm缓存位置"]
+  },
+  "npm 切换国内镜像源": {
+    "prefix": ["npm_config_set_registry -node.js.npm"],
+    "body": [
+      "ECHO 设置为淘宝镜像源",
+      "npm config set registry https://registry.npmmirror.com/",
+      "@REM ECHO 还原为官方源",
+      "@REM npm config set registry https://registry.npmjs.org/"
+    ],
+    "description": ["切换npm国内镜像源"]
   }
 }
