@@ -1,6 +1,6 @@
 {
   "node.js 临时环境设置": {
-    "prefix": ["ndoe_Portable -node.js", "npm_Portable -node.js"],
+    "prefix": ["node_Portable -node.js", "npm_Portable -node.js"],
     "body": [
       "if exist \"%~dp0\\node*\" (",
       "    for /D %%i in (*node*) do (",
@@ -20,7 +20,7 @@
     "description": ["node.js 临时环境设置"]
   },
   "node.js 环境变量": {
-    "prefix": ["ndoe_Env_Path -node.js"],
+    "prefix": ["node_Env_Path -node.js"],
     "body": [
       "set systemPath=%path%",
       "@REM set systemPath=C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin32;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\bin;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\",

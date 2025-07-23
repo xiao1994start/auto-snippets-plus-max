@@ -1,29 +1,29 @@
 {
   "npm 版本号": {
-    "prefix": ["npm_v -node.js.npm"],
+    "prefix": ["call_npm_v -node.js.npm"],
     "body": ["ECHO NPM 版本号:", "call npm -v", ""],
     "description": "NPM 版本号"
   },
   "npm 检查 软件仓库位置": {
-    "prefix": ["npm_root_g -node.js.npm"],
+    "prefix": ["call_npm_root_g -node.js.npm"],
     "body": ["ECHO 检查 软件仓库位置:", "call npm root -g", ""],
     "description": "npm 检查 软件仓库位置"
   },
   "npm 自定义仓库位置": {
     "prefix": [
-      "call npm_config_prefix -node.js.npm",
-      "call npm_config_node_global -node.js.npm"
+      "call_npm_config_prefix -node.js.npm",
+      "call_npm_config_node_global -node.js.npm"
     ],
-    "body": ["npm config set prefix ${1:仓库位置}"],
+    "body": ["call npm config set prefix ${1:仓库位置}"],
     "description": ["自定义npm仓库位置"]
   },
   "npm 自定义缓存位置": {
-    "prefix": ["npm_config_cache -node.js.npm"],
+    "prefix": ["call_npm_config_cache -node.js.npm"],
     "body": ["call npm config set cache ${1:缓存位置}"],
     "description": ["自定义npm缓存位置"]
   },
   "npm 切换国内镜像源": {
-    "prefix": ["npm_config_set_registry -node.js.npm"],
+    "prefix": ["call_npm_config_set_registry -node.js.npm"],
     "body": [
       "ECHO 设置为淘宝镜像源",
       "call npm config set registry https://registry.npmmirror.com/",
