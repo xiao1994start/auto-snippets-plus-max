@@ -16,7 +16,7 @@
   },
   "code 安装vsix插件包": {
     "prefix": ["call_code_install_extension -code", "call_code_vsix -code"],
-    "body": ["call code --install-extension ${1:vsix插件包位置}"],
+    "body": ["call code --install-extension ${1:vsix插件包位置}", ""],
     "description": ["code 安装vsix插件包"]
   }
 }

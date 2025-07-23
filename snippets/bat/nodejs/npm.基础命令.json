@@ -14,12 +14,12 @@
       "call_npm_config_prefix -node.js.npm",
       "call_npm_config_node_global -node.js.npm"
     ],
-    "body": ["call npm config set prefix ${1:仓库位置}"],
+    "body": ["call npm config set prefix ${1:仓库位置}", ""],
     "description": ["自定义npm仓库位置"]
   },
   "npm 自定义缓存位置": {
     "prefix": ["call_npm_config_cache -node.js.npm"],
-    "body": ["call npm config set cache ${1:缓存位置}"],
+    "body": ["call npm config set cache ${1:缓存位置}", ""],
     "description": ["自定义npm缓存位置"]
   },
   "npm 切换国内镜像源": {
@@ -28,7 +28,8 @@
       "ECHO 设置为淘宝镜像源",
       "call npm config set registry https://registry.npmmirror.com/",
       "@REM ECHO 还原为官方源",
-      "@REM call npm config set registry https://registry.npmjs.org/"
+      "@REM call npm config set registry https://registry.npmjs.org/",
+      ""
     ],
     "description": ["切换npm国内镜像源"]
   }

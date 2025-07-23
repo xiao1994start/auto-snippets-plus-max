@@ -9,7 +9,8 @@
       "@REM \t-S 局部安装的插件写入package.json文件中的dependencie(默认)",
       "@REM \t-D 局部安装的插件写入package.json文件中的devDependencie",
       "@REM \t-O 局部安装的插件写入package.json文件中的optionalDependencie",
-      "@REM }"
+      "@REM }",
+      ""
     ],
     "description": ["npm帮助说明"]
   }
