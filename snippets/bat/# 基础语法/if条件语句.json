@@ -58,9 +58,9 @@
     "description": ["判断字符串包含"]
   },
   "判断文件夹是否为空": {
-    "prefix": ["dir B findstrEmpty", "if Dir Empty"],
+    "prefix": ["dir_B_findstrEmpty", "if_dir_empty"],
     "body": [
-      "dir /B ${1:文件夹路径} | findstr . >nul && ECHO NoEmpty || ECHO Empty"
+      "dir /B ${1:文件夹路径} | findstr . >nul && ECHO 文件夹不为空 || ECHO 文件夹为空"
     ],
     "description": ["判断文件夹是否为空"]
   }
