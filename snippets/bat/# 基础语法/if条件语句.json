@@ -1,11 +1,11 @@
 {
   "判断文件夹存在": {
-    "prefix": ["if exists", "if exist"],
+    "prefix": ["if_exists", "if_exist"],
     "body": ["if exist ${1:判断目标} (", "    ECHO 目标存在", ")"],
     "description": ["判断文件夹存在"]
   },
   "判断文件夹不存在": {
-    "prefix": ["if not exists", "if not exist"],
+    "prefix": ["if_not_exists", "if_not_exist"],
     "body": ["if not exist ${1:判断目标} (", "    ECHO 目标不存在", ")"],
     "description": ["判断文件夹不存在"]
   },
@@ -19,7 +19,7 @@
     "description": ["判断字符串相等且忽略大小写"]
   },
   "判断字符串完全相等": {
-    "prefix": ["if EQU", "if =="],
+    "prefix": ["if_EQU", "if_=="],
     "body": [
       "if \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
       "    ECHO 完全一致",
@@ -28,7 +28,7 @@
     "description": ["判断字符串完全相等"]
   },
   "判断字符串不一致且忽略大小写": {
-    "prefix": ["if INEQ", "if not I =="],
+    "prefix": ["if_INEQ", "if_not_I =="],
     "body": [
       "if /I \"${1:被比较字符串}\" NEQ \"${2:对比字符串}\" (",
       "    ECHO 不一致",
@@ -37,7 +37,7 @@
     "description": ["字符串不一致且忽略大小写"]
   },
   "判断字符串完全不一致且忽略大小写": {
-    "prefix": ["if NEQ", "if not =="],
+    "prefix": ["if_NEQ", "if_not_=="],
     "body": [
       "if not \"${1:被比较字符串}\"==\"${2:对比字符串}\" (",
       "    ECHO 完全不一致",
@@ -46,7 +46,7 @@
     "description": ["判断字符串完全不一致且忽略大小写"]
   },
   "判断字符串包含": {
-    "prefix": ["if String =="],
+    "prefix": ["if_string_=="],
     "body": [
       "if not \"!被比较字符串:包含字符串=!\"==\"!被比较字符串!\" (",
       "    ECHO 包含",
