@@ -120,7 +120,7 @@
   },
   "打开文件夹": {
     "prefix": ["open -explorer"],
-    "body": ["explorer.exe ${1:dst目标文件夹路径}"],
+    "body": ["call explorer ${1:dst目标文件夹路径}"],
     "description": ["打开文件夹"]
   },
   "向上一级目录寻找文件夹或文件": {
