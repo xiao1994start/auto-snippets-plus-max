@@ -7,8 +7,8 @@
   "subprocess.run 运行命令": {
     "prefix": ["subprocess_run"],
     "body": [
-      "subprocess.run($0,)",
-      "    $0,",
+      "subprocess.run(",
+      "    '$0',",
       "    shell=True,",
       "    # 下面的参数可以省略",
       "    # capture_output=True,  # * 捕获输出",
