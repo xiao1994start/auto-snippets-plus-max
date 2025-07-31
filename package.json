@@ -702,6 +702,10 @@
       {
         "language": "typescript",
         "path": "./snippets/typescript/vue基础设置.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/wps/wps_xml.json"
       }
     ]
   }

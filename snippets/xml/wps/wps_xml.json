@@ -1,0 +1,12 @@
+{
+  "WPS按钮": {
+    "prefix": ["wps_btn"],
+    "body": [
+      "<button id=\"${1:唯一标识}\" label=\"${2:标签}\" onAction=\"ribbon.OnAction\"",
+      "    getEnabled=\"ribbon.OnGetEnabled\" getImage=\"ribbon.GetImage\" visible=\"true\"",
+      "    size=\"large\" />",
+      "$0"
+    ],
+    "description": ["WPS按钮"]
+  }
+}
