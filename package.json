@@ -81,6 +81,10 @@
       },
       {
         "language": "bat",
+        "path": "./snippets/bat/# 基础语法/rd删除命令.json"
+      },
+      {
+        "language": "bat",
         "path": "./snippets/bat/# 基础语法/reg注册表.json"
       },
       {
