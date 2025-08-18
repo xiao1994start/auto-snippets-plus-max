@@ -31,24 +31,11 @@
   "AsAdmin": {
     "prefix": ["AsAdmin"],
     "body": [
-      "@ECHO Off",
-      "Title AsAdmin & Color A",
-      "cd %systemroot%\\system32",
-      "call :IsAdmin",
+      "@REM 获取管理员权限",
+      "@ECHO OFF&(PUSHD \"%~DP0\")&(REG QUERY \"HKU\\S-1-5-19\">NUL 2>&1)||(",
+      "powershell -Command \"Start-Process '%~sdpnx0' -Verb RunAs\"&&EXIT)",
       "",
-      "$0",
-      "",
-      "PAUSE > NUL",
-      "Exit",
-      "",
-      ":IsAdmin",
-      "Reg.exe query \"HKU\\S-1-5-19\\Environment\"",
-      "If Not %ERRORLEVEL% EQU 0 (",
-      " Cls & ECHO You must have administrator rights to continue ... ",
-      " Pause & Exit",
-      ")",
-      "Cls",
-      "goto:eof"
+      "$0"
     ],
     "description": ["检查并获得管理员权限"]
   }
