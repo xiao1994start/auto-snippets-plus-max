@@ -12,6 +12,7 @@
       "",
       ":end",
       "endlocal",
+      "ECHO.& ECHO 完成 & TIMEOUT /t 3 >NUL& EXIT",
       ""
     ],
     "description": ["BAT.tmpl"]
