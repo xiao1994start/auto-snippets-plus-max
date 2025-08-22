@@ -6,7 +6,7 @@
   },
   "提示退出": {
     "prefix": ["exit"],
-    "body": ["@REM ECHO.& ECHO 完成 & TIMEOUT /t 3 >NUL& EXIT", ""],
+    "body": ["ECHO.& ECHO 完成 & TIMEOUT /t 3 >NUL& EXIT", ""],
     "description": "提示退出"
   }
 }
