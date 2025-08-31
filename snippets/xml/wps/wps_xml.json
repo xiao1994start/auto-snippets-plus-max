@@ -25,13 +25,24 @@
   "WPS 组": {
     "prefix": ["wps_group"],
     "body": [
-      "<group id=\"${1:唯一标识}\" label=\"${2:标签}\">",
+      "<group id=\"${1:group_}\" label=\"${2:标签}\">",
       "    $0",
       "    <separator id=\"separator\" />",
       "</group>",
       ""
     ],
     "description": ["WPS 组"]
+  },
+  "WPS 按钮组": {
+    "prefix": ["wps_btnGroup"],
+    "body": [
+      "<buttonGroup id=\"${1:buttonGroup_}\">",
+      "    $0",
+      "    <separator id=\"separator\" />",
+      "</buttonGroup>",
+      ""
+    ],
+    "description": ["WPS 按钮组"]
   },
   "WPS 分割线": {
     "prefix": ["wps_separator"],
