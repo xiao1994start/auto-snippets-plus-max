@@ -1,5 +1,5 @@
 {
-  "WPS按钮 全尺寸": {
+  "WPS 按钮 全尺寸": {
     "prefix": ["wps_btn_large"],
     "body": [
       "<button id=\"${1:唯一标识}\" label=\"${2:标签}\" onAction=\"ribbon.OnAction\"",
@@ -7,29 +7,35 @@
       "    size=\"large\" />",
       "$0"
     ],
-    "description": ["WPS按钮 全尺寸"]
+    "description": ["WPS 按钮 全尺寸"]
   },
-  "WPS按钮 标准 字体样式": {
+  "WPS 按钮 标准 字体样式": {
     "prefix": ["wps_btn_normal_font"],
     "body": [
       "<button id=\"${1:唯一标识}\" label=\"${2:标签}\" imageMso=\"${3|Bold,Italic,Underline,Fontsize|}\" />",
       "$0"
     ],
-    "description": ["WPS按钮 标准 字体样式"]
+    "description": ["WPS 按钮 标准 字体样式"]
   },
-  "WPS按钮 简单 格式": {
+  "WPS 按钮 简单 格式": {
     "prefix": ["wps_btn_simple_format", "wps_btn_idMso"],
     "body": ["<button idMso=\"${1:Underline}\" />", "$0"],
-    "description": ["WPS按钮 简单 格式"]
+    "description": ["WPS 按钮 简单 格式"]
   },
-  "WPS组": {
+  "WPS 组": {
     "prefix": ["wps_group"],
     "body": [
       "<group id=\"${1:唯一标识}\" label=\"${2:标签}\">",
       "    $0",
+      "    <separator id=\"separator\" />",
       "</group>",
       ""
     ],
-    "description": ["WPS组"]
+    "description": ["WPS 组"]
+  },
+  "WPS 分割线": {
+    "prefix": ["wps_separator"],
+    "body": ["<separator id=\"separator\" />", "$0"],
+    "description": ["WPS 分割线"]
   }
 }
