@@ -1,6 +1,6 @@
 {
   "VB 创建快捷方式": {
-    "prefix": ["VB_CS -cmd.vbs", "Desktop_Lnk -cmd.vbs", "Shortcut -cmd.vbs"],
+    "prefix": ["Desktop_Lnk -cmd.vbs", "Shortcut -cmd.vbs"],
     "body": [
       "set \"obj=Set a=CreateObject(\"\"WScript.Shell\"\"):\"",
       "set \"lnk=Set b=a.CreateShortcut(a.SpecialFolders(\"\"Desktop\"\") & \"\"\\\\${1:快捷方式名称}.lnk\"\"):\"",
