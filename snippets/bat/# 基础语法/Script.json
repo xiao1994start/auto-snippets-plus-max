@@ -7,7 +7,7 @@
       "set \"target=b.TargetPath=\"${2:绝对路径}\":\"",
       "@REM set \"args=b.Arguments=\"\"--启动选项可选\"\":\"",
       "set \"workspace=b.WorkingDirectory=\"${3:程序工作目录或起始位置}\":\"",
-      "set \"icon=b.IconLocation=\"${4:ico图标路径}\":\"",
+      "@REM set \"icon=b.IconLocation=\"${4:ico图标路径}\":\"",
       "mshta vbscript:Execute(\"!obj!!lnk!!target!!args!!workspace!!icon!b.Save:close\"^)",
       ""
     ],

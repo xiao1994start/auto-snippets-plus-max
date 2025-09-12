@@ -5,7 +5,7 @@
     "description": "设置变量"
   },
   "提示输入信息": {
-    "prefix": ["set.p -set", "input -set"],
+    "prefix": ["set_p -set", "input -set"],
     "body": ["set /p name="],
     "description": "提示输入信息"
   },
