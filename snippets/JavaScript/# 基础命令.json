@@ -1,0 +1,15 @@
+{
+  "弹窗": {
+    "prefix": ["alert"],
+    "body": ["alert(${1:content})", ""],
+    "description": ["弹窗"]
+  },
+  "导出语法": {
+    "prefix": ["export default"],
+    "body": ["export default \\{ $0 \\}", ""],
+    "description": [
+      "导出语法",
+      "将一个对象、函数、类或值作为模块的默认导出(暴露)，供其他文件引入使用"
+    ]
+  }
+}

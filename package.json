@@ -184,6 +184,10 @@
         "path": "./snippets/bat/vscode/vscodePlugin插件创建.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/JavaScript/# 基础命令.json"
+      },
+      {
         "language": "json",
         "path": "./snippets/json/json_snippets_for_all.json"
       },

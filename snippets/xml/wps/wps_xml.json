@@ -10,6 +10,15 @@
     ],
     "description": ["WPS 组"]
   },
+  "WPS 盒子": {
+    "prefix": "",
+    "body": [
+      "<box id=\"box\" boxStyle=\"${1|horizontal,vertical|}\">",
+      "    ",
+      "</box>"
+    ],
+    "description": "WPS 盒子"
+  },
   "WPS 按钮组": {
     "prefix": ["wps_btnGroup"],
     "body": [
