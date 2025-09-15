@@ -4,7 +4,7 @@
       "wps_group"
     ],
     "body": [
-      "<group id=\"${1:group_}\" label=\"${2:标签}\">",
+      "<group id=\"${1:控件组}\" label=\"${1:控件组}\">",
       "    $0",
       "    <separator id=\"separator\" />",
       "</group>",
