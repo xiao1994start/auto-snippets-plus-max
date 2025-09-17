@@ -31,13 +31,12 @@
   },
   "创建 else 判断": {
     "prefix": [
-      "if_else"
+      "else"
     ],
     "body": [
       "else {",
       "  $0",
-      "}",
-      ""
+      "}"
     ],
     "description": [
       "创建 else 判断"
@@ -66,10 +65,9 @@
       "else_if"
     ],
     "body": [
-      "else if {",
+      "else if (${1:condition}) {",
       "  $0",
-      "}",
-      ""
+      "}"
     ],
     "description": [
       "创建 else_if 条件判断"
@@ -104,8 +102,7 @@
     "body": [
       "case ${1:value}:",
       "$0",
-      "  break",
-      ""
+      "  break"
     ],
     "description": [
       "创建 case 判断"
