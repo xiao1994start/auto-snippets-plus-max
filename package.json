@@ -192,6 +192,10 @@
         "path": "./snippets/JavaScript/if 和 swith 条件判断.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/JavaScript/try.json"
+      },
+      {
         "language": "json",
         "path": "./snippets/json/json_snippets_for_all.json"
       },
