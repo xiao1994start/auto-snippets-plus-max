@@ -5,7 +5,7 @@
       "try {",
       "  $0",
       "} catch (error) {",
-      "  // alert(\"发生错误:\", error)",
+      "  // alert(\"发生错误:\" + error)",
       "  // console.error(\"发生错误:\", error)",
       "}"
     ],
