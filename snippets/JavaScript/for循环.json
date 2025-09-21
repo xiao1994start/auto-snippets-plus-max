@@ -1,0 +1,11 @@
+{
+  "创建 for 循环语句": {
+    "prefix": ["for_let_loop"],
+    "body": [
+      "for (let ${1:i} = 0; ${1:i} < array.length; ${1:i}++) {",
+      "  alert(${1:i})",
+      "}"
+    ],
+    "description": ["创建 for 循环语句"]
+  }
+}
