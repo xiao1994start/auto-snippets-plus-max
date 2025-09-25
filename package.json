@@ -734,6 +734,10 @@
       {
         "language": "xml",
         "path": "./snippets/xml/wps/wps_xml.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/常用属性.json"
       }
     ]
   }
