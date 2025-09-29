@@ -1,6 +1,6 @@
 {
   "print(...)": {
-    "prefix": ["P_print", "prt_print"],
+    "prefix": ["prt_print", "print"],
     "body": "print($0)",
     "description": ["print语句的代码片段"]
   }
