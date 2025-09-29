@@ -18,7 +18,7 @@
     "description": ["BAT.tmpl"]
   },
   "ECHO_控制台输出": {
-    "prefix": ["prt -ECHO", "pcl -ECHO", "clp -ECHO"],
+    "prefix": ["prt_ECHO", "P_ECHO"],
     "body": ["ECHO $0"],
     "description": ["ECHO_控制台输出"]
   },
