@@ -189,6 +189,10 @@
       },
       {
         "language": "javascript",
+        "path": "./snippets/JavaScript/console控制台.json"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/JavaScript/filter过滤.json"
       },
       {
